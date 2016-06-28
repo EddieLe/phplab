@@ -1,4 +1,6 @@
 <?php
+// global 表示最外層最初參數設定的值 不會在其他function上使用global參數 
+
 $a = 20;
 function myfunction($b) {
 	//print "a=$a<br>";
@@ -9,4 +11,7 @@ function myfunction($b) {
 	return $c = ($b + $a);
 }
 print myfunction(40) + $c;
+
+
+
 ?>
