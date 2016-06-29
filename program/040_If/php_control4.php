@@ -1,4 +1,5 @@
 <?php
+//switch case 是將對應到的結果最對應的呈現 若都無結果則是到default
 	header("content-type: text/html; charset=utf-8");
 	$num = 3;
 	switch ($num){

@@ -1,4 +1,5 @@
 <?php
+//if elseif 可連用多個判斷
 	$score = 95;
 	if ($score >=60 && $score < 70) {
 		echo 'D';

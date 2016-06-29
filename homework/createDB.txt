@@ -1,0 +1,27 @@
+-- 建立資料庫
+
+create database Accounts default character set utf8;
+
+-- 使用Accounts資料庫
+
+use Accounts;
+
+-- 建立資料表設定欄位 primary key 項目 金額 日期
+
+create table money 
+(
+    id int auto_increment primary key,
+    item char(30) null,
+    pay int not null,
+    date timestamp
+);
+
+-- 寫入欄位進資料表
+
+insert into money(id, item, pay, date) values (1, '住宿', 4500, current_timestamp()); 
+insert into money(id, item, pay, date) values (2, '食物', 6000, current_timestamp()); 
+insert into money(id, item, pay, date) values (3, '交通', 1500, current_timestamp()); 
+
+-- show 資料表
+
+select * from money;
