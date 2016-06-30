@@ -6,7 +6,7 @@ create database Accounts default character set utf8;
 
 use Accounts;
 
--- 建立資料表設定欄位 primary key 項目 金額 日期
+-- 建立資料表設定欄位 primary key 項目 金額 日期 engine
 
 create table money 
 (
@@ -14,7 +14,7 @@ create table money
     item char(30) null,
     pay int not null,
     date timestamp
-);
+) engine = InnoDB;
 
 -- 寫入欄位進資料表
 
