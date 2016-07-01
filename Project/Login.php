@@ -2,9 +2,9 @@
 class Login{
     function login()
     {   
-        if($_POST["txtUserName"] != "")
+        if($_POST["userName"] != "")
         {
-        setcookie("userName",$_POST["txtUserName"]);
+        setcookie("userName",$_POST["userName"]);
         }
         
     }

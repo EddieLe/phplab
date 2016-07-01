@@ -3,7 +3,7 @@
 $obj = new CTest();
 $obj->Foo(1, 2, 3, 4);
 
-
+//var_dump 可檢視參數型態
 class CTest {
 	
 	function __call($MethodName, $Parameters) {
