@@ -9,7 +9,7 @@ function signUp()
         $link = mysql_connect ( $dbhost, $dbuser, $dbpass ) or die ( mysql_error () );
         $result = mysql_query ( "set names utf8", $link );
         mysql_selectdb ( $dbname, $link );
-        $cmd="INSERT INTO accounts (userName, password, email, date) VALUES ('$_POST[userName]','$_POST[password]','$_POST[email]', current_timestamp())";
+        $cmd = "INSERT INTO accounts (userName, password, email, date) VALUES ('$_POST[userName]','$_POST[password]','$_POST[email]', current_timestamp())";
         mysql_query ($cmd, $link);
         mysql_close($link);
         

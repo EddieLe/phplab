@@ -55,3 +55,28 @@
 [01-Jul-2016 04:18:01 UTC] PHP   2. array_search() /home/ubuntu/workspace/eddie/Project/Auth.php:16
 [01-Jul-2016 05:32:26 UTC] PHP Fatal error:  Cannot use [] for reading in /home/ubuntu/workspace/eddie/Project/Auth.php on line 5
 [01-Jul-2016 06:35:55 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/eddie/Project/Upload.php on line 5
+[01-Jul-2016 06:49:28 UTC] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /home/ubuntu/workspace/eddie/Project/Upload.php on line 3
+[01-Jul-2016 06:49:28 UTC] PHP Stack trace:
+[01-Jul-2016 06:49:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Upload.php:0
+[01-Jul-2016 06:49:28 UTC] PHP   2. move_uploaded_file() /home/ubuntu/workspace/eddie/Project/Upload.php:3
+[01-Jul-2016 06:49:28 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phptRRKAw' to 'picture/' in /home/ubuntu/workspace/eddie/Project/Upload.php on line 3
+[01-Jul-2016 06:49:28 UTC] PHP Stack trace:
+[01-Jul-2016 06:49:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Upload.php:0
+[01-Jul-2016 06:49:28 UTC] PHP   2. move_uploaded_file() /home/ubuntu/workspace/eddie/Project/Upload.php:3
+[01-Jul-2016 07:33:29 UTC] PHP Warning:  require(config): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/Upload.php on line 15
+[01-Jul-2016 07:33:29 UTC] PHP Stack trace:
+[01-Jul-2016 07:33:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Upload.php:0
+[01-Jul-2016 07:33:29 UTC] PHP Fatal error:  require(): Failed opening required 'config' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/Upload.php on line 15
+[01-Jul-2016 07:33:29 UTC] PHP Stack trace:
+[01-Jul-2016 07:33:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Upload.php:0
+[01-Jul-2016 07:38:03 UTC] PHP Fatal error:  Call to undefined function current_timestamp() in /home/ubuntu/workspace/eddie/Project/Upload.php on line 17
+[01-Jul-2016 07:38:03 UTC] PHP Stack trace:
+[01-Jul-2016 07:38:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Upload.php:0
+[01-Jul-2016 07:38:40 UTC] PHP Fatal error:  Call to undefined function mysql_selsctdb() in /home/ubuntu/workspace/eddie/Project/Upload.php on line 23
+[01-Jul-2016 07:38:40 UTC] PHP Stack trace:
+[01-Jul-2016 07:38:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Upload.php:0
+[01-Jul-2016 07:39:18 UTC] PHP Fatal error:  Call to undefined function mysql_selsctdb() in /home/ubuntu/workspace/eddie/Project/Upload.php on line 23
+[01-Jul-2016 07:39:18 UTC] PHP Stack trace:
+[01-Jul-2016 07:39:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Upload.php:0
+[01-Jul-2016 07:59:59 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/eddie/Project/homepage.php on line 35
+[01-Jul-2016 08:00:06 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/eddie/Project/homepage.php on line 35

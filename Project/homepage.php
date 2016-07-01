@@ -30,19 +30,19 @@
 
 				<?php while ($row = mysql_fetch_assoc($result)) : ?>
 				<tr>
-                        
+                  	
                     <td><?php echo $row["id"] ?></td>
-					<td><img src=<?php echo $row["picture"] ?>></td>
+					<td><img src=<?php echo picture."/".$row["picture"].".".jpg ?>></td>
 					<td><?php echo $row["item"] ?>}</td>
 					<td>＄<?php echo $row["price"] ?></td>
 					<td>
-						<form action="<?php echo $row["id"] ?>", method="get">
+						<form action="updatepage.php", method="post">
+						<input name="update" type="hidden" value="<?php echo $row["id"] ?>">
 						<button>修改</button>
 						</form>				
 					<td>
-						<form action="photo/{{ $commodity->id }}", method="post">
-						<input name="_token" type="hidden" value="{{ csrf_token() }}">
-						<input name="_method" type="hidden" value="delete">
+						<form action="Delete.php", method="post">
+						<input name="delete" type="hidden" value="<?php echo $row["id"] ?>">
 						<button>刪除</button>
 						</form>
 					</td>
@@ -56,7 +56,7 @@
 						<button>新增</button>
 				    </form>
 				    <br>
-				    <form method="post" action=loginpage.php method="get">
+				    <form method="post" action=loginpage.php>
 						<input type="submit" name="logout" id="btnHome" value="登出" />
 					</form>
 				</div>    
