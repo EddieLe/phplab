@@ -11,7 +11,8 @@ if (file_exists("picture/" . $_FILES["myfile"]["name"]))
     
     move_uploaded_file($_FILES["myfile"]["tmp_name"],"picture/".$_FILES["myfile"]["name"]);
     //取出圖片檔名
-    $arrayPicture = mb_split("\.",$_FILES['myfile']['name']);
+    //$arrayPicture = mb_split("\.",$_FILES['myfile']['name']);
+    $arrayPicture[] = $_FILES['myfile']['name'];
     
     require ("config.php");
     $link = mysql_connect ( $dbhost, $dbuser, $dbpass ) or die ( mysql_error () );
