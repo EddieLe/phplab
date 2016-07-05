@@ -7,3 +7,16 @@
 [04-Jul-2016 09:27:42 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/eddie/Project/productsPublic/products.php on line 208
 [04-Jul-2016 09:29:19 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/eddie/Project/productsPublic/products.php on line 208
 [04-Jul-2016 09:43:57 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/eddie/Project/productsPublic/products.php on line 211
+[05-Jul-2016 01:16:08 UTC] PHP Warning:  require(config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/productsPublic/shoppingCar.php on line 3
+[05-Jul-2016 01:16:08 UTC] PHP Stack trace:
+[05-Jul-2016 01:16:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/productsPublic/shoppingCar.php:0
+[05-Jul-2016 01:16:08 UTC] PHP Fatal error:  require(): Failed opening required 'config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/productsPublic/shoppingCar.php on line 3
+[05-Jul-2016 01:16:08 UTC] PHP Stack trace:
+[05-Jul-2016 01:16:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/productsPublic/shoppingCar.php:0
+[05-Jul-2016 08:16:34 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in /home/ubuntu/workspace/eddie/Project/productsPublic/shoppingCar.php on line 121
+[05-Jul-2016 08:20:53 UTC] PHP Warning:  require(config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/productsPublic/shoppingCar.php on line 2
+[05-Jul-2016 08:20:53 UTC] PHP Stack trace:
+[05-Jul-2016 08:20:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/productsPublic/shoppingCar.php:0
+[05-Jul-2016 08:20:53 UTC] PHP Fatal error:  require(): Failed opening required 'config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/productsPublic/shoppingCar.php on line 2
+[05-Jul-2016 08:20:53 UTC] PHP Stack trace:
+[05-Jul-2016 08:20:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/productsPublic/shoppingCar.php:0
