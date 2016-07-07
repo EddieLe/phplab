@@ -82,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="total-item">
 				<h3>OPTIONS</h3>
 				<h4>COUPONS</h4>
-				<a class="cpns" href="#">Apply Coupons</a>
+				<!--<a class="cpns" href="#">Apply Coupons</a>-->
 			</div>
 		</div>
 		<div class="col-md-9 cart-items">
@@ -98,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</script>
 			   
 			<?php while($row = mysql_fetch_assoc($result)){ ?>
-			<form action="" , method="post">
+			<form action="../Delete.php" , method="post">
 				
 				<div class="cart-header">
 					<div class="close1"> </div>
@@ -115,8 +115,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="delivery">
 									 <p><?php echo $row["price"]?></p>
 									 <span></span>
-									 <input type="hidden" name="deletecar" value="<?php echo $row["id"]?>"/>
-									 <input type="submit" class="close1" value=""/>
+									 	<input type="hidden" name="id" value="<?php echo $row["id"]?>"/>
+									 	<input type="submit" class="close1" value=""/>
 									 <div class="clearfix"></div>
 								</div>								
 						   </div>

@@ -69,6 +69,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <!---->			 
 			 </div>
 			<div class="clearfix"> </div>
+			<form action="Login.php" method="post">
+				<!--<input type="text" name=""/>-->
+				<input type="submit" value="Logout">
+			</form>
+			
 </div>
 <!---->	
 <div class="slider">

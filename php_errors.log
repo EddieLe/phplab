@@ -80,3 +80,412 @@
 [01-Jul-2016 07:39:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Upload.php:0
 [01-Jul-2016 07:59:59 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/eddie/Project/homepage.php on line 35
 [01-Jul-2016 08:00:06 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/eddie/Project/homepage.php on line 35
+[06-Jul-2016 01:27:11 UTC] PHP Fatal error:  Call to undefined function signUpSopping() in /home/ubuntu/workspace/eddie/Project/Signup.php on line 46
+[06-Jul-2016 01:27:11 UTC] PHP Stack trace:
+[06-Jul-2016 01:27:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Signup.php:0
+[06-Jul-2016 08:39:14 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Auth.php on line 35
+[06-Jul-2016 08:39:14 UTC] PHP Stack trace:
+[06-Jul-2016 08:39:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Auth.php:0
+[06-Jul-2016 08:39:14 UTC] PHP   2. authPeopleShopping() /home/ubuntu/workspace/eddie/Project/Auth.php:49
+[06-Jul-2016 08:39:14 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Auth.php:35
+[06-Jul-2016 09:15:09 UTC] PHP Warning:  require_once(controllers/productsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:15:09 UTC] PHP Stack trace:
+[06-Jul-2016 09:15:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:15:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:15:09 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/productsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:15:09 UTC] PHP Stack trace:
+[06-Jul-2016 09:15:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:15:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:15:10 UTC] PHP Warning:  require_once(controllers/productsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:15:10 UTC] PHP Stack trace:
+[06-Jul-2016 09:15:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:15:10 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:15:10 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/productsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:15:10 UTC] PHP Stack trace:
+[06-Jul-2016 09:15:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:15:10 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:15:21 UTC] PHP Warning:  require_once(controllers/productsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:15:21 UTC] PHP Stack trace:
+[06-Jul-2016 09:15:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:15:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:15:21 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/productsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:15:21 UTC] PHP Stack trace:
+[06-Jul-2016 09:15:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:15:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:15:31 UTC] PHP Warning:  require_once(controllers/productsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:15:31 UTC] PHP Stack trace:
+[06-Jul-2016 09:15:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:15:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:15:31 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/productsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:15:31 UTC] PHP Stack trace:
+[06-Jul-2016 09:15:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:15:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:16:54 UTC] PHP Warning:  require_once(controllers/productsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:16:54 UTC] PHP Stack trace:
+[06-Jul-2016 09:16:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:16:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:16:54 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/productsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:16:54 UTC] PHP Stack trace:
+[06-Jul-2016 09:16:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:16:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:17:00 UTC] PHP Warning:  require_once(controllers/productsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:17:00 UTC] PHP Stack trace:
+[06-Jul-2016 09:17:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:17:00 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:17:00 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/productsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:17:00 UTC] PHP Stack trace:
+[06-Jul-2016 09:17:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:17:00 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:17:03 UTC] PHP Warning:  require_once(controllers/productsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:17:03 UTC] PHP Stack trace:
+[06-Jul-2016 09:17:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:17:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:17:03 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/productsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:17:03 UTC] PHP Stack trace:
+[06-Jul-2016 09:17:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:17:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:17:05 UTC] PHP Warning:  require_once(controllers/productsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:17:05 UTC] PHP Stack trace:
+[06-Jul-2016 09:17:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:17:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:17:05 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/productsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:17:05 UTC] PHP Stack trace:
+[06-Jul-2016 09:17:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:17:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:17:08 UTC] PHP Warning:  require_once(controllers/productsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:17:08 UTC] PHP Stack trace:
+[06-Jul-2016 09:17:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:17:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:17:08 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/productsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:17:08 UTC] PHP Stack trace:
+[06-Jul-2016 09:17:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:17:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:25:13 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:25:13 UTC] PHP Stack trace:
+[06-Jul-2016 09:25:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:25:13 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:25:13 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:25:13 UTC] PHP Stack trace:
+[06-Jul-2016 09:25:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:25:13 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:25:17 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:25:17 UTC] PHP Stack trace:
+[06-Jul-2016 09:25:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:25:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:25:17 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:25:17 UTC] PHP Stack trace:
+[06-Jul-2016 09:25:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:25:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:25:30 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:25:30 UTC] PHP Stack trace:
+[06-Jul-2016 09:25:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:25:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:25:30 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:25:30 UTC] PHP Stack trace:
+[06-Jul-2016 09:25:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:25:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:30:08 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:30:08 UTC] PHP Stack trace:
+[06-Jul-2016 09:30:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:30:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:30:08 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:30:08 UTC] PHP Stack trace:
+[06-Jul-2016 09:30:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:30:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:40:18 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:40:18 UTC] PHP Stack trace:
+[06-Jul-2016 09:40:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:40:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:40:18 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:40:18 UTC] PHP Stack trace:
+[06-Jul-2016 09:40:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:40:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:44:30 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:44:30 UTC] PHP Stack trace:
+[06-Jul-2016 09:44:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:44:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:44:30 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:44:30 UTC] PHP Stack trace:
+[06-Jul-2016 09:44:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:44:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:44:43 UTC] PHP Warning:  require_once(controllers/123Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:44:43 UTC] PHP Stack trace:
+[06-Jul-2016 09:44:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:44:43 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:44:43 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/123Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:44:43 UTC] PHP Stack trace:
+[06-Jul-2016 09:44:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:44:43 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:52:40 UTC] PHP Warning:  require_once(controllers/HomeController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:52:40 UTC] PHP Stack trace:
+[06-Jul-2016 09:52:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:52:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:52:40 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/HomeController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:52:40 UTC] PHP Stack trace:
+[06-Jul-2016 09:52:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:52:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:53:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[06-Jul-2016 09:53:16 UTC] PHP Stack trace:
+[06-Jul-2016 09:53:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:53:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:53:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[06-Jul-2016 09:53:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[06-Jul-2016 09:53:38 UTC] PHP Stack trace:
+[06-Jul-2016 09:53:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:53:38 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:53:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[06-Jul-2016 09:54:14 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[06-Jul-2016 09:54:14 UTC] PHP Stack trace:
+[06-Jul-2016 09:54:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:54:14 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:54:14 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[06-Jul-2016 09:54:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[06-Jul-2016 09:54:16 UTC] PHP Stack trace:
+[06-Jul-2016 09:54:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:54:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:54:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[06-Jul-2016 09:57:57 UTC] PHP Warning:  require_once(controllers/123Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:57:57 UTC] PHP Stack trace:
+[06-Jul-2016 09:57:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:57:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:57:57 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/123Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[06-Jul-2016 09:57:57 UTC] PHP Stack trace:
+[06-Jul-2016 09:57:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:57:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:58:29 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[06-Jul-2016 09:58:29 UTC] PHP Stack trace:
+[06-Jul-2016 09:58:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 09:58:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 09:58:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[06-Jul-2016 10:00:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[06-Jul-2016 10:00:38 UTC] PHP Stack trace:
+[06-Jul-2016 10:00:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[06-Jul-2016 10:00:38 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[06-Jul-2016 10:00:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 00:54:35 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 00:54:35 UTC] PHP Stack trace:
+[07-Jul-2016 00:54:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 00:54:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 00:54:35 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 00:54:35 UTC] PHP Stack trace:
+[07-Jul-2016 00:54:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 00:54:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 00:54:54 UTC] PHP Warning:  require_once(controllers/backStageController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 00:54:54 UTC] PHP Stack trace:
+[07-Jul-2016 00:54:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 00:54:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 00:54:54 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/backStageController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 00:54:54 UTC] PHP Stack trace:
+[07-Jul-2016 00:54:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 00:54:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 00:55:17 UTC] PHP Warning:  require_once(controllers/backStageController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 00:55:17 UTC] PHP Stack trace:
+[07-Jul-2016 00:55:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 00:55:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 00:55:17 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/backStageController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 00:55:17 UTC] PHP Stack trace:
+[07-Jul-2016 00:55:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 00:55:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 00:55:44 UTC] PHP Warning:  Missing argument 1 for BackStageController::hello() in /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php on line 9
+[07-Jul-2016 00:55:44 UTC] PHP Stack trace:
+[07-Jul-2016 00:55:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 00:55:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 00:55:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 00:55:44 UTC] PHP   4. BackStageController->hello() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 00:55:44 UTC] PHP Fatal error:  Call to undefined method BackStageController::model() in /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php on line 10
+[07-Jul-2016 00:55:44 UTC] PHP Stack trace:
+[07-Jul-2016 00:55:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 00:55:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 00:55:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 00:55:44 UTC] PHP   4. BackStageController->hello() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:00:51 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'products' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[07-Jul-2016 01:00:51 UTC] PHP Stack trace:
+[07-Jul-2016 01:00:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:00:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 01:00:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:02:09 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'products' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[07-Jul-2016 01:02:09 UTC] PHP Stack trace:
+[07-Jul-2016 01:02:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:02:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 01:02:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:02:20 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[07-Jul-2016 01:02:20 UTC] PHP Stack trace:
+[07-Jul-2016 01:02:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:02:20 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 01:02:20 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:02:26 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'views' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[07-Jul-2016 01:02:26 UTC] PHP Stack trace:
+[07-Jul-2016 01:02:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:02:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 01:02:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:03:08 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'login.php' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[07-Jul-2016 01:03:08 UTC] PHP Stack trace:
+[07-Jul-2016 01:03:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:03:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 01:03:08 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:04:57 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'Login.php' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[07-Jul-2016 01:04:57 UTC] PHP Stack trace:
+[07-Jul-2016 01:04:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:04:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 01:04:57 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:08:33 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'BackStageController.php' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[07-Jul-2016 01:08:33 UTC] PHP Stack trace:
+[07-Jul-2016 01:08:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:08:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 01:08:33 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:10:04 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'app.php' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[07-Jul-2016 01:10:04 UTC] PHP Stack trace:
+[07-Jul-2016 01:10:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:10:04 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 01:10:04 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:15:05 UTC] PHP Fatal error:  Class 'User' not found in /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php on line 5
+[07-Jul-2016 01:15:05 UTC] PHP Stack trace:
+[07-Jul-2016 01:15:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:15:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 01:15:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:15:05 UTC] PHP   4. ShoppingController->loginPage() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 01:21:57 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 01:21:57 UTC] PHP Stack trace:
+[07-Jul-2016 01:21:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:21:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 01:21:57 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 01:21:57 UTC] PHP Stack trace:
+[07-Jul-2016 01:21:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 01:21:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 02:43:18 UTC] PHP Fatal error:  Call to undefined method ShoppingController::model() in /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php on line 5
+[07-Jul-2016 02:43:18 UTC] PHP Stack trace:
+[07-Jul-2016 02:43:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 02:43:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 02:43:18 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 02:43:18 UTC] PHP   4. ShoppingController->loginPage() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:20:56 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 03:20:56 UTC] PHP Stack trace:
+[07-Jul-2016 03:20:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 03:20:56 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 03:20:56 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 03:20:56 UTC] PHP Stack trace:
+[07-Jul-2016 03:20:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 03:20:56 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 03:21:07 UTC] PHP Warning:  require_once(../project/models/User.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/Controller.php on line 5
+[07-Jul-2016 03:21:07 UTC] PHP Stack trace:
+[07-Jul-2016 03:21:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 03:21:07 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 03:21:07 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:21:07 UTC] PHP   4. ShoppingController->loginPage() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:21:07 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:5
+[07-Jul-2016 03:21:07 UTC] PHP Fatal error:  require_once(): Failed opening required '../project/models/User.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/Controller.php on line 5
+[07-Jul-2016 03:21:07 UTC] PHP Stack trace:
+[07-Jul-2016 03:21:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 03:21:07 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 03:21:07 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:21:07 UTC] PHP   4. ShoppingController->loginPage() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:21:07 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:5
+[07-Jul-2016 03:26:17 UTC] PHP Warning:  require_once(../project/models/User.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/Controller.php on line 5
+[07-Jul-2016 03:26:17 UTC] PHP Stack trace:
+[07-Jul-2016 03:26:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 03:26:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 03:26:17 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:26:17 UTC] PHP   4. ShoppingController->loginPage() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:26:17 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:5
+[07-Jul-2016 03:26:17 UTC] PHP Fatal error:  require_once(): Failed opening required '../project/models/User.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/Controller.php on line 5
+[07-Jul-2016 03:26:17 UTC] PHP Stack trace:
+[07-Jul-2016 03:26:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 03:26:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 03:26:17 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:26:17 UTC] PHP   4. ShoppingController->loginPage() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:26:17 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:5
+[07-Jul-2016 03:26:26 UTC] PHP Warning:  require_once(../project/models/User.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/Controller.php on line 5
+[07-Jul-2016 03:26:26 UTC] PHP Stack trace:
+[07-Jul-2016 03:26:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 03:26:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 03:26:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:26:26 UTC] PHP   4. ShoppingController->loginPage() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:26:26 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:5
+[07-Jul-2016 03:26:26 UTC] PHP Fatal error:  require_once(): Failed opening required '../project/models/User.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/Controller.php on line 5
+[07-Jul-2016 03:26:26 UTC] PHP Stack trace:
+[07-Jul-2016 03:26:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 03:26:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 03:26:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:26:26 UTC] PHP   4. ShoppingController->loginPage() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[07-Jul-2016 03:26:26 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:5
+[07-Jul-2016 04:39:32 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 04:39:32 UTC] PHP Stack trace:
+[07-Jul-2016 04:39:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 04:39:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 04:39:32 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[07-Jul-2016 04:39:32 UTC] PHP Stack trace:
+[07-Jul-2016 04:39:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[07-Jul-2016 04:39:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[07-Jul-2016 08:04:08 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/eddie/Project/Logout.php on line 14
+[07-Jul-2016 08:04:08 UTC] PHP Stack trace:
+[07-Jul-2016 08:04:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Logout.php:0
+[07-Jul-2016 08:06:05 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/eddie/Project/Logout.php on line 11
+[07-Jul-2016 09:39:44 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 26
+[07-Jul-2016 09:39:44 UTC] PHP Stack trace:
+[07-Jul-2016 09:39:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:39:44 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:39
+[07-Jul-2016 09:39:44 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:26
+[07-Jul-2016 09:40:33 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 26
+[07-Jul-2016 09:40:33 UTC] PHP Stack trace:
+[07-Jul-2016 09:40:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:40:33 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:39
+[07-Jul-2016 09:40:33 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:26
+[07-Jul-2016 09:40:37 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 26
+[07-Jul-2016 09:40:37 UTC] PHP Stack trace:
+[07-Jul-2016 09:40:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:40:37 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:39
+[07-Jul-2016 09:40:37 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:26
+[07-Jul-2016 09:43:40 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:43:40 UTC] PHP Stack trace:
+[07-Jul-2016 09:43:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:43:40 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:55
+[07-Jul-2016 09:43:40 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27
+[07-Jul-2016 09:44:25 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:44:25 UTC] PHP Stack trace:
+[07-Jul-2016 09:44:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:44:25 UTC] PHP   2. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27
+[07-Jul-2016 09:45:22 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:45:22 UTC] PHP Stack trace:
+[07-Jul-2016 09:45:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:45:22 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:55
+[07-Jul-2016 09:45:22 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27
+[07-Jul-2016 09:46:45 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:46:45 UTC] PHP Stack trace:
+[07-Jul-2016 09:46:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:46:45 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:55
+[07-Jul-2016 09:46:45 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27
+[07-Jul-2016 09:48:01 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:48:01 UTC] PHP Stack trace:
+[07-Jul-2016 09:48:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:48:01 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:55
+[07-Jul-2016 09:48:01 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27
+[07-Jul-2016 09:48:52 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:48:52 UTC] PHP Stack trace:
+[07-Jul-2016 09:48:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:48:52 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:55
+[07-Jul-2016 09:48:52 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27
+[07-Jul-2016 09:51:21 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:51:21 UTC] PHP Stack trace:
+[07-Jul-2016 09:51:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:51:21 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:55
+[07-Jul-2016 09:51:21 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27
+[07-Jul-2016 09:51:47 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:51:47 UTC] PHP Stack trace:
+[07-Jul-2016 09:51:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:51:47 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:55
+[07-Jul-2016 09:51:47 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27
+[07-Jul-2016 09:51:52 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:51:52 UTC] PHP Stack trace:
+[07-Jul-2016 09:51:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:51:52 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:55
+[07-Jul-2016 09:51:52 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27
+[07-Jul-2016 09:53:25 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:53:25 UTC] PHP Stack trace:
+[07-Jul-2016 09:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:53:25 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:55
+[07-Jul-2016 09:53:25 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27
+[07-Jul-2016 09:57:13 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/Delete.php on line 27
+[07-Jul-2016 09:57:13 UTC] PHP Stack trace:
+[07-Jul-2016 09:57:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/Delete.php:0
+[07-Jul-2016 09:57:13 UTC] PHP   2. Delete->deleteCar() /home/ubuntu/workspace/eddie/Project/Delete.php:55
+[07-Jul-2016 09:57:13 UTC] PHP   3. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/Delete.php:27

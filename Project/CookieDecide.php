@@ -8,6 +8,8 @@ class CookieDecide{
             header("location: homepage.php");
         }
     }
+    
+    
 }
 
 ?>

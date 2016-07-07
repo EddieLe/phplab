@@ -4,7 +4,7 @@ include "Logout.php";
     if(isset($_POST["logout"]))
     {
         $cookieDisappear = new Logout();
-        $cookieDisappear->logout();
+        $cookieDisappear->backStageLogout();
     }  
 ?>
 

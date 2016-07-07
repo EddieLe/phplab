@@ -9,6 +9,7 @@
     $result = mysql_query($cmdselect, $link);
     $row = mysql_fetch_assoc($result);
     
+    
     //將資料count撈出加上新輸入值
     $count = $_POST["count"] + $row["count"];
     $cmdupdate = "UPDATE products SET count='$count' Where id=$_POST[id]";

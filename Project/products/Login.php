@@ -1,3 +1,13 @@
+<?php
+include "../Logout.php";
+
+    if(isset($_POST["logout"]))
+    {
+        $cookieDisappear = new Logout();
+        $cookieDisappear->shoppingLogout();
+    }  
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,101 +54,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h1><a href="Login.php">Lighting</a></h1>
 					
 				</div>
-			 <!---->		 
-			 <!--<div class="top-nav">-->
-				<!--<ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>-->
-				<!--	<li class="grid"><a href="#">Products</a>-->
-				<!--		<div class="mepanel">-->
-				<!--			<div class="row">-->
-				<!--				<div class="col1 me-one">-->
-				<!--					<h4>Shop</h4>-->
-				<!--					<ul>-->
-				<!--						<li><a href="product.html">New Arrivals</a></li>-->
-				<!--						<li><a href="product.html">Home</a></li>-->
-				<!--						<li><a href="product.html">Decorates</a></li>-->
-				<!--						<li><a href="product.html">Accessories</a></li>-->
-				<!--						<li><a href="product.html">Kids</a></li>-->
-				<!--						<li><a href="product.html">Login</a></li>-->
-				<!--						<li><a href="product.html">Brands</a></li>-->
-				<!--						<li><a href="product.html">My Shopping Bag</a></li>-->
-				<!--					</ul>-->
-				<!--				</div>-->
-				<!--				<div class="col1 me-one">-->
-				<!--					<h4>Type</h4>-->
-				<!--					<ul>-->
-				<!--						<li><a href="product.html">Diwali Lights</a></li>-->
-				<!--						<li><a href="product.html">Tube Lights</a></li>-->
-				<!--						<li><a href="product.html">Bulbs</a></li>-->
-				<!--						<li><a href="product.html">Ceiling Lights</a></li>-->
-				<!--						<li><a href="product.html">Accessories</a></li>-->
-				<!--						<li><a href="product.html">Lanterns</a></li>-->
-				<!--					</ul>	-->
-				<!--				</div>-->
-				<!--				<div class="col1 me-one">-->
-				<!--					<h4>Popular Brands</h4>-->
-				<!--					<ul>-->
-				<!--						<li><a href="product.html">Everyday</a></li>-->
-				<!--						<li><a href="product.html">Philips</a></li>-->
-				<!--						<li><a href="product.html">Havells</a></li>-->
-				<!--						<li><a href="product.html">Wipro</a></li>-->
-				<!--						<li><a href="product.html">Jaguar</a></li>-->
-				<!--						<li><a href="product.html">Ave</a></li>-->
-				<!--						<li><a href="product.html">Gold Medal</a></li>-->
-				<!--						<li><a href="product.html">Anchor</a></li>-->
-				<!--					</ul>	-->
-				<!--				</div>-->
-				<!--			</div>-->
-				<!--		</div>-->
-				<!--	</li>-->
-				<!--	<li class="grid"><a href="#">Accessories</a>-->
-				<!--		<div class="mepanel">-->
-				<!--			<div class="row">-->
-				<!--				<div class="col1 me-one">-->
-				<!--					<h4>Shop</h4>-->
-				<!--					<ul>-->
-				<!--						<li><a href="product.html">New Arrivals</a></li>-->
-				<!--						<li><a href="product.html">Home</a></li>-->
-				<!--						<li><a href="product.html">Decorates</a></li>-->
-				<!--						<li><a href="product.html">Accessories</a></li>-->
-				<!--						<li><a href="product.html">Kids</a></li>-->
-				<!--						<li><a href="product.html">Login</a></li>-->
-				<!--						<li><a href="product.html">Brands</a></li>-->
-				<!--						<li><a href="product.html">My Shopping Bag</a></li>-->
-				<!--					</ul>-->
-				<!--				</div>-->
-				<!--				<div class="col1 me-one">-->
-				<!--					<h4>Type</h4>-->
-				<!--					<ul>-->
-				<!--						<li><a href="product.html">Diwali Lights</a></li>-->
-				<!--						<li><a href="product.html">Tube Lights</a></li>-->
-				<!--						<li><a href="product.html">Bulbs</a></li>-->
-				<!--						<li><a href="product.html">Ceiling Lights</a></li>-->
-				<!--						<li><a href="product.html">Accessories</a></li>-->
-				<!--						<li><a href="product.html">Lanterns</a></li>-->
-				<!--					</ul>	-->
-				<!--				</div>-->
-				<!--				<div class="col1 me-one">-->
-				<!--					<h4>Popular Brands</h4>-->
-				<!--					<ul>-->
-				<!--						<li><a href="product.html">Everyday</a></li>-->
-				<!--						<li><a href="product.html">Philips</a></li>-->
-				<!--						<li><a href="product.html">Havells</a></li>-->
-				<!--						<li><a href="product.html">Wipro</a></li>-->
-				<!--						<li><a href="product.html">Jaguar</a></li>-->
-				<!--						<li><a href="product.html">Ave</a></li>-->
-				<!--						<li><a href="product.html">Gold Medal</a></li>-->
-				<!--						<li><a href="product.html">Anchor</a></li>-->
-				<!--					</ul>	-->
-				<!--				</div>-->
-				<!--			</div>-->
-				<!--		</div>-->
-				<!--	</li>-->
-				<!--	<li class="grid"><a href="typo.html">Typo</a></li>-->
-				<!--	<li class="grid"><a href="contact.html">Contact</a></li>-->
-				<!--</ul>-->
-				<!--<div class="clearfix"> </div>-->
-			 <!--</div>-->
-			 <!---->
+			
 			 <div class="cart box_1">
 				 <a href="checkout.html">
 					<div class="total">
@@ -164,11 +80,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="col-md-6 log">			 
 				 <p>Welcome, please enter the folling to continue.</p>
 				 <p>If you have previously Login with us, <span>click here</span></p>
-				 <form action="" , method="post">
+				 <form action="../Auth.php" , method="post">
 					 <h5>User Name</h5>	
-					 <input type="text" value="">
+					 <input type="text" name="firstName" value="">
 					 <h5>Password</h5>
-					 <input type="password" value="">					
+					 <input type="password" name="password" value="">					
 					 <input type="submit" value="Login">	
 						<a class="acount-btn" href="Account.php">Create an Account</a>
 				 </form>
