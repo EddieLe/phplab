@@ -1,4 +1,7 @@
 <?php
+	include "CookieDecide.php";
+	$cd = new CookieDecide();
+	$cd->cookieDecide();
 
     require("../config.php");
     $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());

@@ -21,16 +21,19 @@ class Delete{
         $result = mysql_query("set name utf8", $link);
         mysql_selectdb ( $dbname, $link );
         
+        //由ID取count值
         $cmdselect = "SELECT count FROM products where id='$_POST[id]'";
         $result = mysql_query($cmdselect, $link);
         $row = mysql_fetch_assoc($result);
         
-        $count -=$row['id'];
+        //取出值減一放回資料庫
+        $count = $row['count'];
+        $count --;
     
         $cmdupdate = "UPDATE products SET count='$count' Where id=$_POST[id]";
         mysql_query($cmdupdate, $link);
         mysql_close($link);
-        //header("location: homepage.php");
+        header("location: products/shoppingCar.php");
     }
     
 }    

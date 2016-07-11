@@ -1,3 +1,9 @@
+<?php
+if(isset($_COOKIE["firstName"]))
+{
+   header("location: products.php");
+}  
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +47,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="index.html">Lighting</a></h1>
+					<h1><a href="#">Lighting</a></h1>
 				</div>
 			 </div>
 			<div class="clearfix"> </div>
@@ -49,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->	
 <div class="container">
 	  <ol class="breadcrumb">
-		  <li><a href="Login.php">Login</a></li>
+		  <li><a href="loginPage">Login</a></li>
 		  <li class="active">Account</li>
 		 </ol>
 	 <div class="registration">

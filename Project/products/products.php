@@ -1,4 +1,7 @@
 <?php
+	include "CookieDecide.php";
+	$cd = new CookieDecide();
+	$cd->cookieDecide();
 
     require("../config.php");
     $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
@@ -69,7 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <!---->			 
 			 </div>
 			<div class="clearfix"> </div>
-			<form action="Login.php" method="post">
+			<form action="../Logout.php" method="post">
 				<!--<input type="text" name=""/>-->
 				<input type="submit" value="Logout">
 			</form>

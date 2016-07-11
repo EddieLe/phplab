@@ -1,3 +1,10 @@
+<?php
+if(isset($_COOKIE["firstName"]))
+{
+   header("location: products.php");
+}  
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,20 +70,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="login_sec">
 	 <div class="container">
 		 <ol class="breadcrumb">
-		  <li><a href="index.html">Home</a></li>
+		  <li><a href="#">Home</a></li>
 		  <li class="active">Login</li>
 		 </ol>
 		 <h2>Login</h2>
 		 <div class="col-md-6 log">			 
 				 <p>Welcome, please enter the folling to continue.</p>
 				 <p>If you have previously Login with us, <span>click here</span></p>
-				 <form action="../Auth.php" , method="post">
+				 <form action="auth" , method="post">
 					 <h5>User Name</h5>	
 					 <input type="text" name="firstName" value="">
 					 <h5>Password</h5>
 					 <input type="password" name="password" value="">					
 					 <input type="submit" value="Login">	
-						<a class="acount-btn" href="Account.php">Create an Account</a>
+						<a class="acount-btn" href="accountPage">Create an Account</a>
 				 </form>
 				 <a href="#">Forgot Password ?</a>
 					

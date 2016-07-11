@@ -1,6 +1,6 @@
 <?php
 class Logout{
-    function logout()
+    function backStageLogout()
     {
         setcookie("userName", $_POST["userName"],time()-60*60*24);
         header("location: loginpage.php");
@@ -12,6 +12,6 @@ class Logout{
     }
     
 }
-// $shoppingLogout = new Logout();
-// $shoppingLogout->shoppingLogout();
+$shoppingLogout = new Logout();
+$shoppingLogout->shoppingLogout();
 ?>

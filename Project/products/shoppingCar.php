@@ -1,5 +1,9 @@
 <?php
-require("../config.php");
+	include "CookieDecide.php";
+	$cd = new CookieDecide();
+	$cd->cookieDecide();
+
+	require("../config.php");
     $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
     $result = mysql_query("set name utf8", $link);
     mysql_selectdb ( $dbname, $link );
@@ -40,7 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="index.html">Lighting</a></h1>					
+					<h1><a href="products.php">Lighting</a></h1>					
 				</div>
 			
 			 <div class="cart box_1">

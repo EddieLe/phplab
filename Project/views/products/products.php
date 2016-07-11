@@ -1,12 +1,15 @@
 <?php
+	// include "CookieDecide.php";
+	// $cd = new CookieDecide();
+	// $cd->cookieDecide();
 
-    require("../config.php");
-    $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-    $result = mysql_query("set name utf8", $link);
-    mysql_selectdb ( $dbname, $link );
-    $cmd = "SELECT * FROM products";
-    $result = mysql_query($cmd, $link);
-    mysql_close($link);
+ //   require("../config.php");
+ //   $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
+ //   $result = mysql_query("set name utf8", $link);
+ //   mysql_selectdb ( $dbname, $link );
+ //   $cmd = "SELECT * FROM products";
+ //   $result = mysql_query($cmd, $link);
+ //   mysql_close($link);
    
 ?>
 
@@ -69,6 +72,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <!---->			 
 			 </div>
 			<div class="clearfix"> </div>
+			<form action="../Logout.php" method="post">
+				<!--<input type="text" name=""/>-->
+				<input type="submit" value="Logout">
+			</form>
+			
 </div>
 <!---->	
 <div class="slider">

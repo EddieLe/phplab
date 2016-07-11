@@ -1,5 +1,9 @@
 <?php
-require("../config.php");
+	include "CookieDecide.php";
+	$cd = new CookieDecide();
+	$cd->cookieDecide();
+
+	require("../config.php");
     $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
     $result = mysql_query("set name utf8", $link);
     mysql_selectdb ( $dbname, $link );
@@ -40,7 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="index.html">Lighting</a></h1>					
+					<h1><a href="products.php">Lighting</a></h1>					
 				</div>
 			
 			 <div class="cart box_1">
@@ -82,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="total-item">
 				<h3>OPTIONS</h3>
 				<h4>COUPONS</h4>
-				<a class="cpns" href="#">Apply Coupons</a>
+				<!--<a class="cpns" href="#">Apply Coupons</a>-->
 			</div>
 		</div>
 		<div class="col-md-9 cart-items">
@@ -98,7 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</script>
 			   
 			<?php while($row = mysql_fetch_assoc($result)){ ?>
-			<form action="" , method="post">
+			<form action="../Delete.php" , method="post">
 				
 				<div class="cart-header">
 					<div class="close1"> </div>
@@ -115,8 +119,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="delivery">
 									 <p><?php echo $row["price"]?></p>
 									 <span></span>
-									 <input type="hidden" name="deletecar" value="<?php echo $row["id"]?>"/>
-									 <input type="submit" class="close1" value=""/>
+									 	<input type="hidden" name="id" value="<?php echo $row["id"]?>"/>
+									 	<input type="submit" class="close1" value=""/>
 									 <div class="clearfix"></div>
 								</div>								
 						   </div>

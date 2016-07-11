@@ -1,11 +1,8 @@
 <?php
-include "../Logout.php";
-
-    if(isset($_POST["logout"]))
-    {
-        $cookieDisappear = new Logout();
-        $cookieDisappear->shoppingLogout();
-    }  
+if(isset($_COOKIE["firstName"]))
+{
+   header("location: products.php");
+}  
 ?>
 
 <!DOCTYPE html>
@@ -73,7 +70,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="login_sec">
 	 <div class="container">
 		 <ol class="breadcrumb">
-		  <li><a href="index.html">Home</a></li>
+		  <li><a href="#">Home</a></li>
 		  <li class="active">Login</li>
 		 </ol>
 		 <h2>Login</h2>
