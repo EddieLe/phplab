@@ -1,18 +1,3 @@
-<?php
-	// include "CookieDecide.php";
-	// $cd = new CookieDecide();
-	// $cd->cookieDecide();
-
- //   require("../config.php");
- //   $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
- //   $result = mysql_query("set name utf8", $link);
- //   mysql_selectdb ( $dbname, $link );
- //   $cmd = "SELECT * FROM products";
- //   $result = mysql_query($cmd, $link);
- //   mysql_close($link);
-   
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 		
 			 <div class="cart box_1">
-				 <a href="shoppingCar.php">
+				 <a href="shoppingCarPage">
 					<div class="total">
 					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
 					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
@@ -72,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <!---->			 
 			 </div>
 			<div class="clearfix"> </div>
-			<form action="../Logout.php" method="post">
+			<form action="#################" method="post">
 				<!--<input type="text" name=""/>-->
 				<input type="submit" value="Logout">
 			</form>
@@ -114,26 +99,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <div class="items">
 	 <div class="container">
-	     <?php while($row = mysql_fetch_assoc($result)):?>
+	 	
+	 	 <!--將三維陣列轉為二維陣列-->
+	     <?php $viewData = $data[0]; ?>
+	     <!--取id欄位數量做for迴圈-->
+	     <?php for($i = 0; $i < count($viewData[4]); $i++):?>
+	    
 		 <div class="items-sec">
-		     
 			 <div class="col-md-3 feature-grid">
 			     
-				 <a href="product.html"><img src="<?php echo $row["pricure"]?>" alt=""/>	
+				 <!--<a href="product.html"><img src="<?php echo $viewData[4][$i]?>" alt=""/>	-->
 					 <div class="arrival-info">
-						 <h4><?php echo $row["item"]?></h4>
-						 <p><img src=<?php echo "../".picture."/".$row["picture"]?>></p>
-						 <p><?php echo round($row["price"] / 1.12)?></p>
-						 <span class="pric1"><del><?php echo $row["price"]?></del></span>
+						 <h4><?php echo $viewData[0][$i]?></h4>
+						 <p><img src=<?php echo "../".picture."/".$viewData[1][$i]?>></p>
+						 <p><?php echo round($viewData[2][$i] / 1.12)?></p>
+						 <span class="pric1"><del><?php echo $viewData[2][$i]?></del></span>
 						 <span class="disc">[12% Off]</span>
 					 </div>
 					 <div class="viw">
-						<a href="checkPage.php"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
+						<a href="checkPage"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
 					 </div>
 				  </a>
 				  
 			 </div>
-			 <?php endwhile;?>
+			 <?php endfor;?>
+			
 
 			 <div class="clearfix"></div>
 		 </div>

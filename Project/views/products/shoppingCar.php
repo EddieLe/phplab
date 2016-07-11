@@ -1,15 +1,15 @@
 <?php
-	include "CookieDecide.php";
-	$cd = new CookieDecide();
-	$cd->cookieDecide();
+	// include "CookieDecide.php";
+	// $cd = new CookieDecide();
+	// $cd->cookieDecide();
 
-	require("../config.php");
-    $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-    $result = mysql_query("set name utf8", $link);
-    mysql_selectdb ( $dbname, $link );
-    $cmd = "SELECT * FROM products";
-    $result = mysql_query($cmd, $link);
-    mysql_close($link);
+	// require("../config.php");
+ //   $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
+ //   $result = mysql_query("set name utf8", $link);
+ //   mysql_selectdb ( $dbname, $link );
+ //   $cmd = "SELECT * FROM products";
+ //   $result = mysql_query($cmd, $link);
+ //   mysql_close($link);
 ?>
 
 <!DOCTYPE html>
@@ -44,11 +44,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="products.php">Lighting</a></h1>					
+					<h1><a href="products">Lighting</a></h1>					
 				</div>
 			
 			 <div class="cart box_1">
-				 <a href="checkout.html">
+				 <a href="#">
 					<div class="total">
 					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
 					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
@@ -100,26 +100,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				// 		});	  
 				// 	});
 			</script>
-			   
-			<?php while($row = mysql_fetch_assoc($result)){ ?>
-			<form action="../Delete.php" , method="post">
+			<?php $vauleData = $data[0]; ?>   
+			<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
+			<form action="removeCar" , method="post">
 				
 				<div class="cart-header">
 					<div class="close1"> </div>
 					<div class="cart-sec simpleCart_shelfItem">
 							<div class="cart-item cyc">
-								<img src=<?php echo "../".picture."/".$row["picture"]?> class="img-responsive" alt=""/>
+								<img src=<?php echo "../".picture."/".$vauleData[1][$i]?> class="img-responsive" alt=""/>
 							</div>
 						   <div class="cart-item-info">
-							    <h3><a href="#"><?php echo $row["item"];?></a><span></span></h3>
+							    <h3><a href="#"><?php echo $vauleData[0][$i];?></a><span></span></h3>
 								<ul class="qty">
-									<li><p>數量: <?php echo $row["count"]?></p></li>
+									<li><p>數量: <?php echo $vauleData[3][$i]?></p></li>
 									<li><p></p></li>
 								</ul>
 								<div class="delivery">
-									 <p><?php echo $row["price"]?></p>
+									 <p><?php echo $vauleData[2][$i]?></p>
 									 <span></span>
-									 	<input type="hidden" name="id" value="<?php echo $row["id"]?>"/>
+									 	<input type="hidden" name="id" value="<?php echo $vauleData[4][$i]?>"/>
 									 	<input type="submit" class="close1" value=""/>
 									 <div class="clearfix"></div>
 								</div>								

@@ -1,18 +1,3 @@
-<?php
-	include "CookieDecide.php";
-	$cd = new CookieDecide();
-	$cd->cookieDecide();
-
-    require("../config.php");
-    $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-    $result = mysql_query("set name utf8", $link);
-    mysql_selectdb ( $dbname, $link );
-    $cmd = "SELECT * FROM products";
-    $result = mysql_query($cmd, $link);
-    mysql_close($link);
-   
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,11 +39,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="index.html">Lighting</a></h1>					
+					<h1><a href="products">Lighting</a></h1>					
 				</div>
 			
 			 <div class="cart box_1">
-				 <a href="shoppingCar.php">
+				 <a href="shoppingCarPage">
 					<div class="total">
 					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
 					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
@@ -75,29 +60,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="product-model">	 
 	 <div class="container">
 			<ol class="breadcrumb">
-		  <li><a href="products.php">Home</a></li>
+		  <li><a href="products">Home</a></li>
 		  <li class="active">Products</li>
 		 </ol>
 			<h2>Our Products</h2>	
 
 		 <div class="col-md-9 product-model-sec">
-		             <?php while($row = mysql_fetch_assoc($result)) : ?>
-					 <a href="single.html"><div class="product-grid">
+		 			<?php $vauleData = $data[0]?>
+		            <?php for ($i = 0; $i < count($vauleData[4]); $i++) { ?>
+		            
+					<a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="<?php echo  "../picture/".$row ["picture"]?>" class="img-responsive" alt="">
+							<img src="<?php echo  "../picture/".$vauleData[1][$i]?>" class="img-responsive" alt="">
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4><?php echo $row["item"]?></h4>								
-								<span class="item_price"><?php echo round($row["price"] /0.12) ?></span>
+								<h4><?php echo $vauleData[0][$i]?></h4>								
+								<span class="item_price"><?php echo round($vauleData[2][$i] /0.12) ?></span>
 								<div class="ofr">
-								  <p class="pric1"><del><?php echo $row["price"] ?>0</del></p>
+								  <p class="pric1"><del><?php echo $vauleData[2][$i] ?>0</del></p>
 						          <p class="disc">[12% Off]</p>
 								</div>
-								<form action="Add.php", method="post">
+								<form action="addCar", method="post">
 								    <input type="text", name="count", class="item_quantity" value="1" />
-								    <input type="hidden", name="id", value="<?php echo $row["id"]?>">
+								    <input type="hidden", name="id", value="<?php echo $vauleData[4][$i]?>">
 								    <input type="submit" class="item_add items" value="ADD">
 							    </form>
 							    
@@ -106,7 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 						</div>
 					</div>	
-					<?php endwhile ; ?>
+					<?php } ?>
 			
 			</div>
 			<div class="rsidebar span_1_of_left">

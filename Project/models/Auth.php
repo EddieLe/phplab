@@ -42,14 +42,13 @@ class Auth{
         if(in_array($_POST["firstName"]." ".$_POST["password"], $arrayUserName))
         {
             setcookie("firstName",$_POST["firstName"]);
-            //header("location: products.php");
-            // echo 123;
-            // exit();
+            //重倒回ShoppingController function products
+            header("location: products");
+            
         }else
-            header("location: Login.php");
+            //重倒回ShoppingController function loginPage
+            header("location: loginPage");
     }
     
 }
-    // authPeopleBackstage();
-    // authPeopleShopping();
 ?>

@@ -10,7 +10,19 @@ class MysqlAction{
         $cmd = "SELECT * FROM products";
         $result = mysql_query($cmd, $link);
         mysql_close($link);
-        return $result;
+        
+        while($row = mysql_fetch_assoc($result))
+        {
+            $itemArray[] = $row['item'];
+            $pictureArray[] =  $row['picture'] ;   
+            $priceArray[] = $row['price'];
+            $countArray[] = $row['count'];
+            $idArray[] = $row['id'];
+        }
+        //將商品結果裝置商品陣列中 為了在controller 給view使用
+        $productsArray[] = array($itemArray, $pictureArray, $priceArray, $countArray, $idArray);
+        return $productsArray;
+        
     }
 }    
 ?>
