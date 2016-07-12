@@ -5,7 +5,7 @@ class Controller {
      require_once "../Project/models/$model.php";
      return new $model ();
     }
-    public function view($view, $data) {
+    public function view($view, $data = Array()) {
      require_once "../Project/views/$view.php";
     }
 }

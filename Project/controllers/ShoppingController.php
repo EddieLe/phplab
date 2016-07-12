@@ -2,6 +2,9 @@
 class ShoppingController extends Controller{
     
     function loginPage(){
+        if(isset($_COOKIE["firstName"])){
+            header("location: products");
+        }  
         $this->view("products/Login");
     }
     
@@ -67,12 +70,11 @@ class ShoppingController extends Controller{
         $delete->deleteShoppingCar();
     }
     
-    function login(){
-        echo"123";
-    }
     
     function logout(){
-        
+        $this->model("Logout");
+        $logout = new Logout();
+        $logout->shoppingLogout();
     }
     
     function signUp(){

@@ -1,17 +1,3 @@
-<?php
-	// include "CookieDecide.php";
-	// $cd = new CookieDecide();
-	// $cd->cookieDecide();
-
-	// require("../config.php");
- //   $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
- //   $result = mysql_query("set name utf8", $link);
- //   mysql_selectdb ( $dbname, $link );
- //   $cmd = "SELECT * FROM products";
- //   $result = mysql_query($cmd, $link);
- //   mysql_close($link);
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,6 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 				</a>
 				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+				<p><a href="checkPage" class="simpleCart_empty">回購物頁</a></p>
 			 	<div class="clearfix"> </div>
 			 </div>
 			 <div class="clearfix"> </div>
@@ -102,6 +89,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</script>
 			<?php $vauleData = $data[0]; ?>   
 			<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
+			<!--如果數量為0不讓他顯示Div-->
+			<?php if($vauleData[3][$i] == 0){ continue;}?>
 			<form action="removeCar" , method="post">
 				
 				<div class="cart-header">

@@ -1,10 +1,3 @@
-<?php
-if(isset($_COOKIE["firstName"]))
-{
-   header("location: products.php");
-}  
-?>
-
 <!DOCTYPE html>
 <html>
 <head>

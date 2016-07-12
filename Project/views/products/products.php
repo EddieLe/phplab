@@ -56,13 +56,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="clearfix"> </div>
 			 <!---->			 
 			 </div>
-			<div class="clearfix"> </div>
-			<form action="#################" method="post">
-				<!--<input type="text" name=""/>-->
-				<input type="submit" value="Logout">
-			</form>
+			<div class="subscribe" > 
+				<form action="logout" method="post">
+					<!--<input type="text" name=""/>-->
+					<input type="submit" value="Logout">
+				</form>
 			
-</div>
+			</div>
 <!---->	
 <div class="slider">
 	  <div class="callbacks_container">

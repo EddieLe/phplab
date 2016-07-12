@@ -19,9 +19,9 @@ class Auth{
         if(in_array($_POST["userName"]." ".$_POST["password"], $arrayUserName))
         {
             setcookie("userName",$_POST["userName"]);
-            header("location: homepage.php");
+            header("location: homePage");
         }else
-            header("location: loginpage.php");
+            header("location: loginPage");
     }
     function authPeopleShopping(){
         

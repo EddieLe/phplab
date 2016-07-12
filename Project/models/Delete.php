@@ -10,7 +10,7 @@ class Delete{
         $cmd = "DELETE FROM products WHERE id = $_POST[delete]";
         mysql_query($cmd, $link);
         mysql_close($link);
-        header("location: homepage.php");
+        header("location: homePage");
     }
     
     function deleteShoppingCar()
@@ -29,6 +29,9 @@ class Delete{
         //取出值減一放回資料庫
         $count = $row['count'];
         $count --;
+        if($count < 0){
+            $count = 0;
+        }
     
         $cmdupdate = "UPDATE products SET count='$count' Where id=$_POST[id]";
         mysql_query($cmdupdate, $link);

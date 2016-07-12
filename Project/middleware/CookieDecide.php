@@ -7,6 +7,14 @@ class CookieDecide{
             header("location: loginPage");
            
         }
-    } 
+    }
+    
+    function cookieBackStageDecide()
+    {
+        if(!isset($_COOKIE["userName"])){
+            //header("location: loginPage");
+           
+        }
+    }
 }
 ?>
