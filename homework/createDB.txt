@@ -25,3 +25,4 @@ insert into money(id, item, pay, date) values (3, '交通', 1500, current_timest
 -- show 資料表
 
 select * from money;
+

@@ -1,4 +1,6 @@
 <?php
+include "middleware/CookieDecide.php";
+
 class ShoppingController extends Controller{
     
     function loginPage(){
@@ -13,7 +15,6 @@ class ShoppingController extends Controller{
     }
     
     function auth(){
-        include "middleware/CookieDecide.php";
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
         $this->model("Auth");
@@ -23,7 +24,6 @@ class ShoppingController extends Controller{
     }
     
     function products(){
-        include "middleware/CookieDecide.php";
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
         $this->model("MysqlAction");
@@ -33,7 +33,6 @@ class ShoppingController extends Controller{
     }
     
     function shoppingCarPage(){
-        include "middleware/CookieDecide.php";
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
 	    $this->model("MysqlAction");
@@ -43,7 +42,6 @@ class ShoppingController extends Controller{
     }
     
     function checkPage(){
-        include "middleware/CookieDecide.php";
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
 	    $this->model("MysqlAction");
@@ -53,7 +51,6 @@ class ShoppingController extends Controller{
     }
     
     function addCar(){
-        include "middleware/CookieDecide.php";
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
         $this->model("Add");
@@ -62,7 +59,6 @@ class ShoppingController extends Controller{
     }
     
     function removeCar(){
-        include "middleware/CookieDecide.php";
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
 	    $this->model("Delete");
@@ -78,7 +74,9 @@ class ShoppingController extends Controller{
     }
     
     function signUp(){
-        
+        $this->model("Signup");
+        $signup = new Signup();
+        $signup->signUpShopping();
     }
     
     

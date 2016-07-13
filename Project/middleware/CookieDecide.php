@@ -9,12 +9,5 @@ class CookieDecide{
         }
     }
     
-    function cookieBackStageDecide()
-    {
-        if(!isset($_COOKIE["userName"])){
-            //header("location: loginPage");
-           
-        }
-    }
 }
 ?>

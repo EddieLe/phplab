@@ -10,6 +10,7 @@
 		<form action="update" method="post" accept-charset="UTF-8" enctype="multipart/form-data">  
 
    			<input type="file" name="myfile" placeholder="上傳圖片" value=""><br>
+   			<?php session_start(); ?>
    			<?php echo $_SESSION["error"]; ?>
    			
 			<h1>修改標題</h1>

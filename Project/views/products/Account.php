@@ -108,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 </script>
 			 <div class="registration_form">
 			 <!-- Form -->
-				<form action="../Signup.php" method="post">
+				<form action="signup" method="post">
 					<div>
 						<label>
 							<input placeholder="first name" name="firstName" type="text" tabindex="1" value="">

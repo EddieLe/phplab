@@ -5,10 +5,9 @@ class Upload{
     {
         if (file_exists("picture/" . $_FILES["myfile"]["name"]))
         {
+        //session_start();
         $_SESSION["error"] = "檔案已經存在，請勿重覆上傳相同檔案";
-        //echo $_SESSION["error"];
         header("location: editPage");
-        //echo "檔案已經存在，請勿重覆上傳相同檔案";
         }else{
         
         move_uploaded_file($_FILES["myfile"]["tmp_name"],"picture/".$_FILES["myfile"]["name"]);

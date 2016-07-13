@@ -1,5 +1,5 @@
 <?php
-include "middleware/CookieDecide.php";
+include "middleware/CookieBackStageDecide.php";
 
 class BackStageController extends Controller {
 
@@ -11,9 +11,8 @@ class BackStageController extends Controller {
     }
     
     function homePage(){
-    //     include "middleware/CookieDecide.php";
-	   // $cd = new CookieDecide();
-	   // $cd->cookieBackStageDecide();
+	    $cd = new CookieBackStageDecide();
+	    $cd->cookieBackStageDecide();
 	    $this->model("MysqlAction");
 	    $selectMysqlAction = new MysqlAction();
 	    $result = $selectMysqlAction->selectProducts();
@@ -21,42 +20,43 @@ class BackStageController extends Controller {
     }
     
     function editPage(){
-    //     include "middleware/CookieDecide.php";
-	   // $cd = new CookieDecide();
-	   // $cd->cookieBackStageDecide();
-	   
+        $cd = new CookieBackStageDecide();
+	    $cd->cookieBackStageDecide();
 	    $this->view("backstage/editpage");
     }
     
     function updatePage(){
-    //     include "middleware/CookieDecide.php";
-	   // $cd = new CookieDecide();
-	   // $cd->cookieBackStageDecide();
+        $cd = new CookieBackStageDecide();
+	    $cd->cookieBackStageDecide();
 	    $this->view("backstage/updatepage");
     }
     
     function upload(){
+        $cd = new CookieBackStageDecide();
+	    $cd->cookieBackStageDecide();
         $this->model("Upload");
 	    $upload = new Upload();
 	    $upload->backStageUpload();
     }
     
     function update(){
+        $cd = new CookieBackStageDecide();
+	    $cd->cookieBackStageDecide();
         $this->model("Update");
 	    $update = new Update();
 	    $update->updateBackStageProducts();
     }
     
     function remove(){
-        
+        $cd = new CookieBackStageDecide();
+	    $cd->cookieBackStageDecide();
 	    $this->model("Delete");
         $delete = new Delete();
         $delete->deleteProduct();
     }
     
     function auth(){
-        include "middleware/CookieDecide.php";
-	    $cd = new CookieDecide();
+        $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
         $this->model("Auth");
         $auth = new Auth();
@@ -64,9 +64,8 @@ class BackStageController extends Controller {
     }
     
     function signUp(){
-       // include "middleware/CookieDecide.php";
-	   // $cd = new CookieDecide();
-	   // $cd->cookieBackStageDecide();
+        $cd = new CookieBackStageDecide();
+	    $cd->cookieBackStageDecide();
         $this->model("Signup");
         $signup = new Signup();
         $signup->signUpBackstage();

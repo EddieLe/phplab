@@ -40,9 +40,9 @@ class Signup{
             
             //註冊成功使他保持登入狀態
             setcookie("firstName", $_POST["firstName"]);
-            header("location: products/products.php");
+            header("location: products");
         }else
-            header("location: Account.php");
+            header("location: Account");
     }
 
 }
