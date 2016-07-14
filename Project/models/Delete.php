@@ -41,8 +41,9 @@ class Delete{
         // $cmdselect = "SELECT sId FROM shoppingCar where id='$_POST[sId]'";
         // mysql_query($cmd, $link);
         // mysql_close($link);
-        //刪除shoppingCar id
         
+        
+        //刪除shoppingCar id
         $cmdupdate = "DELETE FROM shoppingCar WHERE sId=$_POST[sId]";
         mysql_query($cmdupdate, $link);
         mysql_close($link);

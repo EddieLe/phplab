@@ -79,6 +79,15 @@ class ShoppingController extends Controller{
         $signup->signUpShopping();
     }
     
+    function payPage(){
+        $cd = new CookieDecide();
+	    $cd->cookieDecide();
+	    $this->model("MysqlAction");
+        $payProducts = new MysqlAction();
+        $result = $payProducts->payProducts();
+        $this->view("products/payPage",$result);
+    }
+    
     function pay(){
         $this->model("PayLog");
         $paylog = new PayLog();

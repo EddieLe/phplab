@@ -26,8 +26,6 @@ class ShowCar{
             $itemArray[] = $row['item'];
             $pictureArray[] = $row['picture'] ;   
             $priceArray[] = $row['price'];
-            //$countArray[] = $row['count'];
-            //$countArray[] = $count[$row['item']];
             $countArray[] = $row['c'];
             $idArray[] = $row['id'];
             $shoppingCarIdArray[] = $row['sId'];
