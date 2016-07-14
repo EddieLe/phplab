@@ -17,6 +17,7 @@ class Add{
         $cmdupdate = "UPDATE products SET count='$count' Where id=$_POST[id]";
         $result = mysql_query($cmdupdate, $link);
         
+        //新增購物清單
         $cmdinsert = "INSERT INTO shoppingCar (mId, pId, date) VALUES ('$_COOKIE[firstName]','$_POST[id]', current_timestamp())";
         $result = mysql_query($cmdinsert, $link);
 

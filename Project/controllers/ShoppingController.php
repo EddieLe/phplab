@@ -35,9 +35,9 @@ class ShoppingController extends Controller{
     function shoppingCarPage(){
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	    $this->model("MysqlAction");
-        $mysqlAction = new MysqlAction();
-        $result = $mysqlAction->selectProducts();
+	    $this->model("ShowCar");
+        $showCar = new ShowCar();
+        $result = $showCar->selectProducts();
         $this->view("products/shoppingCar",$result);
     }
     
@@ -77,6 +77,12 @@ class ShoppingController extends Controller{
         $this->model("Signup");
         $signup = new Signup();
         $signup->signUpShopping();
+    }
+    
+    function pay(){
+        $this->model("PayLog");
+        $paylog = new PayLog();
+        $paylog->insertPayLog();
     }
     
     

@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						          <p class="disc">[12% Off]</p>
 								</div>
 								<form action="addCar", method="post">
-								    <input type="text", name="count", class="item_quantity" value="1" />
+								    <input type="hidden", name="count", class="item_quantity" value="1" />
 								    <input type="hidden", name="id", value="<?php echo $vauleData[4][$i]?>">
 								    <input type="submit" class="item_add items" value="ADD">
 							    </form>

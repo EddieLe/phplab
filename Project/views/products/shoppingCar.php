@@ -40,7 +40,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 				</a>
 				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-				<p><a href="checkPage" class="simpleCart_empty">回購物頁</a></p>
 			 	<div class="clearfix"> </div>
 			 </div>
 			 <div class="clearfix"> </div>
@@ -52,7 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="container">
 	<div class="check-sec">	 
 		<div class="col-md-3 cart-total">
-			<a class="continue" href="product.html">Continue to basket</a>
+			<a class="continue" href="checkPage">回購物頁</a>
 			<div class="price-details">
 				<h3>Price Details</h3>
 				<span>Total</span>
@@ -64,12 +63,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"></div>				 
 			</div>	
 			<ul class="total_price">
-			   <li class="last_price"> <h4>TOTAL</h4></li>	
-			   <li class="last_price"><span><?php echo $rw["count"] * $rw["price"];?></span></li>	
+			   <li class="last_price"> <span style="color:blue;"><h4><?php echo $_COOKIE['firstName'] ."購物車";?></h4></span></li>	
+			   <li class="last_price"><span></span></li>	
 			</ul> 
 			<div class="clearfix"></div>
 			<div class="clearfix"></div>
-			<a class="order" href="#">Place Order</a>
+			<a class="order" href="#">購物車</a>
 			<div class="total-item">
 				<h3>OPTIONS</h3>
 				<h4>COUPONS</h4>
@@ -89,8 +88,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</script>
 			<?php $vauleData = $data[0]; ?>   
 			<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
-			<!--如果數量為0不讓他顯示Div-->
-			<?php if($vauleData[3][$i] == 0){ continue;}?>
 			<form action="removeCar" , method="post">
 				
 				<div class="cart-header">
@@ -106,10 +103,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><p></p></li>
 								</ul>
 								<div class="delivery">
-									 <p><?php echo $vauleData[2][$i]?></p>
+									 <p><?php echo "價位 : ". $vauleData[2][$i]?></p>
 									 <span></span>
-									 	<input type="hidden" name="id" value="<?php echo $vauleData[4][$i]?>"/>
+									 	<input type="hidden" name="sId" value="<?php echo $vauleData[5][$i]?>"/>
 									 	<input type="submit" class="close1" value=""/>
+									 	
 									 <div class="clearfix"></div>
 								</div>								
 						   </div>
@@ -119,7 +117,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 </div>
 				
 			</form>
+			<?php $allPrice += ($vauleData[3][$i] * $vauleData[2][$i]);?>
 			<?php } ?>
+			
+				
+			
+			<ul align = "center" class="">
+			   <h4>TOTAL</h4>
+			   <br>
+			   <span style=color:red><h3><?php echo'總價 : ' . $allPrice;?></h3></span> 
+			   <br>
+			   <br>
+			   <form action="pay" method="post">   
+					<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>	  
+				    <input type="hidden" name="item" value= "<?php echo $vauleData[0][$i]?>"/><p></p>
+				    <input type="hidden" name="price" value="<?php echo $vauleData[2][$i]?>"/><p></p>
+				    <input type="hidden" name="count"value="<?php echo $vauleData[3][$i]?>"/><p></p>
+				    <?php echo "商品名:". $vauleData[0][$i]?> <input class="order" type="submit" value="下單"/>
+				    <?php } ?>
+				</form>
+			</ul>
+			
+			</div>	
+			
 		
 		</div>
 		<div class="clearfix"> </div>
