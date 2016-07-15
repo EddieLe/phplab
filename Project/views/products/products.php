@@ -112,9 +112,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <div class="arrival-info">
 						 <h4>商品名稱 : <?php echo $viewData[0][$i]?></h4>
 						 <p><img src=<?php echo "../picture/".$viewData[1][$i]?>></p>
-						 <p>價位 : <?php echo round($viewData[2][$i])?></p>
-						 <!--<span class="pric1"><del><?php echo $viewData[2][$i]?></del></span>-->
-						 <!--<span class="disc">[12% Off]</span>-->
+						 <p>價位 : <?php echo $viewData[2][$i]?></p>
+						 <span class="pric1"><del><?php echo $viewData[2][$i]?></del></span>
+						 <span class="disc">[<?php echo $viewData[6][$i]?>% Off]</span>
 					 </div>
 					 <div class="viw">
 						<a href="checkPage"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>

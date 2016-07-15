@@ -12498,3 +12498,186 @@
 [15-Jul-2016 05:51:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
 [15-Jul-2016 05:51:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
 [15-Jul-2016 05:51:12 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 06:17:24 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 06:17:24 UTC] PHP Stack trace:
+[15-Jul-2016 06:17:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 06:17:24 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 06:17:24 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 06:17:27 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 06:17:27 UTC] PHP Stack trace:
+[15-Jul-2016 06:17:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 06:17:27 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 06:17:27 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 07:35:28 UTC] PHP Warning:  require_once(controllers/favicon.icoController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[15-Jul-2016 07:35:28 UTC] PHP Stack trace:
+[15-Jul-2016 07:35:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 07:35:28 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 07:35:28 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/favicon.icoController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/core/App.php on line 10
+[15-Jul-2016 07:35:28 UTC] PHP Stack trace:
+[15-Jul-2016 07:35:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 07:35:28 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 07:48:25 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 07:48:25 UTC] PHP Stack trace:
+[15-Jul-2016 07:48:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 07:48:25 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 07:48:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 07:48:25 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 07:48:25 UTC] PHP Stack trace:
+[15-Jul-2016 07:48:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 07:48:25 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 07:48:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 07:48:30 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 07:48:30 UTC] PHP Stack trace:
+[15-Jul-2016 07:48:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 07:48:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 07:48:30 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 07:48:30 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 07:48:30 UTC] PHP Stack trace:
+[15-Jul-2016 07:48:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 07:48:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 07:48:30 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:05:25 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:05:25 UTC] PHP Stack trace:
+[15-Jul-2016 08:05:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:05:25 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:05:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:06:46 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:06:46 UTC] PHP Stack trace:
+[15-Jul-2016 08:06:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:06:46 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:06:46 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:06:48 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'shoppingCar' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:06:48 UTC] PHP Stack trace:
+[15-Jul-2016 08:06:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:06:48 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:06:48 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:07:28 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:07:28 UTC] PHP Stack trace:
+[15-Jul-2016 08:07:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:07:28 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:07:28 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:07:29 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:07:29 UTC] PHP Stack trace:
+[15-Jul-2016 08:07:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:07:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:07:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:09:10 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:09:10 UTC] PHP Stack trace:
+[15-Jul-2016 08:09:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:09:10 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:09:10 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:10:32 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:10:32 UTC] PHP Stack trace:
+[15-Jul-2016 08:10:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:10:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:10:32 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:33:50 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:33:50 UTC] PHP Stack trace:
+[15-Jul-2016 08:33:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:33:50 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:33:50 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:33:52 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:33:52 UTC] PHP Stack trace:
+[15-Jul-2016 08:33:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:33:52 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:33:52 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:33:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:33:54 UTC] PHP Stack trace:
+[15-Jul-2016 08:33:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:33:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:33:54 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:33:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 08:33:54 UTC] PHP Stack trace:
+[15-Jul-2016 08:33:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:33:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:33:54 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:58:11 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php on line 64
+[15-Jul-2016 08:58:11 UTC] PHP Stack trace:
+[15-Jul-2016 08:58:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 08:58:11 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 08:58:11 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:58:11 UTC] PHP   4. BackStageController->editPage() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 08:58:11 UTC] PHP   5. MysqlAction->editProduct() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:33
+[15-Jul-2016 08:58:11 UTC] PHP   6. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php:64
+[15-Jul-2016 09:00:53 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php on line 66
+[15-Jul-2016 09:00:53 UTC] PHP Stack trace:
+[15-Jul-2016 09:00:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:00:53 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:00:53 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:00:53 UTC] PHP   4. BackStageController->editPage() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:00:53 UTC] PHP   5. MysqlAction->editProduct() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:33
+[15-Jul-2016 09:00:53 UTC] PHP   6. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php:66
+[15-Jul-2016 09:17:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:17:03 UTC] PHP Stack trace:
+[15-Jul-2016 09:17:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:17:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:17:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:17:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:17:03 UTC] PHP Stack trace:
+[15-Jul-2016 09:17:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:17:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:17:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:26:29 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/eddie/Project/views/products/products.php on line 115
+[15-Jul-2016 09:26:29 UTC] PHP Stack trace:
+[15-Jul-2016 09:26:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:26:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:26:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:26:29 UTC] PHP   4. ShoppingController->products() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:26:29 UTC] PHP   5. Controller->view() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:39
+[15-Jul-2016 09:28:06 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:28:06 UTC] PHP Stack trace:
+[15-Jul-2016 09:28:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:28:06 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:28:06 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:28:06 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:28:06 UTC] PHP Stack trace:
+[15-Jul-2016 09:28:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:28:06 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:28:06 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:28:29 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:28:29 UTC] PHP Stack trace:
+[15-Jul-2016 09:28:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:28:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:28:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:28:29 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:28:29 UTC] PHP Stack trace:
+[15-Jul-2016 09:28:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:28:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:28:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:28:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:28:38 UTC] PHP Stack trace:
+[15-Jul-2016 09:28:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:28:38 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:28:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:28:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:28:38 UTC] PHP Stack trace:
+[15-Jul-2016 09:28:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:28:38 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:28:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:28:51 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:28:51 UTC] PHP Stack trace:
+[15-Jul-2016 09:28:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:28:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:28:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:28:51 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:28:51 UTC] PHP Stack trace:
+[15-Jul-2016 09:28:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:28:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:28:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:41:11 UTC] PHP Fatal error:  Class 'Computting' not found in /home/ubuntu/workspace/eddie/Project/core/Controller.php on line 6
+[15-Jul-2016 09:41:11 UTC] PHP Stack trace:
+[15-Jul-2016 09:41:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:41:11 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:41:11 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:41:11 UTC] PHP   4. ShoppingController->aaa() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:41:11 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:107
+[15-Jul-2016 09:59:47 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:59:47 UTC] PHP Stack trace:
+[15-Jul-2016 09:59:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:59:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:59:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15
+[15-Jul-2016 09:59:47 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/core/App.php on line 15
+[15-Jul-2016 09:59:47 UTC] PHP Stack trace:
+[15-Jul-2016 09:59:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[15-Jul-2016 09:59:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[15-Jul-2016 09:59:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/core/App.php:15}() /home/ubuntu/workspace/eddie/Project/core/App.php:15

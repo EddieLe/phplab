@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span>Total</span>
 				<span class="total1"></span>
 				<span>Discount</span>
-				<span class="total1">10%(Festival Offer)</span>
+				<span class="total1"></span>
 				<span>Delivery Charges</span>
 				<span class="total1">150.00</span>
 				<div class="clearfix"></div>				 
@@ -132,9 +132,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		    </form>
 		    <?php }?>
 		    <br>
-			   <h4>TOTAL</h4>
-			   <br>
-			   <span style=color:red><h3><?php echo'總價 : ' . $allPrice;?></h3></span> 
+			   <!--<h4>TOTAL</h4>-->
+			   <!--<br>-->
+			   <span style=color:red><h3><?php echo'TOTAL 總金額 : ' . $allPrice;?></h3></span> 
 			   <br>
 			   <a href=payPage>結帳頁面</a>
 			</ul>

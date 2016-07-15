@@ -4,8 +4,6 @@ class Signup{
 
     function signUpBackstage()
     {
-        // echo 123;
-        // exit();
         //確保都有輸入資料
         if(isset($_POST["userName"]) && isset($_POST["password"]) && isset($_POST["email"]))
         {

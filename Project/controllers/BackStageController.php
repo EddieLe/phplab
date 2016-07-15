@@ -24,10 +24,14 @@ class BackStageController extends Controller {
     }
     
     function editPage(){
+        //顯示記錄錯誤訊息
         session_start();
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
-	    $this->view("backstage/editpage");
+	    $this->model("MysqlAction");
+	    $editShow = new MysqlAction();
+	    $result = $editShow->editProduct();
+	    $this->view("backstage/editpage",$result);
     }
     
     function updatePage(){

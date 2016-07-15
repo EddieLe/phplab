@@ -3,6 +3,8 @@ class Delete{
     
     function deleteProduct()
     {
+        echo $_GET["id"];
+        exit();
         require ("config.php");
         $link = mysql_connect ( $dbhost, $dbuser, $dbpass ) or die ( mysql_error ());
         $result = mysql_query ( "set names utf8", $link );

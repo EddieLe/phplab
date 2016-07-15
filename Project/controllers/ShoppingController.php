@@ -103,6 +103,11 @@ class ShoppingController extends Controller{
         $paylog->insertPayLog();
     }
     
+    function aaa(){
+        $this->model("Computting");
+        $aaa = new Computting();
+        $aaa->saleComputting();
+    }
     
 }
 ?>
