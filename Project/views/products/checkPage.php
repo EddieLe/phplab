@@ -39,7 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="products">Lighting</a></h1>					
+					<h1><a href="products">Eddie Home</a></h1>					
 				</div>
 			
 			 <div class="cart box_1">
@@ -76,11 +76,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4><?php echo $vauleData[0][$i]?></h4>								
-								<span class="item_price"><?php echo round($vauleData[2][$i] /0.12) ?></span>
+								<h4>商品名稱 : <?php echo $vauleData[0][$i]?></h4>								
+								<span class="item_price">價位 : <?php echo round($vauleData[2][$i]) ?></span>
 								<div class="ofr">
-								  <p class="pric1"><del><?php echo $vauleData[2][$i] ?>0</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <!--<p class="pric1"><del><?php echo $vauleData[2][$i] ?>0</del></p>-->
+						    <!--      <p class="disc">[12% Off]</p>-->
 								</div>
 								<form action="addCar", method="post">
 								    <input type="hidden", name="count", class="item_quantity" value="1" />
@@ -99,6 +99,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="rsidebar span_1_of_left">
 				 <section  class="sky-form">
 					 <div class="product_right">
+					 	<a class="continue" href="products">回商品頁</a>
 						 <h4 class="m_2"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>Categories</h4>
 						 <div class="tab1">
 							 <ul class="place">								

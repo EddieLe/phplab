@@ -30,7 +30,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="products">Lighting</a></h1>					
+					<h1><a href="products">Eddie Home</a></h1>					
 				</div>
 			
 			 <div class="cart box_1">
@@ -51,7 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="container">
 	<div class="check-sec">	 
 		<div class="col-md-3 cart-total">
-			<a class="continue" href="checkPage">回購物頁</a>
+			<a class="continue" href="products">回商品頁</a>
 			<div class="price-details">
 				<h3>Price Details</h3>
 				<span>Total</span>
@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ul> 
 			<div class="clearfix"></div>
 			<div class="clearfix"></div>
-			<a class="order" href="#">購物車</a>
+			<a class="order" href="checkPage">回購物頁</a>
 			<div class="total-item">
 				<h3>OPTIONS</h3>
 				<h4>COUPONS</h4>
@@ -119,16 +119,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</form>
 			<?php $allPrice += ($vauleData[3][$i] * $vauleData[2][$i]);?>
 			<?php } ?>
-			
-				
-			
+
 			<ul align = "center" class="">
+			<!--下單所需要資訊-->
 			<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
 			<form action="pay" method="post"> 
 				<input type="hidden" name="item" value= "<?php echo $vauleData[0][$i]?>"/><p></p>
 			    <input type="hidden" name="price" value="<?php echo $vauleData[2][$i]?>"/><p></p>
 			    <input type="hidden" name="count"value="<?php echo $vauleData[3][$i]?>"/><p></p>
-			    <input type="hidden" name="sId" value="<?php echo $vauleData[5][$i]?>"/>
+			    <input type="hidden" name="id" value="<?php echo $vauleData[4][$i]?>"/>
 			    <?php echo "商品項目 :" .$vauleData[0][$i]?> <input class="order" type="submit" value="下單"/>
 		    </form>
 		    <?php }?>
@@ -136,7 +135,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   <h4>TOTAL</h4>
 			   <br>
 			   <span style=color:red><h3><?php echo'總價 : ' . $allPrice;?></h3></span> 
-			   <br>
 			   <br>
 			   <a href=payPage>結帳頁面</a>
 			</ul>

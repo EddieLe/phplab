@@ -4,6 +4,7 @@ include "middleware/CookieBackStageDecide.php";
 class BackStageController extends Controller {
 
     function loginPage(){
+        //判斷有無登入過有回設定商品頁
         if(isset($_COOKIE["userName"])){
             header("location: homePage");
         }  
@@ -11,6 +12,9 @@ class BackStageController extends Controller {
     }
     
     function homePage(){
+        //刪除以上傳後的錯誤訊息session error
+        session_start();
+        unset($_SESSION["error"]);
 	    $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $this->model("MysqlAction");
@@ -20,6 +24,7 @@ class BackStageController extends Controller {
     }
     
     function editPage(){
+        session_start();
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $this->view("backstage/editpage");

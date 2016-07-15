@@ -19,7 +19,7 @@ class MysqlAction{
             $countArray[] = $row['count'];
             $idArray[] = $row['id'];
         }
-        //將商品結果裝置商品陣列中 為了在controller 給view使用
+        //將商品結果資訊裝置商品陣列中 為了在controller 給view使用
         $productsArray[] = array($itemArray, $pictureArray, $priceArray, $countArray, $idArray);
         return $productsArray;
         
@@ -31,10 +31,11 @@ class MysqlAction{
         $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
         $result = mysql_query("set name utf8", $link);
         mysql_selectdb ( $dbname, $link );
-        $cmd = "SELECT * FROM payProducts";
+        $cmd = "SELECT * FROM payProducts Where name='$_COOKIE[firstName]' ";
         $result = mysql_query($cmd, $link);
         mysql_close($link);
         
+        //撈出已訂購商品項目
         while($row = mysql_fetch_assoc($result))
         {
             $itemArray[] = $row['item'];

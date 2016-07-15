@@ -14,7 +14,8 @@
 					
 					<th>Item</th>
 					<th>Price</th>
-					<th colspan="2">數量</th>
+					<th>數量</th>
+					<th>結果</th>
 						
 				</tr>
 				<?php $vauleData = $data[0] ?>
@@ -26,7 +27,7 @@
 					<td><?php echo $vauleData[0][$i] ?></td>
 					<td>＄<?php echo $vauleData[2][$i] ?></td>
 					<td><?php echo $vauleData[3][$i] ?></td>
-					<td></td>
+					<td>done</td>
 					
 				</tr>
 				<?php }?>

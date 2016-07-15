@@ -4,6 +4,10 @@ include "middleware/CookieDecide.php";
 class ShoppingController extends Controller{
     
     function loginPage(){
+        //清除錯誤訊息
+        session_start();
+        unset($_SESSION["duble"]);
+        //判斷有無登入過有就回商品頁
         if(isset($_COOKIE["firstName"])){
             header("location: products");
         }  
@@ -24,6 +28,9 @@ class ShoppingController extends Controller{
     }
     
     function products(){
+        //清除錯誤訊息
+        session_start();
+        unset($_SESSION["duble"]);
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
         $this->model("MysqlAction");
@@ -89,6 +96,8 @@ class ShoppingController extends Controller{
     }
     
     function pay(){
+        $cd = new CookieDecide();
+	    $cd->cookieDecide();
         $this->model("PayLog");
         $paylog = new PayLog();
         $paylog->insertPayLog();

@@ -47,7 +47,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="#">Lighting</a></h1>
+					<h1><a href="#">Eddie Home</a></h1>
 				</div>
 			 </div>
 			<div class="clearfix"> </div>
@@ -109,6 +109,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="registration_form">
 			 <!-- Form -->
 				<form action="signup" method="post">
+					<?php session_start();?>
+					<h4><span style="color:red;font-weight:bold"><?php echo $_SESSION["duble"]; ?></span></h4>
 					<div>
 						<label>
 							<input placeholder="first name" name="firstName" type="text" tabindex="1" value="">

@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="#">Lighting</a></h1>					
+					<h1><a href="#">Eddie Home</a></h1>					
 				</div>
 		
 			 <div class="cart box_1">
@@ -110,11 +110,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			     
 				 <!--<a href="product.html"><img src="<?php echo $viewData[4][$i]?>" alt=""/>	-->
 					 <div class="arrival-info">
-						 <h4><?php echo $viewData[0][$i]?></h4>
+						 <h4>商品名稱 : <?php echo $viewData[0][$i]?></h4>
 						 <p><img src=<?php echo "../picture/".$viewData[1][$i]?>></p>
-						 <p><?php echo round($viewData[2][$i] / 1.12)?></p>
-						 <span class="pric1"><del><?php echo $viewData[2][$i]?></del></span>
-						 <span class="disc">[12% Off]</span>
+						 <p>價位 : <?php echo round($viewData[2][$i])?></p>
+						 <!--<span class="pric1"><del><?php echo $viewData[2][$i]?></del></span>-->
+						 <!--<span class="disc">[12% Off]</span>-->
 					 </div>
 					 <div class="viw">
 						<a href="checkPage"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>

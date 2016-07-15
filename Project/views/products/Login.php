@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-top">
 	 <div class="header-bottom">			
 				<div class="logo">
-					<h1><a href="Login.php">Lighting</a></h1>
+					<h1><a href="loginPage">Eddie Home</a></h1>
 					
 				</div>
 			
