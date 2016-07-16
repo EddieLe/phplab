@@ -10,7 +10,7 @@ class Update{
         $link = mysql_connect ( $dbhost, $dbuser, $dbpass ) or die(mysql_error ());
         $result = mysql_query ( "set names utf8", $link );
         mysql_selectdb ( $dbname, $link );
-        $cmd = "UPDATE products SET item='$_POST[item]', picture='$arrayPicture[0]', price='$_POST[price]', date=current_timestamp() WHERE id=$_POST[update]";
+        $cmd = "UPDATE products SET item='$_POST[item]', picture='$arrayPicture[0]', price='$_POST[price]', sale='$_POST[sale]', date=current_timestamp() WHERE id=$_POST[id]";
         mysql_query ($cmd, $link);
         mysql_close($link);
         header("location: homePage");  

@@ -210,7 +210,7 @@
 					
 					<div class="box-content">
 					    <!--<form action="editPage", method="get">-->
-						<a href="editPage" class="add-button"><span>Add new Article</span></a>
+						<a href="uploadPage" class="add-button"><span>Add new Article</span></a>
 						<div class="cl">&nbsp;</div>
 						
 						<p class="select-all"><input type="checkbox" class="checkbox" /><label>select all</label></p>

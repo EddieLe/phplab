@@ -34,10 +34,10 @@ class BackStageController extends Controller {
 	    $this->view("backstage/editpage",$result);
     }
     
-    function updatePage(){
+    function uploadPage(){
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
-	    $this->view("backstage/updatepage");
+	    $this->view("backstage/uploadpage");
     }
     
     function upload(){

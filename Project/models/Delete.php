@@ -3,13 +3,12 @@ class Delete{
     
     function deleteProduct()
     {
-        echo $_GET["id"];
-        exit();
+
         require ("config.php");
         $link = mysql_connect ( $dbhost, $dbuser, $dbpass ) or die ( mysql_error ());
         $result = mysql_query ( "set names utf8", $link );
         mysql_selectdb ( $dbname, $link );
-        $cmd = "DELETE FROM products WHERE id = $_POST[delete]";
+        $cmd = "DELETE FROM products WHERE id = $_GET[id]";
         mysql_query($cmd, $link);
         mysql_close($link);
         header("location: homePage");

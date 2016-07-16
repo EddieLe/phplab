@@ -117,6 +117,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 </div>
 				
 			</form>
+			<!--計算總金額-->
 			<?php $allPrice += ($vauleData[3][$i] * $vauleData[2][$i]);?>
 			<?php } ?>
 
