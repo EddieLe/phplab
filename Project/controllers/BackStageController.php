@@ -34,6 +34,15 @@ class BackStageController extends Controller {
 	    $this->view("backstage/editpage",$result);
     }
     
+    function reportPage(){
+        $cd = new CookieBackStageDecide();
+	    $cd->cookieBackStageDecide();
+	    $this->model("Report");
+	    $report = new Report();
+	    $result = $report->report();
+        $this->view("backstage/reportpage",$result);
+    }
+    
     function uploadPage(){
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();

@@ -27,9 +27,10 @@ class ShowCar{
             $countArray[] = $row['c'];
             $idArray[] = $row['id'];
             $shoppingCarIdArray[] = $row['sId'];
+            $computtingArray[] = round($row['price'] * ((100-$row['sale'])/100));
         }
         //將商品資料結果裝置商品陣列中 為了在controller 給view使用
-        $productsArray[] = array($itemArray, $pictureArray, $priceArray, $countArray, $idArray,$shoppingCarIdArray);
+        $productsArray[] = array($itemArray, $pictureArray, $priceArray, $countArray, $idArray,$shoppingCarIdArray,$computtingArray);
         return $productsArray;
         
     }

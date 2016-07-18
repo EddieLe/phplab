@@ -4,7 +4,7 @@ include "middleware/CookieDecide.php";
 class ShoppingController extends Controller{
     
     function loginPage(){
-        //清除錯誤訊息
+        //回登入頁清除帳號重複錯誤訊息
         session_start();
         unset($_SESSION["duble"]);
         //判斷有無登入過有就回商品頁
@@ -28,7 +28,7 @@ class ShoppingController extends Controller{
     }
     
     function products(){
-        //清除錯誤訊息
+        //登入成功清除帳號重複錯誤訊息
         session_start();
         unset($_SESSION["duble"]);
 	    $cd = new CookieDecide();
@@ -101,12 +101,6 @@ class ShoppingController extends Controller{
         $this->model("PayLog");
         $paylog = new PayLog();
         $paylog->insertPayLog();
-    }
-    
-    function aaa(){
-        $this->model("Computting");
-        $aaa = new Computting();
-        $aaa->saleComputting();
     }
     
 }

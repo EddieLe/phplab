@@ -77,7 +77,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
 								<h4>商品名稱 : <?php echo $vauleData[0][$i]?></h4>								
-								<span class="item_price">價位 : <?php echo round($vauleData[2][$i]) ?></span>
+								<span class="item_price">價位 : <?php echo round($vauleData[7][$i]) ?></span>
 								<div class="ofr">
 								  <!--<p class="pric1"><del><?php echo $vauleData[2][$i] ?>0</del></p>-->
 						    <!--      <p class="disc">[12% Off]</p>-->

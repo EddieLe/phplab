@@ -12,9 +12,10 @@
 				<tr>
 				    <th>下單者</th>
 					
-					<th>Item</th>
-					<th>Price</th>
+					<th>商品名稱</th>
+					<th>商品單價</th>
 					<th>數量</th>
+					<th>單筆消費金額</th>
 					<th>下單時間</th>
 					<th>結果</th>
 						
@@ -28,6 +29,7 @@
 					<td><?php echo $vauleData[0][$i] ?></td>
 					<td>＄<?php echo $vauleData[2][$i] ?></td>
 					<td><?php echo $vauleData[3][$i] ?></td>
+					<td>＄<?php echo $vauleData[2][$i] * $vauleData[3][$i] ?></td>
 					<td><?php echo $vauleData[5][$i] ?></td>
 					<td>done</td>
 					

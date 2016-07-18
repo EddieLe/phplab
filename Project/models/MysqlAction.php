@@ -20,9 +20,10 @@ class MysqlAction{
             $idArray[] = $row['id'];
             $dateArray[] = $row['date'];
             $saleArray[] = $row['sale'];
+            $computtingArray[] = round($row['price'] * ((100-$row['sale'])/100));
         }
         //將商品結果資訊裝置商品陣列中 為了在controller 給view使用
-        $productsArray[] = array($itemArray, $pictureArray, $priceArray, $countArray, $idArray,$dateArray,$saleArray);
+        $productsArray[] = array($itemArray, $pictureArray, $priceArray, $countArray, $idArray,$dateArray,$saleArray,$computtingArray);
         return $productsArray;
         
     }
@@ -65,10 +66,12 @@ class MysqlAction{
         while($row = mysql_fetch_assoc($result))
         {
             $itemArray[] = $row['item'];
-            $pictureArray[] =  $row['picture'] ;
+            $pictureArray[] =  $row['picture'];
+            $priceArray[] =  $row['price'];
+            $saleArray[] =  $row['sale'];
         }    
         
-        $productsArray[] = array($itemArray,$pictureArray);
+        $productsArray[] = array($itemArray,$pictureArray,$priceArray,$saleArray);
         return $productsArray;
     }
     

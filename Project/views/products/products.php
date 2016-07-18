@@ -56,13 +56,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="clearfix"> </div>
 			 <!---->			 
 			 </div>
-			<div class="subscribe" > 
-				<form action="logout" method="post">
+			<!--<div class="subscribe">-->
+			<!--	<form action="logout" method="post">-->
 					<!--<input type="text" name=""/>-->
-					<input type="submit" value="Logout">
-				</form>
+			<!--		<input type="submit" value="Logout">-->
+			<!--	</form>-->
+			<!--	<form action="#" method="post">-->
+					<!--<input type="text" name=""/>-->
+			<!--		<input type="submit" value="5555">-->
+			<!--	</form>-->
+			<!--	<a href="123">1111</a>-->
 			
-			</div>
+			<!--</div>-->
+<div class="menubar">
+<ul>
+    <li><a href="#" >Home</a></li>
+    <li><a href="#" id="current">Products</a>
+        <ul> <li><a href="#">Sliders</a></li>
+        <li><a href="#">Galleries</a></li>
+        <li><a href="#">Apps</a></li>
+        <li><a href="#">Extensions</a></li>
+        </ul>
+    </li>
+    <li><a href="/about.html">About</a> </li>
+    <li><a href="#">Company History</a></li>
+    <li><a href="#">Address</a></li>
+    <li><a href="#">Customer Service</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+</div>
 <!---->	
 <div class="slider">
 	  <div class="callbacks_container">
@@ -112,7 +134,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <div class="arrival-info">
 						 <h4>商品名稱 : <?php echo $viewData[0][$i]?></h4>
 						 <p><img src=<?php echo "../picture/".$viewData[1][$i]?>></p>
-						 <p>價位 : <?php echo $viewData[2][$i]?></p>
+						 <p>價位 : <?php echo $viewData[7][$i]?></p>
 						 <span class="pric1"><del><?php echo $viewData[2][$i]?></del></span>
 						 <span class="disc">[<?php echo $viewData[6][$i]?>% Off]</span>
 					 </div>

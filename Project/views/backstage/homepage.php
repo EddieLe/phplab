@@ -5,6 +5,19 @@
 	<title>BackStage</title>
 	<link rel="stylesheet" href="cssb/style.css" type="text/css" media="all" />
 </head>
+<script type="text/javascript" src="jquery.min.js">
+$(function(){
+    var $li = $('ul.clearfix li');
+    
+        // 進入時預設點擊第一個頁籤，除了第一個 content 其他 content 隱藏
+        $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.content').hide();
+    
+        $li.click(function(){
+            $($(this).find('a'). attr ('href')).show().siblings ('.content').hide();
+            $(this).addClass('active'). siblings ('.active').removeClass('active');
+        });
+    });
+</script>
 <body>
 <!-- Header -->
 <div id="header">
@@ -26,13 +39,13 @@
 		
 		<!-- Main Nav -->
 		<div id="navigation">
-			<ul>
-			    <li><a href="#" class="active"><span>Products</span></a></li>
-			    <li><a href="#"><span>New Articles</span></a></li>
-			    <li><a href="#"><span>User Management</span></a></li>
-			    <li><a href="#"><span>Photo Gallery</span></a></li>
-			    <li><a href="#"><span>Dashboard</span></a></li>
-			    <li><a href="#"><span>Services Control</span></a></li>
+			<ul class="clearfix">
+			    <li><a href="#toProdusts" class="active"><span>Products</span></a></li>
+			    <li><a href="reportPage"><span>Report Form</span></a></li>
+			    <!--<li><a href="#"><span>User Management</span></a></li>-->
+			    <!--<li><a href="#"><span>Photo Gallery</span></a></li>-->
+			    <!--<li><a href="#"><span>Dashboard</span></a></li>-->
+			    <!--<li><a href="#"><span>Services Control</span></a></li>-->
 			</ul>
 		</div>
 		<!-- End Main Nav -->
@@ -74,6 +87,7 @@
 			<div id="content">
 				
 				<!-- Box -->
+<div id="toProdusts">
 				<div class="box">
 					<!-- Box Head -->
 					<div class="box-head">
@@ -142,55 +156,56 @@
 					<!-- Table -->
 					
 				</div>
+</div>
 				<!-- End Box -->
 				
 				<!-- Box -->
-				<div class="box">
+				<!--<div class="box">-->
 					<!-- Box Head -->
-					<div class="box-head">
-					    	<h2>Add New Article</h2>
-					</div>
+				<!--	<div class="box-head">-->
+				<!--	    	<h2>Add New Article</h2>-->
+				<!--	</div>-->
 					<!-- End Box Head -->
 					
-					<form action="" method="post">
+				<!--	<form action="" method="post">-->
 						
 						<!-- Form -->
-						<div class="form">
-								<p>
-									<span class="req">max 100 symbols</span>
-									<label>Article Title <span>(Required Field)</span></label>
-									<input type="text" class="field size1" />
-								</p>	
-								<p class="inline-field">
-									<label>Date</label>
-									<select class="field size2">
-										<option value="">23</option>
-									</select>
-									<select class="field size3">
-										<option value="">July</option>
-									</select>
-									<select class="field size3">
-										<option value="">2009</option>
-									</select>
-								</p>
+				<!--		<div class="form">-->
+				<!--				<p>-->
+				<!--					<span class="req">max 100 symbols</span>-->
+				<!--					<label>Article Title <span>(Required Field)</span></label>-->
+				<!--					<input type="text" class="field size1" />-->
+				<!--				</p>	-->
+				<!--				<p class="inline-field">-->
+				<!--					<label>Date</label>-->
+				<!--					<select class="field size2">-->
+				<!--						<option value="">23</option>-->
+				<!--					</select>-->
+				<!--					<select class="field size3">-->
+				<!--						<option value="">July</option>-->
+				<!--					</select>-->
+				<!--					<select class="field size3">-->
+				<!--						<option value="">2009</option>-->
+				<!--					</select>-->
+				<!--				</p>-->
 								
-								<p>
-									<span class="req">max 100 symbols</span>
-									<label>Content <span>(Required Field)</span></label>
-									<textarea class="field size1" rows="10" cols="30"></textarea>
-								</p>	
+				<!--				<p>-->
+				<!--					<span class="req">max 100 symbols</span>-->
+				<!--					<label>Content <span>(Required Field)</span></label>-->
+				<!--					<textarea class="field size1" rows="10" cols="30"></textarea>-->
+				<!--				</p>	-->
 							
-						</div>
+				<!--		</div>-->
 						<!-- End Form -->
 						
 						<!-- Form Buttons -->
-						<div class="buttons">
-							<input type="button" class="button" value="preview" />
-							<input type="submit" class="button" value="submit" />
-						</div>
+				<!--		<div class="buttons">-->
+				<!--			<input type="button" class="button" value="preview" />-->
+				<!--			<input type="submit" class="button" value="submit" />-->
+				<!--		</div>-->
 						<!-- End Form Buttons -->
-					</form>
-				</div>
+				<!--	</form>-->
+				<!--</div>-->
 				<!-- End Box -->
 
 			</div>
@@ -210,25 +225,25 @@
 					
 					<div class="box-content">
 					    <!--<form action="editPage", method="get">-->
-						<a href="uploadPage" class="add-button"><span>Add new Article</span></a>
+						<a href="uploadPage" class="add-button"><span>Add new Product</span></a>
 						<div class="cl">&nbsp;</div>
 						
 						<p class="select-all"><input type="checkbox" class="checkbox" /><label>select all</label></p>
 						<p><a href="#">Delete Selected</a></p>
 						
 						<!-- Sort -->
-						<div class="sort">
-							<label>Sort by</label>
-							<select class="field">
-								<option value="">Title</option>
-							</select>
-							<select class="field">
-								<option value="">Date</option>
-							</select>
-							<select class="field">
-								<option value="">Author</option>
-							</select>
-						</div>
+						<!--<div class="sort">-->
+						<!--	<label>Sort by</label>-->
+						<!--	<select class="field">-->
+						<!--		<option value="">Title</option>-->
+						<!--	</select>-->
+						<!--	<select class="field">-->
+						<!--		<option value="">Date</option>-->
+						<!--	</select>-->
+						<!--	<select class="field">-->
+						<!--		<option value="">Author</option>-->
+						<!--	</select>-->
+						<!--</div>-->
 						<!-- End Sort -->
 						
 					</div>
@@ -249,7 +264,7 @@
 	<div class="shell">
 		<span class="left">&copy; 2010 - CompanyName</span>
 		<span class="right">
-			Design by <a href="http://chocotemplates.com" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a>
+			Design by <a href="#" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a>
 		</span>
 	</div>
 </div>

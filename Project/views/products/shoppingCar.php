@@ -103,7 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><p></p></li>
 								</ul>
 								<div class="delivery">
-									 <p><?php echo "價位 : ". $vauleData[2][$i]?></p>
+									 <p><?php echo "價位 : ". $vauleData[6][$i]?></p>
 									 <span></span>
 									 	<input type="hidden" name="sId" value="<?php echo $vauleData[5][$i]?>"/>
 									 	<input type="submit" class="close1" value=""/>
@@ -118,7 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 			</form>
 			<!--計算總金額-->
-			<?php $allPrice += ($vauleData[3][$i] * $vauleData[2][$i]);?>
+			<?php $allPrice += ($vauleData[3][$i] * $vauleData[6][$i]);?>
 			<?php } ?>
 
 			<ul align = "center" class="">
@@ -126,15 +126,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
 			<form action="pay" method="post"> 
 				<input type="hidden" name="item" value= "<?php echo $vauleData[0][$i]?>"/><p></p>
-			    <input type="hidden" name="price" value="<?php echo $vauleData[2][$i]?>"/><p></p>
+			    <input type="hidden" name="price" value="<?php echo $vauleData[6][$i]?>"/><p></p>
 			    <input type="hidden" name="count"value="<?php echo $vauleData[3][$i]?>"/><p></p>
 			    <input type="hidden" name="id" value="<?php echo $vauleData[4][$i]?>"/>
 			    <?php echo "商品項目 :" .$vauleData[0][$i]?> <input class="order" type="submit" value="下單"/>
 		    </form>
 		    <?php }?>
 		    <br>
-			   <!--<h4>TOTAL</h4>-->
-			   <!--<br>-->
 			   <span style=color:red><h3><?php echo'TOTAL 總金額 : ' . $allPrice;?></h3></span> 
 			   <br>
 			   <a href=payPage>結帳頁面</a>
