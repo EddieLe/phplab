@@ -1,14 +1,13 @@
 <?php
+include "config.php";
 class Auth{
     function authPeopleBackstage()
     {
-        //收尋資料庫
-        require("config.php");
-        $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-        $result = mysql_query("set name utf8", $link);
-        mysql_selectdb($dbname, $link);
+        //搜尋資料庫
+        //require("config.php");
         $cmd = "SELECT userName, password FROM accounts";
-        $result = mysql_query($cmd, $link);
+        $cf = new Config();
+        $result = $cf->config($cmd);
         
         //找出資料庫帳密
         while ($row = mysql_fetch_assoc($result))
@@ -25,12 +24,10 @@ class Auth{
     }
     function authPeopleShopping(){
         
-        require("config.php");
-        $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-        $result = mysql_query("set name utf8", $link);
-        mysql_selectdb($dbname, $link);
+        //require("config.php");
         $cmd = "SELECT firstName, password FROM clients";
-        $result = mysql_query($cmd, $link);
+        $cf = new Config();
+        $result = $cf->config($cmd);
         
         //找出資料庫帳密
         while ($row = mysql_fetch_assoc($result))

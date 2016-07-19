@@ -32,10 +32,6 @@
 			<ul class="clearfix">
 			    <li><a href="homepage"><span>Products</span></a></li>
 			    <li><a href="#" class="active"><span>Report Form</span></a></li>
-			    <!--<li><a href="#"><span>User Management</span></a></li>-->
-			    <!--<li><a href="#"><span>Photo Gallery</span></a></li>-->
-			    <!--<li><a href="#"><span>Dashboard</span></a></li>-->
-			    <!--<li><a href="#"><span>Services Control</span></a></li>-->
 			</ul>
 		</div>
 		<!-- End Main Nav -->
@@ -49,7 +45,7 @@
 		
 		<!-- Small Nav -->
 		<div class="small-nav">
-			<a href="#">Dashboard</a>
+			<a href="#">Report Form</a>
 			<span>&gt;</span>
 			Current Articles
 		</div>
@@ -99,31 +95,25 @@
 								<td><?php echo "$".$data[$i][2] * $data[$i][3]?></td>
 								<td><?php echo $data[$i][4]?></td>
 								<td>
-    								<!--<form action="remove", method="post">-->
-    					   <!--     	<input name="delete" type="hidden" value="<?php echo $vauleData[4][$i] ?>">-->
-    					   <!--     	<button class="ico del">Delete</button>-->
-    						  <!--      </form>-->
-    						  <!--		<a href="remove?id=<?php echo $vauleData[4][$i] ?>" class="ico del">delete</a>-->
-								    <!--<a href="editPage?id=<?php echo $vauleData[4][$i] ?>" class="ico edit">Edit</a>-->
 								</td>
 							</tr>
 							<?php }?>
 						</table>
 						<!-- Pagging -->
-						<div class="pagging">
-							<div class="left">Showing 1-12 of 44</div>
-							<div class="right">
-								<a href="#">Previous</a>
-								<a href="#">1</a>
-								<a href="#">2</a>
-								<a href="#">3</a>
-								<a href="#">4</a>
-								<a href="#">245</a>
-								<span>...</span>
-								<a href="#">Next</a>
-								<a href="#">View all</a>
-							</div>
-						</div>
+						<!--<div class="pagging">-->
+						<!--	<div class="left">Showing 1-12 of 44</div>-->
+						<!--	<div class="right">-->
+						<!--		<a href="#">Previous</a>-->
+						<!--		<a href="#">1</a>-->
+						<!--		<a href="#">2</a>-->
+						<!--		<a href="#">3</a>-->
+						<!--		<a href="#">4</a>-->
+						<!--		<a href="#">245</a>-->
+						<!--		<span>...</span>-->
+						<!--		<a href="#">Next</a>-->
+						<!--		<a href="#">View all</a>-->
+						<!--	</div>-->
+						<!--</div>-->
 						<!-- End Pagging -->
 						
 					</div>
@@ -137,26 +127,6 @@
 			<!-- Sidebar -->
 			<div id="sidebar">
 				
-			<!--	 Box -->
-				<!--<div class="box">-->
-					
-			<!--		 Box Head -->
-					<!--<div class="box-head">-->
-					<!--	<h2>Management</h2>-->
-					<!--</div>-->
-			<!--		 End Box Head-->
-					
-					<!--<div class="box-content">-->
-					<!--    <form action="editPage", method="get">-->
-					<!--	<a href="uploadPage" class="add-button"><span>Add new Product</span></a>-->
-					<!--	<div class="cl">&nbsp;</div>-->
-						
-					<!--	<p class="select-all"><input type="checkbox" class="checkbox" /><label>select all</label></p>-->
-					<!--	<p><a href="#">Delete Selected</a></p>-->
-						
-					<!--</div>-->
-				<!--</div>-->
-			<!--	 End Box -->
 			</div>
 			<!-- End Sidebar -->
 			

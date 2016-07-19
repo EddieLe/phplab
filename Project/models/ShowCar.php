@@ -1,14 +1,12 @@
 <?php
+include "config.php";
 class ShowCar{
     
     function selectProducts(){
-        
-        require("config.php");
-        $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-        $result = mysql_query("set name utf8", $link);
-        mysql_selectdb ( $dbname, $link );
+
         $cmdshpooing = "SELECT mId, pId FROM shoppingCar";
-        $result = mysql_query($cmdshpooing, $link);
+        $cf = new Config();
+        $result = $cf->config($cmdshpooing);
 
         //JOIN 商品 購物車 找出該會員加入購物車的商品與數量 加總數量
         $cmd = "SELECT COUNT( shoppingCar.sId ) AS c, shoppingCar.mId, shoppingCar.sId, products. * 
@@ -16,8 +14,8 @@ class ShowCar{
                 JOIN products ON shoppingCar.pId = products.id
                 WHERE mId =  '$_COOKIE[firstName]'
                 GROUP BY products.id";
-        
-        $result = mysql_query($cmd, $link);
+
+        $result = $cf->config($cmd);
         //選擇需要資訊
         while($row = mysql_fetch_assoc($result))
         {

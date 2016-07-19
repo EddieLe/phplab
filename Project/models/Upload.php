@@ -1,5 +1,6 @@
 <meta charset=utf-8>
 <?php
+include "config.php";
 class Upload{
     function backStageUpload()
     {
@@ -14,13 +15,9 @@ class Upload{
         //取出圖片檔名
         $arrayPicture[] = $_FILES['myfile']['name'];
         
-        require ("config.php");
-        $link = mysql_connect ( $dbhost, $dbuser, $dbpass ) or die ( mysql_error () );
-        $result = mysql_query ( "set names utf8", $link );
-        mysql_selectdb ( $dbname, $link );
-
-        $cmd = "INSERT INTO products (item, picture, price, sale, date) VALUES ('$_POST[item]','$arrayPicture[0]','$_POST[price]','$_POST[sale]', current_timestamp())";
-        mysql_query ($cmd, $link);
+        $cmd = "INSERT INTO products (item, picture, price, sale, owner, date) VALUES ('$_POST[item]','$arrayPicture[0]','$_POST[price]','$_POST[sale]','$_COOKIE[userName]' ,current_timestamp())";
+        $cf = new Config();
+        $result = $cf->config($cmd);
         mysql_close($link);
         header("location: homePage");   
         }

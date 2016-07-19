@@ -6,9 +6,10 @@
 	<title>下單頁面</title>
 </head>
 	<body>
-		 
-		
-		<table width="600px" align="center" border="1" bgcolor="#E6E6F2">
+		<div style="text-align: center;">
+			<h3>購買紀錄</h3>
+		</div>
+		<table width="800px" align="center" border="1" bgcolor="#E6E6F2">
 				<tr>
 				    <th>下單者</th>
 					
@@ -16,6 +17,7 @@
 					<th>商品單價</th>
 					<th>數量</th>
 					<th>單筆消費金額</th>
+					<th>付費方式</th>
 					<th>下單時間</th>
 					<th>結果</th>
 						
@@ -30,6 +32,7 @@
 					<td>＄<?php echo $vauleData[2][$i] ?></td>
 					<td><?php echo $vauleData[3][$i] ?></td>
 					<td>＄<?php echo $vauleData[2][$i] * $vauleData[3][$i] ?></td>
+					<td><?php echo $vauleData[6][$i] ?></td>
 					<td><?php echo $vauleData[5][$i] ?></td>
 					<td>done</td>
 					

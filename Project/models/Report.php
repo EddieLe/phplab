@@ -1,17 +1,14 @@
 <?php
+include "config.php";
 class Report{
 
     function report(){
-        require("config.php");
-        $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-        $result = mysql_query("set name utf8", $link);
-        mysql_selectdb ( $dbname, $link );
-        
         //搜尋已售出 以購買者分類 加總單品購買數量
         $cmd = "SELECT SUM(count) AS c, payProducts . * 
                 FROM  `payProducts` 
                 GROUP BY name, item";
-        $result = mysql_query($cmd, $link);
+        $cf = new Config();
+        $result = $cf->config($cmd);
         while($row = mysql_fetch_assoc($result))
         {
             $nameArray[] = $row['name'];

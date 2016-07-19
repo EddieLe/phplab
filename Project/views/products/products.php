@@ -2,6 +2,9 @@
 <html>
 <head>
 <title>Home</title>
+<style type="text/css">
+	
+</style>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/docs.min.css" rel="stylesheet">
 <!-- Custom Theme files -->
@@ -45,46 +48,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 		
 			 <div class="cart box_1">
-				 <a href="shoppingCarPage">
-					<div class="total">
-					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
-					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+				 <a href="payPage">
+					<!--<div class="total">-->
+					<span>歡迎:<?php echo $_COOKIE['firstName']?></span></div>
 				</a>
-				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 			 	<div class="clearfix"> </div>
 			 </div>
 			 <div class="clearfix"> </div>
 			 <!---->			 
 			 </div>
-			<!--<div class="subscribe">-->
-			<!--	<form action="logout" method="post">-->
-					<!--<input type="text" name=""/>-->
-			<!--		<input type="submit" value="Logout">-->
-			<!--	</form>-->
-			<!--	<form action="#" method="post">-->
-					<!--<input type="text" name=""/>-->
-			<!--		<input type="submit" value="5555">-->
-			<!--	</form>-->
-			<!--	<a href="123">1111</a>-->
-			
-			<!--</div>-->
-<div class="menubar">
-<ul>
-    <li><a href="#" >Home</a></li>
-    <li><a href="#" id="current">Products</a>
-        <ul> <li><a href="#">Sliders</a></li>
-        <li><a href="#">Galleries</a></li>
-        <li><a href="#">Apps</a></li>
-        <li><a href="#">Extensions</a></li>
-        </ul>
-    </li>
-    <li><a href="/about.html">About</a> </li>
-    <li><a href="#">Company History</a></li>
-    <li><a href="#">Address</a></li>
-    <li><a href="#">Customer Service</a></li>
-    <li><a href="#">Contact</a></li>
-</ul>
-</div>
+			<div class="subscribe">
+				<form action="checkPage" method="post">
+					<input type="submit" value="購物頁面">
+				</form>
+				<form action="shoppingCarPage" method="post">
+					<input type="submit" value="購物車">
+				</form>
+				<form action="payPage" method="post">
+					<input type="submit" value="下單資訊">
+				</form>
+				<form action="logout" method="post">
+					<input type="submit" value="Logout">
+				</form>
+			</div>
+
 <!---->	
 <div class="slider">
 	  <div class="callbacks_container">

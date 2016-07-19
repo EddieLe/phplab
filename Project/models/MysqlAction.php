@@ -1,15 +1,12 @@
 <?php
+include "config.php";
+//所有有關產品資料資料庫操作
 class MysqlAction{
-    
+
     function selectProducts(){
-        
-        require("config.php");
-        $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-        $result = mysql_query("set name utf8", $link);
-        mysql_selectdb ( $dbname, $link );
         $cmd = "SELECT * FROM products";
-        $result = mysql_query($cmd, $link);
-        mysql_close($link);
+        $cf = new Config();
+        $result = $cf->config($cmd);
         
         while($row = mysql_fetch_assoc($result))
         {
@@ -21,22 +18,18 @@ class MysqlAction{
             $dateArray[] = $row['date'];
             $saleArray[] = $row['sale'];
             $computtingArray[] = round($row['price'] * ((100-$row['sale'])/100));
+            $ownerArray[] = $row['owner'];
         }
         //將商品結果資訊裝置商品陣列中 為了在controller 給view使用
-        $productsArray[] = array($itemArray, $pictureArray, $priceArray, $countArray, $idArray,$dateArray,$saleArray,$computtingArray);
+        $productsArray[] = array($itemArray, $pictureArray, $priceArray, $countArray, $idArray,$dateArray,$saleArray,$computtingArray,$ownerArray);
         return $productsArray;
         
     }
     
     function payProducts(){
-        
-        require("config.php");
-        $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-        $result = mysql_query("set name utf8", $link);
-        mysql_selectdb ( $dbname, $link );
         $cmd = "SELECT * FROM payProducts Where name='$_COOKIE[firstName]' ";
-        $result = mysql_query($cmd, $link);
-        mysql_close($link);
+        $cf = new Config();
+        $result = $cf->config($cmd);
         
         //撈出已訂購商品項目
         while($row = mysql_fetch_assoc($result))
@@ -47,22 +40,19 @@ class MysqlAction{
             $countArray[] = $row['count'];
             $idArray[] = $row['id'];
             $dateArray[] = $row['date'];
+            $payMethodArray[] = $row['payMethod'];
         }
         //將商品結果裝置商品陣列中 為了在controller 給view使用
-        $productsArray[] = array($itemArray, $nameArray, $priceArray, $countArray, $idArray,$dateArray);
+        $productsArray[] = array($itemArray, $nameArray, $priceArray, $countArray, $idArray,$dateArray,$payMethodArray);
         return $productsArray;
         
     }
     function editProduct(){
-        
-        require("config.php");
-        $link = mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());
-        $result = mysql_query("set name utf8", $link);
-        mysql_selectdb ( $dbname, $link );
         $cmd = "SELECT * FROM products Where id=$_GET[id] ";
-        $result = mysql_query($cmd, $link);
-        mysql_close($link);
-
+        $cf = new Config();
+        $result = $cf->config($cmd);
+        
+        //編輯商品放入陣列
         while($row = mysql_fetch_assoc($result))
         {
             $itemArray[] = $row['item'];
@@ -72,6 +62,23 @@ class MysqlAction{
         }    
         
         $productsArray[] = array($itemArray,$pictureArray,$priceArray,$saleArray);
+        return $productsArray;
+    }
+    function productInfo(){
+        $cmd = "SELECT * FROM products Where id=$_GET[id] ";
+        $cf = new Config();
+        $result = $cf->config($cmd);
+        //單資訊商品放入陣列
+        while($row = mysql_fetch_assoc($result))
+        {
+            $itemArray[] = $row['item'];
+            $pictureArray[] =  $row['picture'];
+            $priceArray[] =  $row['price'];
+            $saleArray[] =  $row['sale'];
+            $totleArray[] = round($row['price'] * ((100-$row['sale'])/100));
+        }    
+        
+        $productsArray[] = array($itemArray,$pictureArray,$priceArray,$saleArray,$totleArray);
         return $productsArray;
     }
     

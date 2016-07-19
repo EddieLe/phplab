@@ -43,12 +43,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			
 			 <div class="cart box_1">
-				 <a href="shoppingCarPage">
-					<div class="total">
-					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
-					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+				 <a href="payPage">
+					<!--<div class="total">-->
+					<span>歡迎:<?php echo $_COOKIE['firstName']?></span></div>
 				</a>
-				<!--<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>-->
 			 	<div class="clearfix"> </div>
 			 </div>
 			 <div class="clearfix"> </div>
@@ -69,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 			<?php $vauleData = $data[0]?>
 		            <?php for ($i = 0; $i < count($vauleData[4]); $i++) { ?>
 		            
-					<a href="single.html"><div class="product-grid">
+					<a href="productInfo?id=<?php echo $vauleData[4][$i]?>"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
 							<img src="<?php echo  "../picture/".$vauleData[1][$i]?>" class="img-responsive" alt="">

@@ -57,6 +57,21 @@ class ShoppingController extends Controller{
         $this->view("products/checkPage",$result);
     }
     
+    function productInfo(){
+        $cd = new CookieDecide();
+	    $cd->cookieDecide();
+	    $this->model("MysqlAction");
+	    $productInfo = new MysqlAction();
+	    $result = $productInfo->productInfo();
+	    $this->view("products/productInfo",$result);
+    }
+    
+    function payMethod(){
+        $cd = new CookieDecide();
+	    $cd->cookieDecide();
+        $this->view("products/payMethod");
+    }
+    
     function addCar(){
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();

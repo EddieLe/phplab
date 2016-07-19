@@ -34,12 +34,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			
 			 <div class="cart box_1">
-				 <a href="#">
-					<div class="total">
-					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
-					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+				 <a href="payPage">
+					<!--<div class="total">-->
+					<span>歡迎:<?php echo $_COOKIE['firstName']?></span></div>
 				</a>
-				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 			 	<div class="clearfix"> </div>
 			 </div>
 			 <div class="clearfix"> </div>
@@ -53,13 +51,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-3 cart-total">
 			<a class="continue" href="products">回商品頁</a>
 			<div class="price-details">
+				<?php $vauleData = $data[0]; ?> 
+				<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
+				<?php $priceSale += (($vauleData[3][$i] * $vauleData[2][$i])-($vauleData[3][$i] * $vauleData[6][$i])); ?>
+				<?php }?>
 				<h3>Price Details</h3>
 				<span>Total</span>
 				<span class="total1"></span>
 				<span>Discount</span>
 				<span class="total1"></span>
 				<span>Delivery Charges</span>
-				<span class="total1">150.00</span>
+				<span style=color:red><?php echo $priceSale?></span>
 				<div class="clearfix"></div>				 
 			</div>	
 			<ul class="total_price">
@@ -86,7 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				// 		});	  
 				// 	});
 			</script>
-			<?php $vauleData = $data[0]; ?>   
+			  
 			<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
 			<form action="removeCar" , method="post">
 				
@@ -124,9 +126,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<ul align = "center" class="">
 			<!--下單所需要資訊-->
 			<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
-			<form action="pay" method="post"> 
-				<input type="hidden" name="item" value= "<?php echo $vauleData[0][$i]?>"/><p></p>
-			    <input type="hidden" name="price" value="<?php echo $vauleData[6][$i]?>"/><p></p>
+			<form action="payMethod" method="post"> 
+				<input type="hidden" name="item"value= "<?php echo $vauleData[0][$i]?>"/><p></p>
+				<input type="hidden" name="picture"value= "<?php echo $vauleData[1][$i]?>"/><p></p>
+			    <input type="hidden" name="price"value="<?php echo $vauleData[6][$i]?>"/><p></p>
 			    <input type="hidden" name="count"value="<?php echo $vauleData[3][$i]?>"/><p></p>
 			    <input type="hidden" name="id" value="<?php echo $vauleData[4][$i]?>"/>
 			    <?php echo "商品項目 :" .$vauleData[0][$i]?> <input class="order" type="submit" value="下單"/>
@@ -137,7 +140,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   <br>
 			   <a href=payPage>結帳頁面</a>
 			</ul>
-			
 			</div>	
 			
 		
