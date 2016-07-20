@@ -61,12 +61,14 @@
 				<div class="box">
 					<!-- Box Head -->
 					<div class="box-head">
-						<h2 class="left">Current Articles</h2>
-						<div class="right">
-							<label>search articles</label>
-							<input type="text" class="field small-field" />
-							<input type="submit" class="button" value="search" />
-						</div>
+						<h2 class="left">報表</h2>
+						<!--<div class="right">-->
+						<!--	<form action="search" method="post">-->
+						<!--		<label>search articles</label>-->
+						<!--		<input type="text" class="field small-field" name="search" value="" />-->
+						<!--		<input type="submit" class="button" value="search" />-->
+						<!--	</form>-->
+						<!--</div>-->
 					</div>
 					<!-- End Box Head -->	
 

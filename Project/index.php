@@ -1,7 +1,7 @@
 <?php
 
-require_once 'core/App.php';
-require_once 'core/Controller.php';
+require_once 'router/App.php';
+require_once 'router/Controller.php';
 
 $app = new App();
 

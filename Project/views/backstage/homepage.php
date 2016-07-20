@@ -62,12 +62,12 @@
 				<div class="box">
 					<!-- Box Head -->
 					<div class="box-head">
-						<h2 class="left">Current Articles</h2>
-						<div class="right">
-							<label>search articles</label>
-							<input type="text" class="field small-field" />
-							<input type="submit" class="button" value="search" />
-						</div>
+						<h2 class="left">商品</h2>
+						<!--<div class="right">-->
+						<!--	<label>search articles</label>-->
+						<!--	<input type="text" class="field small-field" />-->
+						<!--	<input type="submit" class="button" value="search" />-->
+						<!--</div>-->
 					</div>
 					<!-- End Box Head -->	
 
@@ -92,9 +92,9 @@
 								<td><img src=<?php echo "../".picture."/".$vauleData[1][$i]?>></td>
 								<td><h3><a href="#"><?php echo $vauleData[0][$i] ?></a></h3></td>
 								<td><?php echo $vauleData[5][$i] ?></td>
-								<td><a href="#"><?php echo  $vauleData[8][$i]?></a></td>
+								<td><?php echo  $vauleData[8][$i]?></td>
 								<td><?php echo "$".$vauleData[2][$i]?></td>
-								<td><a href="#"><?php echo $vauleData[6][$i]."%"?></a></td>
+								<td><?php echo $vauleData[6][$i]."%"?></td>
 								<td>
     						  		<a href="remove?id=<?php echo $vauleData[4][$i] ?>" class="ico del">delete</a>
 								    <a href="editPage?id=<?php echo $vauleData[4][$i] ?>" class="ico edit">Edit</a>
