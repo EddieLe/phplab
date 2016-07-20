@@ -152,7 +152,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input type="submit" value="create an account" id="register-submit">
 					</div>
 					<div class="sky-form">
-						<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>i agree Terms & conditions &nbsp;<a class="terms" href="#"> terms of service</a> </label>
+						<label class="checkbox"><input type="hidden" name="checkbox" ><i></i> &nbsp;<a class="terms" href="#"></a> </label>
 					</div>
 				</form>
 				<!-- /Form -->
@@ -177,7 +177,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input type="submit" value="sign in">
 					</div>
 					<div class="forget">
-						<a href="#">forgot your password</a>
+						<a href="#"></a>
 					</div>
 				</form>
 			 <!-- /Form -->

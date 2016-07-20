@@ -18,10 +18,6 @@
 			<div id="top-navigation">
 				Welcome <a href="#"><strong><?php echo $_COOKIE["userName"]?></strong></a>
 				<span>|</span>
-				<a href="#">Help</a>
-				<span>|</span>
-				<a href="#">Profile Settings</a>
-				<span>|</span>
 					<a href="logout">Logout</a>
 			</div>
 		</div>
@@ -47,7 +43,7 @@
 		<div class="small-nav">
 			<a href="#">Products</a>
 			<span>&gt;</span>
-			Current Articles
+			商品
 		</div>
 		<br />
 		<!-- Main -->
@@ -63,11 +59,6 @@
 					<!-- Box Head -->
 					<div class="box-head">
 						<h2 class="left">商品</h2>
-						<!--<div class="right">-->
-						<!--	<label>search articles</label>-->
-						<!--	<input type="text" class="field small-field" />-->
-						<!--	<input type="submit" class="button" value="search" />-->
-						<!--</div>-->
 					</div>
 					<!-- End Box Head -->	
 
@@ -128,9 +119,8 @@
 					    <!--<form action="editPage", method="get">-->
 						<a href="uploadPage" class="add-button"><span>Add new Product</span></a>
 						<div class="cl">&nbsp;</div>
-						
-						<p class="select-all"><input type="checkbox" class="checkbox" /><label>select all</label></p>
-						<p><a href="#">Delete Selected</a></p>
+						<!--<p class="select-all"><input type="checkbox" class="checkbox" /><label>select all</label></p>-->
+						<!--<p><a href="#">Delete Selected</a></p>-->
 						
 					</div>
 				</div>

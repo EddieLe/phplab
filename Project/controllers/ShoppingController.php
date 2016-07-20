@@ -88,7 +88,6 @@ class ShoppingController extends Controller{
         $delete->deleteShoppingCar();
     }
     
-    
     function logout(){
         $this->model("Logout");
         $logout = new Logout();

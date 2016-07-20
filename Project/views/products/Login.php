@@ -76,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <input type="submit" value="Login">	
 						<a class="acount-btn" href="accountPage">Create an Account</a>
 				 </form>
-				 <a href="#">Forgot Password ?</a>
+				 <a href="#"></a>
 					
 		 </div>	
 				

@@ -73,9 +73,6 @@ class BackStageController extends Controller {
         $delete->deleteProduct();
     }
     
-    // function search(){
-        
-    // }
     
     function auth(){
         $cd = new CookieBackStageDecide();

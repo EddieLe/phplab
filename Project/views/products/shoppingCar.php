@@ -24,6 +24,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/memenu.js"></script>
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>	
 <!-- /start menu -->
+
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!-- header -->
@@ -49,19 +53,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="container">
 	<div class="check-sec">	 
 		<div class="col-md-3 cart-total">
-			<a class="continue" href="products">回商品頁</a>
+			<a class="continue" href="checkPage">回購物頁</a>
 			<div class="price-details">
 				<?php $vauleData = $data[0]; ?> 
 				<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
 				<?php $priceSale += (($vauleData[3][$i] * $vauleData[2][$i])-($vauleData[3][$i] * $vauleData[6][$i])); ?>
+				<?php $beforeSale += $vauleData[3][$i] * $vauleData[2][$i]; ?>
+				<?php $afterSale += $vauleData[3][$i] * $vauleData[6][$i]; ?>
 				<?php }?>
 				<h3>Price Details</h3>
-				<span>Total</span>
+				<span>折扣前金額</span>
 				<span class="total1"></span>
-				<span>Discount</span>
+				<span><?php echo "$". $beforeSale?> </span>
+				<span>折扣後金額</span>
 				<span class="total1"></span>
-				<span>Delivery Charges</span>
-				<span style=color:red><?php echo $priceSale?></span>
+				<span><?php  echo "$". $afterSale?></span>
+				<span class="total1"></span>
+				<span>現折</span>
+				<span style=color:red><?php echo "$". $priceSale?></span>
 				<div class="clearfix"></div>				 
 			</div>	
 			<ul class="total_price">
@@ -70,24 +79,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ul> 
 			<div class="clearfix"></div>
 			<div class="clearfix"></div>
-			<a class="order" href="checkPage">回購物頁</a>
+			<a class="order" href="products">回商品頁</a>
 			<div class="total-item">
-				<h3>OPTIONS</h3>
-				<h4>COUPONS</h4>
+				<h3></h3>
+				<h4></h4>
 				<!--<a class="cpns" href="#">Apply Coupons</a>-->
 			</div>
 		</div>
 		<div class="col-md-9 cart-items">
 			<h1>My Shopping Bag</h1>
-			<script>
-				// $(document).ready(function(c) {
-				// 	$('.close1').on('click', function(c){
-				// 		$('.cart-header').fadeOut('slow', function(c){
-				// 			$('.cart-header').remove();
-				// 		});
-				// 		});	  
-				// 	});
-			</script>
 			  
 			<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
 			<form action="removeCar" , method="post">
@@ -125,16 +125,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<ul align = "center" class="">
 			<!--下單所需要資訊-->
-			<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
-			<form action="payMethod" method="post"> 
-				<input type="hidden" name="item"value= "<?php echo $vauleData[0][$i]?>"/><p></p>
-				<input type="hidden" name="picture"value= "<?php echo $vauleData[1][$i]?>"/><p></p>
-			    <input type="hidden" name="price"value="<?php echo $vauleData[6][$i]?>"/><p></p>
-			    <input type="hidden" name="count"value="<?php echo $vauleData[3][$i]?>"/><p></p>
-			    <input type="hidden" name="id" value="<?php echo $vauleData[4][$i]?>"/>
-			    <?php echo "商品項目 :" .$vauleData[0][$i]?> <input class="order" type="submit" value="下單"/>
-		    </form>
-		    <?php }?>
+			<div class="table-responsive">
+			   <table class="table">
+			      <caption>下單列表</caption>
+			      <thead>
+			         <tr>
+			            <th>產品</th>
+			            <th>金額</th>
+			            <th>數量</th>
+			            <th>狀態</th>
+			         </tr>
+			      </thead>
+			      <tbody>
+			    	<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
+					<form action="payMethod" method="post">
+			         <tr>
+			            <td><?php echo $vauleData[0][$i]?></td>
+			            <td>$<?php echo $vauleData[6][$i]?></td>
+			            <td><?php echo $vauleData[3][$i]?></td>
+			            <td><input type="hidden" name="item"value= "<?php echo $vauleData[0][$i]?>"/><p></p>
+							<input type="hidden" name="picture"value= "<?php echo $vauleData[1][$i]?>"/><p></p>
+					    	<input type="hidden" name="price"value="<?php echo $vauleData[6][$i]?>"/><p></p>
+					   	 	<input type="hidden" name="count"value="<?php echo $vauleData[3][$i]?>"/><p></p>
+					    	<input type="hidden" name="id" value="<?php echo $vauleData[4][$i]?>"/>
+			            	<input class="order" type="submit" value="下單"/>
+			            </td>
+			         </tr>
+			         </form>
+			        <?php }?>
+			      </tbody>
+			   </table>
+			</div>  	
+
 		    <br>
 			   <span style=color:red><h3><?php echo'TOTAL 總金額 : ' . $allPrice;?></h3></span> 
 			   <br>

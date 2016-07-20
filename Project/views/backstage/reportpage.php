@@ -17,10 +17,7 @@
 			<h1><a href="#">BackStage</a></h1>
 			<div id="top-navigation">
 				Welcome <a href="#"><strong><?php echo $_COOKIE["userName"]?></strong></a>
-				<span>|</span>
-				<a href="#">Help</a>
-				<span>|</span>
-				<a href="#">Profile Settings</a>
+
 				<span>|</span>
 					<a href="logout">Logout</a>
 			</div>
@@ -47,7 +44,7 @@
 		<div class="small-nav">
 			<a href="#">Report Form</a>
 			<span>&gt;</span>
-			Current Articles
+			報表
 		</div>
 		<br />
 		<!-- Main -->
@@ -62,13 +59,6 @@
 					<!-- Box Head -->
 					<div class="box-head">
 						<h2 class="left">報表</h2>
-						<!--<div class="right">-->
-						<!--	<form action="search" method="post">-->
-						<!--		<label>search articles</label>-->
-						<!--		<input type="text" class="field small-field" name="search" value="" />-->
-						<!--		<input type="submit" class="button" value="search" />-->
-						<!--	</form>-->
-						<!--</div>-->
 					</div>
 					<!-- End Box Head -->	
 
@@ -101,22 +91,7 @@
 							</tr>
 							<?php }?>
 						</table>
-						<!-- Pagging -->
-						<!--<div class="pagging">-->
-						<!--	<div class="left">Showing 1-12 of 44</div>-->
-						<!--	<div class="right">-->
-						<!--		<a href="#">Previous</a>-->
-						<!--		<a href="#">1</a>-->
-						<!--		<a href="#">2</a>-->
-						<!--		<a href="#">3</a>-->
-						<!--		<a href="#">4</a>-->
-						<!--		<a href="#">245</a>-->
-						<!--		<span>...</span>-->
-						<!--		<a href="#">Next</a>-->
-						<!--		<a href="#">View all</a>-->
-						<!--	</div>-->
-						<!--</div>-->
-						<!-- End Pagging -->
+
 						
 					</div>
 					<!-- Table -->
