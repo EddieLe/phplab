@@ -1,3 +1,6 @@
+<?php
+    var_dump($_SESSION);
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
@@ -79,6 +82,8 @@
                         <div id="register" class="animate form">
                             <form method="post" action="signUp" autocomplete="on"> 
                                 <h1> Sign up </h1> 
+                                <!--<?php session_start();?>-->
+                                <h4><span style="color:red;font-weight:bold"><?php echo $_SESSION["duble"]; ?></span></h4>
                                 <p> 
                                     <label for="usernamesignup" class="uname" data-icon="u">申請帳號</label>
                                     <input id="usernamesignup" name="userName" required="required" type="text" placeholder="mysuperusername690" />

@@ -8,6 +8,7 @@ class MysqlAction{
         $cf = new Config();
         $result = $cf->config($cmd);
         
+        //撈出所有商品資訊
         while($row = mysql_fetch_assoc($result))
         {
             $itemArray[] = $row['item'];
@@ -47,6 +48,7 @@ class MysqlAction{
         return $productsArray;
         
     }
+    
     function editProduct(){
         $cmd = "SELECT * FROM products Where id=$_GET[id] ";
         $cf = new Config();
@@ -64,6 +66,7 @@ class MysqlAction{
         $productsArray[] = array($itemArray,$pictureArray,$priceArray,$saleArray);
         return $productsArray;
     }
+    
     function productInfo(){
         $cmd = "SELECT * FROM products Where id=$_GET[id] ";
         $cf = new Config();

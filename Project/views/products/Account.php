@@ -1,9 +1,3 @@
-<?php
-if(isset($_COOKIE["firstName"]))
-{
-   header("location: products.php");
-}  
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -113,12 +107,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h4><span style="color:red;font-weight:bold"><?php echo $_SESSION["duble"]; ?></span></h4>
 					<div>
 						<label>
-							<input placeholder="first name" name="firstName" type="text" tabindex="1" value="">
+							<input placeholder="first name" name="firstName" type="text" tabindex="1" value="" required>
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="last name" name="lastName" type="text" tabindex="2" value="">
+							<input placeholder="last name" name="lastName" type="text" tabindex="2" value="" required>
 						</label>
 					</div>
 					<div>
@@ -140,7 +134,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>					
 					<div>
 						<label>
-							<input placeholder="password" type="password" name="password" tabindex="4" value="">
+							<input placeholder="password" type="password" name="password" tabindex="4" value="" required>
 						</label>
 					</div>						
 					<div>

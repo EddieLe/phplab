@@ -13,7 +13,9 @@ class Signup{
             $result = $cf->config($cmds);
             //判斷帳號有無重複
             if($row = mysql_fetch_assoc($result)){
-                header("location: loginPage");
+                session_start();
+                $_SESSION['duble'] = "帳號重複";
+                header("location: loginPage#toregister");
             }else{
                 $cmd = "INSERT INTO accounts (userName, password, email, date) VALUES ('$_POST[userName]','$_POST[password]','$_POST[email]', current_timestamp())";
                 $result = $cf->config($cmd);
@@ -21,6 +23,7 @@ class Signup{
                 
                 //註冊成功使他保持登入狀態
                 setcookie("userName", $_POST["userName"]);
+                $_SESSION["userName"] = $_POST["userName"];
                 header("location: homePage");
             }
 
@@ -49,6 +52,7 @@ class Signup{
                 mysql_close($link);
                 //註冊成功使他保持登入狀態
                 setcookie("firstName", $_POST["firstName"]);
+                $_SESSION["firstName"] = $_POST["firstName"];
                 header("location: products");
             }
 

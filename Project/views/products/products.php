@@ -131,7 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </a>
 				  
 			 </div>
-			 <?php endfor;?>
+		<?php endfor;?>
 			
 
 			 <div class="clearfix"></div>

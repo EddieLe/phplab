@@ -8,6 +8,12 @@ class CookieDecide{
            
         }
     }
-    
+    function sessionBackStageDecide()
+    {
+
+        if(!isset($_SESSION["firstName"])){
+            header("location: loginPage");
+        }
+    }
 }
 ?>

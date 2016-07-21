@@ -3,12 +3,15 @@
 class App {
     
      public function __construct() {
+         //導向controller
         $url = $this->parseUrl();
-        
         $controllerName = "{$url[0]}Controller";
         
+        //建controller物件
         require_once "controllers/$controllerName.php";
         $controller = new $controllerName;
+        
+        //導向methodName
         $methodName = $url[1];
         unset($url[0]); unset($url[1]);
         $params = $url ? array_values($url) : Array();
@@ -16,8 +19,7 @@ class App {
     }
     
     public function parseUrl() {
-        // echo $_GET["url"];
-        // exit();
+        // 抓取URL以"/"區分字串
         if (isset($_GET["url"])) {
             $url = rtrim($_GET["url"], "/");
             $url = explode("/", $url);

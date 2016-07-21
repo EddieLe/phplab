@@ -8,6 +8,13 @@ class CookieBackStageDecide{
             header("location: loginPage");
         }
     }
+    function sessionBackStageDecide()
+    {
+
+        if(!isset($_SESSION["userName"])){
+            header("location: loginPage");
+        }
+    }
 }
 
 ?>
