@@ -8,7 +8,7 @@ class ShoppingController extends Controller{
         session_start();
         unset($_SESSION["duble"]);
         //判斷有無登入過有就回商品頁
-        if(isset($_COOKIE["firstName"])){
+        if(isset($_COOKIE["firstName"]) && isset($_SESSION["firstName"])){
             header("location: products");
         }  
         $this->view("products/Login");
@@ -21,7 +21,7 @@ class ShoppingController extends Controller{
     function auth(){
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	   // $cd->sessionDecide();
+	    $cd->sessionDecide();
 	    $_POST["password"] = md5($_POST["password"]);
         $this->model("Auth");
         $auth = new Auth();
@@ -35,7 +35,7 @@ class ShoppingController extends Controller{
         unset($_SESSION["duble"]);
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	   // $cd->sessionDecide();
+	    $cd->sessionDecide();
         $this->model("MysqlAction");
         $mysqlAction = new MysqlAction();
         $result = $mysqlAction->selectProductsPage();
@@ -50,7 +50,7 @@ class ShoppingController extends Controller{
     function shoppingCarPage(){
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	   // $cd->sessionDecide();
+	    $cd->sessionDecide();
 	    $this->model("ShowCar");
         $showCar = new ShowCar();
         $result = $showCar->selectProducts();
@@ -60,17 +60,17 @@ class ShoppingController extends Controller{
     function checkPage(){
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	   // $cd->sessionDecide();
+	    $cd->sessionDecide();
 	    $this->model("MysqlAction");
         $mysqlAction = new MysqlAction();
         $result = $mysqlAction->selectProducts();
         $this->view("products/checkPage",$result);
     }
     
-    function productInfo(){
+    function productInfo(){ 
         $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	   // $cd->sessionDecide();
+	    $cd->sessionDecide();
 	    $this->model("MysqlAction");
 	    $productInfo = new MysqlAction();
 	    $result = $productInfo->productInfo();
@@ -80,14 +80,14 @@ class ShoppingController extends Controller{
     function payMethod(){
         $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	   // $cd->sessionDecide();
+	    $cd->sessionDecide();
         $this->view("products/payMethod");
     }
     
     function addCar(){
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	   // $cd->sessionDecide();
+	    $cd->sessionDecide();
         $this->model("Add");
         $add = new Add();
         $add->addShoppingCar();
@@ -96,13 +96,15 @@ class ShoppingController extends Controller{
     function removeCar(){
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	   // $cd->sessionDecide();
+	    $cd->sessionDecide();
 	    $this->model("Delete");
         $delete = new Delete();
         $delete->deleteShoppingCar();
     }
     
     function logout(){
+        session_start();
+        unset($_SESSION);
         $this->model("Logout");
         $logout = new Logout();
         $logout->shoppingLogout();
@@ -118,7 +120,7 @@ class ShoppingController extends Controller{
     function payPage(){
         $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	   // $cd->sessionDecide();
+	    $cd->sessionDecide();
 	    $this->model("MysqlAction");
         $payProducts = new MysqlAction();
         $result = $payProducts->payProducts();
@@ -128,15 +130,12 @@ class ShoppingController extends Controller{
     function pay(){
         $cd = new CookieDecide();
 	    $cd->cookieDecide();
-	   // $cd->sessionDecide();
+	    $cd->sessionDecide();
         $this->model("PayLog");
         $paylog = new PayLog();
         $paylog->insertPayLog();
     }
     
-    function page(){
-        $this->view("products/page");
-    }
     
 }
 ?>

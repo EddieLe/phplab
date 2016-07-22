@@ -8,22 +8,21 @@
 <body>
 	<center>
 	<div>
-
 		<br>
 			<?php $vauleData = $data[0]; ?>   
-			<?php for($i = 0 ; $i < count($vauleData[0]) ; $i++){ ?>
-			<img src=<?php echo "../".picture."/".$vauleData[1][$i]?>>
+			<?php for($i = 0 ; $i < count($vauleData['item']) ; $i++){ ?>
+			<img src=<?php echo "../".picture."/".$vauleData['picture'][$i]?>>
 
-			<h3>標題 : <?php echo $vauleData[0][$i]?></h3>
+			<h3>標題 : <?php echo $vauleData['item'][$i]?></h3>
 			<p></p>
 			
-			<h3>原價 : <?php echo "$". $vauleData[2][$i]?></h3>
+			<h3>原價 : <?php echo "$". $vauleData['price'][$i]?></h3>
 			<p></p>
 
-			<h3>折扣 : <?php echo $vauleData[3][$i] ."%"?></h3>
+			<h3>折扣 : <?php echo $vauleData['sale'][$i] ."%"?></h3>
 			<p></p>
 		
-			<h3>折後價錢 : <?php echo "$". $vauleData[4][$i]?></h3>
+			<h3>折後價錢 : <?php echo "$". $vauleData['totle'][$i]?></h3>
 			<p></p>
 		
 			<?php } ?>

@@ -23,17 +23,16 @@
 						
 				</tr>
 				<?php $vauleData = $data[0] ?>
-				<?php for ($i = 0; $i < count($vauleData[4]); $i++) { ?>
+				<?php for ($i = 0; $i < count($vauleData['id']); $i++) { ?>
 				<tr>
-                  	
                     <td><?php echo $_COOKIE["firstName"] ?></td>
-					<!--<td><img src=<?php echo "../".picture."/".$vauleData[1][$i]?>></td>-->
-					<td><?php echo $vauleData[0][$i] ?></td>
-					<td>＄<?php echo $vauleData[2][$i] ?></td>
-					<td><?php echo $vauleData[3][$i] ?></td>
-					<td>＄<?php echo $vauleData[2][$i] * $vauleData[3][$i] ?></td>
-					<td><?php echo $vauleData[6][$i] ?></td>
-					<td><?php echo $vauleData[5][$i] ?></td>
+					<!--<td><img src=<?php echo "../".picture."/".$vauleData['picture'][$i]?>></td>-->
+					<td><?php echo $vauleData['item'][$i] ?></td>
+					<td>＄<?php echo $vauleData['price'][$i] ?></td>
+					<td><?php echo $vauleData['count'][$i] ?></td>
+					<td>＄<?php echo $vauleData['price'][$i] * $vauleData['count'][$i] ?></td>
+					<td><?php echo $vauleData['payMethod'][$i] ?></td>
+					<td><?php echo $vauleData['date'][$i] ?></td>
 					<td>done</td>
 					
 				</tr>

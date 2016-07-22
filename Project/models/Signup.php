@@ -22,6 +22,7 @@ class Signup{
                 mysql_close($link);
                 
                 //註冊成功使他保持登入狀態
+                session_start();
                 setcookie("userName", $_POST["userName"]);
                 $_SESSION["userName"] = $_POST["userName"];
                 header("location: homePage");
@@ -51,6 +52,7 @@ class Signup{
                 $result = $cf->config($cmd);
                 mysql_close($link);
                 //註冊成功使他保持登入狀態
+                session_start();
                 setcookie("firstName", $_POST["firstName"]);
                 $_SESSION["firstName"] = $_POST["firstName"];
                 header("location: products");

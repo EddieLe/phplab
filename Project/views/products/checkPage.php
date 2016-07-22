@@ -65,24 +65,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		 <div class="col-md-9 product-model-sec">
 		 			<?php $vauleData = $data[0]?>
-		            <?php for ($i = 0; $i < count($vauleData[4]); $i++) { ?>
+		            <?php for ($i = 0; $i < count($vauleData['id']); $i++) { ?>
 		            
-					<a href="productInfo?id=<?php echo $vauleData[4][$i]?>"><div class="product-grid">
+					<a href="productInfo?id=<?php echo $vauleData['id'][$i]?>"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="<?php echo  "../picture/".$vauleData[1][$i]?>" class="img-responsive" alt="">
+							<img src="<?php echo  "../picture/".$vauleData['picture'][$i]?>" class="img-responsive" alt="">
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>商品名稱 : <?php echo $vauleData[0][$i]?></h4>								
-								<span class="item_price">價位 : <?php echo round($vauleData[7][$i]) ?></span>
+								<h4>商品名稱 : <?php echo $vauleData['item'][$i]?></h4>								
+								<span class="item_price">價位 : <?php echo round($vauleData['computting'][$i]) ?></span>
 								<div class="ofr">
 								  <!--<p class="pric1"><del><?php echo $vauleData[2][$i] ?>0</del></p>-->
 						    <!--      <p class="disc">[12% Off]</p>-->
 								</div>
 								<form action="addCar", method="post">
 								    <input type="hidden", name="count", class="item_quantity" value="1" />
-								    <input type="hidden", name="id", value="<?php echo $vauleData[4][$i]?>">
+								    <input type="hidden", name="id", value="<?php echo $vauleData['id'][$i]?>">
 								    <input type="submit" class="item_add items" value="ADD">
 							    </form>
 							    

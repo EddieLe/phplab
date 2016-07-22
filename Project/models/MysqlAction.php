@@ -22,7 +22,14 @@ class MysqlAction{
             $ownerArray[] = $row['owner'];
         }
         //將商品結果資訊裝置商品陣列中 為了在controller 給view使用
-        $productsArray[] = array($itemArray, $pictureArray, $priceArray, $countArray, $idArray,$dateArray,$saleArray,$computtingArray,$ownerArray,$totalPage);
+        $productsArray[] = array('item'=>$itemArray, 
+                                'picture'=>$pictureArray, 
+                                'price'=>$priceArray, 
+                                'count'=>$countArray, 
+                                'id'=>$idArray, 'date'=>$dateArray,
+                                'sale'=>$saleArray,
+                                'computting'=>$computtingArray,
+                                'owner'=>$ownerArray);
         return $productsArray;
         
     }
@@ -30,10 +37,12 @@ class MysqlAction{
         $cmd = "select * from products order by id";
         $cf = new Config();
         $result = $cf->config($cmd);
+        //找所有東西有多少
         $total = mysql_num_rows($result);
+        
         //撈出所有商品資訊
-        $start = 0;
-        $end = 8;
+        $start = 0; //給初始值
+        $end = 8; //給初始值
         $pageSize = 8; //每頁顯示數量
         $totalPage = ceil($total/$pageSize); //分幾頁
         
@@ -59,15 +68,33 @@ class MysqlAction{
             $ownerArray[] = $row['owner'];
         }
         $remainder = $total%$pageSize;
-        if($_POST["page"] == $totalPage){
-            for($i = 0; $i < $remainder; $i++){
-                $productsArray[] = array($itemArray[$i], $pictureArray[$i], $priceArray[$i], $countArray[$i], $idArray[$i],$dateArray[$i],$saleArray[$i],$computtingArray[$i],$ownerArray[$i],$totalPage);
-            }
-        }else{    
+        // if($_POST["page"] == $totalPage){
+        //     for($i = 0; $i < $remainder; $i++){
+        //         $productsArray[] = array($itemArray[$i], 
+        //                                 $pictureArray[$i], 
+        //                                 $priceArray[$i], 
+        //                                 $countArray[$i], 
+        //                                 $idArray[$i],
+        //                                 $dateArray[$i],
+        //                                 $saleArray[$i],
+        //                                 $computtingArray[$i],
+        //                                 $ownerArray[$i],
+        //                                 $totalPage);
+        //     }
+        // }else{    
             for($i = 0; $i < $pageSize; $i++){
-                $productsArray[] = array($itemArray[$i], $pictureArray[$i], $priceArray[$i], $countArray[$i], $idArray[$i],$dateArray[$i],$saleArray[$i],$computtingArray[$i],$ownerArray[$i],$totalPage);
+                $productsArray[] = array($itemArray[$i], 
+                                        $pictureArray[$i], 
+                                        $priceArray[$i], 
+                                        $countArray[$i], 
+                                        $idArray[$i],
+                                        $dateArray[$i],
+                                        $saleArray[$i],
+                                        $computtingArray[$i],
+                                        $ownerArray[$i],
+                                        $totalPage);
             }
-        }
+        // }
         return $productsArray;
      
     }
@@ -114,7 +141,17 @@ class MysqlAction{
             $ownerArray[] = $row['owner'];
         }
         //將商品結果資訊裝置商品陣列中 為了在controller 給view使用
-        $productsArray[] = array($itemArray, $pictureArray, $priceArray, $countArray, $idArray,$dateArray,$saleArray,$computtingArray,$ownerArray,$totalPage,$dif);
+        $productsArray[] = array('item'=>$itemArray, 
+                                'picture'=>$pictureArray,
+                                'price'=>$priceArray, 
+                                'count'=>$countArray, 
+                                'id'=>$idArray,
+                                'date'=>$dateArray,
+                                'sale'=>$saleArray,
+                                'computting'=>$computtingArray,
+                                'owner'=>$ownerArray,
+                                'totle'=>$totalPage,
+                                'dif'=>$dif);
         return $productsArray;
         
     }
@@ -136,7 +173,13 @@ class MysqlAction{
             $payMethodArray[] = $row['payMethod'];
         }
         //將商品結果裝置商品陣列中 為了在controller 給view使用
-        $productsArray[] = array($itemArray, $nameArray, $priceArray, $countArray, $idArray,$dateArray,$payMethodArray);
+        $productsArray[] = array('item'=>$itemArray,
+                                'name'=>$nameArray,
+                                'price'=>$priceArray,
+                                'count'=>$countArray,
+                                'id'=>$idArray,
+                                'date'=>$dateArray,
+                                'payMethod'=>$payMethodArray);
         return $productsArray;
         
     }
@@ -155,7 +198,10 @@ class MysqlAction{
             $saleArray[] =  $row['sale'];
         }    
         
-        $productsArray[] = array($itemArray,$pictureArray,$priceArray,$saleArray);
+        $productsArray[] = array('item'=>$itemArray,
+                                'picture'=>$pictureArray,
+                                'price'=>$priceArray,
+                                'sale'=>$saleArray);
         return $productsArray;
     }
     
@@ -173,7 +219,11 @@ class MysqlAction{
             $totleArray[] = round($row['price'] * ((100-$row['sale'])/100));
         }    
         
-        $productsArray[] = array($itemArray,$pictureArray,$priceArray,$saleArray,$totleArray);
+        $productsArray[] = array('item'=>$itemArray,
+                                'picture'=>$pictureArray,
+                                'price'=>$priceArray,
+                                'sale'=>$saleArray,
+                                'totle'=>$totleArray);
         return $productsArray;
     }
     

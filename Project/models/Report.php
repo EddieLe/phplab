@@ -23,7 +23,11 @@ class Report{
         //以購買者分類 加總單品購買數量 放入陣列
         for($i = 0; $i < count($reportArray[0][0]); $i++)
         {
-            $reportSelfArray[] = array($nameArray[$i],$itemArray[$i],$countArray[$i],$priceArray[$i],$dateArray[$i]);
+            $reportSelfArray[] = array('name'=>$nameArray[$i],
+                                    'item'=>$itemArray[$i],
+                                    'count'=>$countArray[$i],
+                                    'price'=>$priceArray[$i],
+                                    'date'=>$dateArray[$i]);
         }
         return $reportSelfArray;
         

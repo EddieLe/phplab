@@ -8,9 +8,9 @@ class CookieDecide{
            
         }
     }
-    function sessionBackStageDecide()
+    function sessionDecide()
     {
-
+        session_start();
         if(!isset($_SESSION["firstName"])){
             header("location: loginPage");
         }

@@ -1,4 +1,3 @@
-<!--<?php var_dump($data)?>-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -178,6 +177,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				// console.log(res);
 				$.each( res, function( subKey, value ) {
 					console.log(value);
+						//假如陣列為null移除div
+						if(value[0]==null){
+							alert(0);
+							$(".arrival-info[data-info="+subKey+"]").hide();
+						}
 						//itemName
 						$('.arrival-info[data-info='+subKey+'] .itemName').text(value[0]);
 						//img
@@ -188,7 +192,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						$('.arrival-info[data-info='+subKey+'] .pric1').html("<del>"+value[2]+"</del>");
 						//disc
 						$('.arrival-info[data-info='+subKey+'] .disc').html("["+value[6]+"% Off]");
-
 				});
 			}
 		});

@@ -80,12 +80,12 @@
 			            	<?php for ($i = 0; $i < count($data); $i++) { ?>
 							<tr>
 								<td><input type="checkbox" class="checkbox" /></td>
-								<td><?php echo $data[$i][0]?></td>
-								<td><h3><a href="#"><?php echo $data[$i][1] ?></a></h3></td>
-								<td><?php echo "$".$data[$i][3] ?></td>
-								<td><a href="#"><?php echo $data[$i][2]?></a></td>
-								<td><?php echo "$".$data[$i][2] * $data[$i][3]?></td>
-								<td><?php echo $data[$i][4]?></td>
+								<td><?php echo $data[$i]['name']?></td>
+								<td><h3><a href="#"><?php echo $data[$i]['item'] ?></a></h3></td>
+								<td><?php echo "$".$data[$i]['price'] ?></td>
+								<td><a href="#"><?php echo $data[$i]['count']?></a></td>
+								<td><?php echo "$".$data[$i]['count'] * $data[$i]['price']?></td>
+								<td><?php echo $data[$i]['date']?></td>
 								<td>
 								</td>
 							</tr>

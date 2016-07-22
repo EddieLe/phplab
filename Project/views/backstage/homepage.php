@@ -1,6 +1,3 @@
-<?php
-	var_dump($_SESSION);
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -80,18 +77,18 @@
 								<th width="110" class="ac">Content Control</th>
 							</tr>
 							<?php $vauleData = $data[0] ?>
-			            	<?php for ($i = 0; $i < $vauleData[10]; $i++) { ?>
+			            	<?php for ($i = 0; $i < $vauleData['dif']; $i++) { ?>
 							<tr>
 								<td><input type="checkbox" class="checkbox" /></td>
-								<td><img src=<?php echo "../".picture."/".$vauleData[1][$i]?>></td>
-								<td><h3><a href="#"><?php echo $vauleData[0][$i] ?></a></h3></td>
-								<td><?php echo $vauleData[5][$i] ?></td>
-								<td><?php echo  $vauleData[8][$i]?></td>
-								<td><?php echo "$".$vauleData[2][$i]?></td>
-								<td><?php echo $vauleData[6][$i]."%"?></td>
+								<td><img src=<?php echo "../".picture."/".$vauleData['picture'][$i]?>></td>
+								<td><h3><a href="#"><?php echo $vauleData['item'][$i] ?></a></h3></td>
+								<td><?php echo $vauleData['date'][$i] ?></td>
+								<td><?php echo  $vauleData['owner'][$i]?></td>
+								<td><?php echo "$".$vauleData['price'][$i]?></td>
+								<td><?php echo $vauleData['sale'][$i]."%"?></td>
 								<td>
-    						  		<a href="remove?id=<?php echo $vauleData[4][$i] ?>" class="ico del">delete</a>
-								    <a href="editPage?id=<?php echo $vauleData[4][$i] ?>" class="ico edit">Edit</a>
+    						  		<a href="remove?id=<?php echo $vauleData['id'][$i] ?>" class="ico del">delete</a>
+								    <a href="editPage?id=<?php echo $vauleData['id'][$i] ?>" class="ico edit">Edit</a>
 								</td>
 							</tr>
 							<?php }?>
@@ -103,7 +100,7 @@
 							<div class="left">Page</div>
 							<div class="right">
 								
-								<?php for ($i = 1; $i <= $vauleData[9]; $i++) { ?>
+								<?php for ($i = 1; $i <= $vauleData['totle']; $i++) { ?>
 								<a href="homepage?page=<?php echo $i;?>"><?php echo $i;?></a>
 								<?php }?>
 							</div>
