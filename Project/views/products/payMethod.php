@@ -86,6 +86,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 					</ul>
 		                   </form>
 						   </div>
+								   <div align = "center">
+								   		<a href=shoppingCarPage>購物車頁面</a>
+								   </div>		
 						   <div class="clearfix"></div>
 												
 					  </div>

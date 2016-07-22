@@ -1,6 +1,3 @@
-<?php 
-	var_dump($data);
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,11 +55,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-3 cart-total">
 			<a class="continue" href="checkPage">回購物頁</a>
 			<div class="price-details">
+
 				<?php $vauleData = $data[0]; ?> 
-				<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
-				<?php $priceSale += (($vauleData[3][$i] * $vauleData[2][$i])-($vauleData[3][$i] * $vauleData[6][$i])); ?>
-				<?php $beforeSale += $vauleData[3][$i] * $vauleData[2][$i]; ?>
-				<?php $afterSale += $vauleData[3][$i] * $vauleData[6][$i]; ?>
+				<?php for($i = 0 ; $i < count($vauleData['id']) ; $i++){ ?>
+				<?php $priceSale += (($vauleData['count'][$i] * $vauleData['price'][$i])-($vauleData['count'][$i] * $vauleData['computting'][$i])); ?>
+				<?php $beforeSale += $vauleData['count'][$i] * $vauleData['price'][$i]; ?>
+				<?php $afterSale += $vauleData['count'][$i] * $vauleData['computting'][$i]; ?>
 				<?php }?>
 				<h3>Price Details</h3>
 				<span>折扣前金額</span>
@@ -91,26 +89,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="col-md-9 cart-items">
 			<h1>My Shopping Bag</h1>
-			  
-			<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
+			  				
+			<?php for($i = 0 ; $i < count($vauleData['id']) ; $i++){ ?>
 			<form action="removeCar" , method="post">
 				
 				<div class="cart-header">
 					<div class="close1"> </div>
 					<div class="cart-sec simpleCart_shelfItem">
 							<div class="cart-item cyc">
-								<img src=<?php echo "../".picture."/".$vauleData[1][$i]?> class="img-responsive" alt=""/>
+								<img src=<?php echo "../".picture."/".$vauleData['picture'][$i]?> class="img-responsive" alt=""/>
 							</div>
 						   <div class="cart-item-info">
-							    <h3><a href="#"><?php echo $vauleData[0][$i];?></a><span></span></h3>
+							    <h3><a href="#"><?php echo $vauleData['item'][$i];?></a><span></span></h3>
 								<ul class="qty">
-									<li><p>數量: <?php echo $vauleData[3][$i]?></p></li>
+									<li><p>數量: <?php echo $vauleData['count'][$i]?></p></li>
 									<li><p></p></li>
 								</ul>
 								<div class="delivery">
-									 <p><?php echo "價位 : ". $vauleData[6][$i]?></p>
+									 <p><?php echo "價位 : ". $vauleData['computting'][$i]?></p>
 									 <span></span>
-									 	<input type="hidden" name="sId" value="<?php echo $vauleData[5][$i]?>"/>
+									 	<input type="hidden" name="sId" value="<?php echo $vauleData['shoppingCar'][$i]?>"/>
 									 	<input type="submit" class="close1" value=""/>
 									 	
 									 <div class="clearfix"></div>
@@ -123,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 			</form>
 			<!--計算總金額-->
-			<?php $allPrice += ($vauleData[3][$i] * $vauleData[6][$i]);?>
+			<?php $allPrice += ($vauleData['count'][$i] * $vauleData['computting'][$i]);?>
 			<?php } ?>
 
 			<ul align = "center" class="">
@@ -140,17 +138,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			         </tr>
 			      </thead>
 			      <tbody>
-			    	<?php for($i = 0 ; $i < count($vauleData[4]) ; $i++){ ?>
+			    	<?php for($i = 0 ; $i < count($vauleData['id']) ; $i++){ ?>
 					<form action="payMethod" method="post">
 			         <tr>
-			            <td><?php echo $vauleData[0][$i]?></td>
-			            <td>$<?php echo $vauleData[6][$i]?></td>
-			            <td><?php echo $vauleData[3][$i]?></td>
-			            <td><input type="hidden" name="item"value= "<?php echo $vauleData[0][$i]?>"/><p></p>
-							<input type="hidden" name="picture"value= "<?php echo $vauleData[1][$i]?>"/><p></p>
-					    	<input type="hidden" name="price"value="<?php echo $vauleData[6][$i]?>"/><p></p>
-					   	 	<input type="hidden" name="count"value="<?php echo $vauleData[3][$i]?>"/><p></p>
-					    	<input type="hidden" name="id" value="<?php echo $vauleData[4][$i]?>"/>
+			            <td><?php echo $vauleData['item'][$i]?></td>
+			            <td>$<?php echo $vauleData['computting'][$i]?></td>
+			            <td><?php echo $vauleData['price'][$i]?></td>
+			            <td><input type="hidden" name="item"value= "<?php echo $vauleData['item'][$i]?>"/><p></p>
+							<input type="hidden" name="picture"value= "<?php echo $vauleData['picture'][$i]?>"/><p></p>
+					    	<input type="hidden" name="price"value="<?php echo $vauleData['computting'][$i]?>"/><p></p>
+					   	 	<input type="hidden" name="count"value="<?php echo $vauleData['count'][$i]?>"/><p></p>
+					    	<input type="hidden" name="id" value="<?php echo $vauleData['id'][$i]?>"/>
 			            	<input class="order" type="submit" value="下單"/>
 			            </td>
 			         </tr>

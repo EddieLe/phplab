@@ -23855,3 +23855,558 @@
 [22-Jul-2016 10:17:21 UTC] PHP Stack trace:
 [22-Jul-2016 10:17:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
 [22-Jul-2016 10:17:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:23:27 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:23:27 UTC] PHP Stack trace:
+[22-Jul-2016 14:23:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:23:27 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:23:27 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:23:27 UTC] PHP Stack trace:
+[22-Jul-2016 14:23:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:23:27 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:23:34 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:23:34 UTC] PHP Stack trace:
+[22-Jul-2016 14:23:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:23:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:23:34 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:23:39 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:23:39 UTC] PHP Stack trace:
+[22-Jul-2016 14:23:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:23:39 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:23:39 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:23:44 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:23:44 UTC] PHP Stack trace:
+[22-Jul-2016 14:23:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:23:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:23:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:23:45 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:23:45 UTC] PHP Stack trace:
+[22-Jul-2016 14:23:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:23:45 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:23:45 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:23:54 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:23:54 UTC] PHP Stack trace:
+[22-Jul-2016 14:23:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:23:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:23:54 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:23:54 UTC] PHP Stack trace:
+[22-Jul-2016 14:23:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:23:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:24:11 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:24:11 UTC] PHP Stack trace:
+[22-Jul-2016 14:24:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:24:11 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:24:11 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:24:12 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:24:12 UTC] PHP Stack trace:
+[22-Jul-2016 14:24:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:24:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:24:12 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:24:14 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:24:14 UTC] PHP Stack trace:
+[22-Jul-2016 14:24:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:24:14 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:24:14 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:24:14 UTC] PHP Stack trace:
+[22-Jul-2016 14:24:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:24:14 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:24:19 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:24:19 UTC] PHP Stack trace:
+[22-Jul-2016 14:24:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:24:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:24:19 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:24:19 UTC] PHP Stack trace:
+[22-Jul-2016 14:24:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:24:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:25:15 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:25:15 UTC] PHP Stack trace:
+[22-Jul-2016 14:25:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:25:15 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:25:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:25:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:25:16 UTC] PHP Stack trace:
+[22-Jul-2016 14:25:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:25:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:25:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:25:19 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:25:19 UTC] PHP Stack trace:
+[22-Jul-2016 14:25:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:25:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:25:19 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:25:19 UTC] PHP Stack trace:
+[22-Jul-2016 14:25:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:25:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:25 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:47:25 UTC] PHP Stack trace:
+[22-Jul-2016 14:47:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:47:25 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:47:26 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:47:26 UTC] PHP Stack trace:
+[22-Jul-2016 14:47:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:47:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:47:28 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:47:28 UTC] PHP Stack trace:
+[22-Jul-2016 14:47:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:47:28 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:28 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:47:28 UTC] PHP Stack trace:
+[22-Jul-2016 14:47:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:47:28 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:43 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:47:43 UTC] PHP Stack trace:
+[22-Jul-2016 14:47:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:47:43 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:43 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:47:47 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:47:47 UTC] PHP Stack trace:
+[22-Jul-2016 14:47:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:47:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:47:49 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:47:49 UTC] PHP Stack trace:
+[22-Jul-2016 14:47:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:47:49 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:49 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 14:47:50 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:47:50 UTC] PHP Stack trace:
+[22-Jul-2016 14:47:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:47:50 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:50 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 14:47:50 UTC] PHP Stack trace:
+[22-Jul-2016 14:47:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:47:50 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:51 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 14:47:51 UTC] PHP Stack trace:
+[22-Jul-2016 14:47:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 14:47:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 14:47:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:00:15 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:00:15 UTC] PHP Stack trace:
+[22-Jul-2016 15:00:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:00:15 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:00:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:00:17 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:00:17 UTC] PHP Stack trace:
+[22-Jul-2016 15:00:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:00:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:00:17 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:00:19 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:00:19 UTC] PHP Stack trace:
+[22-Jul-2016 15:00:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:00:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:00:19 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:00:19 UTC] PHP Stack trace:
+[22-Jul-2016 15:00:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:00:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:00:23 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:00:23 UTC] PHP Stack trace:
+[22-Jul-2016 15:00:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:00:23 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:00:23 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:00:26 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Add.php on line 21
+[22-Jul-2016 15:00:26 UTC] PHP Stack trace:
+[22-Jul-2016 15:00:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:00:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:00:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:00:26 UTC] PHP   4. ShoppingController->addCar() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:00:26 UTC] PHP   5. Add->addShoppingCar() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:93
+[22-Jul-2016 15:00:26 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Add.php:21
+[22-Jul-2016 15:00:27 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:00:27 UTC] PHP Stack trace:
+[22-Jul-2016 15:00:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:00:27 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:00:27 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:36 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:18:36 UTC] PHP Stack trace:
+[22-Jul-2016 15:18:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:18:36 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:18:36 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:39 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Add.php on line 20
+[22-Jul-2016 15:18:39 UTC] PHP Stack trace:
+[22-Jul-2016 15:18:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:18:39 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:18:39 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:39 UTC] PHP   4. ShoppingController->addCar() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:39 UTC] PHP   5. Add->addShoppingCar() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:93
+[22-Jul-2016 15:18:39 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Add.php:20
+[22-Jul-2016 15:18:39 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:18:39 UTC] PHP Stack trace:
+[22-Jul-2016 15:18:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:18:39 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:18:39 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:40 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Add.php on line 20
+[22-Jul-2016 15:18:40 UTC] PHP Stack trace:
+[22-Jul-2016 15:18:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:18:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:18:40 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:40 UTC] PHP   4. ShoppingController->addCar() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:40 UTC] PHP   5. Add->addShoppingCar() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:93
+[22-Jul-2016 15:18:40 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Add.php:20
+[22-Jul-2016 15:18:41 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:18:41 UTC] PHP Stack trace:
+[22-Jul-2016 15:18:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:18:41 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:18:41 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:44 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Add.php on line 20
+[22-Jul-2016 15:18:44 UTC] PHP Stack trace:
+[22-Jul-2016 15:18:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:18:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:18:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:44 UTC] PHP   4. ShoppingController->addCar() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:44 UTC] PHP   5. Add->addShoppingCar() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:93
+[22-Jul-2016 15:18:44 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Add.php:20
+[22-Jul-2016 15:18:44 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:18:44 UTC] PHP Stack trace:
+[22-Jul-2016 15:18:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:18:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:18:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:48 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Add.php on line 20
+[22-Jul-2016 15:18:48 UTC] PHP Stack trace:
+[22-Jul-2016 15:18:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:18:48 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:18:48 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:48 UTC] PHP   4. ShoppingController->addCar() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:18:48 UTC] PHP   5. Add->addShoppingCar() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:93
+[22-Jul-2016 15:18:48 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Add.php:20
+[22-Jul-2016 15:18:48 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:18:48 UTC] PHP Stack trace:
+[22-Jul-2016 15:18:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:18:48 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:18:48 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:40:30 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:40:30 UTC] PHP Stack trace:
+[22-Jul-2016 15:40:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:40:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:40:30 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:40:31 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Add.php on line 15
+[22-Jul-2016 15:40:31 UTC] PHP Stack trace:
+[22-Jul-2016 15:40:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:40:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:40:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:40:31 UTC] PHP   4. ShoppingController->addCar() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:40:31 UTC] PHP   5. Add->addShoppingCar() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:93
+[22-Jul-2016 15:40:31 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Add.php:15
+[22-Jul-2016 15:40:33 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:40:33 UTC] PHP Stack trace:
+[22-Jul-2016 15:40:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:40:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:40:33 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:53:22 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:53:22 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:22 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:22 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:53:24 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:53:24 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:24 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:24 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:53:27 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:53:27 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:27 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:27 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:53:27 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:27 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:30 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:53:30 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:30 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:53:30 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:32 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:53:32 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:32 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:53:32 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:47 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:53:47 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:53:58 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:53:58 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:58 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:58 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:53:58 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:58 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:58 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:53:58 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:58 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:53:58 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:53:58 UTC] PHP Stack trace:
+[22-Jul-2016 15:53:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:53:58 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:54:16 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:54:16 UTC] PHP Stack trace:
+[22-Jul-2016 15:54:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:54:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:54:16 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:54:16 UTC] PHP Stack trace:
+[22-Jul-2016 15:54:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:54:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:54:16 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:54:16 UTC] PHP Stack trace:
+[22-Jul-2016 15:54:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:54:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:54:16 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:54:16 UTC] PHP Stack trace:
+[22-Jul-2016 15:54:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:54:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:54:18 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:54:18 UTC] PHP Stack trace:
+[22-Jul-2016 15:54:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:54:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:54:18 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:54:18 UTC] PHP Stack trace:
+[22-Jul-2016 15:54:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:54:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:54:18 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:54:18 UTC] PHP Stack trace:
+[22-Jul-2016 15:54:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:54:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:54:18 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:54:18 UTC] PHP Stack trace:
+[22-Jul-2016 15:54:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:54:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:56:00 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:56:00 UTC] PHP Stack trace:
+[22-Jul-2016 15:56:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:56:00 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:56:00 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:56:01 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:56:01 UTC] PHP Stack trace:
+[22-Jul-2016 15:56:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:56:01 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:56:01 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:56:03 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:56:03 UTC] PHP Stack trace:
+[22-Jul-2016 15:56:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:56:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:56:03 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:56:03 UTC] PHP Stack trace:
+[22-Jul-2016 15:56:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:56:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:56:03 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:56:03 UTC] PHP Stack trace:
+[22-Jul-2016 15:56:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:56:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:56:03 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:56:03 UTC] PHP Stack trace:
+[22-Jul-2016 15:56:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:56:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:57:03 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:57:04 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:57:04 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:04 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:04 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 15:57:08 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:57:08 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:08 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:57:08 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:08 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:57:08 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:08 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:57:08 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:12 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:57:12 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:12 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:57:12 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:13 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:57:13 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:13 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:13 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 15:57:13 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:13 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:21 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 15:57:21 UTC] PHP Stack trace:
+[22-Jul-2016 15:57:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 15:57:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 15:57:21 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:05:32 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:05:32 UTC] PHP Stack trace:
+[22-Jul-2016 16:05:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:05:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:05:32 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:06:15 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:06:15 UTC] PHP Stack trace:
+[22-Jul-2016 16:06:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:06:15 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:06:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:06:19 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:06:19 UTC] PHP Stack trace:
+[22-Jul-2016 16:06:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:06:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:06:19 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:06:22 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:06:22 UTC] PHP Stack trace:
+[22-Jul-2016 16:06:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:06:22 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:06:22 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:06:26 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:06:26 UTC] PHP Stack trace:
+[22-Jul-2016 16:06:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:06:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:06:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:06:31 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:06:31 UTC] PHP Stack trace:
+[22-Jul-2016 16:06:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:06:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:06:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:07:19 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:07:19 UTC] PHP Stack trace:
+[22-Jul-2016 16:07:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:07:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:07:19 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:07:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:07:38 UTC] PHP Stack trace:
+[22-Jul-2016 16:07:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:07:38 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:07:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:07:40 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:07:40 UTC] PHP Stack trace:
+[22-Jul-2016 16:07:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:07:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:07:40 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:08:00 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:08:00 UTC] PHP Stack trace:
+[22-Jul-2016 16:08:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:08:00 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:08:00 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:08:04 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:08:04 UTC] PHP Stack trace:
+[22-Jul-2016 16:08:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:08:04 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:08:04 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:08:30 UTC] PHP Warning:  require_once(controllers/favicon.icoController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 16:08:30 UTC] PHP Stack trace:
+[22-Jul-2016 16:08:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:08:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:08:30 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/favicon.icoController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 16:08:30 UTC] PHP Stack trace:
+[22-Jul-2016 16:08:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:08:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:24:47 UTC] PHP Warning:  require_once(controllers/favicon.icoController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 16:24:47 UTC] PHP Stack trace:
+[22-Jul-2016 16:24:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:24:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:24:47 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/favicon.icoController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 16:24:47 UTC] PHP Stack trace:
+[22-Jul-2016 16:24:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:24:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:24:49 UTC] PHP Warning:  require_once(controllers/favicon.icoController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 16:24:49 UTC] PHP Stack trace:
+[22-Jul-2016 16:24:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:24:49 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:24:49 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/favicon.icoController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 16:24:49 UTC] PHP Stack trace:
+[22-Jul-2016 16:24:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:24:49 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:25:04 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Signup.php on line 22
+[22-Jul-2016 16:25:04 UTC] PHP Stack trace:
+[22-Jul-2016 16:25:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:25:04 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:25:04 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:25:04 UTC] PHP   4. BackStageController->signUp() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:25:04 UTC] PHP   5. Signup->signUpBackstage() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:106
+[22-Jul-2016 16:25:04 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Signup.php:22
+[22-Jul-2016 16:25:29 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Upload.php on line 21
+[22-Jul-2016 16:25:29 UTC] PHP Stack trace:
+[22-Jul-2016 16:25:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:25:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:25:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:25:29 UTC] PHP   4. BackStageController->upload() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:25:29 UTC] PHP   5. Upload->backStageUpload() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:66
+[22-Jul-2016 16:25:29 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Upload.php:21
+[22-Jul-2016 16:25:32 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 16:25:32 UTC] PHP Stack trace:
+[22-Jul-2016 16:25:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:25:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:25:32 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[22-Jul-2016 16:25:32 UTC] PHP Stack trace:
+[22-Jul-2016 16:25:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:25:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:27:36 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:27:36 UTC] PHP Stack trace:
+[22-Jul-2016 16:27:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:27:36 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:27:36 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:27:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:27:38 UTC] PHP Stack trace:
+[22-Jul-2016 16:27:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:27:38 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:27:38 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:27:41 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:27:41 UTC] PHP Stack trace:
+[22-Jul-2016 16:27:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:27:41 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:27:41 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:27:44 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:27:44 UTC] PHP Stack trace:
+[22-Jul-2016 16:27:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:27:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:27:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:27:51 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:27:51 UTC] PHP Stack trace:
+[22-Jul-2016 16:27:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:27:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:27:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:28:00 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:28:00 UTC] PHP Stack trace:
+[22-Jul-2016 16:28:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:28:00 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:28:00 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:28:01 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:28:01 UTC] PHP Stack trace:
+[22-Jul-2016 16:28:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:28:01 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:28:01 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:28:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:28:03 UTC] PHP Stack trace:
+[22-Jul-2016 16:28:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:28:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:28:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:28:05 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:28:05 UTC] PHP Stack trace:
+[22-Jul-2016 16:28:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:28:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:28:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:28:09 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:28:09 UTC] PHP Stack trace:
+[22-Jul-2016 16:28:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:28:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:28:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[22-Jul-2016 16:28:11 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[22-Jul-2016 16:28:11 UTC] PHP Stack trace:
+[22-Jul-2016 16:28:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[22-Jul-2016 16:28:11 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[22-Jul-2016 16:28:11 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18

@@ -91,19 +91,14 @@
 							</tr>
 							<?php }?>
 						</table>
-
-						
 					</div>
 					<!-- Table -->
-					
 				</div>
-
 			</div>
 			<!-- End Content -->
 			
 			<!-- Sidebar -->
 			<div id="sidebar">
-				
 			</div>
 			<!-- End Sidebar -->
 			
@@ -115,11 +110,11 @@
 <!-- End Container -->
 
 <!-- Footer -->
-<div id="footer">
+<div id="footerReport">
 	<div class="shell">
 		<span class="left">&copy; 2010 - CompanyName</span>
 		<span class="right">
-			Design by <a href="#" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a>
+			<a href="#" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a>
 		</span>
 	</div>
 </div>

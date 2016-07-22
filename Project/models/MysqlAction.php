@@ -34,7 +34,7 @@ class MysqlAction{
         
     }
     function selectProductsPage(){
-        $cmd = "select * from products order by id";
+        $cmd = "SELECT * FROM products ORDER BY id";
         $cf = new Config();
         $result = $cf->config($cmd);
         //找所有東西有多少
@@ -52,7 +52,7 @@ class MysqlAction{
 	       $end = $_POST["page"]*$pageSize;
         
 	    }
-        $cmd = "select * from products order by id limit $start,$end";
+        $cmd = "SELECT * FROM products ORDER BY id limit $start,$end";
         $result = $cf->config($cmd);
         
         while($row = mysql_fetch_assoc($result))
@@ -67,34 +67,19 @@ class MysqlAction{
             $computtingArray[] = round($row['price'] * ((100-$row['sale'])/100));
             $ownerArray[] = $row['owner'];
         }
-        $remainder = $total%$pageSize;
-        // if($_POST["page"] == $totalPage){
-        //     for($i = 0; $i < $remainder; $i++){
-        //         $productsArray[] = array($itemArray[$i], 
-        //                                 $pictureArray[$i], 
-        //                                 $priceArray[$i], 
-        //                                 $countArray[$i], 
-        //                                 $idArray[$i],
-        //                                 $dateArray[$i],
-        //                                 $saleArray[$i],
-        //                                 $computtingArray[$i],
-        //                                 $ownerArray[$i],
-        //                                 $totalPage);
-        //     }
-        // }else{    
-            for($i = 0; $i < $pageSize; $i++){
-                $productsArray[] = array($itemArray[$i], 
-                                        $pictureArray[$i], 
-                                        $priceArray[$i], 
-                                        $countArray[$i], 
-                                        $idArray[$i],
-                                        $dateArray[$i],
-                                        $saleArray[$i],
-                                        $computtingArray[$i],
-                                        $ownerArray[$i],
-                                        $totalPage);
-            }
-        // }
+
+        for($i = 0; $i < $pageSize; $i++){
+            $productsArray[] = array('item'=>$itemArray[$i], 
+                                    'picture'=>$pictureArray[$i], 
+                                    'price'=>$priceArray[$i], 
+                                    'count'=>$countArray[$i], 
+                                    'id'=>$idArray[$i],
+                                    'date'=>$dateArray[$i],
+                                    'sale'=>$saleArray[$i],
+                                    'computting'=>$computtingArray[$i],
+                                    'owner'=>$ownerArray[$i],
+                                    'total'=>$totalPage);
+        }
         return $productsArray;
      
     }
@@ -109,7 +94,7 @@ class MysqlAction{
         $pageSize = 3; //每頁顯示數量
         $totalPage = ceil($total/$pageSize); //分幾頁
         
-        //如果載入動作給他值
+        //如果載入動作給他值1
         if(!isset($_GET["page"])){
             $_GET["page"] = 1 ;
         }

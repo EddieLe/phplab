@@ -32,15 +32,11 @@
             <header>
                 <h1>Backstage Login Page</h1>
 				<nav class="codrops-demos">
-					<!--<span>Click <strong>"Join us"</strong> to see the form switch</span>-->
-				<!--	<a href="index.html" class="current-demo">Demo 1</a>-->
-				<!--	<a href="index2.html">Demo 2</a>-->
-				<!--	<a href="index3.html">Demo 3</a>-->
-				<!--</nav>-->
+
             </header>
             <section>				
                 <div id="container_demo" >
-                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+
                     <a class="hiddenanchor" id="toregister"></a>
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
@@ -51,13 +47,13 @@
                                     <label for="username" class="uname" data-icon="u" > 帳號 </label>
                                     <!--改變的地方-->
                                     <input type="text" name="userName" id="txtUserName" />  
-                                    <!--<input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>-->
+                                
                                 </p>
                                 <p> 
                                     <label for="password" class="youpasswd" data-icon="p"> 密碼 </label>
                                     <!-- 改變的地方-->
                                     <input type="password" name="password" id="txtPassword" />
-                                    <!--<input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> -->
+                                    
                                 </p>
                                 <p class="keeplogin"> 
 									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
@@ -66,8 +62,7 @@
                                 <p class="login button"> 
                                     <!-- 改變的地方-->
                                     <input type="submit" name="btnOK" id="btnOK" value="登入" /> 
-                                    <!--<input type="submit" name="logout" id="btnHome" value="登出" />-->
-                                    <!--<input type="submit" value="Login" /> -->
+                                    
 								</p>
                                 <p class="change_link">
 									Not a member yet ?

@@ -15,6 +15,11 @@ class ShoppingController extends Controller{
     }
     
     function accountPage(){
+        //判斷有無登入過有就回商品頁
+        session_start();
+        if(isset($_COOKIE["firstName"]) && isset($_SESSION["firstName"])){
+            header("location: products");
+        }  
         $this->view("products/Account");
     }
     
@@ -39,7 +44,7 @@ class ShoppingController extends Controller{
         $this->model("MysqlAction");
         $mysqlAction = new MysqlAction();
         $result = $mysqlAction->selectProductsPage();
-
+        //判斷post page有沒有初值
         if(isset($_POST["page"])){
             echo json_encode($result);
         } else {
