@@ -38,8 +38,13 @@ class ShoppingController extends Controller{
 	   // $cd->sessionDecide();
         $this->model("MysqlAction");
         $mysqlAction = new MysqlAction();
-        $result = $mysqlAction->selectProducts();
-        $this->view("products/products",$result);
+        $result = $mysqlAction->selectProductsPage();
+
+        if(isset($_POST["page"])){
+            echo json_encode($result);
+        } else {
+            $this->view("products/products",$result);   
+        }
     }
     
     function shoppingCarPage(){

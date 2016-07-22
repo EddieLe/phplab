@@ -24,7 +24,7 @@ class BackStageController extends Controller {
 	    //$cd->sessionBackStageDecide();
 	    $this->model("MysqlAction");
 	    $selectMysqlAction = new MysqlAction();
-	    $result = $selectMysqlAction->selectProducts();
+	    $result = $selectMysqlAction->selectBackStageProducts();
         $this->view("backstage/homepage", $result);
     }
     

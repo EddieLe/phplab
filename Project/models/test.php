@@ -1,35 +1,33 @@
 <?php
-echo 123;
 include'config.php'; 
 
 // class Page{
 //     function pageCut(){
-
         
-        $cmd = "select * from products order by id asc limit  
-        $_GET[p]*$pageSize,$pageSize";
-        
-        $page = intval($_GET["p"]); //當前頁
+        $cmd = "select * from products order by id";
         $cf = new Config();
         $result = $cf->config($cmd);
         $total = mysql_num_rows($result);
-        $pageSize = 4; //每頁顯示數量 
-        
-        if(!isset($_GET["p"])){
-            
-        }
-        
-        
-        $totalPage = ceil($total/$pageSize); //分幾頁
-        
+        //撈出所有商品資訊
+        // $pageSize = 4; //每頁顯示數量
+        // $totalPage = ceil($total/$pageSize); //分幾頁
+        //$page = intval($_GET["p"]); //當前頁
+        $cmd = "select * from products order by id limit 0,4";
+        $result = $cf->config($cmd);
+         
 
-        while($row = mysql_fetch_array($result)){ 
-             $arr[] = array( 
-                'id' => $row['id'], 
-                'title' => $row['title'], 
-                'pic' => $row['price'], 
-             ); 
-        } 
+        while($row = mysql_fetch_assoc($result))
+        {
+            $itemArray[] = $row['item'];
+            $pictureArray[] =  $row['picture'] ;   
+            $priceArray[] = $row['price'];
+            $countArray[] = $row['count'];
+            $idArray[] = $row['id'];
+            $dateArray[] = $row['date'];
+            $saleArray[] = $row['sale'];
+            $computtingArray[] = round($row['price'] * ((100-$row['sale'])/100));
+            $ownerArray[] = $row['owner'];
+        }
         return $arr;
         //echo json_encode($arr); //输出JSON 
 //     }

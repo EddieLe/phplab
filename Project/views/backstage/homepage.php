@@ -80,7 +80,7 @@
 								<th width="110" class="ac">Content Control</th>
 							</tr>
 							<?php $vauleData = $data[0] ?>
-			            	<?php for ($i = 0; $i < count($vauleData[4]); $i++) { ?>
+			            	<?php for ($i = 0; $i < $vauleData[10]; $i++) { ?>
 							<tr>
 								<td><input type="checkbox" class="checkbox" /></td>
 								<td><img src=<?php echo "../".picture."/".$vauleData[1][$i]?>></td>
@@ -99,6 +99,16 @@
 						
 					</div>
 					<!-- Table -->
+					<div class="pagging">
+							<div class="left">Page</div>
+							<div class="right">
+								
+								<?php for ($i = 1; $i <= $vauleData[9]; $i++) { ?>
+								<a href="homepage?page=<?php echo $i;?>"><?php echo $i;?></a>
+								<?php }?>
+							</div>
+						</div>
+					<div id="pagecount"></div>
 					
 				</div>
 </div>

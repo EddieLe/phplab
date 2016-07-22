@@ -1,3 +1,4 @@
+<!--<?php var_dump($data)?>-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -112,18 +113,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 	 <!--將三維陣列轉為二維陣列-->
 	     <?php $viewData = $data[0]; ?>
 	     <!--取id欄位數量做for迴圈-->
-	     <?php for($i = 0; $i < count($viewData[4]); $i++):?>
+	 <!--    <?php for($i = 0; $i < count($viewData[4]); $i++):?>-->
+	    
+		<!-- <div class="items-sec">-->
+		<!--	 <div class="col-md-3 feature-grid">-->
+			     
+		<!--			 <div class="arrival-info" data-info=<?php echo $i;?>>-->
+		<!--				 <h4>商品名稱 : <span class="itemName"><?php echo $viewData[0][$i]?></span></h4>-->
+		<!--				 <p><img class="imgSrc" src=<?php echo "../picture/".$viewData[1][$i]?>></p>-->
+		<!--				 <p>價位 : <span class="price"><?php echo $viewData[7][$i]?></span></p>-->
+		<!--				 <span class="pric1"><del><?php echo $viewData[2][$i]?></del></span>-->
+		<!--				 <span class="disc">[<?php echo $viewData[6][$i]?>% Off]</span>-->
+		<!--			 </div>-->
+		<!--			 <div class="viw">-->
+		<!--				<a href="checkPage"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>-->
+		<!--			 </div>-->
+		<!--		  </a>-->
+				  
+		<!--	 </div>-->
+		<!--<?php endfor;?>-->
+		<!--	 <div class="clearfix"></div>-->
+		<!--	 <div class="test" style="text-align: center;">-->
+		<!--	 	<?php for($i = 1; $i <= $viewData[9]; $i++){ ?>-->
+		<!--		<a href="javascript: void(0);" class="ajax" data-value="<?php echo $i;?>"><?php echo $i;?></a>-->
+		<!--		<?php } ?>-->
+		 <?php for($i = 0; $i < count($data); $i++):?>
 	    
 		 <div class="items-sec">
 			 <div class="col-md-3 feature-grid">
 			     
-				 <!--<a href="product.html"><img src="<?php echo $viewData[4][$i]?>" alt=""/>	-->
-					 <div class="arrival-info">
-						 <h4>商品名稱 : <?php echo $viewData[0][$i]?></h4>
-						 <p><img src=<?php echo "../picture/".$viewData[1][$i]?>></p>
-						 <p>價位 : <?php echo $viewData[7][$i]?></p>
-						 <span class="pric1"><del><?php echo $viewData[2][$i]?></del></span>
-						 <span class="disc">[<?php echo $viewData[6][$i]?>% Off]</span>
+					 <div class="arrival-info" data-info=<?php echo $i;?>>
+						 <h4>商品名稱 : <span class="itemName"><?php echo $data[$i][0]?></span></h4>
+						 <p><img class="imgSrc" src=<?php echo "../picture/".$data[$i][1]?>></p>
+						 <p>價位 : <span class="price"><?php echo $data[$i][7]?></span></p>
+						 <span class="pric1"><del><?php echo $data[$i][2]?></del></span>
+						 <span class="disc">[<?php echo $data[$i][6]?>% Off]</span>
 					 </div>
 					 <div class="viw">
 						<a href="checkPage"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
@@ -132,13 +156,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  
 			 </div>
 		<?php endfor;?>
-			
-
 			 <div class="clearfix"></div>
+			 <div class="test" style="text-align: center;">
+			 	<?php for($i = 1; $i <= $viewData[9]; $i++){ ?>
+				<a href="javascript: void(0);" class="ajax" data-value="<?php echo $i;?>"><?php echo $i;?></a>
+				<?php } ?>
+			</div>
 		 </div>
 	 </div>
 </div>
+<script>
+	$('.ajax').click(function() {
+		var page = $(this).attr('data-value');
+		$.ajax({
+			data: {"page" : page},
+			type: "POST",
+			url: "products",
+			success: function(res) {
+				var res = JSON.parse(res);
+				//debug
+				// console.log(res);
+				$.each( res, function( subKey, value ) {
+					console.log(value);
+						//itemName
+						$('.arrival-info[data-info='+subKey+'] .itemName').text(value[0]);
+						//img
+						$('.arrival-info[data-info='+subKey+'] .imgSrc').attr('src', "../picture/"+value[1]);
+						//price
+						$('.arrival-info[data-info='+subKey+'] .price').text(value[7]);
+						//pric1
+						$('.arrival-info[data-info='+subKey+'] .pric1').html("<del>"+value[2]+"</del>");
+						//disc
+						$('.arrival-info[data-info='+subKey+'] .disc').html("["+value[6]+"% Off]");
 
+				});
+			}
+		});
+	});
+	
+</script>
 <div class="subscribe">
 	 <div class="container">
 		 <h3>Newsletter</h3>
