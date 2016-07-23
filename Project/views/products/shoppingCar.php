@@ -143,7 +143,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			         <tr>
 			            <td><?php echo $vauleData['item'][$i]?></td>
 			            <td>$<?php echo $vauleData['computting'][$i]?></td>
-			            <td><?php echo $vauleData['price'][$i]?></td>
+			            <td><?php echo $vauleData['count'][$i]?></td>
 			            <td><input type="hidden" name="item"value= "<?php echo $vauleData['item'][$i]?>"/><p></p>
 							<input type="hidden" name="picture"value= "<?php echo $vauleData['picture'][$i]?>"/><p></p>
 					    	<input type="hidden" name="price"value="<?php echo $vauleData['computting'][$i]?>"/><p></p>
