@@ -40,7 +40,7 @@ class MysqlAction{
         //找所有東西有多少
         $total = mysql_num_rows($result);
         
-        //撈出所有商品資訊
+        //撈出所有商品資訊AJAX方式
         $start = 0; //給初始值
         $end = 8; //給初始值
         $pageSize = 8; //每頁顯示數量
@@ -88,7 +88,7 @@ class MysqlAction{
         $cf = new Config();
         $result = $cf->config($cmd);
         $total = mysql_num_rows($result);
-        //撈出所有商品資訊
+        //撈出所有商品資訊PHP方式
         $start = 0;
         $end = 3;
         $pageSize = 3; //每頁顯示數量

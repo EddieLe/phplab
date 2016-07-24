@@ -24,7 +24,6 @@ class Auth{
     }
     function authPeopleShopping(){
         
-        //require("config.php");
         $cmd = "SELECT firstName, password FROM clients";
         $cf = new Config();
         $result = $cf->config($cmd);
