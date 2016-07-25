@@ -113,10 +113,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     <?php $viewData = $data[0]; ?>
 	     <!--取id欄位數量做for迴圈-->
 		 <?php for($i = 0; $i < count($data); $i++):?>
-	    
 		 <div class="items-sec">
 			 <div class="col-md-3 feature-grid">
-
 					 <div class="arrival-info" data-info=<?php echo $i;?>>
 						 <h4>商品名稱 : <span class="itemName"><?php echo $data[$i]['item']?></span></h4>
 						 <p><img class="imgSrc" src=<?php echo "../picture/".$data[$i]['picture']?>></p>
@@ -127,9 +125,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a href="checkPage"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
 					 	</div>
 					 </div>
-					 
 				  </a>
-				  
 			 </div>
 		<?php endfor;?>
 			 <div class="clearfix"></div>
@@ -161,15 +157,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						}else{
 							$(".arrival-info[data-info="+subKey+"]").show();
 						}
-						//itemName
 						$('.arrival-info[data-info='+subKey+'] .itemName').text(value['item']);
-						//img
 						$('.arrival-info[data-info='+subKey+'] .imgSrc').attr('src', "../picture/"+value['picture']);
-						//price
 						$('.arrival-info[data-info='+subKey+'] .price').text(value['computting']);
-						//pric1
 						$('.arrival-info[data-info='+subKey+'] .pric1').html("<del>"+value['price']+"</del>");
-						//disc
 						$('.arrival-info[data-info='+subKey+'] .disc').html("["+value['sale']+"% Off]");
 				});
 			}

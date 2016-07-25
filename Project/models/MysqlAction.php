@@ -81,7 +81,6 @@ class MysqlAction{
                                     'total'=>$totalPage);
         }
         return $productsArray;
-     
     }
     function selectBackStageProducts(){
         $cmd = "select * from products order by id";
