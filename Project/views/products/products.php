@@ -153,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				//debug
 				// console.log(res);
 				$.each( res, function( subKey, value ) {
-					console.log(value);
+					//console.log(value);
 						//假如陣列為null隱藏div
 						
 						if(value['item']==null){

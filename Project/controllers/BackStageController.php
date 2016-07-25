@@ -22,8 +22,7 @@ class BackStageController extends Controller {
 	    $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
-	    $this->model("MysqlAction");
-	    $selectMysqlAction = new MysqlAction();
+	    $selectMysqlAction = $this->model("MysqlAction");
 	    $result = $selectMysqlAction->selectBackStageProducts();
         $this->view("backstage/homepage", $result);
     }
@@ -34,8 +33,7 @@ class BackStageController extends Controller {
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
-	    $this->model("MysqlAction");
-	    $editShow = new MysqlAction();
+	    $editShow = $this->model("MysqlAction");
 	    $result = $editShow->editProduct();
 	    $this->view("backstage/editpage",$result);
     }
@@ -44,8 +42,7 @@ class BackStageController extends Controller {
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
-	    $this->model("Report");
-	    $report = new Report();
+	    $report = $this->model("Report");
 	    $result = $report->report();
         $this->view("backstage/reportpage",$result);
     }
@@ -61,8 +58,7 @@ class BackStageController extends Controller {
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
-        $this->model("Upload");
-	    $upload = new Upload();
+        $upload = $this->model("Upload");
 	    $upload->backStageUpload();
     }
     
@@ -70,8 +66,7 @@ class BackStageController extends Controller {
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
-        $this->model("Update");
-	    $update = new Update();
+        $update = $this->model("Update");
 	    $update->updateBackStageProducts();
     }
     
@@ -79,8 +74,7 @@ class BackStageController extends Controller {
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
-	    $this->model("Delete");
-        $delete = new Delete();
+	    $delete = $this->model("Delete");
         $delete->deleteProduct();
     }
     
@@ -91,8 +85,7 @@ class BackStageController extends Controller {
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
 	    $_POST["password"] = md5($_POST["password"]);
-        $this->model("Auth");
-        $auth = new Auth();
+        $auth = $this->model("Auth");
         $auth->authPeopleBackstage();
     }
     
@@ -101,16 +94,14 @@ class BackStageController extends Controller {
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
 	    $_POST["password"] = md5($_POST["password"]);
-        $this->model("Signup");
-        $signup = new Signup();
+        $signup = $this->model("Signup");
         $signup->signUpBackstage();
     }
     
     function logout(){
         session_start();
         unset($_SESSION["userName"]);
-        $this->model("Logout");
-        $logout = new Logout();
+        $logout = $this->model("Logout");
         $logout->backStageLogout();
     }
 }
