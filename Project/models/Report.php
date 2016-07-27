@@ -19,19 +19,17 @@ class Report{
             
         }
         $reportArray = array($nameArray,$itemArray,$countArray,$priceArray,$dateArray);
-        count($reportArray[0];
-        exit;
+
         //以購買者分類 加總單品購買數量 放入陣列
         for($i = 0; $i < count($reportArray[0]); $i++)
         {
-            $reportSelfArray = array('name'=>$nameArray[$i],
+            $reportSelfArray[] = array('name'=>$nameArray[$i],
                                     'item'=>$itemArray[$i],
                                     'count'=>$countArray[$i],
                                     'price'=>$priceArray[$i],
                                     'date'=>$dateArray[$i]);
         }
         return $reportSelfArray;
-        
     }
     
 }    

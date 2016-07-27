@@ -76,8 +76,6 @@
 								<th>Date</th>
 								<!--<th width="110" class="ac">Content Control</th>-->
 							</tr>
-							<?php var_dump($data);?>
-							<?php count($data);?>
 			            	<?php for ($i = 0; $i < count($data); $i++) { ?>
 							<tr>
 								<td><input type="checkbox" class="checkbox" /></td>

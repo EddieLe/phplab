@@ -2,7 +2,7 @@
 include "config.php";
 class ShowCar{
     
-    function selectProducts(){
+    function selectProducts($firstName){
 
         $cmdshpooing = "SELECT mId, pId FROM shoppingCar";
         $cf = new Config();
@@ -12,7 +12,7 @@ class ShowCar{
         $cmd = "SELECT COUNT( shoppingCar.sId ) AS c, shoppingCar.mId, shoppingCar.sId, products. * 
                 FROM shoppingCar
                 JOIN products ON shoppingCar.pId = products.id
-                WHERE mId =  '$_COOKIE[firstName]'
+                WHERE mId =  '$firstName'
                 GROUP BY products.id";
 
         $result = $cf->config($cmd);

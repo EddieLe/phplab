@@ -24,7 +24,6 @@ class ShoppingController extends Controller{
     }
     
     function auth(){
-	   
 	    $_POST["password"] = md5($_POST["password"]);
         $auth = $this->model("Auth");
         $result = $auth->authPeopleShopping();
@@ -62,11 +61,12 @@ class ShoppingController extends Controller{
     }
     
     function shoppingCarPage(){
+        $firstName = $_COOKIE['firstName'];
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
 	    $cd->sessionDecide();
 	    $showCar = $this->model("ShowCar");
-        $result = $showCar->selectProducts();
+        $result = $showCar->selectProducts($firstName);
         $this->view("products/shoppingCar",$result);
     }
     
@@ -79,12 +79,13 @@ class ShoppingController extends Controller{
         $this->view("products/checkPage",$result);
     }
     
-    function productInfo(){ 
+    function productInfo(){
+        $id = $_GET['id']
         $cd = new CookieDecide();
 	    $cd->cookieDecide();
 	    $cd->sessionDecide();
 	    $productInfo = $this->model("MysqlAction");
-	    $result = $productInfo->productInfo();
+	    $result = $productInfo->productInfo($id);
 	    $this->view("products/productInfo",$result);
     }
     
@@ -96,20 +97,23 @@ class ShoppingController extends Controller{
     }
     
     function addCar(){
+        $id = $_POST['id'];
+        $firstName = $_COOKIE['firstName'];
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
 	    $cd->sessionDecide();
         $add = $this->model("Add");
-        $add->addShoppingCar();
+        $add->addShoppingCar($id, $firstName);
         header("location: checkPage");
     }
     
     function removeCar(){
+        $id = $_POST['sId'];
 	    $cd = new CookieDecide();
 	    $cd->cookieDecide();
 	    $cd->sessionDecide();
 	    $delete = $this->model("Delete");
-        $delete->deleteShoppingCar();
+        $delete->deleteShoppingCar($id);
     }
     
     function logout(){
@@ -120,12 +124,31 @@ class ShoppingController extends Controller{
     }
     
     function signUp(){
-        $_POST["password"] = md5($_POST["password"]);
-        $signup = $this->model("Signup");
-        $signup->signUpShopping();
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
+        $email = $_POST['email'];
+        $mobile = $_POST['mobile'];
+        $sex = $_POST['sex'];
+        $password = $_POST['password'];
+        
+        if(isset($_POST["firstName"]) && isset($_POST["password"]) && isset($_POST["email"]))
+        {
+            $_POST["password"] = md5($_POST["password"]);
+            $signup = $this->model("Signup");
+            $result = $signup->signUpShopping($firstName,$lastName,$email,$mobile,$sex,$password);
+
+            if($result == "success"){
+                header("location: products");
+            }else{
+                header("location: accountPage");
+            }
+        }else{
+            header("location: accountPage");
+        }
     }
     
     function payPage(){
+        $firstName = $_COOKIE['firstName'];
         $cd = new CookieDecide();
 	    $cd->cookieDecide();
 	    $cd->sessionDecide();
@@ -135,11 +158,17 @@ class ShoppingController extends Controller{
     }
     
     function pay(){
+        $id = $_POST['id'];
+        $item = $_POST['item'];
+        $firstName = $_COOKIE['firstName']; 
+        $price = $_POST['price'];
+        $count = $_POST['count']; 
+        $payMethod = $_POST['payMethod'];
         $cd = new CookieDecide();
 	    $cd->cookieDecide();
 	    $cd->sessionDecide();
         $paylog = $this->model("PayLog");
-        $paylog->insertPayLog();
+        $paylog->insertPayLog($id, $item, $firstName, $price, $count, $payMethod);
     }
     
     

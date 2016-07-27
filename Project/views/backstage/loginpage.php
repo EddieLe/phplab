@@ -64,10 +64,10 @@
                                     <input type="submit" name="btnOK" id="btnOK" value="登入" /> 
                                     
 								</p>
-                                <p class="change_link">
-									Not a member yet ?
-									<a href="#toregister" class="to_register">註冊</a>
-								</p>
+        <!--                        <p class="change_link">-->
+								<!--	Not a member yet ?-->
+								<!--	<a href="#toregister" class="to_register">註冊</a>-->
+								<!--</p>-->
                             </form>
                         </div>
 

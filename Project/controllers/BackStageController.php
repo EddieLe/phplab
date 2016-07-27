@@ -81,12 +81,11 @@ class BackStageController extends Controller {
     
     function auth(){
         session_start();
-        
 	    $_POST["password"] = md5($_POST["password"]);
         $auth = $this->model("Auth");
-        $auth->authPeopleBackstage();
+        $result = $auth->authPeopleBackstage();
         //判斷帳密是否一致
-        if(in_array($_POST["userName"]." ".$_POST["password"], $arrayUserName))
+        if(in_array($_POST["userName"]." ".$_POST["password"], $result))
         {
             setcookie("userName",$_POST["userName"]);
             $_SESSION['userName'] = $_POST["userName"];
@@ -99,12 +98,19 @@ class BackStageController extends Controller {
     }
     
     function signUp(){
-        $cd = new CookieBackStageDecide();
-	    $cd->cookieBackStageDecide();
-	    $cd->sessionBackStageDecide();
-	    $_POST["password"] = md5($_POST["password"]);
-        $signup = $this->model("Signup");
-        $signup->signUpBackstage();
+        if(isset($_POST["userName"]) && isset($_POST["password"]) && isset($_POST["email"]))
+        {
+    	    $_POST["password"] = md5($_POST["password"]);
+            $signup = $this->model("Signup");
+            $result = $signup->signUpBackstage();
+            if($result == "success"){
+                header("location: homePage");
+            }else{
+                header("location: loginPage");
+            }
+        }else {
+             header("location: loginPage");
+        }
     }
     
     function logout(){

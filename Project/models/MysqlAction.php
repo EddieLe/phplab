@@ -140,8 +140,8 @@ class MysqlAction{
         
     }
     
-    function payProducts(){
-        $cmd = "SELECT * FROM payProducts Where name='$_COOKIE[firstName]' ";
+    function payProducts($firstName){
+        $cmd = "SELECT * FROM payProducts Where name='$firstName' ";
         $cf = new Config();
         $result = $cf->config($cmd);
         
@@ -168,8 +168,8 @@ class MysqlAction{
         
     }
     
-    function editProduct(){
-        $cmd = "SELECT * FROM products Where id=$_GET[id] ";
+    function editProduct($id){
+        $cmd = "SELECT * FROM products Where id=$id ";
         $cf = new Config();
         $result = $cf->config($cmd);
         
@@ -189,8 +189,8 @@ class MysqlAction{
         return $productsArray;
     }
     
-    function productInfo(){
-        $cmd = "SELECT * FROM products Where id=$_GET[id] ";
+    function productInfo($id){
+        $cmd = "SELECT * FROM products Where id=$id ";
         $cf = new Config();
         $result = $cf->config($cmd);
         //單資訊商品放入陣列
