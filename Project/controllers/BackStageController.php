@@ -30,11 +30,12 @@ class BackStageController extends Controller {
     function editPage(){
         //顯示記錄錯誤訊息
         session_start();
+        $id = $_GET['id'];
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
 	    $editShow = $this->model("MysqlAction");
-	    $result = $editShow->editProduct();
+	    $result = $editShow->editProduct($id);
 	    $this->view("backstage/editpage",$result);
     }
     
@@ -55,27 +56,36 @@ class BackStageController extends Controller {
     }
     
     function upload(){
+        $item = $_POST['item'];
+        $price = $_POST['price'];
+        $sale = $_POST['sale'];
+        $userName = $_COOKIE['userName'];
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
         $upload = $this->model("Upload");
-	    $upload->backStageUpload();
+	    $upload->backStageUpload($item, $price, $sale, $userName);
     }
     
     function update(){
+        $item = $_POST['item'];
+        $price = $_POST['price']; 
+        $sale = $_POST['sale'];
+        $id = $_POST['id'];
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
         $update = $this->model("Update");
-	    $update->updateBackStageProducts();
+	    $update->updateBackStageProducts($item, $price, $sale, $id);
     }
     
     function remove(){
+        $id = $_GET['id'];
         $cd = new CookieBackStageDecide();
 	    $cd->cookieBackStageDecide();
 	    $cd->sessionBackStageDecide();
 	    $delete = $this->model("Delete");
-        $delete->deleteProduct();
+        $delete->deleteProduct($id);
     }
     
     

@@ -10,7 +10,7 @@
 	<div>
  
 		<br>
-			<?php $vauleData = $data[0]; ?>   
+			<?php $vauleData = $data; ?>   
 			<?php for($i = 0 ; $i < count($vauleData['item']) ; $i++){ ?>
 			<img src=<?php echo "../".picture."/".$vauleData['picture'][$i]?>>
 			<h3><?php echo "檔案名稱 : ".$vauleData[1][$i]?></h3>

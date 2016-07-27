@@ -27267,3 +27267,521 @@
 [27-Jul-2016 03:11:08 UTC] PHP Stack trace:
 [27-Jul-2016 03:11:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
 [27-Jul-2016 03:11:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 04:35:04 UTC] PHP Parse error:  syntax error, unexpected '$cd' (T_VARIABLE) in /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php on line 84
+[27-Jul-2016 04:35:04 UTC] PHP Stack trace:
+[27-Jul-2016 04:35:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 04:35:04 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 04:36:08 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 04:36:08 UTC] PHP Stack trace:
+[27-Jul-2016 04:36:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 04:36:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 04:36:08 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 04:36:09 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 04:36:09 UTC] PHP Stack trace:
+[27-Jul-2016 04:36:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 04:36:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 04:36:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 04:36:12 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 04:36:12 UTC] PHP Stack trace:
+[27-Jul-2016 04:36:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 04:36:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 04:36:12 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 04:36:15 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 04:36:15 UTC] PHP Stack trace:
+[27-Jul-2016 04:36:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 04:36:15 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 04:36:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 04:36:19 UTC] PHP Warning:  Missing argument 1 for MysqlAction::payProducts(), called in /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php on line 156 and defined in /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php on line 143
+[27-Jul-2016 04:36:19 UTC] PHP Stack trace:
+[27-Jul-2016 04:36:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 04:36:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 04:36:19 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 04:36:19 UTC] PHP   4. ShoppingController->payPage() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 04:36:19 UTC] PHP   5. MysqlAction->payProducts() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:156
+[27-Jul-2016 05:32:36 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:32:36 UTC] PHP Stack trace:
+[27-Jul-2016 05:32:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:32:36 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:32:36 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:32:52 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:32:52 UTC] PHP Stack trace:
+[27-Jul-2016 05:32:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:32:52 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:32:52 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:32:55 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:32:55 UTC] PHP Stack trace:
+[27-Jul-2016 05:32:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:32:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:32:55 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:32:55 UTC] PHP Stack trace:
+[27-Jul-2016 05:32:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:32:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:48:15 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Upload.php on line 22
+[27-Jul-2016 05:48:15 UTC] PHP Stack trace:
+[27-Jul-2016 05:48:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:48:15 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:48:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:48:15 UTC] PHP   4. BackStageController->upload() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:48:15 UTC] PHP   5. Upload->backStageUpload() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:67
+[27-Jul-2016 05:48:15 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Upload.php:22
+[27-Jul-2016 05:48:17 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:48:17 UTC] PHP Stack trace:
+[27-Jul-2016 05:48:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:48:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:48:17 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:48:17 UTC] PHP Stack trace:
+[27-Jul-2016 05:48:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:48:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:48:53 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php on line 177
+[27-Jul-2016 05:48:53 UTC] PHP Stack trace:
+[27-Jul-2016 05:48:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:48:53 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:48:53 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:48:53 UTC] PHP   4. BackStageController->editPage() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:48:53 UTC] PHP   5. MysqlAction->editProduct() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:38
+[27-Jul-2016 05:48:53 UTC] PHP   6. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php:177
+[27-Jul-2016 05:51:41 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:51:41 UTC] PHP Stack trace:
+[27-Jul-2016 05:51:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:51:41 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:51:41 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:51:41 UTC] PHP Stack trace:
+[27-Jul-2016 05:51:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:51:41 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:52:23 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Upload.php on line 22
+[27-Jul-2016 05:52:23 UTC] PHP Stack trace:
+[27-Jul-2016 05:52:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:52:23 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:52:23 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:52:23 UTC] PHP   4. BackStageController->upload() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:52:23 UTC] PHP   5. Upload->backStageUpload() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:67
+[27-Jul-2016 05:52:23 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Upload.php:22
+[27-Jul-2016 05:52:26 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:52:26 UTC] PHP Stack trace:
+[27-Jul-2016 05:52:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:52:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:52:26 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:52:26 UTC] PHP Stack trace:
+[27-Jul-2016 05:52:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:52:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:52:53 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:52:53 UTC] PHP Stack trace:
+[27-Jul-2016 05:52:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:52:53 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:52:53 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:52:55 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:52:55 UTC] PHP Stack trace:
+[27-Jul-2016 05:52:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:52:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:52:55 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:52:55 UTC] PHP Stack trace:
+[27-Jul-2016 05:52:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:52:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:52:58 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:52:58 UTC] PHP Stack trace:
+[27-Jul-2016 05:52:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:52:58 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:52:58 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:53:05 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:53:05 UTC] PHP Stack trace:
+[27-Jul-2016 05:53:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:53:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:53:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:54:51 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Update.php on line 12
+[27-Jul-2016 05:54:51 UTC] PHP Stack trace:
+[27-Jul-2016 05:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:54:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:54:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:54:51 UTC] PHP   4. BackStageController->update() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:54:51 UTC] PHP   5. Update->updateBackStageProducts() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:79
+[27-Jul-2016 05:54:51 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Update.php:12
+[27-Jul-2016 05:54:55 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:54:55 UTC] PHP Stack trace:
+[27-Jul-2016 05:54:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:54:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:54:55 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:54:55 UTC] PHP Stack trace:
+[27-Jul-2016 05:54:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:54:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:57:07 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:57:07 UTC] PHP Stack trace:
+[27-Jul-2016 05:57:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:57:07 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:57:07 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:57:07 UTC] PHP Stack trace:
+[27-Jul-2016 05:57:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:57:07 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:57:08 UTC] PHP Warning:  require_once(controllers/pictureController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:57:08 UTC] PHP Stack trace:
+[27-Jul-2016 05:57:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:57:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:57:08 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/pictureController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:57:08 UTC] PHP Stack trace:
+[27-Jul-2016 05:57:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:57:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:57:17 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/eddie/Project/models/Update.php on line 12
+[27-Jul-2016 05:57:17 UTC] PHP Stack trace:
+[27-Jul-2016 05:57:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:57:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:57:17 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:57:17 UTC] PHP   4. BackStageController->update() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:57:17 UTC] PHP   5. Update->updateBackStageProducts() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:79
+[27-Jul-2016 05:57:17 UTC] PHP   6. mysql_close() /home/ubuntu/workspace/eddie/Project/models/Update.php:12
+[27-Jul-2016 05:58:05 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:58:05 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:58:07 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:58:07 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:07 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:07 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:58:25 UTC] PHP Warning:  require_once(controllers/favicon.icoController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:58:25 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:25 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:25 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/favicon.icoController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[27-Jul-2016 05:58:25 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:25 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:33 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:58:33 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:33 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:58:34 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:58:34 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:34 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:34 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:58:40 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:58:40 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:40 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:58:41 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:58:41 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:41 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:41 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:58:43 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:58:43 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:43 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:43 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:58:57 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:58:57 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:57 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:58:58 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:58:58 UTC] PHP Stack trace:
+[27-Jul-2016 05:58:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:58:58 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:58:58 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 05:59:07 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 05:59:07 UTC] PHP Stack trace:
+[27-Jul-2016 05:59:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 05:59:07 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 05:59:07 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:49:15 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/ubuntu/workspace/eddie/Project/models/myPDO.php on line 3
+[27-Jul-2016 06:49:15 UTC] PHP Stack trace:
+[27-Jul-2016 06:49:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 06:49:15 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 06:49:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:49:15 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:49:15 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:174
+[27-Jul-2016 06:52:39 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/ubuntu/workspace/eddie/Project/models/myPDO.php on line 3
+[27-Jul-2016 06:52:39 UTC] PHP Stack trace:
+[27-Jul-2016 06:52:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 06:52:39 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 06:52:39 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:52:39 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:52:39 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:174
+[27-Jul-2016 06:53:40 UTC] PHP Catchable fatal error:  Object of class MyPDO could not be converted to string in /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php on line 175
+[27-Jul-2016 06:53:40 UTC] PHP Stack trace:
+[27-Jul-2016 06:53:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 06:53:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 06:53:40 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:53:40 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:55:06 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 3
+[27-Jul-2016 06:55:06 UTC] PHP Stack trace:
+[27-Jul-2016 06:55:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 06:55:06 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 06:55:06 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:55:06 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:55:06 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:174
+[27-Jul-2016 06:56:48 UTC] PHP Warning:  mysql_connect(): Access denied for user ''@'localhost' (using password: NO) in /home/ubuntu/workspace/eddie/Project/models/config.php on line 14
+[27-Jul-2016 06:56:48 UTC] PHP Stack trace:
+[27-Jul-2016 06:56:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 06:56:48 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 06:56:48 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:56:48 UTC] PHP   4. ShoppingController->products() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 06:56:48 UTC] PHP   5. MysqlAction->selectProductsPage() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:54
+[27-Jul-2016 06:56:48 UTC] PHP   6. Config->config() /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php:38
+[27-Jul-2016 06:56:48 UTC] PHP   7. mysql_connect() /home/ubuntu/workspace/eddie/Project/models/config.php:14
+[27-Jul-2016 06:57:01 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 06:57:01 UTC] PHP Stack trace:
+[27-Jul-2016 06:57:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 06:57:01 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 06:57:01 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:02:42 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php on line 41
+[27-Jul-2016 07:02:42 UTC] PHP Stack trace:
+[27-Jul-2016 07:02:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:02:42 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:02:42 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:02:42 UTC] PHP   4. ShoppingController->products() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:02:42 UTC] PHP   5. MysqlAction->selectProductsPage() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:54
+[27-Jul-2016 07:02:42 UTC] PHP   6. mysql_num_rows() /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php:41
+[27-Jul-2016 07:02:42 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php on line 58
+[27-Jul-2016 07:02:42 UTC] PHP Stack trace:
+[27-Jul-2016 07:02:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:02:42 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:02:42 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:02:42 UTC] PHP   4. ShoppingController->products() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:02:42 UTC] PHP   5. MysqlAction->selectProductsPage() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:54
+[27-Jul-2016 07:02:42 UTC] PHP   6. mysql_fetch_assoc() /home/ubuntu/workspace/eddie/Project/models/MysqlAction.php:58
+[27-Jul-2016 07:02:42 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 07:02:42 UTC] PHP Stack trace:
+[27-Jul-2016 07:02:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:02:42 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:02:42 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:03:15 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 07:03:15 UTC] PHP Stack trace:
+[27-Jul-2016 07:03:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:03:15 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:03:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:03:18 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 07:03:18 UTC] PHP Stack trace:
+[27-Jul-2016 07:03:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:03:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:03:18 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:03:26 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 07:03:26 UTC] PHP Stack trace:
+[27-Jul-2016 07:03:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:03:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:03:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:03:31 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 07:03:31 UTC] PHP Stack trace:
+[27-Jul-2016 07:03:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:03:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:03:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:10:09 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'fonts' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[27-Jul-2016 07:10:09 UTC] PHP Stack trace:
+[27-Jul-2016 07:10:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:10:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:10:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:11:44 UTC] PHP Fatal error:  Cannot access private property Config::$dbhost in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 8
+[27-Jul-2016 07:11:44 UTC] PHP Stack trace:
+[27-Jul-2016 07:11:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:11:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:11:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:11:44 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:11:44 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:174
+[27-Jul-2016 07:11:44 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 07:15:55 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 8
+[27-Jul-2016 07:15:55 UTC] PHP Stack trace:
+[27-Jul-2016 07:15:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:15:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:15:55 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:15:55 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:15:55 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:174
+[27-Jul-2016 07:24:35 UTC] PHP Parse error:  syntax error, unexpected 'static' (T_STATIC), expecting identifier (T_STRING) in /home/ubuntu/workspace/eddie/Project/models/config.php on line 8
+[27-Jul-2016 07:24:35 UTC] PHP Stack trace:
+[27-Jul-2016 07:24:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 07:24:35 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 07:24:35 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:24:35 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 07:24:35 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:174
+[27-Jul-2016 07:24:35 UTC] PHP   6. require_once() /home/ubuntu/workspace/eddie/Project/router/Controller.php:5
+[27-Jul-2016 08:00:21 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 9
+[27-Jul-2016 08:00:21 UTC] PHP Stack trace:
+[27-Jul-2016 08:00:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 08:00:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 08:00:21 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:00:21 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:00:21 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:174
+[27-Jul-2016 08:01:32 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 9
+[27-Jul-2016 08:01:32 UTC] PHP Stack trace:
+[27-Jul-2016 08:01:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 08:01:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 08:01:32 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:01:32 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:01:32 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:174
+[27-Jul-2016 08:01:32 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 08:01:32 UTC] PHP   7. PDO->__construct() /home/ubuntu/workspace/eddie/Project/models/MyPDO.php:9
+[27-Jul-2016 08:01:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/eddie/Project/models/MyPDO.php(9): PDO->__construct('mysql:host=();d...')
+#1 /home/ubuntu/workspace/eddie/Project/router/Controller.php(6): MyPDO->__construct()
+#2 /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php(174): Controller->model('MyPDO')
+#3 [internal function]: ShoppingController->test()
+#4 /home/ubuntu/workspace/eddie/Project/router/App.php(18): call_user_func_array(Array, Array)
+#5 /home/ubuntu/workspace/eddie/Project/index.php(6): App->__construct()
+#6 {main}
+  thrown in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 9
+[27-Jul-2016 08:01:58 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 9
+[27-Jul-2016 08:01:58 UTC] PHP Stack trace:
+[27-Jul-2016 08:01:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 08:01:58 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 08:01:58 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:01:58 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:01:58 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:174
+[27-Jul-2016 08:28:12 UTC] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 14
+[27-Jul-2016 08:28:12 UTC] PHP Stack trace:
+[27-Jul-2016 08:28:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 08:28:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 08:28:12 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:28:12 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:28:12 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 08:28:12 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 08:39:13 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 16
+[27-Jul-2016 08:39:13 UTC] PHP Stack trace:
+[27-Jul-2016 08:39:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 08:39:13 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 08:39:13 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:39:13 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:39:13 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 08:39:13 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 08:50:48 UTC] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 14
+[27-Jul-2016 08:50:48 UTC] PHP Stack trace:
+[27-Jul-2016 08:50:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 08:50:48 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 08:50:48 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:50:48 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 08:50:48 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 08:50:48 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:07:31 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 12
+[27-Jul-2016 09:07:31 UTC] PHP Stack trace:
+[27-Jul-2016 09:07:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:07:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:07:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:07:31 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:07:31 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:10:39 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 12
+[27-Jul-2016 09:10:39 UTC] PHP Stack trace:
+[27-Jul-2016 09:10:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:10:39 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:10:39 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:10:39 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:10:39 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:13:16 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 12
+[27-Jul-2016 09:13:16 UTC] PHP Stack trace:
+[27-Jul-2016 09:13:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:13:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:13:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:13:16 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:13:16 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:13:59 UTC] PHP Fatal error:  Call to undefined function ＞setFetchMode() in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 14
+[27-Jul-2016 09:13:59 UTC] PHP Stack trace:
+[27-Jul-2016 09:13:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:13:59 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:13:59 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:13:59 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:13:59 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:13:59 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:14:26 UTC] PHP Fatal error:  Call to undefined function ＞fetchAll() in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 15
+[27-Jul-2016 09:14:26 UTC] PHP Stack trace:
+[27-Jul-2016 09:14:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:14:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:14:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:14:26 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:14:26 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:14:26 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:31:24 UTC] PHP Fatal error:  Call to undefined function ＞fetchAll() in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 15
+[27-Jul-2016 09:31:24 UTC] PHP Stack trace:
+[27-Jul-2016 09:31:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:31:24 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:31:24 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:31:24 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:31:24 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:31:24 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:44:14 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 14
+[27-Jul-2016 09:44:14 UTC] PHP Stack trace:
+[27-Jul-2016 09:44:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:44:14 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:44:14 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:44:14 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:44:14 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:44:14 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:48:42 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 15
+[27-Jul-2016 09:48:42 UTC] PHP Stack trace:
+[27-Jul-2016 09:48:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:48:42 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:48:42 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:48:42 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:48:42 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:48:42 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:49:22 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 15
+[27-Jul-2016 09:49:22 UTC] PHP Stack trace:
+[27-Jul-2016 09:49:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:49:22 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:49:22 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:49:22 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:49:22 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:49:22 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:49:43 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 15
+[27-Jul-2016 09:49:43 UTC] PHP Stack trace:
+[27-Jul-2016 09:49:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:49:43 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:49:43 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:49:43 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:49:43 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:49:43 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:51:33 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 15
+[27-Jul-2016 09:51:33 UTC] PHP Stack trace:
+[27-Jul-2016 09:51:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:51:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:51:33 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:51:33 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:51:33 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:51:33 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:52:45 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 15
+[27-Jul-2016 09:52:45 UTC] PHP Stack trace:
+[27-Jul-2016 09:52:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:52:45 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:52:45 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:52:45 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:52:45 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:52:45 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:53:02 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 15
+[27-Jul-2016 09:53:02 UTC] PHP Stack trace:
+[27-Jul-2016 09:53:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:53:02 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:53:02 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:53:02 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:53:02 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:53:02 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:55:15 UTC] PHP Fatal error:  Call to a member function setFetchMode() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 17
+[27-Jul-2016 09:55:15 UTC] PHP Stack trace:
+[27-Jul-2016 09:55:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:55:15 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:55:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:55:15 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:55:15 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:55:15 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:57:26 UTC] PHP Fatal error:  Call to undefined function ＞fetchAll() in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 15
+[27-Jul-2016 09:57:26 UTC] PHP Stack trace:
+[27-Jul-2016 09:57:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:57:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:57:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:57:26 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:57:26 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:57:26 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:58:57 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 14
+[27-Jul-2016 09:58:57 UTC] PHP Stack trace:
+[27-Jul-2016 09:58:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:58:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:58:57 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:58:57 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:58:57 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:58:57 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6
+[27-Jul-2016 09:59:15 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/eddie/Project/models/MyPDO.php on line 14
+[27-Jul-2016 09:59:15 UTC] PHP Stack trace:
+[27-Jul-2016 09:59:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[27-Jul-2016 09:59:15 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[27-Jul-2016 09:59:15 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:59:15 UTC] PHP   4. ShoppingController->test() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[27-Jul-2016 09:59:15 UTC] PHP   5. Controller->model() /home/ubuntu/workspace/eddie/Project/controllers/ShoppingController.php:175
+[27-Jul-2016 09:59:15 UTC] PHP   6. MyPDO->__construct() /home/ubuntu/workspace/eddie/Project/router/Controller.php:6

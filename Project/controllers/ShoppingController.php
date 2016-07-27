@@ -80,7 +80,7 @@ class ShoppingController extends Controller{
     }
     
     function productInfo(){
-        $id = $_GET['id']
+        $id = $_GET['id'];
         $cd = new CookieDecide();
 	    $cd->cookieDecide();
 	    $cd->sessionDecide();
@@ -153,7 +153,7 @@ class ShoppingController extends Controller{
 	    $cd->cookieDecide();
 	    $cd->sessionDecide();
 	    $payProducts = $this->model("MysqlAction");
-        $result = $payProducts->payProducts();
+        $result = $payProducts->payProducts($firstName);
         $this->view("products/payPage",$result);
     }
     
@@ -170,7 +170,10 @@ class ShoppingController extends Controller{
         $paylog = $this->model("PayLog");
         $paylog->insertPayLog($id, $item, $firstName, $price, $count, $payMethod);
     }
-    
+    function test(){
+        $_POST['id'] = 50;
+        $this->model("MyPDO");
+    }
     
 }
 ?>

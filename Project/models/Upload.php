@@ -2,7 +2,7 @@
 <?php
 include "config.php";
 class Upload{
-    function backStageUpload()
+    function backStageUpload($item, $price, $sale, $userName)
     {
         if (file_exists("picture/" . $_FILES["myfile"]["name"]))
         {
@@ -15,7 +15,8 @@ class Upload{
         //取出圖片檔名
         $arrayPicture[] = $_FILES['myfile']['name'];
         
-        $cmd = "INSERT INTO products (item, picture, price, sale, owner, date) VALUES ('$_POST[item]','$arrayPicture[0]','$_POST[price]','$_POST[sale]','$_COOKIE[userName]' ,current_timestamp())";
+        $cmd = "INSERT INTO products (item, picture, price, sale, owner, date) VALUES ('$item','$arrayPicture[0]',
+                                                '$price','$sale','$userName' ,current_timestamp())";
         $cf = new Config();
         $result = $cf->config($cmd);
         mysql_close($link);
