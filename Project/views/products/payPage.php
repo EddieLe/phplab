@@ -22,7 +22,7 @@
 					<th>結果</th>
 						
 				</tr>
-				<?php $vauleData = $data[0] ?>
+				<?php $vauleData = $data ?>
 				<?php for ($i = 0; $i < count($vauleData['id']); $i++) { ?>
 				<tr>
                     <td><?php echo $_COOKIE["firstName"] ?></td>

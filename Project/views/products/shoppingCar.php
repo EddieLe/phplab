@@ -56,7 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<a class="continue" href="checkPage">回購物頁</a>
 			<div class="price-details">
 
-				<?php $vauleData = $data[0]; ?> 
+				<?php $vauleData = $data; ?> 
 				<?php for($i = 0 ; $i < count($vauleData['id']) ; $i++){ ?>
 				<?php $priceSale += (($vauleData['count'][$i] * $vauleData['price'][$i])-($vauleData['count'][$i] * $vauleData['computting'][$i])); ?>
 				<?php $beforeSale += $vauleData['count'][$i] * $vauleData['price'][$i]; ?>

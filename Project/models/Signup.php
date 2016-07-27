@@ -48,7 +48,9 @@ class Signup{
                 header("location: accountPage");
             }else{
 
-                $cmd = "INSERT INTO clients (firstName, lastName, email, mobile, sex, password, date) VALUES ('$_POST[firstName]','$_POST[lastName]','$_POST[email]','$_POST[mobile]','$_POST[sex]','$_POST[password]', current_timestamp())";
+                $cmd = "INSERT INTO clients (firstName, lastName, email, mobile, sex, password, date) 
+                VALUES ('$_POST[firstName]','$_POST[lastName]','$_POST[email]','$_POST[mobile]','$_POST[sex]','$_POST[password]', 
+                current_timestamp())";
                 $result = $cf->config($cmd);
                 mysql_close($link);
                 //註冊成功使他保持登入狀態

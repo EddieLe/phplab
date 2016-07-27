@@ -24,13 +24,24 @@ class ShoppingController extends Controller{
     }
     
     function auth(){
-	    $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+	   
 	    $_POST["password"] = md5($_POST["password"]);
         $auth = $this->model("Auth");
-        $auth->authPeopleShopping();
-        
+        $result = $auth->authPeopleShopping();
+        //判斷帳密是否一致
+        if(in_array($_POST["firstName"]." ".$_POST["password"], $result))
+        {
+            setcookie("firstName",$_POST["firstName"]);
+            $_SESSION["firstName"] = $_POST["firstName"];
+            //重倒回ShoppingController function products
+            header("location: products");
+            
+        }else
+            //重倒回ShoppingController function loginPage
+            header("location: loginPage");
+        $cd = new CookieDecide();
+	    $cd->cookieDecide();
+	    $cd->sessionDecide();
     }
     
     function products(){
@@ -90,6 +101,7 @@ class ShoppingController extends Controller{
 	    $cd->sessionDecide();
         $add = $this->model("Add");
         $add->addShoppingCar();
+        header("location: checkPage");
     }
     
     function removeCar(){

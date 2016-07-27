@@ -10,11 +10,7 @@ class Add{
         //新增購物清單
         $cmdinsert = "INSERT INTO shoppingCar (mId, pId, date) VALUES ('$_COOKIE[firstName]','$_POST[id]', current_timestamp())";
         $result = $cf->config($cmdinsert);
-
         
-        mysql_close($link);
-        
-        header("location: checkPage");
     }
 }
 ?>

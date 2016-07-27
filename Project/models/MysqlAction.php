@@ -22,7 +22,7 @@ class MysqlAction{
             $ownerArray[] = $row['owner'];
         }
         //將商品結果資訊裝置商品陣列中 為了在controller 給view使用
-        $productsArray[] = array('item'=>$itemArray, 
+        $productsArray = array('item'=>$itemArray, 
                                 'picture'=>$pictureArray, 
                                 'price'=>$priceArray, 
                                 'count'=>$countArray, 
@@ -101,7 +101,7 @@ class MysqlAction{
         if($total%$pageSize != 0 && $_GET["page"] == $totalPage ){
 	       $start = ($_GET["page"]-1)*$pageSize ;
 	       $end = $start + ($total%$pageSize);
-           $dif = $end-$start;
+          $dif = $end-$start;
 	    }else{
 	       $start = ($_GET["page"]-1)*$pageSize ;
 	       $end = $_GET["page"]*$pageSize;
@@ -157,7 +157,7 @@ class MysqlAction{
             $payMethodArray[] = $row['payMethod'];
         }
         //將商品結果裝置商品陣列中 為了在controller 給view使用
-        $productsArray[] = array('item'=>$itemArray,
+        $productsArray = array('item'=>$itemArray,
                                 'name'=>$nameArray,
                                 'price'=>$priceArray,
                                 'count'=>$countArray,
@@ -182,7 +182,7 @@ class MysqlAction{
             $saleArray[] =  $row['sale'];
         }    
         
-        $productsArray[] = array('item'=>$itemArray,
+        $productsArray = array('item'=>$itemArray,
                                 'picture'=>$pictureArray,
                                 'price'=>$priceArray,
                                 'sale'=>$saleArray);
@@ -203,7 +203,7 @@ class MysqlAction{
             $totleArray[] = round($row['price'] * ((100-$row['sale'])/100));
         }    
         
-        $productsArray[] = array('item'=>$itemArray,
+        $productsArray = array('item'=>$itemArray,
                                 'picture'=>$pictureArray,
                                 'price'=>$priceArray,
                                 'sale'=>$saleArray,

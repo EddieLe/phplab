@@ -28,7 +28,7 @@ class ShowCar{
             $computtingArray[] = round($row['price'] * ((100-$row['sale'])/100));
         }
         //將商品資料結果裝置商品陣列中 為了在controller 給view使用
-        $productsArray[] = array('item'=>$itemArray,
+        $productsArray = array('item'=>$itemArray,
                                 'picture'=>$pictureArray,
                                 'price'=>$priceArray,
                                 'count'=>$countArray,

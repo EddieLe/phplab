@@ -81,12 +81,21 @@ class BackStageController extends Controller {
     
     function auth(){
         session_start();
-        $cd = new CookieBackStageDecide();
-	    $cd->cookieBackStageDecide();
-	    $cd->sessionBackStageDecide();
+        
 	    $_POST["password"] = md5($_POST["password"]);
         $auth = $this->model("Auth");
         $auth->authPeopleBackstage();
+        //判斷帳密是否一致
+        if(in_array($_POST["userName"]." ".$_POST["password"], $arrayUserName))
+        {
+            setcookie("userName",$_POST["userName"]);
+            $_SESSION['userName'] = $_POST["userName"];
+            header("location: homePage");
+        }else
+            header("location: loginPage");
+        $cd = new CookieBackStageDecide();
+	    $cd->cookieBackStageDecide();
+	    $cd->sessionBackStageDecide();
     }
     
     function signUp(){

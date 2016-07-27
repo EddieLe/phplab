@@ -64,7 +64,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h2>Our Products</h2>	
 
 		 <div class="col-md-9 product-model-sec">
-		 			<?php $vauleData = $data[0]?>
+		 			<?php $vauleData = $data?>
 		            <?php for ($i = 0; $i < count($vauleData['id']); $i++) { ?>
 		            
 					<a href="productInfo?id=<?php echo $vauleData['id'][$i]?>"><div class="product-grid">
