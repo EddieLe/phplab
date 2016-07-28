@@ -1,15 +1,18 @@
 <?php
-include "config.php";
+// include "config.php";
+include "MyPDO.php";
 //所有有關產品資料資料庫操作
 class MysqlAction{
 
     function selectProducts(){
-        $cmd = "SELECT * FROM products";
-        $cf = new Config();
-        $result = $cf->config($cmd);
+        $cmd = "SELECT * FROM `products`";
+        $myPdo = new MyPDO();
+        $pdo = $myPdo->pdoConnect;
+        $stmt = $pdo->query($cmd);
+        $stmt->execute();
         
         //撈出所有商品資訊
-        while($row = mysql_fetch_assoc($result))
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC))
         {
             $itemArray[] = $row['item'];
             $pictureArray[] =  $row['picture'] ;   
@@ -34,11 +37,15 @@ class MysqlAction{
         
     }
     function selectProductsPage(){
-        $cmd = "SELECT * FROM products ORDER BY id";
-        $cf = new Config();
-        $result = $cf->config($cmd);
+        $cmd = "SELECT * FROM `products` ORDER BY `id`";
+        $myPdo = new MyPDO();
+        $pdo = $myPdo->pdoConnect;
+        $stmt = $pdo->query($cmd);
+        $rowCount = $stmt->rowCount();
+        $stmt->execute();
+        
         //找所有東西有多少
-        $total = mysql_num_rows($result);
+        $total = $rowCount;
         
         //撈出所有商品資訊AJAX方式
         $start = 0; //給初始值
@@ -52,10 +59,10 @@ class MysqlAction{
 	       $end = $_POST["page"]*$pageSize;
         
 	    }
-        $cmd = "SELECT * FROM products ORDER BY id limit $start,$end";
-        $result = $cf->config($cmd);
+        $cmd = "SELECT * FROM `products` ORDER BY `id` LIMIT $start,$end";
+        $stmt = $pdo->query($cmd);
         
-        while($row = mysql_fetch_assoc($result))
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC))
         {
             $itemArray[] = $row['item'];
             $pictureArray[] =  $row['picture'] ;   
@@ -83,10 +90,14 @@ class MysqlAction{
         return $productsArray;
     }
     function selectBackStageProducts(){
-        $cmd = "select * from products order by id";
-        $cf = new Config();
-        $result = $cf->config($cmd);
-        $total = mysql_num_rows($result);
+        $cmd = "SELECT * FROM `products` ORDER BY `id`";
+        $myPdo = new MyPDO();
+        $pdo = $myPdo->pdoConnect;
+        $stmt = $pdo->query($cmd);
+        $rowCount = $stmt->rowCount();
+        $stmt->execute();
+        
+        $total = $rowCount;
         //撈出所有商品資訊PHP方式
         $start = 0;
         $end = 3;
@@ -101,18 +112,19 @@ class MysqlAction{
         if($total%$pageSize != 0 && $_GET["page"] == $totalPage ){
 	       $start = ($_GET["page"]-1)*$pageSize ;
 	       $end = $start + ($total%$pageSize);
-          $dif = $end-$start;
+           $dif = $end-$start;
 	    }else{
 	       $start = ($_GET["page"]-1)*$pageSize ;
 	       $end = $_GET["page"]*$pageSize;
 	       $dif = $end-$start;
 	    }
         
-        $cmd = "select * from products order by id limit $start,$end";
-        $result = $cf->config($cmd);
+        $cmd = "SELECT * FROM `products` ORDER BY `id` LIMIT $start,$end";
+        $stmt = $pdo->query($cmd);
+        $stmt->execute();
         
         //撈出所有商品資訊
-        while($row = mysql_fetch_assoc($result))
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC))
         {
             $itemArray[] = $row['item'];
             $pictureArray[] =  $row['picture'] ;   
@@ -141,12 +153,15 @@ class MysqlAction{
     }
     
     function payProducts($firstName){
-        $cmd = "SELECT * FROM payProducts Where name='$firstName' ";
-        $cf = new Config();
-        $result = $cf->config($cmd);
+        $cmd = "SELECT * FROM `payProducts` WHERE `name`=:firstName ";
+        $myPdo = new MyPDO();
+        $pdo = $myPdo->pdoConnect;
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(':firstName'=>$firstName));
+        
         
         //撈出已訂購商品項目
-        while($row = mysql_fetch_assoc($result))
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC))
         {
             $itemArray[] = $row['item'];
             $nameArray[] = $row['name'];
@@ -169,12 +184,14 @@ class MysqlAction{
     }
     
     function editProduct($id){
-        $cmd = "SELECT * FROM products Where id=$id ";
-        $cf = new Config();
-        $result = $cf->config($cmd);
+        $cmd = "SELECT * FROM `products` WHERE `id`= :id ";
+        $myPdo = new MyPDO();
+        $pdo = $myPdo->pdoConnect;
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(':id'=>$id));
         
         //編輯商品放入陣列
-        while($row = mysql_fetch_assoc($result))
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC))
         {
             $itemArray[] = $row['item'];
             $pictureArray[] =  $row['picture'];
@@ -190,11 +207,14 @@ class MysqlAction{
     }
     
     function productInfo($id){
-        $cmd = "SELECT * FROM products Where id=$id ";
-        $cf = new Config();
-        $result = $cf->config($cmd);
+        $cmd = "SELECT * FROM `products` WHERE `id`=:id ";
+        $myPdo = new MyPDO();
+        $pdo = $myPdo->pdoConnect;
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(':id'=>$id));
+        
         //單資訊商品放入陣列
-        while($row = mysql_fetch_assoc($result))
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC))
         {
             $itemArray[] = $row['item'];
             $pictureArray[] =  $row['picture'];

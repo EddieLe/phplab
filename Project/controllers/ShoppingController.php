@@ -24,6 +24,7 @@ class ShoppingController extends Controller{
     }
     
     function auth(){
+        session_start();
 	    $_POST["password"] = md5($_POST["password"]);
         $auth = $this->model("Auth");
         $result = $auth->authPeopleShopping();
@@ -133,7 +134,7 @@ class ShoppingController extends Controller{
         
         if(isset($_POST["firstName"]) && isset($_POST["password"]) && isset($_POST["email"]))
         {
-            $_POST["password"] = md5($_POST["password"]);
+            $password = md5($password);
             $signup = $this->model("Signup");
             $result = $signup->signUpShopping($firstName,$lastName,$email,$mobile,$sex,$password);
 
@@ -169,6 +170,7 @@ class ShoppingController extends Controller{
 	    $cd->sessionDecide();
         $paylog = $this->model("PayLog");
         $paylog->insertPayLog($id, $item, $firstName, $price, $count, $payMethod);
+        header("location: shoppingCarPage"); 
     }
     function test(){
         $_POST['id'] = 50;

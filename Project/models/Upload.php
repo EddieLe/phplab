@@ -1,6 +1,6 @@
 <meta charset=utf-8>
 <?php
-include "config.php";
+include "MyPDO.php";
 class Upload{
     function backStageUpload($item, $price, $sale, $userName)
     {
@@ -15,12 +15,18 @@ class Upload{
         //取出圖片檔名
         $arrayPicture[] = $_FILES['myfile']['name'];
         
-        $cmd = "INSERT INTO products (item, picture, price, sale, owner, date) VALUES ('$item','$arrayPicture[0]',
-                                                '$price','$sale','$userName' ,current_timestamp())";
-        $cf = new Config();
-        $result = $cf->config($cmd);
-        mysql_close($link);
-        header("location: homePage");   
+        $cmd = "INSERT INTO `products` (item, picture, price, sale, owner, date) VALUES (:item,'$arrayPicture[0]',
+                                                :price,:sale,:userName ,current_timestamp())";
+        // $cf = new Config();
+        // $result = $cf->config($cmd);
+        
+        $myPdo = new MyPDO();
+        $pdo = $myPdo->pdoConnect;
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(':item'=>$item,
+                            ':price'=>$price,
+                            ':sale'=>$sale,
+                            ':userName'=>$userName));  
         }
     }
 }

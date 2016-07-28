@@ -14,6 +14,8 @@ class Config{
 	    $result = mysql_query($cmd, $link);
 	    return $result;
 	}
+	
+	//外部使用連線 singleton
 	function getdbhost(){
 		return $this->dbhost;
 	}
@@ -27,6 +29,7 @@ class Config{
 		return $this->dbname;
 	}
 	
+	//外部更改連線
 	function setdbhost($dbhost, $dbuser, $dbpass, $dbname){
 		$this->dbhost = $dbhost;
 		$this->dbuser = $dbuser;

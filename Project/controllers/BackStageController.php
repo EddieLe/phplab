@@ -65,6 +65,7 @@ class BackStageController extends Controller {
 	    $cd->sessionBackStageDecide();
         $upload = $this->model("Upload");
 	    $upload->backStageUpload($item, $price, $sale, $userName);
+	    header("location: homePage"); 
     }
     
     function update(){
@@ -77,6 +78,7 @@ class BackStageController extends Controller {
 	    $cd->sessionBackStageDecide();
         $update = $this->model("Update");
 	    $update->updateBackStageProducts($item, $price, $sale, $id);
+	    header("location: homePage");
     }
     
     function remove(){
@@ -108,11 +110,14 @@ class BackStageController extends Controller {
     }
     
     function signUp(){
+        $userName = $_POST['userName'];
+        $password = $_POST['password'];
+        $email = $_POST['email'];
         if(isset($_POST["userName"]) && isset($_POST["password"]) && isset($_POST["email"]))
         {
-    	    $_POST["password"] = md5($_POST["password"]);
+    	    $password = md5($password);
             $signup = $this->model("Signup");
-            $result = $signup->signUpBackstage();
+            $result = $signup->signUpBackstage($userName, $password, $email);
             if($result == "success"){
                 header("location: homePage");
             }else{

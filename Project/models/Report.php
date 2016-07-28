@@ -1,15 +1,18 @@
 <?php
-include "config.php";
+include "MyPDO.php";
 class Report{
 
     function report(){
         //搜尋已售出 以購買者分類 加總單品購買數量
         $cmd = "SELECT SUM(count) AS c, payProducts . * 
                 FROM  `payProducts` 
-                GROUP BY name, item";
-        $cf = new Config();
-        $result = $cf->config($cmd);
-        while($row = mysql_fetch_assoc($result))
+                GROUP BY `name`, `item`";
+        $myPdo = new MyPDO();
+        $pdo = $myPdo->pdoConnect;
+        $stmt = $pdo->query($cmd);
+        $stmt->execute();
+        
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC))
         {
             $nameArray[] = $row['name'];
             $itemArray[] = $row['item'];

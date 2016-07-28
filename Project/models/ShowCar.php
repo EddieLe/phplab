@@ -1,23 +1,26 @@
 <?php
-include "config.php";
+include "MyPDO.php";
 class ShowCar{
     
     function selectProducts($firstName){
 
-        $cmdshpooing = "SELECT mId, pId FROM shoppingCar";
-        $cf = new Config();
-        $result = $cf->config($cmdshpooing);
+        $cmdshpooing = "SELECT `mId`, `pId` FROM `shoppingCar`";
+        $myPdo = new MyPDO();
+        $pdo = $myPdo->pdoConnect;
+        $stmt = $pdo->query($cmdshpooing);
+        $stmt->execute();
 
         //JOIN 商品 購物車 找出該會員加入購物車的商品與數量 加總數量
         $cmd = "SELECT COUNT( shoppingCar.sId ) AS c, shoppingCar.mId, shoppingCar.sId, products. * 
                 FROM shoppingCar
                 JOIN products ON shoppingCar.pId = products.id
-                WHERE mId =  '$firstName'
+                WHERE mId =  :firstName
                 GROUP BY products.id";
 
-        $result = $cf->config($cmd);
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(':firstName'=>$firstName));
         //選擇需要資訊
-        while($row = mysql_fetch_assoc($result))
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC))
         {
             $itemArray[] = $row['item'];
             $pictureArray[] = $row['picture'] ;   
