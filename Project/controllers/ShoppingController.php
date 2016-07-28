@@ -172,10 +172,6 @@ class ShoppingController extends Controller{
         $paylog->insertPayLog($id, $item, $firstName, $price, $count, $payMethod);
         header("location: shoppingCarPage"); 
     }
-    function test(){
-        $_POST['id'] = 50;
-        $this->model("MyPDO");
-    }
     
 }
 ?>
