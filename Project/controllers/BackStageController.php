@@ -1,5 +1,4 @@
 <?php
-include "middleware/CookieBackStageDecide.php";
 
 class BackStageController extends Controller {
 
@@ -17,9 +16,6 @@ class BackStageController extends Controller {
     }
     
     function homePage(){
-        //刪除以上傳後的錯誤訊息session error
-        unset($_SESSION["duble"]);
-        unset($_SESSION["error"]);
 	    $Decide = $this->model("Decide");
 	    $decideC = $Decide->cookieBackStageDecide();
 	    $decideS = $Decide->sessionBackStageDecide();
@@ -32,7 +28,6 @@ class BackStageController extends Controller {
     }
     
     function editPage(){
-        //顯示記錄錯誤訊息
         $id = $_GET['id'];
         $Decide = $this->model("Decide");
 	    $decideC = $Decide->cookieBackStageDecide();
@@ -80,6 +75,9 @@ class BackStageController extends Controller {
 	    }
         $upload = $this->model("Upload");
 	    $upload->backStageUpload($item, $price, $sale, $userName);
+	    if($upload){
+            header("location: uploadPage");
+        }
 	    header("location: homePage"); 
     }
     
@@ -114,15 +112,14 @@ class BackStageController extends Controller {
     
     
     function auth(){
-        session_start();
 	    $_POST["password"] = md5($_POST["password"]);
         $auth = $this->model("Auth");
         $result = $auth->authPeopleBackstage();
         //判斷帳密是否一致
         if(in_array($_POST["userName"]." ".$_POST["password"], $result))
         {
-            setcookie("userName",$_POST["userName"]);
-            $_SESSION['userName'] = $_POST["userName"];
+            $setAuth = $this->model("Decide");
+            $setAuth->setAuth();
             header("location: homePage");
         }else
             header("location: loginPage");

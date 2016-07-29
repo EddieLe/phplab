@@ -31977,3 +31977,863 @@ Stack trace:
 [29-Jul-2016 08:14:54 UTC] PHP Stack trace:
 [29-Jul-2016 08:14:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
 [29-Jul-2016 08:14:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:40 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:50:40 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:40 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:50:42 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:50:42 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:42 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:42 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:50:42 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:42 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:47 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:50:47 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:50:47 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:50:47 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:47 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:50:47 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:50 UTC] PHP Warning:  require_once(controllers/favicon.icoController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:50:50 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:50 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:50 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/favicon.icoController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:50:50 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:50 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:55 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:50:55 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:55 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:50:55 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:50:55 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:55 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:50:55 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:57 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:50:57 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:57 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:50:57 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:50:57 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:57 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:50:59 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:50:59 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:59 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:59 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:50:59 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:50:59 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:59 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:59 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:50:59 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:59 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:59 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:50:59 UTC] PHP Stack trace:
+[29-Jul-2016 08:50:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:50:59 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:50:59 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:01 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:01 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:01 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:01 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:01 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:01 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:01 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:01 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:01 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:01 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:01 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:01 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:01 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:01 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:02 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:02 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:02 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:02 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:02 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:02 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:02 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:02 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:03 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:03 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:03 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:03 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:03 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:03 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:05 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:05 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:05 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:05 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:06 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:06 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:06 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:06 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:08 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:08 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:08 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:08 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:08 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:08 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:10 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:10 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:10 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:10 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:10 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:10 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:10 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:10 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:10 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:10 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:11 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:11 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:11 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:11 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:11 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:11 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:13 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:13 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:13 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:13 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:13 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:13 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:13 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:13 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:13 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:13 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:13 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:13 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:13 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:13 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:16 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:16 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:16 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:16 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:16 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:16 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:23 UTC] PHP Warning:  require_once(controllers/favicon.icoController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:23 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:23 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:23 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/favicon.icoController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:51:23 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:23 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:27 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:27 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:27 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:27 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:29 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:29 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:51:33 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:51:33 UTC] PHP Stack trace:
+[29-Jul-2016 08:51:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:51:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:51:33 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:55:27 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:27 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:27 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:27 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:27 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:27 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:27 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:55:27 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:27 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:27 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:55:29 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:29 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:29 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:29 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:31 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:31 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:31 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:31 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:33 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:33 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:33 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:33 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:43 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:43 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:43 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:43 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:43 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:43 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:56 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:56 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:56 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:56 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:56 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:56 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:58 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:58 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:58 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:55:58 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:55:58 UTC] PHP Stack trace:
+[29-Jul-2016 08:55:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:55:58 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:56:03 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:56:03 UTC] PHP Stack trace:
+[29-Jul-2016 08:56:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:56:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:56:03 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:56:03 UTC] PHP Stack trace:
+[29-Jul-2016 08:56:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:56:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:56:08 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:56:08 UTC] PHP Stack trace:
+[29-Jul-2016 08:56:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:56:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:56:08 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:56:08 UTC] PHP Stack trace:
+[29-Jul-2016 08:56:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:56:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:56:08 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:56:08 UTC] PHP Stack trace:
+[29-Jul-2016 08:56:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:56:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:56:08 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:56:09 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:56:09 UTC] PHP Stack trace:
+[29-Jul-2016 08:56:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:56:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:56:09 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:56:09 UTC] PHP Stack trace:
+[29-Jul-2016 08:56:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:56:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:56:14 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:56:14 UTC] PHP Stack trace:
+[29-Jul-2016 08:56:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:56:14 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:56:14 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:56:14 UTC] PHP Stack trace:
+[29-Jul-2016 08:56:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:56:14 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:14 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:14 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:14 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:14 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:14 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:14 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:18 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:18 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:18 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:18 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:19 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:19 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:19 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:19 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:26 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 08:59:26 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:26 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 08:59:26 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:26 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:26 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:26 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:26 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:28 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:28 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:28 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:28 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:28 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:28 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:30 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:30 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 08:59:30 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 08:59:30 UTC] PHP Stack trace:
+[29-Jul-2016 08:59:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 08:59:30 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:00:45 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:00:45 UTC] PHP Stack trace:
+[29-Jul-2016 09:00:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:00:45 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:00:45 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:00:45 UTC] PHP Stack trace:
+[29-Jul-2016 09:00:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:00:45 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:00:45 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:00:45 UTC] PHP Stack trace:
+[29-Jul-2016 09:00:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:00:45 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:00:45 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:00:46 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:00:46 UTC] PHP Stack trace:
+[29-Jul-2016 09:00:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:00:46 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:00:46 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:00:46 UTC] PHP Stack trace:
+[29-Jul-2016 09:00:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:00:46 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:00:49 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:00:49 UTC] PHP Stack trace:
+[29-Jul-2016 09:00:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:00:49 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:00:49 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:00:49 UTC] PHP Stack trace:
+[29-Jul-2016 09:00:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:00:49 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:01:00 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:01:00 UTC] PHP Stack trace:
+[29-Jul-2016 09:01:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:01:00 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:01:00 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:01:00 UTC] PHP Stack trace:
+[29-Jul-2016 09:01:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:01:00 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:01:19 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:01:19 UTC] PHP Stack trace:
+[29-Jul-2016 09:01:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:01:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:01:19 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:01:20 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:01:20 UTC] PHP Stack trace:
+[29-Jul-2016 09:01:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:01:20 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:01:20 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:01:20 UTC] PHP Stack trace:
+[29-Jul-2016 09:01:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:01:20 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:01:22 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:01:22 UTC] PHP Stack trace:
+[29-Jul-2016 09:01:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:01:22 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:01:22 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:01:22 UTC] PHP Stack trace:
+[29-Jul-2016 09:01:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:01:22 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:01:24 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:01:24 UTC] PHP Stack trace:
+[29-Jul-2016 09:01:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:01:24 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:01:24 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:01:24 UTC] PHP Stack trace:
+[29-Jul-2016 09:01:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:01:24 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:07 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:03:07 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:07 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:07 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:03:07 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:07 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:08 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:03:08 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:08 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:03:09 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:03:09 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:09 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:03:09 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:12 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:03:12 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:12 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:03:12 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:03:12 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:12 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:03:12 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:12 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:03:12 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:12 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:03:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:03:16 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:03:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:03:16 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:03:16 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:03:16 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:16 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:03:16 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:17 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:03:17 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:17 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:03:17 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:03:17 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:17 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:03:19 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:03:19 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:19 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:03:19 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:03:19 UTC] PHP Stack trace:
+[29-Jul-2016 09:03:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:03:19 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:03:19 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:24:09 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:24:09 UTC] PHP Stack trace:
+[29-Jul-2016 09:24:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:24:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:24:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:24:10 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:24:10 UTC] PHP Stack trace:
+[29-Jul-2016 09:24:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:24:10 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:24:10 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:24:49 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:24:49 UTC] PHP Stack trace:
+[29-Jul-2016 09:24:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:24:49 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:24:49 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:24:51 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:24:51 UTC] PHP Stack trace:
+[29-Jul-2016 09:24:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:24:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:24:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:24:55 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:24:55 UTC] PHP Stack trace:
+[29-Jul-2016 09:24:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:24:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:24:55 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:25:55 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:25:55 UTC] PHP Stack trace:
+[29-Jul-2016 09:25:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:25:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:25:55 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:25:57 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:25:57 UTC] PHP Stack trace:
+[29-Jul-2016 09:25:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:25:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:25:57 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:26:57 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:26:57 UTC] PHP Stack trace:
+[29-Jul-2016 09:26:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:26:57 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:26:57 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:27:01 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:27:01 UTC] PHP Stack trace:
+[29-Jul-2016 09:27:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:27:01 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:27:01 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:27:04 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:27:04 UTC] PHP Stack trace:
+[29-Jul-2016 09:27:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:27:04 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:27:04 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:28:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:28:03 UTC] PHP Stack trace:
+[29-Jul-2016 09:28:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:28:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:28:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:28:05 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:28:05 UTC] PHP Stack trace:
+[29-Jul-2016 09:28:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:28:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:28:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:28:09 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:28:09 UTC] PHP Stack trace:
+[29-Jul-2016 09:28:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:28:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:28:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:34:06 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:34:06 UTC] PHP Stack trace:
+[29-Jul-2016 09:34:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:34:06 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:34:06 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:34:08 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:34:08 UTC] PHP Stack trace:
+[29-Jul-2016 09:34:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:34:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:34:08 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:35:56 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:35:56 UTC] PHP Stack trace:
+[29-Jul-2016 09:35:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:35:56 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:35:56 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:35:58 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:35:58 UTC] PHP Stack trace:
+[29-Jul-2016 09:35:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:35:58 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:35:58 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:36:21 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:36:21 UTC] PHP Stack trace:
+[29-Jul-2016 09:36:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:36:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:36:21 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:36:47 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:36:47 UTC] PHP Stack trace:
+[29-Jul-2016 09:36:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:36:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:36:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:36:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:36:54 UTC] PHP Stack trace:
+[29-Jul-2016 09:36:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:36:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:36:54 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:37:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:37:16 UTC] PHP Stack trace:
+[29-Jul-2016 09:37:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:37:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:37:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:37:24 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:37:24 UTC] PHP Stack trace:
+[29-Jul-2016 09:37:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:37:24 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:37:24 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:38:50 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:38:50 UTC] PHP Stack trace:
+[29-Jul-2016 09:38:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:38:50 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:38:50 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:38:52 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:38:52 UTC] PHP Stack trace:
+[29-Jul-2016 09:38:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:38:52 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:38:52 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:08 UTC] PHP Warning:  unlink(picture/): Is a directory in /home/ubuntu/workspace/eddie/Project/models/Delete.php on line 17
+[29-Jul-2016 09:39:08 UTC] PHP Stack trace:
+[29-Jul-2016 09:39:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:39:08 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:39:08 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:08 UTC] PHP   4. BackStageController->remove() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:08 UTC] PHP   5. Delete->deleteProduct() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:110
+[29-Jul-2016 09:39:08 UTC] PHP   6. unlink() /home/ubuntu/workspace/eddie/Project/models/Delete.php:17
+[29-Jul-2016 09:39:09 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:39:09 UTC] PHP Stack trace:
+[29-Jul-2016 09:39:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:39:09 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:39:09 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:14 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:39:14 UTC] PHP Stack trace:
+[29-Jul-2016 09:39:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:39:14 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:39:14 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:17 UTC] PHP Warning:  unlink(picture/): Is a directory in /home/ubuntu/workspace/eddie/Project/models/Delete.php on line 17
+[29-Jul-2016 09:39:17 UTC] PHP Stack trace:
+[29-Jul-2016 09:39:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:39:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:39:17 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:17 UTC] PHP   4. BackStageController->remove() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:17 UTC] PHP   5. Delete->deleteProduct() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:110
+[29-Jul-2016 09:39:17 UTC] PHP   6. unlink() /home/ubuntu/workspace/eddie/Project/models/Delete.php:17
+[29-Jul-2016 09:39:18 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:39:18 UTC] PHP Stack trace:
+[29-Jul-2016 09:39:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:39:18 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:39:18 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:43 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:39:43 UTC] PHP Stack trace:
+[29-Jul-2016 09:39:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:39:43 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:39:43 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:51 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:39:51 UTC] PHP Stack trace:
+[29-Jul-2016 09:39:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:39:51 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:39:51 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:54 UTC] PHP Warning:  unlink(picture/): Is a directory in /home/ubuntu/workspace/eddie/Project/models/Delete.php on line 16
+[29-Jul-2016 09:39:54 UTC] PHP Stack trace:
+[29-Jul-2016 09:39:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:39:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:39:54 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:54 UTC] PHP   4. BackStageController->remove() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:39:54 UTC] PHP   5. Delete->deleteProduct() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:110
+[29-Jul-2016 09:39:54 UTC] PHP   6. unlink() /home/ubuntu/workspace/eddie/Project/models/Delete.php:16
+[29-Jul-2016 09:39:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:39:54 UTC] PHP Stack trace:
+[29-Jul-2016 09:39:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:39:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:39:54 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:40:48 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:40:48 UTC] PHP Stack trace:
+[29-Jul-2016 09:40:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:40:48 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:40:48 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:41:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:41:03 UTC] PHP Stack trace:
+[29-Jul-2016 09:41:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:41:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:41:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:41:05 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:41:05 UTC] PHP Stack trace:
+[29-Jul-2016 09:41:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:41:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:41:05 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:41:22 UTC] PHP Warning:  unlink(picture/Chrysanthemum.jpg): No such file or directory in /home/ubuntu/workspace/eddie/Project/models/Delete.php on line 16
+[29-Jul-2016 09:41:22 UTC] PHP Stack trace:
+[29-Jul-2016 09:41:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:41:22 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:41:22 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:41:22 UTC] PHP   4. BackStageController->remove() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:41:22 UTC] PHP   5. Delete->deleteProduct() /home/ubuntu/workspace/eddie/Project/controllers/BackStageController.php:110
+[29-Jul-2016 09:41:22 UTC] PHP   6. unlink() /home/ubuntu/workspace/eddie/Project/models/Delete.php:16
+[29-Jul-2016 09:41:22 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:41:22 UTC] PHP Stack trace:
+[29-Jul-2016 09:41:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:41:22 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:41:22 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:41:29 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:41:29 UTC] PHP Stack trace:
+[29-Jul-2016 09:41:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:41:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:41:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:41:36 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:41:36 UTC] PHP Stack trace:
+[29-Jul-2016 09:41:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:41:36 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:41:36 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:41:40 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:41:40 UTC] PHP Stack trace:
+[29-Jul-2016 09:41:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:41:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:41:40 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:45:44 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:45:44 UTC] PHP Stack trace:
+[29-Jul-2016 09:45:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:45:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:45:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:45:48 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:45:48 UTC] PHP Stack trace:
+[29-Jul-2016 09:45:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:45:48 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:45:48 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:45:52 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:45:52 UTC] PHP Stack trace:
+[29-Jul-2016 09:45:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:45:52 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:45:52 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:46:10 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:46:10 UTC] PHP Stack trace:
+[29-Jul-2016 09:46:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:46:10 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:46:10 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:46:16 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:46:16 UTC] PHP Stack trace:
+[29-Jul-2016 09:46:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:46:16 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:46:16 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:46:17 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:46:17 UTC] PHP Stack trace:
+[29-Jul-2016 09:46:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:46:17 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:46:17 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:46:21 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:46:21 UTC] PHP Stack trace:
+[29-Jul-2016 09:46:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:46:21 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:46:21 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:46:24 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:46:24 UTC] PHP Stack trace:
+[29-Jul-2016 09:46:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:46:24 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:46:24 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:46:28 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:46:28 UTC] PHP Stack trace:
+[29-Jul-2016 09:46:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:46:28 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:46:28 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:46:29 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:46:29 UTC] PHP Stack trace:
+[29-Jul-2016 09:46:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:46:29 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:46:29 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:46:32 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:46:32 UTC] PHP Stack trace:
+[29-Jul-2016 09:46:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:46:32 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:46:32 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:47:50 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:47:50 UTC] PHP Stack trace:
+[29-Jul-2016 09:47:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:47:50 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:47:50 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:47:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:47:54 UTC] PHP Stack trace:
+[29-Jul-2016 09:47:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:47:54 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:47:54 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:58:25 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:58:25 UTC] PHP Stack trace:
+[29-Jul-2016 09:58:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:58:25 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:58:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:58:31 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:58:31 UTC] PHP Stack trace:
+[29-Jul-2016 09:58:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:58:31 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:58:31 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:58:33 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:58:33 UTC] PHP Stack trace:
+[29-Jul-2016 09:58:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:58:33 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:58:33 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:58:40 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:58:40 UTC] PHP Stack trace:
+[29-Jul-2016 09:58:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:58:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:58:40 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:58:45 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:58:45 UTC] PHP Stack trace:
+[29-Jul-2016 09:58:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:58:45 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:58:45 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:58:49 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:58:49 UTC] PHP Stack trace:
+[29-Jul-2016 09:58:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:58:49 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:58:49 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:59:44 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:59:44 UTC] PHP Stack trace:
+[29-Jul-2016 09:59:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:59:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:59:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:59:44 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:59:44 UTC] PHP Stack trace:
+[29-Jul-2016 09:59:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:59:44 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:59:44 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:59:46 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'css' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:59:46 UTC] PHP Stack trace:
+[29-Jul-2016 09:59:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:59:46 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:59:46 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[29-Jul-2016 09:59:46 UTC] PHP Warning:  require_once(controllers/viewsController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:59:46 UTC] PHP Stack trace:
+[29-Jul-2016 09:59:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:59:46 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:59:46 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/viewsController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[29-Jul-2016 09:59:46 UTC] PHP Stack trace:
+[29-Jul-2016 09:59:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:59:46 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:59:47 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'ShoppingController' does not have a method 'js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[29-Jul-2016 09:59:47 UTC] PHP Stack trace:
+[29-Jul-2016 09:59:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[29-Jul-2016 09:59:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[29-Jul-2016 09:59:47 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18

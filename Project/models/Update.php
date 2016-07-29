@@ -1,5 +1,5 @@
 <?php
-include "MyPDO.php";
+require_once "MyPDO.php";
 class Update{
     function updateBackStageProducts($item, $price, $sale, $id)
     {

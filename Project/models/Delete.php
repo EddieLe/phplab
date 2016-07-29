@@ -1,28 +1,26 @@
 <?php
-include "MyPDO.php";
+require_once "MyPDO.php";
 class Delete{
     
     function deleteProduct($id)
     {
         //get取直刪除資料
-        $cmds = "SELECT `Picture` FROM `products` WHERE `id` = :id";
+        $cmds = "SELECT `picture` FROM `products` WHERE `id` = :id";
         //get取直刪除DB
         $myPdo = new MyPDO();
         $pdo = $myPdo->pdoConnect;
         $stmt = $pdo->prepare($cmds);
         $stmt->execute(array(':id'=>$id));
         
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+            unlink("picture/".$row['picture']);//將檔案刪除
+        }
         
         $cmd = "DELETE FROM `products` WHERE `id` = :id";
-        $pdo = $myPdo->pdoConnect;
         $stmt = $pdo->prepare($cmd);
         $stmt->execute(array(':id'=>$id));
+        $row = $stmt->fetch();
         
-        while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-            // echo $row["picture"];
-            // exit;
-            unlink("picture/".$row["picture"]);//將檔案刪除
-        }
         
     }
     

@@ -1,7 +1,6 @@
 <?php
 class Decide{
     function loginDecide(){
-        unset($_SESSION["duble"]);
         session_start();
         if(isset($_COOKIE["userName"]) && isset($_SESSION["userName"])){
             return true;
@@ -9,7 +8,6 @@ class Decide{
             return false;
     }
     function loginDecideShopping(){
-        unset($_SESSION["duble"]);
         session_start();
         if(isset($_COOKIE["firstName"]) && isset($_SESSION["firstName"])){
             return true;
@@ -19,6 +17,7 @@ class Decide{
     
     function cookieBackStageDecide()
     {
+        session_start();
         if(!isset($_COOKIE["userName"])){
             return true;
         }else
@@ -34,24 +33,28 @@ class Decide{
     }
     function cookieDecide()
     {
+        unset($_SESSION["duble"]);
         if(!isset($_COOKIE["firstName"])){
             return true;
-            // header("location: loginPage");
-           
         }else
             return false;
     }
     function sessionDecide()
     {
+        unset($_SESSION["duble"]);
         session_start();
         if(!isset($_SESSION["firstName"])){
             return true;
-            // header("location: loginPage");
         }else
             return false;
     }
     
     function setAuth(){
+        session_start();
+        setcookie("userName",$_POST["userName"]);
+        $_SESSION["userName"] = $_POST["userName"];
+    }
+    function setAuthShopping(){
         session_start();
         setcookie("firstName",$_POST["firstName"]);
         $_SESSION["firstName"] = $_POST["firstName"];

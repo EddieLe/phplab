@@ -1,5 +1,5 @@
 <?php
-include "MyPDO.php";
+require_once "MyPDO.php";
 class Report{
 
     function report(){

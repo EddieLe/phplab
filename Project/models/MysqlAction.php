@@ -1,6 +1,6 @@
 <?php
 // include "config.php";
-include "MyPDO.php";
+require_once "MyPDO.php";
 //所有有關產品資料資料庫操作
 class MysqlAction{
 
@@ -90,6 +90,8 @@ class MysqlAction{
         return $productsArray;
     }
     function selectBackStageProducts(){
+        unset($_SESSION["duble"]);
+        unset($_SESSION["error"]);
         $cmd = "SELECT * FROM `products` ORDER BY `id`";
         $myPdo = new MyPDO();
         $pdo = $myPdo->pdoConnect;

@@ -1,11 +1,7 @@
 <?php
-include "middleware/CookieDecide.php";
-
 class ShoppingController extends Controller{
     
     function loginPage(){
-        //回登入頁清除帳號重複錯誤訊息
-        unset($_SESSION["duble"]);
         //判斷有無登入過有就回商品頁
         $loginDecideShopping = $this->model("Decide");
         $decide = $loginDecideShopping->loginDecideShopping();
@@ -37,7 +33,7 @@ class ShoppingController extends Controller{
         {
             //設定session and cookie
             $setAuth = $this->model("Decide");
-            $setAuth->setAuth();
+            $setAuth->setAuthShopping();
             //重倒回ShoppingController function products
             header("location: products");
             
@@ -50,15 +46,11 @@ class ShoppingController extends Controller{
 	    if($decideC && $decideS){
 	        header("location: loginPage");
 	    }
-    //     $cd = new CookieDecide();
-	   // $cd->cookieDecide();
-	   // $cd->sessionDecide();
+
     }
     
     function products(){
         //登入成功清除帳號重複錯誤訊息
-        session_start();
-        unset($_SESSION["duble"]);
 	    $Decide = $this->model("Decide");
 	    $decideC = $Decide->cookieDecide();
 	    $decideS = $Decide->sessionDecide();
