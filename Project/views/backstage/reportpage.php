@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<title>BackStage</title>
-	<link rel="stylesheet" href="cssb/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/eddie/Project/views/backstage/cssb/style.css" type="text/css" media="all" />
 </head>
 <script type="text/javascript" src="jquery.min.js">
 

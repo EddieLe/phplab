@@ -5,12 +5,12 @@
 <style type="text/css">
 	
 </style>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/docs.min.css" rel="stylesheet">
+<link href="/eddie/Project/views/products/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/eddie/Project/views/products/css/docs.min.css" rel="stylesheet">
 <!-- Custom Theme files -->
 <!--theme style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<script src="js/jquery.min.js"></script>
+<link href="/eddie/Project/views/products/css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<script src="/eddie/Project/views/products/js/jquery.min.js"></script>
 
 <!--//theme style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,16 +19,16 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- start menu -->
-<script src="js/simpleCart.min.js"> </script>
+<script src="/eddie/Project/views/products/js/simpleCart.min.js"> </script>
 <!-- start menu -->
-<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/memenu.js"></script>
+<link href="/eddie/Project/views/products/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/eddie/Project/views/products/js/memenu.js"></script>
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>	
 <!-- /start menu -->
 </head>
 <body> 
 <!--header-->	
-<script src="js/responsiveslides.min.js"></script>
+<script src="/eddie/Project/views/products/js/responsiveslides.min.js"></script>
 <script>  
     $(function () {
       $("#slider").responsiveSlides({
