@@ -102,7 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						 <div class="tab1">
 							 <ul class="place">								
 								 <li class="sort">Home Decorates</li>
-								 <li class="by"><img src="images/do.png" alt=""></li>
+								 <li class="by"><img src="/eddie/Project/views/products/images/do.png" alt=""></li>
 									<div class="clearfix"> </div>
 							  </ul>
 							 <div class="single-bottom">						
@@ -115,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <div class="tab2">
 							 <ul class="place">								
 								 <li class="sort">Festive Needs</li>
-								 <li class="by"><img src="images/do.png" alt=""></li>
+								 <li class="by"><img src="/eddie/Project/views/products/images/do.png" alt=""></li>
 									<div class="clearfix"> </div>
 							  </ul>
 							 <div class="single-bottom">						
@@ -126,7 +126,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <div class="tab3">
 							 <ul class="place">								
 								 <li class="sort">Kitchen & Dining</li>
-								 <li class="by"><img src="images/do.png" alt=""></li>
+								 <li class="by"><img src="/eddie/Project/views/products/images/do.png" alt=""></li>
 									<div class="clearfix"> </div>
 							  </ul>
 							 <div class="single-bottom">						
@@ -136,7 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <div class="tab4">
 							 <ul class="place">								
 								 <li class="sort">Books</li>
-								 <li class="by"><img src="images/do.png" alt=""></li>
+								 <li class="by"><img src="/eddie/Project/views/products/images/do.png" alt=""></li>
 									<div class="clearfix"> </div>
 							  </ul>
 							 <div class="single-bottom">						
@@ -148,7 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <div class="tab5">
 							 <ul class="place">								
 								 <li class="sort">Automotive</li>
-								 <li class="by"><img src="images/do.png" alt=""></li>
+								 <li class="by"><img src="/eddie/Project/views/products/images/do.png" alt=""></li>
 									<div class="clearfix"> </div>
 							  </ul>
 							 <div class="single-bottom">						

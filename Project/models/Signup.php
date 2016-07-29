@@ -16,7 +16,7 @@ class Signup{
             $_SESSION['duble'] = "帳號重複";
             return "duble";
         }else{
-            $cmd = "INSERT INTO accounts (userName, password, email, date) VALUES ('$userName','$password','$email', current_timestamp())";
+            $cmd = "INSERT INTO `accounts` (`userName`, `password`, `email`, `date`) VALUES (:userName,:password,:email, current_timestamp())";
             $stmt = $pdo->prepare($cmd);
             $stmt->execute(array(':userName'=>$userName,
                                 ':password'=>$password,
@@ -48,7 +48,7 @@ class Signup{
             
         }else{
 
-            $cmd = "INSERT INTO `clients` (firstName, lastName, email, mobile, sex, password, date) 
+            $cmd = "INSERT INTO `clients` (`firstName`, `lastName`, `email`, `mobile`, `sex`, `password`, `date`) 
             VALUES (:firstName,:lastName,:email,:mobile,:sex,:password, 
             current_timestamp())";
             $stmt = $pdo->prepare($cmd);

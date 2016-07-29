@@ -3,7 +3,6 @@ include "MyPDO.php";
 class Auth{
     function authPeopleBackstage()
     {
-        
         $cmd = "SELECT `userName`, `password` FROM `accounts`";
         $myPdo = new MyPDO();
         $pdo = $myPdo->pdoConnect;
@@ -18,8 +17,8 @@ class Auth{
         return $arrayUserName;
         
     }
-    function authPeopleShopping(){
-        
+    function authPeopleShopping()
+    {
         $cmd = "SELECT `firstName`, `password` FROM `clients`";
         $myPdo = new MyPDO();
         $pdo = $myPdo->pdoConnect;

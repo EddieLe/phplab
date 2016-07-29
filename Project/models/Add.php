@@ -11,10 +11,11 @@ class Add {
         $stmt->execute(array(':id'=>$id));
         
         //新增購物清單
-        $cmdinsert = "INSERT INTO `shoppingCar` (mId, pId, date) VALUES (:firstName,:id, current_timestamp())";
+        $cmdinsert = "INSERT INTO `shoppingCar` (`mId`, `pId`, `date`) VALUES (:firstName,:id, current_timestamp())";
         $stmt = $pdo->prepare($cmdinsert);
         $stmt->execute(array(':id'=>$id,':firstName'=>$firstName));
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
+       
     }
 }
 ?>

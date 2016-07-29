@@ -17,8 +17,6 @@ class Upload{
         
         $cmd = "INSERT INTO `products` (item, picture, price, sale, owner, date) VALUES (:item,'$arrayPicture[0]',
                                                 :price,:sale,:userName ,current_timestamp())";
-        // $cf = new Config();
-        // $result = $cf->config($cmd);
         
         $myPdo = new MyPDO();
         $pdo = $myPdo->pdoConnect;

@@ -5,52 +5,66 @@ class ShoppingController extends Controller{
     
     function loginPage(){
         //回登入頁清除帳號重複錯誤訊息
-        session_start();
         unset($_SESSION["duble"]);
         //判斷有無登入過有就回商品頁
-        if(isset($_COOKIE["firstName"]) && isset($_SESSION["firstName"])){
+        $loginDecideShopping = $this->model("Decide");
+        $decide = $loginDecideShopping->loginDecideShopping();
+        if($decide){
             header("location: products");
-        }  
+            exit;
+        }
+        
         $this->view("products/Login");
     }
     
     function accountPage(){
         //判斷有無登入過有就回商品頁
-        session_start();
-        if(isset($_COOKIE["firstName"]) && isset($_SESSION["firstName"])){
+        $loginDecideShopping = $this->model("Decide");
+        $decide = $loginDecideShopping->loginDecideShopping();
+        if($decide){
             header("location: products");
-        }  
+            exit;
+        }
         $this->view("products/Account");
     }
     
     function auth(){
-        session_start();
 	    $_POST["password"] = md5($_POST["password"]);
         $auth = $this->model("Auth");
         $result = $auth->authPeopleShopping();
         //判斷帳密是否一致
         if(in_array($_POST["firstName"]." ".$_POST["password"], $result))
         {
-            setcookie("firstName",$_POST["firstName"]);
-            $_SESSION["firstName"] = $_POST["firstName"];
+            //設定session and cookie
+            $setAuth = $this->model("Decide");
+            $setAuth->setAuth();
             //重倒回ShoppingController function products
             header("location: products");
             
         }else
             //重倒回ShoppingController function loginPage
             header("location: loginPage");
-        $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieDecide();
+	    $decideS = $Decide->sessionDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
+    //     $cd = new CookieDecide();
+	   // $cd->cookieDecide();
+	   // $cd->sessionDecide();
     }
     
     function products(){
         //登入成功清除帳號重複錯誤訊息
         session_start();
         unset($_SESSION["duble"]);
-	    $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+	    $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieDecide();
+	    $decideS = $Decide->sessionDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
         $mysqlAction = $this->model("MysqlAction");
         $result = $mysqlAction->selectProductsPage();
         //判斷post page有沒有初值
@@ -63,18 +77,24 @@ class ShoppingController extends Controller{
     
     function shoppingCarPage(){
         $firstName = $_COOKIE['firstName'];
-	    $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+	    $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieDecide();
+	    $decideS = $Decide->sessionDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
 	    $showCar = $this->model("ShowCar");
         $result = $showCar->selectProducts($firstName);
         $this->view("products/shoppingCar",$result);
     }
     
     function checkPage(){
-	    $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+	    $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieDecide();
+	    $decideS = $Decide->sessionDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
 	    $mysqlAction = $this->model("MysqlAction");
         $result = $mysqlAction->selectProducts();
         $this->view("products/checkPage",$result);
@@ -82,27 +102,36 @@ class ShoppingController extends Controller{
     
     function productInfo(){
         $id = $_GET['id'];
-        $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieDecide();
+	    $decideS = $Decide->sessionDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
 	    $productInfo = $this->model("MysqlAction");
 	    $result = $productInfo->productInfo($id);
 	    $this->view("products/productInfo",$result);
     }
     
     function payMethod(){
-        $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieDecide();
+	    $decideS = $Decide->sessionDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
         $this->view("products/payMethod");
     }
     
     function addCar(){
         $id = $_POST['id'];
         $firstName = $_COOKIE['firstName'];
-	    $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+	    $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieDecide();
+	    $decideS = $Decide->sessionDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
         $add = $this->model("Add");
         $add->addShoppingCar($id, $firstName);
         header("location: checkPage");
@@ -110,18 +139,21 @@ class ShoppingController extends Controller{
     
     function removeCar(){
         $id = $_POST['sId'];
-	    $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+	    $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieDecide();
+	    $decideS = $Decide->sessionDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
 	    $delete = $this->model("Delete");
         $delete->deleteShoppingCar($id);
+        header("location: shoppingCarPage");
     }
     
     function logout(){
-        session_start();
-        unset($_SESSION);
         $logout = $this->model("Logout");
         $logout->shoppingLogout();
+        header("location: loginPage");
     }
     
     function signUp(){
@@ -150,9 +182,12 @@ class ShoppingController extends Controller{
     
     function payPage(){
         $firstName = $_COOKIE['firstName'];
-        $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieDecide();
+	    $decideS = $Decide->sessionDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
 	    $payProducts = $this->model("MysqlAction");
         $result = $payProducts->payProducts($firstName);
         $this->view("products/payPage",$result);
@@ -165,9 +200,12 @@ class ShoppingController extends Controller{
         $price = $_POST['price'];
         $count = $_POST['count']; 
         $payMethod = $_POST['payMethod'];
-        $cd = new CookieDecide();
-	    $cd->cookieDecide();
-	    $cd->sessionDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieDecide();
+	    $decideS = $Decide->sessionDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
         $paylog = $this->model("PayLog");
         $paylog->insertPayLog($id, $item, $firstName, $price, $count, $payMethod);
         header("location: shoppingCarPage"); 

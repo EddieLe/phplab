@@ -6,14 +6,14 @@ class Config{
 	private $dbpass = '';
 	private $dbname = 'Shopping';
 	
-	function config($cmd = ''){
+	// function config($cmd = ''){
 		
-		$link = mysql_connect ( $this->dbhost, $this->dbuser, $this->dbpass ) or die ( mysql_error ());
-	    $result = mysql_query ( "set names utf8", $link );
-	    mysql_selectdb ( $this->dbname, $link );
-	    $result = mysql_query($cmd, $link);
-	    return $result;
-	}
+	// 	$link = mysql_connect ( $this->dbhost, $this->dbuser, $this->dbpass ) or die ( mysql_error ());
+	//     $result = mysql_query ( "set names utf8", $link );
+	//     mysql_selectdb ( $this->dbname, $link );
+	//     $result = mysql_query($cmd, $link);
+	//     return $result;
+	// }
 	
 	//外部使用連線 singleton
 	function getdbhost(){

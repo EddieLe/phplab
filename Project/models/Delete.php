@@ -19,21 +19,22 @@ class Delete{
         $stmt->execute(array(':id'=>$id));
         
         while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-            unlink("picture/".$row["Picture"]);//將檔案刪除
+            // echo $row["picture"];
+            // exit;
+            unlink("picture/".$row["picture"]);//將檔案刪除
         }
-        header("location: homePage");
+        
     }
     
     function deleteShoppingCar($id)
     {
         //刪除shoppingCar id
-        $cmdupdate = "DELETE FROM shoppingCar WHERE sId=:id";
+        $cmdupdate = "DELETE FROM `shoppingCar` WHERE `sId`=:id";
         $myPdo = new MyPDO();
         $pdo = $myPdo->pdoConnect;
         $stmt = $pdo->prepare($cmdupdate);
         $stmt->execute(array(':id'=>$id));
         
-        header("location: shoppingCarPage");
     }
     
 }    

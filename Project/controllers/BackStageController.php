@@ -4,24 +4,28 @@ include "middleware/CookieBackStageDecide.php";
 class BackStageController extends Controller {
 
     function loginPage(){
-        //移掉錯誤訊息
-        session_start();
-        unset($_SESSION["duble"]);
         //判斷有無登入過有回設定商品頁
-        if(isset($_COOKIE["userName"]) && isset($_SESSION["userName"])){
+        $loginDecide = $this->model("Decide");
+        $decide = $loginDecide->loginDecide();
+        if($decide){
             header("location: homePage");
+            exit;
         }
+        
         $this->view("backstage/loginpage");
+        
     }
     
     function homePage(){
         //刪除以上傳後的錯誤訊息session error
-        session_start();
         unset($_SESSION["duble"]);
         unset($_SESSION["error"]);
-	    $cd = new CookieBackStageDecide();
-	    $cd->cookieBackStageDecide();
-	    $cd->sessionBackStageDecide();
+	    $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieBackStageDecide();
+	    $decideS = $Decide->sessionBackStageDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
 	    $selectMysqlAction = $this->model("MysqlAction");
 	    $result = $selectMysqlAction->selectBackStageProducts();
         $this->view("backstage/homepage", $result);
@@ -29,29 +33,37 @@ class BackStageController extends Controller {
     
     function editPage(){
         //顯示記錄錯誤訊息
-        session_start();
         $id = $_GET['id'];
-        $cd = new CookieBackStageDecide();
-	    $cd->cookieBackStageDecide();
-	    $cd->sessionBackStageDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieBackStageDecide();
+	    $decideS = $Decide->sessionBackStageDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
 	    $editShow = $this->model("MysqlAction");
 	    $result = $editShow->editProduct($id);
 	    $this->view("backstage/editpage",$result);
     }
     
     function reportPage(){
-        $cd = new CookieBackStageDecide();
-	    $cd->cookieBackStageDecide();
-	    $cd->sessionBackStageDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieBackStageDecide();
+	    $decideS = $Decide->sessionBackStageDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
 	    $report = $this->model("Report");
 	    $result = $report->report();
         $this->view("backstage/reportpage",$result);
     }
     
     function uploadPage(){
-        $cd = new CookieBackStageDecide();
-	    $cd->cookieBackStageDecide();
-	    $cd->sessionBackStageDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieBackStageDecide();
+	    $decideS = $Decide->sessionBackStageDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
 	    $this->view("backstage/uploadpage");
     }
     
@@ -60,9 +72,12 @@ class BackStageController extends Controller {
         $price = $_POST['price'];
         $sale = $_POST['sale'];
         $userName = $_COOKIE['userName'];
-        $cd = new CookieBackStageDecide();
-	    $cd->cookieBackStageDecide();
-	    $cd->sessionBackStageDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieBackStageDecide();
+	    $decideS = $Decide->sessionBackStageDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
         $upload = $this->model("Upload");
 	    $upload->backStageUpload($item, $price, $sale, $userName);
 	    header("location: homePage"); 
@@ -73,9 +88,12 @@ class BackStageController extends Controller {
         $price = $_POST['price']; 
         $sale = $_POST['sale'];
         $id = $_POST['id'];
-        $cd = new CookieBackStageDecide();
-	    $cd->cookieBackStageDecide();
-	    $cd->sessionBackStageDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieBackStageDecide();
+	    $decideS = $Decide->sessionBackStageDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
         $update = $this->model("Update");
 	    $update->updateBackStageProducts($item, $price, $sale, $id);
 	    header("location: homePage");
@@ -83,11 +101,15 @@ class BackStageController extends Controller {
     
     function remove(){
         $id = $_GET['id'];
-        $cd = new CookieBackStageDecide();
-	    $cd->cookieBackStageDecide();
-	    $cd->sessionBackStageDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieBackStageDecide();
+	    $decideS = $Decide->sessionBackStageDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
 	    $delete = $this->model("Delete");
         $delete->deleteProduct($id);
+        header("location: homePage");
     }
     
     
@@ -104,9 +126,12 @@ class BackStageController extends Controller {
             header("location: homePage");
         }else
             header("location: loginPage");
-        $cd = new CookieBackStageDecide();
-	    $cd->cookieBackStageDecide();
-	    $cd->sessionBackStageDecide();
+        $Decide = $this->model("Decide");
+	    $decideC = $Decide->cookieBackStageDecide();
+	    $decideS = $Decide->sessionBackStageDecide();
+	    if($decideC && $decideS){
+	        header("location: loginPage");
+	    }
     }
     
     function signUp(){
@@ -129,10 +154,9 @@ class BackStageController extends Controller {
     }
     
     function logout(){
-        session_start();
-        unset($_SESSION["userName"]);
         $logout = $this->model("Logout");
         $logout->backStageLogout();
+        header("location: loginPage");
     }
 }
 
