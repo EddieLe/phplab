@@ -165,7 +165,7 @@ class ShoppingController extends Controller{
             if($result == "success"){
                 header("location: products");
             }else{
-                header("location: accountPage");
+                $this->view("products/Account",$result);
             }
         }else{
             header("location: accountPage");

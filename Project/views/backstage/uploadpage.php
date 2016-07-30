@@ -10,9 +10,8 @@
 		<form action="upload" method="post" accept-charset="UTF-8" enctype="multipart/form-data">  
 
    			<input type="file" name="myfile" placeholder="上傳圖片" value=""><br>
-   			<?php session_start(); ?>
-   			<!--<?php echo $_SESSION["error"]; ?>-->
-   			<h6> <span style="color:red;font-weight:bold"> <?php echo $_SESSION["error"]; ?></span></h6>
+
+   			<h6> <span style="color:red;font-weight:bold"> <?php echo $data["error"]; ?></span></h6>
    			
 			<h3>上傳標題</h3>
 			<p></p>

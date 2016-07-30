@@ -103,8 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="registration_form">
 			 <!-- Form -->
 				<form action="signup" method="post">
-					<?php session_start();?>
-					<h4><span style="color:red;font-weight:bold"><?php echo $_SESSION["duble"]; ?></span></h4>
+					<h4><span style="color:red;font-weight:bold"><?php echo $data["duble"]; ?></span></h4>
 					<div>
 						<label>
 							<input placeholder="first name" name="firstName" type="text" tabindex="1" value="" required>

@@ -10,10 +10,7 @@ class Signup{
         $pdo = $myPdo->pdoConnect;
         $stmt = $pdo->prepare($cmds);
         $stmt->execute(array(':userName'=>$userName));
-        //判斷帳號有無重複
         if($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-            session_start();
-            $_SESSION['duble'] = "帳號重複";
             return "duble";
         }else{
             $cmd = "INSERT INTO `accounts` (`userName`, `password`, `email`, `date`) VALUES (:userName,:password,:email, current_timestamp())";
@@ -40,11 +37,10 @@ class Signup{
         $stmt = $pdo->prepare($cmds);
         $stmt->execute(array(':firstName'=>$firstName));
         
-        //判斷帳號有無重複給他旗標 duble
+        //判斷帳號有無重複給 duble
         if($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-            session_start();
-            $_SESSION['duble'] = "帳號重複";
-            return "duble";
+            $result = array('duble'=>"帳號重複");
+            return $result;
             
         }else{
 

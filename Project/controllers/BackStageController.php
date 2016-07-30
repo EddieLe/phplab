@@ -74,10 +74,11 @@ class BackStageController extends Controller {
 	        header("location: loginPage");
 	    }
         $upload = $this->model("Upload");
-	    $upload->backStageUpload($item, $price, $sale, $userName);
-	    if($upload){
-            header("location: uploadPage");
-        }
+	    $error = $upload->backStageUpload($item, $price, $sale, $userName);
+	    if(isset($error)){
+	        $this->view("backstage/uploadpage",$error);
+	        exit;
+        }else
 	    header("location: homePage"); 
     }
     
