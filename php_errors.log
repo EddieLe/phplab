@@ -33262,3 +33262,34 @@ Stack trace:
 [30-Jul-2016 02:48:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
 [30-Jul-2016 02:48:20 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
 [30-Jul-2016 02:48:20 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[30-Jul-2016 02:50:52 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[30-Jul-2016 02:50:52 UTC] PHP Stack trace:
+[30-Jul-2016 02:50:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[30-Jul-2016 02:50:52 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[30-Jul-2016 02:50:52 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[30-Jul-2016 02:51:00 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[30-Jul-2016 02:51:00 UTC] PHP Stack trace:
+[30-Jul-2016 02:51:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[30-Jul-2016 02:51:00 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[30-Jul-2016 02:51:00 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[30-Jul-2016 02:51:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'BackStageController' does not have a method 'jquery.min.js' in /home/ubuntu/workspace/eddie/Project/router/App.php on line 18
+[30-Jul-2016 02:51:03 UTC] PHP Stack trace:
+[30-Jul-2016 02:51:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[30-Jul-2016 02:51:03 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[30-Jul-2016 02:51:03 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/Project/router/App.php:18}() /home/ubuntu/workspace/eddie/Project/router/App.php:18
+[30-Jul-2016 02:51:05 UTC] PHP Warning:  require_once(controllers/favicon.icoController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[30-Jul-2016 02:51:05 UTC] PHP Stack trace:
+[30-Jul-2016 02:51:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[30-Jul-2016 02:51:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[30-Jul-2016 02:51:05 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/favicon.icoController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[30-Jul-2016 02:51:05 UTC] PHP Stack trace:
+[30-Jul-2016 02:51:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[30-Jul-2016 02:51:05 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[01-Aug-2016 00:49:12 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[01-Aug-2016 00:49:12 UTC] PHP Stack trace:
+[01-Aug-2016 00:49:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[01-Aug-2016 00:49:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[01-Aug-2016 00:49:12 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[01-Aug-2016 00:49:12 UTC] PHP Stack trace:
+[01-Aug-2016 00:49:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[01-Aug-2016 00:49:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6

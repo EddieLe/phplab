@@ -33,7 +33,6 @@ class Decide{
     }
     function cookieDecide()
     {
-        unset($_SESSION["duble"]);
         if(!isset($_COOKIE["firstName"])){
             return true;
         }else
