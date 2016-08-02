@@ -16,7 +16,7 @@ class MyPDO{
         }
         catch(PDOException $e)
         { 
-            echo "Connection Failed ! " . $e->getMessage(); 
+            echo "Connection Failed ! " . $e->getMessage();
         }
         $this->pdoConnect = $pdo;
         $pdo = NULL;

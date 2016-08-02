@@ -20,18 +20,24 @@ class HomeController extends Controller {
         $deadline = strtotime($start);
             //新增日期判斷
             if($now <= $deadline){
-                echo "可新增";
+                //轉換日期格式
+                $startArray = explode("-",$start);
+                $endArray = explode("-",$end);
+                $start = "$startArray[0]/$startArray[1]/$startArray[2]";
+                $end = "$endArray[0]/$endArray[1]/$endArray[2]";
                 $newActive = $this->model("NewActive");
-                $result = $newActive->create($title,$limit,$start,$end,$flag);
-                header("location: table");
+                $result = $newActive->create($title,$limit,$flag,$start,$end);
+                $this->table();
+                echo "<script> alert('新增成功'); </script>";
             }else{
-                echo "不可新增";
                 header("location: activity");
+                echo "<script> alert('新增失敗'); </script>";
             }
     }
     
     function table(){
-        $activeSelect = $this->model("NewActive");
+        $activeSelect = $this->model("SelectActive");
+        $result = $activeSelect->search();
         $this->view("Back/table",$result);
     }
     

@@ -30,12 +30,12 @@
 					  </tr>
 					  <?php for($i = 0; $i < count($data); $i++) {?>
 					  <tr>
-					    <td data-th="活動名稱"><?php echo $data['title']?></td>
-					    <td data-th="報名日"><?php echo $data['start'] ."~". $data['end']?></td>
-					    <td data-th="可報名人數"><?php echo $data['limit']?></td>
-					    <td data-th="攜伴選項"><?php echo $data['flag']?></td>
-					    <td data-th="即時人數"><?php echo $data['flag']?></td>
-					    <td data-th="報名網址"><?php echo $data['flag']?></td>
+					    <td data-th="活動名稱"><?php echo $data[$i]['title']?></td>
+					    <td data-th="報名日"><?php echo $data[$i]['startDate'] ."~". $data[$i]['endDate']?></td>
+					    <td data-th="可報名人數"><?php echo $data[$i]['limitMax']?></td>
+					    <td data-th="攜伴選項"><?php echo $data[$i]['flag']?></td>
+					    <td data-th="即時人數"><?php echo $data[$i]['flag']?></td>
+					    <td data-th="報名網址"><?php echo $data[$i]['flag']?></td>
 					  </tr>
 					  <?php } ?>
 					</table>

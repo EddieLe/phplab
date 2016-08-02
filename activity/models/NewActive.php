@@ -8,8 +8,6 @@ class NewActive{
         $mypdo = new MyPDO();
         $pdo = $mypdo->pdoConnect;
         $stmt = $pdo->prepare($cmd);
-        // var_dump($stmt);
-        // exit;
         $stmt->execute(array(':title'=>$title,
                             ':limitMax'=>$limit,
                             ':flag'=>$flag,

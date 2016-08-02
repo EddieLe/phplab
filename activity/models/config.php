@@ -4,7 +4,7 @@ class Config{
 	private $dbhost = 'localhost';
 	private $dbuser = 'root';
 	private $dbpass = '';
-	private $dbname = 'Shopping';
+	private $dbname = 'Party';
 	
 	// function config($cmd = ''){
 		
