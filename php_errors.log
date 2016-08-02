@@ -33293,3 +33293,29 @@ Stack trace:
 [01-Aug-2016 00:49:12 UTC] PHP Stack trace:
 [01-Aug-2016 00:49:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
 [01-Aug-2016 00:49:12 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[02-Aug-2016 00:46:40 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[02-Aug-2016 00:46:40 UTC] PHP Stack trace:
+[02-Aug-2016 00:46:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[02-Aug-2016 00:46:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[02-Aug-2016 00:46:40 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/Project/router/App.php on line 11
+[02-Aug-2016 00:46:40 UTC] PHP Stack trace:
+[02-Aug-2016 00:46:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/Project/index.php:0
+[02-Aug-2016 00:46:40 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/Project/index.php:6
+[02-Aug-2016 00:47:47 UTC] PHP Warning:  require_once(controllers/Controller.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/activity/core/App.php on line 10
+[02-Aug-2016 00:47:47 UTC] PHP Stack trace:
+[02-Aug-2016 00:47:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/activity/index.php:0
+[02-Aug-2016 00:47:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/activity/index.php:6
+[02-Aug-2016 00:47:47 UTC] PHP Fatal error:  require_once(): Failed opening required 'controllers/Controller.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/activity/core/App.php on line 10
+[02-Aug-2016 00:47:47 UTC] PHP Stack trace:
+[02-Aug-2016 00:47:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/activity/index.php:0
+[02-Aug-2016 00:47:47 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/activity/index.php:6
+[02-Aug-2016 00:47:55 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'HomeController' does not have a method 'index' in /home/ubuntu/workspace/eddie/activity/core/App.php on line 15
+[02-Aug-2016 00:47:55 UTC] PHP Stack trace:
+[02-Aug-2016 00:47:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/activity/index.php:0
+[02-Aug-2016 00:47:55 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/activity/index.php:6
+[02-Aug-2016 00:47:55 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/activity/core/App.php:15}() /home/ubuntu/workspace/eddie/activity/core/App.php:15
+[02-Aug-2016 00:48:04 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'HomeController' does not have a method 'jquery.date_input.js' in /home/ubuntu/workspace/eddie/activity/core/App.php on line 15
+[02-Aug-2016 00:48:04 UTC] PHP Stack trace:
+[02-Aug-2016 00:48:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/activity/index.php:0
+[02-Aug-2016 00:48:04 UTC] PHP   2. App->__construct() /home/ubuntu/workspace/eddie/activity/index.php:6
+[02-Aug-2016 00:48:04 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/eddie/activity/core/App.php:15}() /home/ubuntu/workspace/eddie/activity/core/App.php:15
