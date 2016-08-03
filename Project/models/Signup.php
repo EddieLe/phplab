@@ -19,10 +19,6 @@ class Signup{
                                 ':password'=>$password,
                                 ':email'=>$email));
             
-            //註冊成功使他保持登入狀態
-            session_start();
-            setcookie("userName", $_POST["userName"]);
-            $_SESSION["userName"] = $_POST["userName"];
             return "success";
         }
 

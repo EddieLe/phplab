@@ -38,35 +38,35 @@
             <div class="form-row">
                 <label>
                     <span>Title Name</span>
-                    <input type="text" name="title" value="">
+                    <input type="text" name="title" value="" required>
                 </label>
             </div>
             
             <div class="form-row">
                 <label>
                     <span>Limit</span>
-                    <input type="text" name="limit" value="">
+                    <input type="text" name="limit" value="" required>
                 </label>
             </div>
             <div><?php echo $data['error']; ?></div>
             <div class="form-row">
                 <label>
                     <span>Start Time</span>
-                    <input type="date" name="start" value="">
+                    <input type="date" name="start" value="" required>
                 </label>
             </div>
             
             <div class="form-row">
                 <label>
                     <span>End Time</span>
-                    <input type="date" name="end" value="">
+                    <input type="date" name="end" value="" required>
                 </label>
             </div>
 
             <div class="form-row">
                 <label>
                     <span>Info</span>
-                    <textarea name="info"></textarea>
+                    <textarea name="info" required></textarea>
                 </label>
             </div>
 
@@ -76,14 +76,14 @@
 
                     <div>
                         <label>
-                            <input type="radio" name="flag" value="可攜伴">
+                            <input type="radio" name="flag" value="可攜伴" required>
                             <span>可攜伴</span>
                         </label>
                     </div>
 
                     <div>
                         <label>
-                            <input type="radio" name="flag" value="不可攜伴">
+                            <input type="radio" name="flag" value="不可攜伴" required>
                             <span>不可攜伴</span>
                         </label>
                     </div>
@@ -98,10 +98,10 @@
                  //建立新的td 而Tr.cells.length就是這個tr目前的td數
                  Td = Tr.insertCell(Tr.cells.length);
                  //而這個就是要填入td中的innerHTML
-                 Td.innerHTML='<input name="name[]" type="text" size="12">';
+                 Td.innerHTML='<input name="name[]" type="text" size="12" required>';
                  //這裡也可以用不同的變數來辨別不同的td (我是用同一個比較省事XD)
                  Td = Tr.insertCell(Tr.cells.length);
-                 Td.innerHTML='<input name="number[]" type="text" size="12">';
+                 Td.innerHTML='<input name="number[]" type="text" size="12" required>';
                  //這樣就好囉 記得td數目要一樣 不然會亂掉~
                 }
                 
@@ -132,10 +132,10 @@
                     </tr>
                     <tr>
                         <td>
-                        <input name="name[]" type="text" size="12">
+                        <input name="name[]" type="text" size="12" required>
                         </td>
                         <td>
-                        <input name="number[]" type="text" size="12">
+                        <input name="number[]" type="text" size="12" required>
                         </td>
                     </tr>
                 </table>

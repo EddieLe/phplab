@@ -31,7 +31,8 @@ class HomeController extends Controller {
                 $end = "$endArray[0]/$endArray[1]/$endArray[2]";
                 $newActive = $this->model("NewActive");
                 $result = $newActive->create($title,$limit,$flag,$start,$end,$name,$number,$info);
-                $this->table();
+                header("location: table");
+                exit;
             }else{
                 // $this->view("Back/activity",array('error'=>"新增時間錯誤"));
                 header("location: activity");

@@ -34,8 +34,8 @@
 					    <td data-th="報名日"><?php echo $data[$i]['startDate'] ."~". $data[$i]['endDate']?></td>
 					    <td data-th="可報名人數"><?php echo $data[$i]['limitMax']?></td>
 					    <td data-th="攜伴選項"><?php echo $data[$i]['flag']?></td>
-					    <td data-th="即時人數"><?php echo $data[$i]['flag']?></td>
-					    <td data-th="報名網址"><?php echo $data[$i]['flag']?></td>
+					    <td data-th="即時人數"><?php echo $data[$i]['count']?></td>
+					    <td data-th="報名網址"><a href=<?php echo "https://eddie-eddie-lee.c9users.io/eddie/activity/Active/activePage?id=".$data[$i]['id']?>><?php echo "https://eddie-eddie-lee.c9users.io/eddie/activity/Active/activePage?id=".$data[$i]['id']?></a></td>
 					  </tr>
 					  <?php } ?>
 					</table>

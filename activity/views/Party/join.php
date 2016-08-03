@@ -56,7 +56,7 @@
                 <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a class="sscroll" href="index.html#home">Home</a></li>
-                        <li><a class="sscroll" href="index.html#blog-front">Blog</a></li>
+                        <li><a class="sscroll" href="index.html#blog-front">活動內容</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -111,67 +111,29 @@
   
             <section id="blog-front" class="blog-front gray">
                 <div class="row">
-                    <div class="col-md-12 mg-bt-80">
+                    <!--<div class="col-md-12 mg-bt-80">-->
                         <div class="header-content">
                             <h2>活動內容</h2>
-                            <h3>Thoughts on design and development trends</h3>
+                            <h3><?php echo $data['title'];?></h3>
+                            <?php echo $data['info'];?>
                         </div>
-                    </div>
+                    <!--</div>-->
                 </div>
-                <div class="row">
-                    <form>
-                        <input type="text" name=""/>
-                        <input type="submit" value="Submit"/>
-                    </form>
-                    <article class="col-md-4 col-sm-6">
-                        <figure class="blog-thumb">
-                            <img src="/eddie/activity/views/Party/images/blog/blog-1.jpg" alt="blog-thumb">
-                        </figure>
-                        <div class="post-area">
-                            <a class="post-cat" href="">
-                            <h4>Design</h4>
+                        <div style="text-align:center">
+                           
+                                <h3>輸入身分</h3>
+                                <form method ="post" action = "auth">
+                                    <input type="text" name="name" value ="" placeholder="員工名稱"/>
+                                    <input type="text" name="number" value ="" placeholder="員工編號"/>
+                                    <input type="hidden" name="id" value="<?php echo $data['id'];?>"/>
+                                    <p></p>
+                                    <div class="row">
+                                        <input class="btn blog-btn" type="submit" value="參加"/>
+                                    </div>
+                                </form>
                             </a>
-                            <a class="post-title" href="blog-post.html">
-                                <h3>At vero eos et accusamus et iusto odio dignissimos</h3>
-                            </a>
-                            <p class="post-content">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around ...</p>                            
+                            <p class="post-content"> <?php echo "報名時間 : " .$data['start'] ."~". $data['end'] ;?></p>
                         </div>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <figure class="blog-thumb">
-                            <img src="/eddie/activity/views/Party/images/blog/blog-2.jpg" alt="blog-thumb">
-                        </figure>
-                        <div class="post-area">
-                            <a class="post-cat" href="">
-                            <h4>Illustration</h4>
-                            </a>
-                            <a class="post-title" href="blog-post.html">
-                                <h3>At vero eos et accusamus et iusto odio dignissimos</h3>
-                            </a>
-                            <p class="post-content">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around ...</p>
-                        </div>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <figure class="blog-thumb">
-                            <img src="/eddie/activity/views/Party/images/blog/blog-3.jpg" alt="blog-thumb">
-                        </figure>
-                        <div class="post-area">
-                            <a class="post-cat" href="">
-                            <h4>Inspiration</h4>
-                            </a>
-                            <a class="post-title" href="blog-post.html">
-                                <h3>At vero eos et accusamus et iusto odio dignissimos</h3>
-                            </a>
-                            <p class="post-content">No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around ...</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a class="btn blog-btn" href="blog.html">參加</a>
-                    </div>
                 </div>
             </section>
             
