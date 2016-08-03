@@ -6,14 +6,14 @@ class HomeController extends Controller {
         $this->view("Back/activity");
     }
     function create(){
-        $title = $_POST["title"];
-        $limit = $_POST["limit"];
-        $start = $_POST["start"];
-        $end = $_POST["end"];
-        $flag = $_POST["flag"];
-        $name = $_POST["name"];
-        $number = $_POST["number"];
-        $info = $_POST["info"];
+        $title = str_replace("\'","\'\'",$_POST["title"]);
+        $limit = str_replace("\'","\'\'",$_POST["limit"]);
+        $start = str_replace("\'","\'\'",$_POST["start"]);
+        $end = str_replace("\'","\'\'",$_POST["end"]);
+        $flag = str_replace("\'","\'\'",$_POST["flag"]);
+        $name = str_replace("\'","\'\'",$_POST["name"]);
+        $number = str_replace("\'","\'\'",$_POST["number"]);
+        $info = str_replace("\'","\'\'",$_POST["info"]);
         //輸入時間判斷
         if(strtotime($start) > strtotime($end)){
             // $this->view("Back/activity",array('error'=>"結束時間小於開始時間"));
@@ -29,7 +29,7 @@ class HomeController extends Controller {
                 $endArray = explode("-",$end);
                 $start = "$startArray[0]/$startArray[1]/$startArray[2]";
                 $end = "$endArray[0]/$endArray[1]/$endArray[2]";
-                $newActive = $this->model("NewActive");
+                $newActive = $this->model("Active");
                 $result = $newActive->create($title,$limit,$flag,$start,$end,$name,$number,$info);
                 header("location: table");
                 exit;
@@ -40,7 +40,7 @@ class HomeController extends Controller {
     }
     
     function table(){
-        $activeSelect = $this->model("SelectActive");
+        $activeSelect = $this->model("Active");
         $result = $activeSelect->search();
         $this->view("Back/table",$result);
     }

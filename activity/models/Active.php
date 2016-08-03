@@ -1,5 +1,6 @@
 <?php
 require_once "MyPDO.php";
+
 class Active{
     function create($title,$limit,$flag,$start,$end,$name,$number,$info){
         $cmd = "INSERT INTO `activity` (`title`, `limitMax`, `flag`, `startDate`, `endDate`, `date`, `info`)
@@ -47,6 +48,7 @@ class Active{
             $start = $row['startDate'];
             $end = $row['endDate'];
             $info = $row['info'];
+            $count = $row['count'];
         }
         $result = array('id'=>$id,
                         'title'=>$title,
@@ -54,8 +56,18 @@ class Active{
                         'flag'=>$flag,
                         'start'=>$start,
                         'end'=>$end,
-                        'info'=>$info);
+                        'info'=>$info,
+                        'count'=>$count);
         return  $result;
+    }
+    
+    function insertPeople($count,$id){
+        $cmd = "UPDATE `activity` SET `count`=:count WHERE `id` = :id";
+        $mypdo = new MyPDO();
+        $pdo = $mypdo->pdoConnect;
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(':count'=>$count,
+                            ':id'=>$id));
     }
 }
 ?>

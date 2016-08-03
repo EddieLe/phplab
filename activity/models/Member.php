@@ -2,11 +2,16 @@
 require_once "MyPDO.php";
 
 class Member{
-    function auth(){
-        $cmd = "SELECT * FROM `member`";
+    function auth($name,$number,$id){
+        $cmd = "SELECT * FROM `member` WHERE `active`=:active AND `name`=:name AND `number`=:number";
         $mypdo = new MyPDO();
-        $result = $mypdo->select($cmd);
-        return $result;
+        $pdo = $mypdo->pdoConnect;
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(':active'=>$id,
+                             ':name'=>$name,
+                             ':number'=>$number));
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $row;
     }
     
 }

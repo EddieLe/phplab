@@ -163,9 +163,6 @@ class ShoppingController extends Controller{
             $result = $signup->signUpShopping($firstName,$lastName,$email,$mobile,$sex,$password);
 
             if($result == "success"){
-                // session_start();
-                // setcookie("firstName", $_POST["firstName"]);
-                // $_SESSION["firstName"] = $_POST["firstName"];
                 header("location: products");
             }else{
                 $this->view("products/Account",$result);

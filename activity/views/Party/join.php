@@ -127,6 +127,7 @@
                                     <input type="text" name="number" value ="" placeholder="員工編號"/>
                                     <input type="hidden" name="id" value="<?php echo $data['id'];?>"/>
                                     <p></p>
+                                    <input type="text" name="flag" value ="" placeholder="<?php echo $data['flag'];?>"/>
                                     <div class="row">
                                         <input class="btn blog-btn" type="submit" value="參加"/>
                                     </div>
