@@ -11,10 +11,14 @@ class HomeController extends Controller {
         $start = $_POST["start"];
         $end = $_POST["end"];
         $flag = $_POST["flag"];
+        $name = $_POST["name"];
+        $number = $_POST["number"];
+        $info = $_POST["info"];
         //輸入時間判斷
         if(strtotime($start) > strtotime($end)){
-            echo "時間輸入錯誤";
+            // $this->view("Back/activity",array('error'=>"結束時間小於開始時間"));
             header("location: activity");
+            
         }
         $now = strtotime(date('Y-m-d'));
         $deadline = strtotime($start);
@@ -26,12 +30,11 @@ class HomeController extends Controller {
                 $start = "$startArray[0]/$startArray[1]/$startArray[2]";
                 $end = "$endArray[0]/$endArray[1]/$endArray[2]";
                 $newActive = $this->model("NewActive");
-                $result = $newActive->create($title,$limit,$flag,$start,$end);
+                $result = $newActive->create($title,$limit,$flag,$start,$end,$name,$number,$info);
                 $this->table();
-                echo "<script> alert('新增成功'); </script>";
             }else{
+                // $this->view("Back/activity",array('error'=>"新增時間錯誤"));
                 header("location: activity");
-                echo "<script> alert('新增失敗'); </script>";
             }
     }
     

@@ -14,13 +14,11 @@
 
 </head>
 
-
 	<header>
-		<h1>Freebie: 7 Clean and Responsive Forms</h1>
+		<h1>新增活動頁面</h1>
         <a href="table">活動明細</a>
         <script type="text/javascript" src="jquery.date_input.js"></script>
     </header>
-    
     <!--<ul>-->
     <!--    <li><a href="index.html" class="active">Basic</a></li>-->
     <!--    <li><a href="form-register.html">Register</a></li>-->
@@ -32,13 +30,11 @@
     <!--</ul>-->
     <div class="main-content">
         <!-- You only need this form and the form-basic.css -->
-<?php var_dump($_POST)?>
         <form class="form-basic" method="post" action="create">
 
             <div class="form-title-row">
                 <h1>新增活動表</h1>
             </div>
-
             <div class="form-row">
                 <label>
                     <span>Title Name</span>
@@ -52,7 +48,7 @@
                     <input type="text" name="limit" value="">
                 </label>
             </div>
-            
+            <div><?php echo $data['error']; ?></div>
             <div class="form-row">
                 <label>
                     <span>Start Time</span>
@@ -70,7 +66,7 @@
             <div class="form-row">
                 <label>
                     <span>Info</span>
-                    <textarea name="textarea"></textarea>
+                    <textarea name="info"></textarea>
                 </label>
             </div>
 
@@ -105,7 +101,7 @@
                  Td.innerHTML='<input name="name[]" type="text" size="12">';
                  //這裡也可以用不同的變數來辨別不同的td (我是用同一個比較省事XD)
                  Td = Tr.insertCell(Tr.cells.length);
-                 Td.innerHTML='<input name="content[]" type="text" size="12">';
+                 Td.innerHTML='<input name="number[]" type="text" size="12">';
                  //這樣就好囉 記得td數目要一樣 不然會亂掉~
                 }
                 
@@ -123,10 +119,6 @@
             <div>
                 <table id="mytable" width="580">
                     <tr>
-                        <td width="150" class="td01">員工名稱</td>
-                        <td width="200" class="td01">員工編號</td>
-                    </tr>
-                    <tr>
                         <td>
                         <input type="button" value="新增" onclick="add_new_data()"/>
                         </td>
@@ -135,11 +127,15 @@
                         </td>
                     </tr>
                     <tr>
+                        <td width="150" class="td01">員工名稱</td>
+                        <td width="200" class="td01">員工編號</td>
+                    </tr>
+                    <tr>
                         <td>
                         <input name="name[]" type="text" size="12">
                         </td>
                         <td>
-                        <input name="content[]" type="text" size="12">
+                        <input name="number[]" type="text" size="12">
                         </td>
                     </tr>
                 </table>
