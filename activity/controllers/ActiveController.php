@@ -2,7 +2,7 @@
 class ActiveController extends Controller {
     
     function activePage(){
-        
+        $this->ajax();
         $id = str_replace("\'","\'\'",$_GET['id']);
         $selectActive = $this->model("Active");
         $result = $selectActive->idSearch($id);
@@ -69,6 +69,16 @@ class ActiveController extends Controller {
             $sessionError->sessionError($info = "fail");
             header("location: activePage?id=$id");
         }
+    }
+    function ajax(){
+        $id = str_replace("\'","\'\'",$_GET['id']);
+        $activeSelect = $this->model("Active");
+        $result = $activeSelect->idSearch($id);
+        // echo $id;
+        // var_dump($result);
+        $take = json_encode($result);
+        // echo $take;
+        $this->view("Party/ajax",$take);
     }
 }
 

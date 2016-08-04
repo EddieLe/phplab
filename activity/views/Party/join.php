@@ -20,6 +20,23 @@
     <!--Template Styles-->
     <link href="/eddie/activity/views/Party/css/style.css" rel="stylesheet">
     <link href="/eddie/activity/views/Party/css/scheme/purple.css" rel="stylesheet">
+    
+    <!-- Library Scripts -->
+    <script src="/eddie/activity/views/Party/js/jquery-1.10.2.min.js"></script>
+    <script src="/eddie/activity/views/Party/js/lib/jquery.preloader.js"></script>
+    <script src="/eddie/activity/views/Party/js/lib/nivo-lightbox.min.js"></script>
+    <script src="/eddie/activity/views/Party/js/bootstrap.min.js"></script>
+    <script src="/eddie/activity/views/Party/js/lib/jquery.superslides.min.js"></script>
+    <script src="/eddie/activity/views/Party/js/lib/smoothscroll.js"></script>
+    <script src="/eddie/activity/views/Party/js/lib/jquery.sudoslider.min.js"></script>
+    <script src="/eddie/activity/views/Party/js/lib/jquery.bxslider.min.js"></script>
+    <script src="/eddie/activity/views/Party/js/lib/jquery.mixitup.min.js"></script>
+    <script src="/eddie/activity/views/Party/js/lib/jquery.backtotop.js"></script>
+    <script src="/eddie/activity/views/Party/js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script src="/eddie/activity/views/Party/js/lib/retina.min.js"></script>
+
+    <!-- Custom Script -->    
+    <script src="/eddie/activity/views/Party/js/main.js"></script>
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -123,11 +140,11 @@
                                 <form method ="post" action = "auth">
                                     <input type="text" name="name" value ="" placeholder="員工名稱"/>
                                     <input type="text" name="number" value ="" placeholder="員工編號"/>
-                                    <input type="hidden" name="id" value="<?php echo $data['id'];?>"/>
+                                    <input class="id" type="hidden" name="id" value="<?php echo $data['id'];?>"/>
                                     <input type="hidden" name="start" value="<?php echo $data['start'];?>"/>
                                     <input type="hidden" name="end" value="<?php echo $data['end'];?>"/>
                                     <p></p>
-                                    <input type="text" name="flag" value ="" placeholder="<?php echo $data['flag'];?>"/>
+                                    <input class="take" type="text" name="flag" value ="" placeholder="<?php echo $data['flag'];?>"/>
                                     <p></p>
                                     <div class="row">
                                         <input class="btn blog-btn" type="submit" value="參加"/>
@@ -138,37 +155,35 @@
                         </div>
                 </div>
             </section>
-            
                 </div>
                 </div>
             </footer>
             <!-- END FOOTER -->
+            <script>
+			jQuery(function($){
+    			$(document).ready(function(){
+    			    var id = $(this).attr('id');
+    				$.ajax({
+    				    data: {"id" : id},
+    		            url: "/eddie/activity/Active/ajax",
+    		            type: "GET",
+    		            success: function(data){
+		            	data = JSON.parse(data);
+		            	console.log(data);
+	            		if(data['flag'] == "不可攜伴")
+		            		$('.take').hide();
+    		            },
+    				})
+    			});
+			});
+		</script>
         </div>
     </div>
-
 
     <!-- Back to top -->
     <div id="backtotop">       
         <a class="to-top-btn sscroll" href="index.html#home"><i class="fa fa-angle-double-up"></i></a>
     </div>
-
-
-    <!-- Library Scripts -->
-    <script src="/eddie/activity/views/Party/js/jquery-1.10.2.min.js"></script>
-    <script src="/eddie/activity/views/Party/js/lib/jquery.preloader.js"></script>
-    <script src="/eddie/activity/views/Party/js/lib/nivo-lightbox.min.js"></script>
-    <script src="/eddie/activity/views/Party/js/bootstrap.min.js"></script>
-    <script src="/eddie/activity/views/Party/js/lib/jquery.superslides.min.js"></script>
-    <script src="/eddie/activity/views/Party/js/lib/smoothscroll.js"></script>
-    <script src="/eddie/activity/views/Party/js/lib/jquery.sudoslider.min.js"></script>
-    <script src="/eddie/activity/views/Party/js/lib/jquery.bxslider.min.js"></script>
-    <script src="/eddie/activity/views/Party/js/lib/jquery.mixitup.min.js"></script>
-    <script src="/eddie/activity/views/Party/js/lib/jquery.backtotop.js"></script>
-    <script src="/eddie/activity/views/Party/js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
-    <script src="/eddie/activity/views/Party/js/lib/retina.min.js"></script>
-
-    <!-- Custom Script -->    
-    <script src="/eddie/activity/views/Party/js/main.js"></script>
 </body>
 <?php
 if(isset($_SESSION['Error'])){

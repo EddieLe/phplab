@@ -44,7 +44,7 @@
 			</div>
 		</div>
 		<script>
-			// function poll(){
+			// 顯示即實資料polling
 			$(document).ready(function(){
 				setInterval(function(){
 					$.ajax({
@@ -52,16 +52,13 @@
 			            type: "GET",
 			            success: function(data){
 			            	data = JSON.parse(data);
-			            	alert(data[0]['id']);
-			            	$.each( data[0], function( Key, value ){
-			            		alert(value);
-			            		$('.arrival-info[data-info='+Key+']').text(value[0]);
-			            	});
-			            	// alert(data[1]);
-			            console.log(data[0]['id']);
+			            	$.each( data, function( Key, value ){
+			            		console.log(value['count']);
+				            		$('.arrival-info[data-info='+Key+']').text(value['count']);
+							});
 			            },
 					})
-		        },5000);
+		        },3000);
 			});
 		</script>
 		<hr>
