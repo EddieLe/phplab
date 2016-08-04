@@ -52,9 +52,6 @@ class Signup{
                                 ':password'=>$password));
             
             //註冊成功使他保持登入狀態他旗標 success
-            session_start();
-            setcookie("firstName", $_POST["firstName"]);
-            $_SESSION["firstName"] = $_POST["firstName"];
             return "success";
             
         }

@@ -54,11 +54,12 @@ class ShoppingController extends Controller{
 	    $Decide = $this->model("Decide");
 	    $decideC = $Decide->cookieDecide();
 	    $decideS = $Decide->sessionDecide();
+	    $page = $_POST['page'];
 	    if($decideC && $decideS){
 	        header("location: loginPage");
 	    }
         $mysqlAction = $this->model("MysqlAction");
-        $result = $mysqlAction->selectProductsPage();
+        $result = $mysqlAction->selectProductsPage($page);
         //判斷post page有沒有初值
         if(isset($_POST["page"])){
             echo json_encode($result);
@@ -163,6 +164,8 @@ class ShoppingController extends Controller{
             $result = $signup->signUpShopping($firstName,$lastName,$email,$mobile,$sex,$password);
 
             if($result == "success"){
+                $setSession = $this->model("Decide");
+                $setSession->setAuthShopping();
                 header("location: products");
             }else{
                 $this->view("products/Account",$result);

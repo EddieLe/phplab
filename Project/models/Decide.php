@@ -52,6 +52,7 @@ class Decide{
         session_start();
         setcookie("userName",$_POST["userName"]);
         $_SESSION["userName"] = $_POST["userName"];
+        
     }
     function setAuthShopping(){
         session_start();

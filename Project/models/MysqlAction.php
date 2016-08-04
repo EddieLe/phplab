@@ -36,7 +36,7 @@ class MysqlAction{
         return $productsArray;
         
     }
-    function selectProductsPage(){
+    function selectProductsPage($page){
         $cmd = "SELECT * FROM `products` ORDER BY `id`";
         $myPdo = new MyPDO();
         $pdo = $myPdo->pdoConnect;
@@ -53,10 +53,10 @@ class MysqlAction{
         $pageSize = 8; //每頁顯示數量
         $totalPage = ceil($total/$pageSize); //分幾頁
         
-        if(isset($_POST["page"])){
+        if(isset($page)){
             
-	       $start = ($_POST["page"]-1)*$pageSize ;
-	       $end = $_POST["page"]*$pageSize;
+	       $start = ($page-1)*$pageSize ;
+	       $end = $page*$pageSize;
         
 	    }
         $cmd = "SELECT * FROM `products` ORDER BY `id` LIMIT $start,$end";
@@ -89,7 +89,7 @@ class MysqlAction{
         }
         return $productsArray;
     }
-    function selectBackStageProducts(){
+    function selectBackStageProducts($page){
         $cmd = "SELECT * FROM `products` ORDER BY `id`";
         $myPdo = new MyPDO();
         $pdo = $myPdo->pdoConnect;
@@ -105,17 +105,17 @@ class MysqlAction{
         $totalPage = ceil($total/$pageSize); //分幾頁
         
         //如果載入動作給他值1
-        if(!isset($_GET["page"])){
-            $_GET["page"] = 1 ;
+        if(!isset($page)){
+            $page = 1 ;
         }
         //判斷頁數的分頁數量與區間
-        if($total%$pageSize != 0 && $_GET["page"] == $totalPage ){
-	       $start = ($_GET["page"]-1)*$pageSize ;
+        if($total%$pageSize != 0 && $page == $totalPage ){
+	       $start = ($page-1)*$pageSize ;
 	       $end = $start + ($total%$pageSize);
            $dif = $end-$start;
 	    }else{
-	       $start = ($_GET["page"]-1)*$pageSize ;
-	       $end = $_GET["page"]*$pageSize;
+	       $start = ($page-1)*$pageSize ;
+	       $end = $page*$pageSize;
 	       $dif = $end-$start;
 	    }
         

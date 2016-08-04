@@ -19,11 +19,12 @@ class BackStageController extends Controller {
 	    $Decide = $this->model("Decide");
 	    $decideC = $Decide->cookieBackStageDecide();
 	    $decideS = $Decide->sessionBackStageDecide();
+	    $page = $_GET["page"];
 	    if($decideC && $decideS){
 	        header("location: loginPage");
 	    }
 	    $selectMysqlAction = $this->model("MysqlAction");
-	    $result = $selectMysqlAction->selectBackStageProducts();
+	    $result = $selectMysqlAction->selectBackStageProducts($page);
         $this->view("backstage/homepage", $result);
     }
     
@@ -142,6 +143,8 @@ class BackStageController extends Controller {
             $signup = $this->model("Signup");
             $result = $signup->signUpBackstage($userName, $password, $email);
             if($result == "success"){
+                $setSession = $this->model("Decide");
+                $setSession->setAuth();
                 header("location: homePage");
             }else{
                 header("location: loginPage");

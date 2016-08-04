@@ -2,10 +2,13 @@
 class ActiveController extends Controller {
     
     function activePage(){
-        $this->ajax();
+        // $this->ajax();
         $id = str_replace("\'","\'\'",$_GET['id']);
         $selectActive = $this->model("Active");
         $result = $selectActive->idSearch($id);
+        // if(isset($id)){
+        //     echo $id;
+        // }
         $this->view("Party/join",$result);
     }
     function auth(){
