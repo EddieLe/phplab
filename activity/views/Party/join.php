@@ -26,7 +26,6 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body data-spy="scroll">
 
     <!-- Preloader -->
@@ -115,25 +114,27 @@
                         <div class="header-content">
                             <h2>活動內容</h2>
                             <h3><?php echo $data['title'];?></h3>
-                            <?php echo $data['info'];?>
                         </div>
                     <!--</div>-->
                 </div>
                         <div style="text-align:center">
-                           
+                               <?php echo $data['info'];?>
                                 <h3>輸入身分</h3>
                                 <form method ="post" action = "auth">
                                     <input type="text" name="name" value ="" placeholder="員工名稱"/>
                                     <input type="text" name="number" value ="" placeholder="員工編號"/>
                                     <input type="hidden" name="id" value="<?php echo $data['id'];?>"/>
+                                    <input type="hidden" name="start" value="<?php echo $data['start'];?>"/>
+                                    <input type="hidden" name="end" value="<?php echo $data['end'];?>"/>
                                     <p></p>
                                     <input type="text" name="flag" value ="" placeholder="<?php echo $data['flag'];?>"/>
+                                    <p></p>
                                     <div class="row">
                                         <input class="btn blog-btn" type="submit" value="參加"/>
                                     </div>
                                 </form>
                             </a>
-                            <p class="post-content"> <?php echo "報名時間 : " .$data['start'] ."~". $data['end'] ;?></p>
+                            <p class="post-content"> <?php echo "報名時間 : " .$data['start'] ."  ~  ". $data['end'] ;?></p>
                         </div>
                 </div>
             </section>
@@ -169,5 +170,11 @@
     <!-- Custom Script -->    
     <script src="/eddie/activity/views/Party/js/main.js"></script>
 </body>
+<?php
+if(isset($_SESSION['Error'])){
+    echo "<script> alert('" . $_SESSION['Error'] . "')</script>";
+    unset($_SESSION['Error']);
+}
+?>
 
 </html>

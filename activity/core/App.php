@@ -3,6 +3,7 @@
 class App {
     
      public function __construct() {
+        session_start();
         $url = $this->parseUrl();
         
         $controllerName = "{$url[0]}Controller";

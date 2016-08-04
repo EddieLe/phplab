@@ -13,27 +13,61 @@ class ActiveController extends Controller {
         $name = str_replace("\'","\'\'",$_POST['name']);
         $number = str_replace("\'","\'\'",$_POST['number']);
         $id = str_replace("\'","\'\'",$_POST['id']);
+        $start = str_replace("\'","\'\'",$_POST['start']);
+        $end = str_replace("\'","\'\'",$_POST['end']);
         
         $auth = $this->model("Member");
         $result = $auth->auth($name,$number,$id);
-        
+        //判斷時間區間
+        if(strtotime("now") < strtotime($start)){
+            $sessionError = $this->model("Session");
+            $sessionError->sessionError($info = "early");
+            header("location: activePage?id=$id");
+            exit;
+            
+        }elseif (strtotime("now") > strtotime($end)) {
+            $sessionError = $this->model("Session");
+            $sessionError->sessionError($info = "late");
+            header("location: activePage?id=$id");
+            exit;
+        }
+        //判斷是否可報名
         if($result){
             
             $count = str_replace("\'","\'\'",$_POST['flag']) + 1;
             $selectLimit = $this->model("Active");
             $resultArray = $selectLimit->idSearch($id);
             
+            //判斷人數上限
             if($count > $resultArray['limit']-$resultArray['count']){
-                echo "人數已滿";
+                $sessionError = $this->model("Session");
+                $sessionError->sessionError($info = "full");
+                //將資料庫關閉
+                $closeSql = $this->model("Active");
+                $closeSql->closeSql();
+                header("location: activePage?id=$id");
+                
+            }elseif ($result['flag'] == 1) {
+                $sessionError = $this->model("Session");
+                $sessionError->sessionError($info = "has");
+                header("location: activePage?id=$id");
+                
             }else{
-                echo "報名成功";
+                $flag = 1;
+                $tatleCount = $resultArray['count'] + $count;
                 $insertPeople = $this->model("Active");
-                $insertPeople->insertPeople($count,$id);
-                header("location: activePage");
+                $insertPeople->insertPeople($tatleCount,$id);
+                $insertFlag = $this->model("Member");
+                $insertFlag->insertFlag($id,$name,$number,$flag);
+                $sessionError = $this->model("Session");
+                $sessionError->sessionError($info = "ready");
+                header("location: activePage?id=$id");
             }
             
         }else{
-            echo "資格不符";
+            $sessionError = $this->model("Session");
+            $sessionError->sessionError($info = "fail");
+            header("location: activePage?id=$id");
         }
     }
 }

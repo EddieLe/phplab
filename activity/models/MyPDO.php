@@ -22,6 +22,10 @@ class MyPDO{
         $pdo = NULL;
     }
     
+    function closeConnect(){
+        $this->pdoConnect = NULL;
+    }
+    
     public function select($sql)
     {
         $statement = $this->pdoConnect->query($sql, PDO::FETCH_ASSOC);

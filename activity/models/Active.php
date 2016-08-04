@@ -61,13 +61,20 @@ class Active{
         return  $result;
     }
     
-    function insertPeople($count,$id){
+    function insertPeople($count,$id,$flag){
+        //鎖更新
+        $cmd = "SELECT `count` FROM `activity` WHERE `id` = :id  FOR UPDATE";
         $cmd = "UPDATE `activity` SET `count`=:count WHERE `id` = :id";
         $mypdo = new MyPDO();
         $pdo = $mypdo->pdoConnect;
         $stmt = $pdo->prepare($cmd);
         $stmt->execute(array(':count'=>$count,
                             ':id'=>$id));
+    }
+    
+    function closeSql(){
+        $mypdo = new MyPDO();
+        $mypdo->closeConnect();
     }
 }
 ?>
