@@ -43,9 +43,6 @@ class ActiveController extends Controller {
             if($count > $resultArray['limit']-$resultArray['count']){
                 $sessionError = $this->model("Session");
                 $sessionError->sessionError($info = "full");
-                //將資料庫關閉
-                $closeSql = $this->model("Active");
-                $closeSql->closeSql();
                 header("location: activePage/$url[url]");
             //有無報名過    
             }elseif ($result['flag'] == 1) {

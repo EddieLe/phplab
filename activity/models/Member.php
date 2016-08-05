@@ -17,12 +17,6 @@ class Member{
         
         $mypdo = new MyPDO();
         $pdo = $mypdo->pdoConnect;
-        //避免同時搶票時 被記錄購買過
-        $cmd = "SELECT * FROM `member` WHERE `active`=:active AND `name`=:name AND `number`=:number";
-        $stmt->execute(array(':active'=>$id,
-                             ':name'=>$name,
-                             ':number'=>$number,
-                             ':flag'=>$flag));
         $stmt = $pdo->prepare($cmd);
         $cmd = "UPDATE `member` SET `flag`=:flag WHERE `active`=:active AND `name`=:name AND `number`=:number";
         $stmt = $pdo->prepare($cmd);

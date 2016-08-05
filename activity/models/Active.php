@@ -104,24 +104,21 @@ class Active{
         return  $result;
     }
     
-    function insertPeople($count,$id,$flag){
+    function insertPeople($count,$id){
         //鎖更新
-        try{
             $mypdo = new MyPDO();
             $pdo = $mypdo->pdoConnect;
-            $pdo->beginTransaction();
             $cmd = "SELECT `count` FROM `activity` WHERE `id` = :id  FOR UPDATE";
             $stmt = $pdo->prepare($cmd);
             $stmt->execute(array(':id'=>$id));
             sleep(5);
             $cmd = "UPDATE `activity` SET `count`=:count WHERE `id` = :id";
+            $mypdo = new MyPDO();
+            $pdo = $mypdo->pdoConnect;
             $stmt = $pdo->prepare($cmd);
             $stmt->execute(array(':count'=>$count,
                                 ':id'=>$id));
-            $pdo->commit();
-        }catch(Exception $err){
-            $pdo->rollBack();
-        }
+                                
     }
     
     function closeSql(){
