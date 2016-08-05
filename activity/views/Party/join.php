@@ -137,10 +137,10 @@
                         <div style="text-align:center">
                                <?php echo $data['info'];?>
                                 <h3>輸入身分</h3>
-                                <form method ="post" action = "auth">
+                                <form method ="post" action = "/eddie/activity/Active/auth">
                                     <input type="text" name="name" value ="" placeholder="員工名稱"/>
                                     <input type="text" name="number" value ="" placeholder="員工編號"/>
-                                    <input class="id" type="hidden" name="id" value="<?php echo $data['id'];?>"/>
+                                    <input id="id" type="hidden" name="id" value="<?php echo $data['id'];?>"/>
                                     <input type="hidden" name="start" value="<?php echo $data['start'];?>"/>
                                     <input type="hidden" name="end" value="<?php echo $data['end'];?>"/>
                                     <p></p>
@@ -161,19 +161,20 @@
             <!-- END FOOTER -->
             <script>
 			jQuery(function($){
-    			$(document).ready(function(){
-    			    var id = $(this).attr('id');
+    			$( document ).ready(function() {
+    			    var id = document.getElementById('id').value;
     				$.ajax({
     				    data: {"id" : id},
     		            url: "/eddie/activity/Active/ajax",
-    		            type: "GET",
+    		            type: "POST",
     		            success: function(data){
-		            	data = JSON.parse(data);
-		            	console.log(data);
-	            		if(data['flag'] == "不可攜伴")
-		            		$('.take').hide();
+    		            	data = JSON.parse(data);
+    		              //  console.log(data);
+    	            		if(data['flag'] == "不可攜伴"){
+    		            		$('.take').hide();
+        		            }
     		            },
-    				})
+    				});
     			});
 			});
 		</script>

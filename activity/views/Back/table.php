@@ -17,6 +17,7 @@
 	
 	</head>
 	<body>
+		<a align="center" href=https://eddie-eddie-lee.c9users.io/eddie/activity/Home/activity>回活動頁</a>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-6">
@@ -36,7 +37,7 @@
 					    <td data-th="攜伴選項"><?php echo $data[$i]['flag']?></td>
 					    <td data-th="可報名人數"><?php echo $data[$i]['limitMax']?></td>
 					    <td class="arrival-info" data-info=<?php echo $i;?> data-th="即時人數"><?php echo $data[$i]['count']?></td>
-					    <td data-th="報名網址"><a href=<?php echo "https://eddie-eddie-lee.c9users.io/eddie/activity/Active/activePage?id=".$data[$i]['id']?>><?php echo "https://eddie-eddie-lee.c9users.io/eddie/activity/Active/activePage?id=".$data[$i]['id']?></a></td>
+					    <td data-th="報名網址"><a target="_blank" href=<?php echo "https://eddie-eddie-lee.c9users.io/eddie/activity/Active/activePage/".$data[$i]['url']?>><?php echo "https://eddie-eddie-lee.c9users.io/eddie/activity/Active/activePage/".$data[$i]['url']?></a></td>
 					  </tr>
 					  <?php } ?>
 					</table>
@@ -64,3 +65,4 @@
 		<hr>
 	</body>
 	</html>
+	

@@ -31,6 +31,7 @@ class HomeController extends Controller {
             $end = "$endArray[0]/$endArray[1]/$endArray[2]";
             $newActive = $this->model("Active");
             $result = $newActive->create($title,$limit,$flag,$start,$end,$name,$number,$info);
+            
             header("location: table");
             exit;
         }else{
