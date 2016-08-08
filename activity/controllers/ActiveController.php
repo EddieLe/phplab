@@ -8,7 +8,6 @@ class ActiveController extends Controller {
         $this->view("Party/join",$result);
     }
     function auth(){
-        
         $name = str_replace("\'","\'\'",$_POST['name']);
         $number = str_replace("\'","\'\'",$_POST['number']);
         $id = str_replace("\'","\'\'",$_POST['id']);
@@ -38,7 +37,7 @@ class ActiveController extends Controller {
             $count = str_replace("\'","\'\'",$_POST['flag']) + 1;
             $selectLimit = $this->model("Active");
             $resultArray = $selectLimit->idSearch($id);
-            
+          
             //判斷人數上限
             if($count > $resultArray['limit']-$resultArray['count']){
                 $sessionError = $this->model("Session");

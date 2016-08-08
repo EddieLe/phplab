@@ -15,6 +15,7 @@ class Member{
     }
     function insertFlag($id,$name,$number,$flag){
         
+        
         $mypdo = new MyPDO();
         $pdo = $mypdo->pdoConnect;
         $stmt = $pdo->prepare($cmd);
