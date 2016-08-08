@@ -16,7 +16,6 @@ class HomeController extends Controller {
         $info = str_replace("\'","\'\'",$_POST["info"]);
         //輸入時間判斷
         if(strtotime($start) > strtotime($end)){
-            // $this->view("Back/activity",array('error'=>"結束時間小於開始時間"));
             header("location: activity");
             exit;
         }
@@ -35,7 +34,6 @@ class HomeController extends Controller {
             header("location: table");
             exit;
         }else{
-            // $this->view("Back/activity",array('error'=>"新增時間錯誤"));
             header("location: activity");
         }
     }
