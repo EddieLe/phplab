@@ -22,6 +22,8 @@ class ActionController extends Controller
         //剩下的金額
         $result = $total - $_POST['take'];
         $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
+        $detaiArray = $take->selectDetail($_POST['account']);
+        $this->view("detailVeiw",$detaiArray);
     }
     
     public function save()
@@ -34,7 +36,8 @@ class ActionController extends Controller
         //剩下的金額
         $result = $total + $_POST['save'];
         $save->saveMoney($total, $_POST['account'], $result, $_POST['save']);
-        $this->atm();
+        $detaiArray = $save->selectDetail($_POST['account']);
+        $this->view("detailVeiw",$detaiArray);
     }
 }
 
