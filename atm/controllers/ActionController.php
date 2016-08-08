@@ -14,9 +14,16 @@ class ActionController extends Controller
     }
     public function take()
     {
-        $pay = $this->model("Record");
+        $pay = $this->model("Pay");
         $payArray = $pay->takeAccount($_POST['account']);
+        //提款錢金額
         $total = $payArray['total'];
+        $take = $this->model("Record");
+        //剩下的金額
+        $result = $total - $_POST['take'];
+        $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
+        $this->atm();
+        // $payDetail = $pay->selectDetail();
     }
 }
 
