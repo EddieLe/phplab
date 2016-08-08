@@ -22,8 +22,19 @@ class ActionController extends Controller
         //剩下的金額
         $result = $total - $_POST['take'];
         $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
+    }
+    
+    public function save()
+    {
+        $pay = $this->model("Pay");
+        $payArray = $pay->takeAccount($_POST['account']);
+        //提款錢金額
+        $total = $payArray['total'];
+        $save = $this->model("Record");
+        //剩下的金額
+        $result = $total + $_POST['save'];
+        $save->saveMoney($total, $_POST['account'], $result, $_POST['save']);
         $this->atm();
-        // $payDetail = $pay->selectDetail();
     }
 }
 
