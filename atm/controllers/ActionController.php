@@ -12,6 +12,12 @@ class ActionController extends Controller
         $account = $pay->takeAccount($_POST['account']);
         $this->view("atmView", $account);
     }
+    public function take()
+    {
+        $pay = $this->model("Record");
+        $payArray = $pay->takeAccount($_POST['account']);
+        $total = $payArray['total'];
+    }
 }
 
 ?>
