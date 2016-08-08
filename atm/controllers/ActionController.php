@@ -8,12 +8,14 @@ class ActionController extends Controller
     }
     public function atm() 
     {
+        $_SESSION['account'] = $_POST['account'];
         $pay = $this->model("Pay");
-        $account = $pay->takeAccount($_POST['account']);
+        $account = $pay->takeAccount($_SESSION['account']);
         $this->view("atmView", $account);
     }
     public function take()
     {
+        $_SESSION['account'] = $_POST['account'];
         $pay = $this->model("Pay");
         $payArray = $pay->takeAccount($_POST['account']);
         //提款錢金額
@@ -22,12 +24,12 @@ class ActionController extends Controller
         //剩下的金額
         $result = $total - $_POST['take'];
         $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
-        $detaiArray = $take->selectDetail($_POST['account']);
-        $this->view("detailVeiw",$detaiArray);
+        $this->atm();
     }
     
     public function save()
     {
+        $_SESSION['account'] = $_POST['account'];
         $pay = $this->model("Pay");
         $payArray = $pay->takeAccount($_POST['account']);
         //提款錢金額
@@ -36,7 +38,13 @@ class ActionController extends Controller
         //剩下的金額
         $result = $total + $_POST['save'];
         $save->saveMoney($total, $_POST['account'], $result, $_POST['save']);
-        $detaiArray = $save->selectDetail($_POST['account']);
+        $this->atm();
+    }
+    
+    public function detail()
+    {
+        $detail = $this->model("Record");
+        $detaiArray = $detail->selectDetail($_POST['account']);
         $this->view("detailVeiw",$detaiArray);
     }
 }

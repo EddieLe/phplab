@@ -16,5 +16,9 @@
             <input type="hidden" name="account" value=<?php echo $_POST[account] ?>>
             <input type="submit" value="存款"/>
         </form>
+        <form method="post", action="detail">
+            <input type="hidden" name="account" value=<?php echo $_POST[account] ?>>
+            <input type="submit" value="明細"/>
+        </form>
     </body>
 </html>
