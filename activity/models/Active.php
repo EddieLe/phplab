@@ -113,10 +113,13 @@ class Active{
         $stmt->execute(array(':id'=>$id));
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         sleep(5);
-        $cmd = "UPDATE `activity` SET `count`=:count WHERE `id` = :id";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute(array(':count'=>$count,
-                            ':id'=>$id));
+        //鎖count判斷當下有沒有足夠人數
+        if( $count >= $row['count']){
+            $cmd = "UPDATE `activity` SET `count`=:count WHERE `id` = :id";
+            $stmt = $pdo->prepare($cmd);
+            $stmt->execute(array(':count'=>$count,
+                                ':id'=>$id));
+        }
                                 
     }
     

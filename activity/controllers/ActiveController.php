@@ -71,8 +71,6 @@ class ActiveController extends Controller {
         $id = $_POST['id'];
         $activeSelect = $this->model("Active");
         $result = $activeSelect->idSearch($id);
-        /*echo $id;
-        var_dump($result);*/
         $take = json_encode($result);
         $this->view("Party/ajax",$take);
     }
