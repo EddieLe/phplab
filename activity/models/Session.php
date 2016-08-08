@@ -17,5 +17,11 @@ class Session{
         }           
         
     }
+    function sessionErrorActive($info){
+        
+        if($info == "error"){
+            $_SESSION['ErrorTime'] = "時間輸入有誤";
+        }
+    }
 }
 ?>

@@ -20,12 +20,14 @@ class ActiveController extends Controller {
         $url = $selecturl->idSearch($id);
         //判斷時間區間
         if(strtotime("now") < strtotime($start)){
+            //透過model寫入錯誤訊息
             $sessionError = $this->model("Session");
             $sessionError->sessionError($info = "early");
             header("location: activePage/$url[url]");
             exit;
             
         }elseif (strtotime("now") > strtotime($end)) {
+            //透過model寫入錯誤訊息
             $sessionError = $this->model("Session");
             $sessionError->sessionError($info = "late");
             header("location: activePage/$url[url]");
@@ -40,11 +42,13 @@ class ActiveController extends Controller {
           
             //判斷人數上限
             if($count > $resultArray['limit']-$resultArray['count']){
+                //透過model寫入錯誤訊息
                 $sessionError = $this->model("Session");
                 $sessionError->sessionError($info = "full");
                 header("location: activePage/$url[url]");
             //有無報名過    
             }elseif ($result['flag'] == 1) {
+                //透過model寫入錯誤訊息
                 $sessionError = $this->model("Session");
                 $sessionError->sessionError($info = "has");
                 header("location: activePage/$url[url]");
@@ -52,22 +56,27 @@ class ActiveController extends Controller {
             }else{
                 $flag = 1;
                 $tatleCount = $resultArray['count'] + $count;
+                //寫入參加人數
                 $insertPeople = $this->model("Active");
                 $insertPeople->insertPeople($tatleCount,$id);
+                //給參加與否他旗標為1
                 $insertFlag = $this->model("Member");
                 $insertFlag->insertFlag($id,$name,$number,$flag);
+                //透過model寫入錯誤訊息
                 $sessionError = $this->model("Session");
                 $sessionError->sessionError($info = "ready");
                 header("location: activePage/$url[url]");
             }
             
         }else{
+            //透過model寫入錯誤訊息
             $sessionError = $this->model("Session");
             $sessionError->sessionError($info = "fail");
             header("location: activePage/$url[url]");
         }
     }
     function ajax(){
+        //使controller 不含echo 多建立ajax method將資料撈出投向view("Party/ajax")
         $id = $_POST['id'];
         $activeSelect = $this->model("Active");
         $result = $activeSelect->idSearch($id);

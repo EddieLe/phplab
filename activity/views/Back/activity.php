@@ -150,5 +150,11 @@
     </div>
 
 </body>
+<?php
+if(isset($_SESSION['ErrorTime'])){
+    echo "<script> alert('" . $_SESSION['ErrorTime'] . "')</script>";
+    unset($_SESSION['ErrorTime']);
+}
+?>
 
 </html>

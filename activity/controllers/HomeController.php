@@ -16,6 +16,9 @@ class HomeController extends Controller {
         $info = str_replace("\'","\'\'",$_POST["info"]);
         //輸入時間判斷
         if(strtotime($start) > strtotime($end)){
+            //透過model寫入錯誤訊息
+            $error = $this->model("Session");
+            $error->sessionErrorActive('error');
             header("location: activity");
             exit;
         }
@@ -30,19 +33,22 @@ class HomeController extends Controller {
             $end = "$endArray[0]/$endArray[1]/$endArray[2]";
             $newActive = $this->model("Active");
             $result = $newActive->create($title,$limit,$flag,$start,$end,$name,$number,$info);
-            
             header("location: table");
             exit;
         }else{
+            //透過model寫入錯誤訊息
+            $error = $this->model("Session");
+            $error->sessionErrorActive('error');
             header("location: activity");
         }
     }
     
     function ajax(){
+        //使controller 不含echo 多建立ajax method將資料撈出投向view("Back/ajax")
         $activeSelect = $this->model("Active");
         $result = $activeSelect->search();
-        $poll = json_encode($result);
-        $this->view("Back/ajax",$poll);
+        $polling = json_encode($result);
+        $this->view("Back/ajax",$polling);
     }
     function table(){
         $activeSelect = $this->model("Active");
