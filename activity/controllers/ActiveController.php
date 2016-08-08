@@ -1,7 +1,7 @@
 <?php
 class ActiveController extends Controller {
     
-    function activePage($url){
+    function activePage($url = ''){
         
         $selectActive = $this->model("Active");
         $result = $selectActive->idUrl($url);

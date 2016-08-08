@@ -106,28 +106,19 @@ class Active{
     
     function insertPeople($count,$id){
         //鎖更新
-            $mypdo = new MyPDO();
-            $pdo = $mypdo->pdoConnect;
-            $cmd = "SELECT `count` FROM `activity` WHERE `id` = :id  FOR UPDATE";
-            $stmt = $pdo->prepare($cmd);
-            $stmt->execute(array(':id'=>$id));
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
-            sleep(5);
-            // 判斷同時近if迴圈在找一次並停止收尋 排程if找一次沒有被更新DB即可更新
-            if($row['count'] >= $count){
-                $cmd = "UPDATE `activity` SET `count`=:count WHERE `id` = :id";
-                $stmt = $pdo->prepare($cmd);
-                $stmt->execute(array(':count'=>$count,
-                                    ':id'=>$id));
-            }else{
-                $pdo->closeConnect();
-            }
+        $mypdo = new MyPDO();
+        $pdo = $mypdo->pdoConnect;
+        $cmd = "SELECT `count` FROM `activity` WHERE `id` = :id  FOR UPDATE";
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(':id'=>$id));
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        sleep(5);
+        $cmd = "UPDATE `activity` SET `count`=:count WHERE `id` = :id";
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(':count'=>$count,
+                            ':id'=>$id));
                                 
     }
     
-    function closeSql(){
-        $mypdo = new MyPDO();
-        $mypdo->closeConnect();
-    }
 }
 ?>
