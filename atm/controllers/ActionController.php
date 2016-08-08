@@ -47,6 +47,11 @@ class ActionController extends Controller
         $detaiArray = $detail->selectDetail($_POST['account']);
         $this->view("detailVeiw",$detaiArray);
     }
+    public function logout()
+    {
+        unset($_SESSION);
+        $this->view("loginVeiw");
+    }
 }
 
 ?>

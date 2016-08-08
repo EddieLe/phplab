@@ -20,5 +20,9 @@
             </tr>
             <?php endfor; ?>
         </table>
+        <form method="post", action="atm">
+            <input type="hidden" name="account" value=<?php echo $_POST[account] ?>>
+            <input type="submit" value="轉帳頁"/>
+        </form>
     </body>
 </html>
