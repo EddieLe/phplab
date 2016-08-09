@@ -6,12 +6,12 @@
     <body>
         <?php echo "帳號 :" . $data['account'] . "<br>"?>
         <?php echo "剩餘額度 : $". $data['total']?>
-        <form method="post", action="take">
+        <form method="post", action="atm">
             <input type="text" name="take" value=""/>
             <input type="hidden" name="account" value=<?php echo $_POST[account] ?>>
             <input type="submit" value="取款"/>
         </form>
-        <form method="post", action="save">
+        <form method="post", action="atm">
             <input type="text" name="save" value=""/>
             <input type="hidden" name="account" value=<?php echo $_POST[account] ?>>
             <input type="submit" value="存款"/>

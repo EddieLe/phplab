@@ -11,43 +11,37 @@ class ActionController extends Controller
     {
         $_SESSION['account'] = $_POST['account'];
         $pay = $this->model("Pay");
+
+        //提款動作
+        if (isset($_POST['take'])) {
+            $payArray = $pay->takeAccount($_POST['account']);
+            $total = $payArray['total'];
+
+            $take = $this->model("Record");
+            $result = $total - $_POST['take'];
+
+            if ($result < 0) {
+                $error = $this->model("Session");
+                $error->sessionErrorAction("error");
+
+                $account = $pay->takeAccount($_SESSION['account']);
+                $this->view("atmView", $account);
+            } else {
+                $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
+            }
+
+        //存款動作
+        } elseif (isset($_POST['save'])) {
+            $payArray = $pay->takeAccount($_POST['account']);
+            $total = $payArray['total'];
+
+            $save = $this->model("Record");
+            $result = $total + $_POST['save'];
+            $save->saveMoney($total, $_POST['account'], $result, $_POST['save']);
+        }
         $account = $pay->takeAccount($_SESSION['account']);
         $this->view("atmView", $account);
     }
-
-    public function take()
-    {
-        $_SESSION['account'] = $_POST['account'];
-        $pay = $this->model("Pay");
-        $payArray = $pay->takeAccount($_POST['account']);
-
-        $total = $payArray['total'];
-        $take = $this->model("Record");
-
-        $result = $total - $_POST['take'];
-        if ($result < 0) {
-            $error = $this->model("Session");
-            $error->sessionErrorAction("error");
-            $this->atm();
-        } else {
-            $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
-            $this->atm();
-        }
-    }
-
-    public function save()
-    {
-        $_SESSION['account'] = $_POST['account'];
-        $pay = $this->model("Pay");
-        $payArray = $pay->takeAccount($_POST['account']);
-
-        $total = $payArray['total'];
-        $save = $this->model("Record");
-
-        $result = $total + $_POST['save'];
-        $save->saveMoney($total, $_POST['account'], $result, $_POST['save']);
-        $this->atm();
-}
 
     public function detail()
     {

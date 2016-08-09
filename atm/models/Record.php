@@ -22,7 +22,7 @@ class Record
         $cmd = "INSERT INTO `detail`(`take`, `total`, `account`, `result`) VALUES (:take, :total, :account, :result)";
         $stmt = $pdo->prepare($cmd);
         $stmt->execute(array(':take'=>$take, ':total'=>$total, ':account'=>$account, ':result'=>$after));
-        
+
         //將所有資料庫解鎖
         $cmd = "UNLOCK TABLES";
         $stmt = $pdo->prepare($cmd);
