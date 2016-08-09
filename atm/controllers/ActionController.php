@@ -47,7 +47,7 @@ class ActionController extends Controller
         $result = $total + $_POST['save'];
         $save->saveMoney($total, $_POST['account'], $result, $_POST['save']);
         $this->atm();
-    }
+}
 
     public function detail()
     {
