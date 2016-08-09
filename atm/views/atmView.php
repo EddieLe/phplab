@@ -24,10 +24,9 @@
             <input type="submit" value="登出"/>
         </form>
     </body>
+</html>
 <?php
 if (isset($_SESSION['Error'])) {
     echo "<script> alert('" . $_SESSION['Error'] . "')</script>";
     unset($_SESSION['Error']);
 }
-?>
-</html>

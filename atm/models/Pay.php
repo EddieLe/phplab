@@ -1,11 +1,11 @@
 <?php
 require_once "MyPDO.php";
 
-class Pay 
+class Pay
 {
-    public function takeAccount($account) 
+    public function takeAccount($account)
     {
-        $cmd = "SELECT * FROM `money` WHERE `account` = :account  FOR UPDATE";
+        $cmd = "SELECT * FROM `money` WHERE `account` = :account";
         $mypdo = new MyPDO();
         $pdo = $mypdo->pdoConnect;
         $stmt = $pdo->prepare($cmd);
@@ -14,6 +14,3 @@ class Pay
         return $row;
     }
 }
-
-
-?>

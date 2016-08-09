@@ -1,35 +1,34 @@
 <?php
+
 class Config
 {
-	private $dbhost = 'localhost';
-	private $dbuser = 'root';
-	private $dbpass = '';
-	private $dbname = 'Payment';
-	//外部使用連線 singleton
-	function getdbhost()
+	private $dbHost = 'localhost';
+	private $dbUser = 'root';
+	private $dbPass = '';
+	private $dbName = 'Payment';
+
+	function getDbHost()
 	{
-		return $this->dbhost;
+		return $this->dbHost;
 	}
-	function getdbuser()
+	function getDbUser()
 	{
-		return $this->dbuser;
+		return $this->dbUser;
 	}
-	function getdbpass()
+	function getDbPass()
 	{
-		return $this->dbpass;
+		return $this->dbPass;
 	}
-	function getdbname()
+	function getDbName()
 	{
-		return $this->dbname;
+		return $this->dbName;
 	}
-	
-	//外部更改連線
-	function setdbhost($dbhost, $dbuser, $dbpass, $dbname)
+
+	function setDbHost($dbHost, $dbUser, $dbPass, $dbName)
 	{
-		$this->dbhost = $dbhost;
-		$this->dbuser = $dbuser;
-		$this->dbpass = $dbpass;
-		$this->dbname = $dbname;
+		$this->dbHost = $dbHost;
+		$this->dbUser = $dbUser;
+		$this->dbPass = $dbPass;
+		$this->dbName = $dbName;
 	}
 }
-?>
