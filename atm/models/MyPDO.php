@@ -10,7 +10,8 @@ class MyPDO
     {
         $cf = new Config();
         try {
-            $pdo = new PDO("mysql:host=".$cf->getDbHost().";dbname=".$cf->getDbName(),
+            $pdo = new PDO(
+                "mysql:host=".$cf->getDbHost().";dbname=".$cf->getDbName(),
                 $cf->getDbUser(),
                 $cf->getDbPass(),
                 array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")

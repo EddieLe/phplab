@@ -9,8 +9,9 @@ class Pay
         $mypdo = new MyPDO();
         $pdo = $mypdo->pdoConnect;
         $stmt = $pdo->prepare($cmd);
-        $stmt->execute(array(':account'=>$account));
+        $stmt->execute(array(':account' => $account));
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
         return $row;
     }
 }

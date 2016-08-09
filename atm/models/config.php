@@ -11,14 +11,17 @@ class Config
 	{
 		return $this->dbHost;
 	}
+
 	function getDbUser()
 	{
 		return $this->dbUser;
 	}
+
 	function getDbPass()
 	{
 		return $this->dbPass;
 	}
+
 	function getDbName()
 	{
 		return $this->dbName;

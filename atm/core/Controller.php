@@ -5,9 +5,9 @@ class Controller
     public function model($model)
     {
         require_once "../atm/models/$model.php";
-        return new $model ();
+        return new $model();
     }
-    public function view($view, $data = Array())
+    public function view($view, $data = array())
     {
         require_once "../atm/views/$view.php";
     }
