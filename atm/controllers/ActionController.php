@@ -2,7 +2,7 @@
 
 class ActionController extends Controller 
 {
-    public function longin() 
+    public function login() 
     {
         $this->view("loginVeiw");
     }
@@ -23,10 +23,15 @@ class ActionController extends Controller
         $take = $this->model("Record");
         //剩下的金額
         $result = $total - $_POST['take'];
-        $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
-        $this->atm();
+            if ($result < 0) {
+                $error = $this->model("Session");
+                $error->sessionErrorAction("error");
+                $this->atm();
+            } else {
+                $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
+                $this->atm();
+            }
     }
-    
     public function save()
     {
         $_SESSION['account'] = $_POST['account'];
@@ -40,7 +45,6 @@ class ActionController extends Controller
         $save->saveMoney($total, $_POST['account'], $result, $_POST['save']);
         $this->atm();
     }
-    
     public function detail()
     {
         $detail = $this->model("Record");
