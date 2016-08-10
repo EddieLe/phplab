@@ -14,30 +14,35 @@ class ActionController extends Controller
 
         //提款動作
         if (isset($_POST['take'])) {
-            $payArray = $pay->takeAccount($_POST['account']);
-            $total = $payArray['total'];
+            if ($_POST['take'] > 0) {
+                $payArray = $pay->takeAccount($_POST['account']);
+                $total = $payArray['total'];
 
-            $take = $this->model("Record");
-            $result = $total - $_POST['take'];
+                $take = $this->model("Record");
+                $result = $total - $_POST['take'];
 
-            if ($result < 0) {
-                $error = $this->model("Session");
-                $error->sessionErrorAction("error");
+                if ($result < 0) {
+                    $error = $this->model("Session");
+                    $error->sessionErrorAction("error");
 
-                $account = $pay->takeAccount($_SESSION['account']);
-                $this->view("atmView", $account);
-            } else {
-                $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
+                    $account = $pay->takeAccount($_SESSION['account']);
+                    $this->view("atmView", $account);
+                } else {
+                    $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
+                }
             }
 
         //存款動作
         } elseif (isset($_POST['save'])) {
-            $payArray = $pay->takeAccount($_POST['account']);
-            $total = $payArray['total'];
+            if ($_POST['save'] > 0) {
+                $payArray = $pay->takeAccount($_POST['account']);
+                $total = $payArray['total'];
 
-            $save = $this->model("Record");
-            $result = $total + $_POST['save'];
-            $save->saveMoney($total, $_POST['account'], $result, $_POST['save']);
+                $save = $this->model("Record");
+                $result = $total + $_POST['save'];
+                $save->saveMoney($total, $_POST['account'], $result, $_POST['save']);
+            }
+
         }
         $account = $pay->takeAccount($_SESSION['account']);
         $this->view("atmView", $account);
