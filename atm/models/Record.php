@@ -9,33 +9,37 @@ class Record
         $mypod = new MyPDO();
         $pdo = $mypod->pdoConnect;
         $pdo->beginTransaction();
+        try {
+            //鎖定tables
+            $cmd = "LOCK TABLES `money` WRITE, `detail` WRITE";
+            $stmt = $pdo->prepare($cmd);
+            $stmt->execute();
 
-        //鎖定tables
-        $cmd = "LOCK TABLES `money` WRITE, `detail` WRITE";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute();
+            $cmd = "UPDATE `money` SET `total`= :total WHERE `account` = :account";
+            $stmt = $pdo->prepare($cmd);
+            $stmt->execute([
+                ':total' => $after,
+                ':account' => $account
+            ]);
 
-        $cmd = "UPDATE `money` SET `total`= :total WHERE `account` = :account";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute([
-            ':total' => $after,
-            ':account' => $account
-        ]);
+            $cmd = "INSERT INTO `detail`(`take`, `total`, `account`, `result`) VALUES (:take, :total, :account, :result)";
+            $stmt = $pdo->prepare($cmd);
+            $stmt->execute([
+                ':take' => $take,
+                ':total' => $total,
+                ':account' => $account,
+                ':result' => $after
+            ]);
 
-        $cmd = "INSERT INTO `detail`(`take`, `total`, `account`, `result`) VALUES (:take, :total, :account, :result)";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute([
-            ':take' => $after,
-            ':total' => $total,
-            ':account' => $account,
-            ':result' => $after
-        ]);
-
-        //將所有資料庫解鎖
-        $cmd = "UNLOCK TABLES";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute();
-        $pdo->commit();
+            //將所有資料庫解鎖
+            $cmd = "UNLOCK TABLES";
+            $stmt = $pdo->prepare($cmd);
+            $stmt->execute();
+            $pdo->commit();
+        } catch(Exception $e) {
+            $pdo->rollback();
+            echo 'Caught exception: ',  $e->getMessage();
+        }
     }
 
     public function saveMoney($total, $account, $result, $save)
@@ -44,30 +48,35 @@ class Record
         $pdo = $mypod->pdoConnect;
         $pdo->beginTransaction();
 
-        //鎖定輸入
-        $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute([':account' => $account]);
+        try {
+            //鎖定輸入
+            $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
+            $stmt = $pdo->prepare($cmd);
+            $stmt->execute([':account' => $account]);
 
-        //取出當下total
-        $row = $stmt->fetchall(PDO::FETCH_ASSOC);
-        $newTotal = $row[0]['total'];
+            //取出當下total
+            $row = $stmt->fetchall(PDO::FETCH_ASSOC);
+            $newTotal = $row[0]['total'];
 
-        $cmd = "UPDATE `money` SET `total`= `total` + :save WHERE `account` = :account";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute([':save' => $save, ':account' => $account]);
+            $cmd = "UPDATE `money` SET `total`= `total` + :save WHERE `account` = :account";
+            $stmt = $pdo->prepare($cmd);
+            $stmt->execute([':save' => $save, ':account' => $account]);
 
-        $cmd = "INSERT INTO `detail`(`save`, `total`, `account`, `result`) VALUES (:save, :total, :account, :result)";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute([
-            ':save' => $save,
-            ':total' => $newTotal,
-            ':account' => $account,
-            ':result' => $newTotal + $save
-            ]);
+            $cmd = "INSERT INTO `detail`(`save`, `total`, `account`, `result`) VALUES (:save, :total, :account, :result)";
+            $stmt = $pdo->prepare($cmd);
+            $stmt->execute([
+                ':save' => $save,
+                ':total' => $newTotal,
+                ':account' => $account,
+                ':result' => $newTotal + $save
+                ]);
 
-        //確認執行sql
-        $pdo->commit();
+            //確認執行sql
+            $pdo->commit();
+        } catch(Exception $e) {
+            $pdo->rollback();
+            echo 'Caught exception: ',  $e->getMessage();
+        }
     }
 
     public function selectDetail($account)
