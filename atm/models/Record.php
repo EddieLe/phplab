@@ -25,7 +25,7 @@ class Record
         $cmd = "INSERT INTO `detail`(`take`, `total`, `account`, `result`) VALUES (:take, :total, :account, :result)";
         $stmt = $pdo->prepare($cmd);
         $stmt->execute(array(
-            ':take' => $take,
+            ':take' => $after,
             ':total' => $total,
             ':account' => $account,
             ':result' => $after
@@ -38,7 +38,7 @@ class Record
         $pdo->commit();
     }
 
-    public function saveMoney($total, $account, $after, $save)
+    public function saveMoney($account, $after)
     {
         $mypod = new MyPDO();
         $pdo = $mypod->pdoConnect;
@@ -53,6 +53,15 @@ class Record
         $stmt = $pdo->prepare($cmdup);
         $stmt->execute(array(':total' => $after, ':account' => $account));
 
+        //確認執行sql
+        $pdo->commit();
+    }
+
+    public function insertDetail($total, $account, $after, $save)
+    {
+        $mypod = new MyPDO();
+        $pdo = $mypod->pdoConnect;
+
         $cmd = "INSERT INTO `detail`(`save`, `total`, `account`, `result`) VALUES (:save, :total, :account, :result)";
         $stmt = $pdo->prepare($cmd);
         $stmt->execute(array(
@@ -61,9 +70,15 @@ class Record
             ':account' => $account,
             ':result' => $after
             ));
+        $lastId = $pdo->lastInsertId();
 
-        //確認執行sql
-        $pdo->commit();
+        $cmd ="SELECT `result` FROM `detail` WHERE `id` = :lastId ";
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(':lastId' => $lastId));
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $total = $row['result'];
+
+        return $total;
     }
 
     public function selectDetail($account)
