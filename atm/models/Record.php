@@ -17,19 +17,19 @@ class Record
 
         $cmdup = "UPDATE `money` SET `total`= :total WHERE `account` = :account";
         $stmt = $pdo->prepare($cmdup);
-        $stmt->execute(array(
+        $stmt->execute([
             ':total' => $after,
             ':account' => $account
-        ));
+        ]);
 
         $cmd = "INSERT INTO `detail`(`take`, `total`, `account`, `result`) VALUES (:take, :total, :account, :result)";
         $stmt = $pdo->prepare($cmd);
-        $stmt->execute(array(
+        $stmt->execute([
             ':take' => $after,
             ':total' => $total,
             ':account' => $account,
             ':result' => $after
-        ));
+        ]);
 
         //將所有資料庫解鎖
         $cmd = "UNLOCK TABLES";
@@ -47,11 +47,11 @@ class Record
         //鎖定輸入
         $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
         $stmt = $pdo->prepare($cmd);
-        $stmt->execute(array(':account' => $account));
+        $stmt->execute([':account' => $account]);
 
         $cmdup = "UPDATE `money` SET `total`=:total WHERE `account` = :account";
         $stmt = $pdo->prepare($cmdup);
-        $stmt->execute(array(':total' => $after, ':account' => $account));
+        $stmt->execute([':total' => $after, ':account' => $account]);
 
         //確認執行sql
         $pdo->commit();
@@ -64,17 +64,17 @@ class Record
 
         $cmd = "INSERT INTO `detail`(`save`, `total`, `account`, `result`) VALUES (:save, :total, :account, :result)";
         $stmt = $pdo->prepare($cmd);
-        $stmt->execute(array(
+        $stmt->execute([
             ':save' => $save,
             ':total' => $total,
             ':account' => $account,
             ':result' => $after
-            ));
+            ]);
         $lastId = $pdo->lastInsertId();
 
         $cmd ="SELECT `result` FROM `detail` WHERE `id` = :lastId ";
         $stmt = $pdo->prepare($cmd);
-        $stmt->execute(array(':lastId' => $lastId));
+        $stmt->execute([':lastId' => $lastId]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         $total = $row['result'];
 
@@ -87,7 +87,7 @@ class Record
         $pdo = $mypod->pdoConnect;
         $cmd = "SELECT * FROM `detail` WHERE `account` = :account";
         $stmt = $pdo->prepare($cmd);
-        $stmt->execute(array(':account'=>$account));
+        $stmt->execute([':account'=>$account]);
 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             $idArray[] = $row['id'];
