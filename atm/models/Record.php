@@ -15,7 +15,7 @@ class Record
         $stmt = $pdo->prepare($cmd);
         $stmt->execute();
 
-        $cmdup = "UPDATE `money` SET `total`=:total WHERE `account` = :account";
+        $cmdup = "UPDATE `money` SET `total`= :total WHERE `account` = :account";
         $stmt = $pdo->prepare($cmdup);
         $stmt->execute(array(
             ':total' => $after,
@@ -48,29 +48,22 @@ class Record
         $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
         $stmt = $pdo->prepare($cmd);
         $stmt->execute(array(':account' => $account));
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        //判斷即時有沒有更動總金額
-        if ($total == $row['total']) {
-            $cmdup = "UPDATE `money` SET `total`=:total WHERE `account` = :account";
-            $stmt = $pdo->prepare($cmdup);
-            $stmt->execute(array(':total' => $after, ':account' => $account));
+        $cmdup = "UPDATE `money` SET `total`=:total WHERE `account` = :account";
+        $stmt = $pdo->prepare($cmdup);
+        $stmt->execute(array(':total' => $after, ':account' => $account));
 
-            $cmd = "INSERT INTO `detail`(`save`, `total`, `account`, `result`) VALUES (:save, :total, :account, :result)";
-            $stmt = $pdo->prepare($cmd);
-            $stmt->execute(array(
-                ':save' => $save,
-                ':total' => $total,
-                ':account' => $account,
-                ':result' => $after
+        $cmd = "INSERT INTO `detail`(`save`, `total`, `account`, `result`) VALUES (:save, :total, :account, :result)";
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute(array(
+            ':save' => $save,
+            ':total' => $total,
+            ':account' => $account,
+            ':result' => $after
             ));
 
-            //確認執行sql
-            $pdo->commit();
-        } else {
-            //更新失敗回上一步
-            $pdo->rollback();
-        }
+        //確認執行sql
+        $pdo->commit();
     }
 
     public function selectDetail($account)
