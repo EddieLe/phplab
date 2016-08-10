@@ -11,12 +11,12 @@
                 <th>存款</th>
                 <th>餘額</th>
             </tr>
-            <?php for ($i = 0; $i < count($data['id']); $i++): ?>
+            <?php for ($i = 0; $i < count($data); $i++): ?>
             <tr>
-                <th><?php echo $data['total'][$i] ?></th>
-                <th><?php echo $data['take'][$i] ?></th>
-                <th><?php echo $data['save'][$i] ?></th>
-                <th><?php echo $data['result'][$i] ?></th>
+                <th><?php echo $data[$i]['total'] ?></th>
+                <th><?php echo $data[$i]['take'] ?></th>
+                <th><?php echo $data[$i]['save'] ?></th>
+                <th><?php echo $data[$i]['result'] ?></th>
             </tr>
             <?php endfor; ?>
         </table>

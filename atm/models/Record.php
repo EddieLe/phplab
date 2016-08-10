@@ -88,22 +88,8 @@ class Record
         $cmd = "SELECT * FROM `detail` WHERE `account` = :account";
         $stmt = $pdo->prepare($cmd);
         $stmt->execute([':account'=>$account]);
+        $row = $stmt->fetchall(PDO::FETCH_ASSOC);
 
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $idArray[] = $row['id'];
-            $takeArray[] = $row['take'];
-            $saveArray[] = $row['save'];
-            $totleArray[] = $row['total'];
-            $resultArray[] = $row['result'];
-        }
-        $detailArray = array(
-            'id' => $idArray,
-            'take' => $takeArray,
-            'save' => $saveArray,
-            'total' => $totleArray,
-            'result' => $resultArray
-        );
-
-        return $detailArray;
+        return $row;
     }
 }
