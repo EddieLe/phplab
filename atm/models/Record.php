@@ -15,10 +15,18 @@ class Record
             $stmt = $pdo->prepare($cmd);
             $stmt->execute();
 
-            $cmd = "UPDATE `money` SET `total`= :total WHERE `account` = :account";
+            $cmd = "SELECT `total` FROM `money` WHERE `account` = :account";
+            $stmt = $pdo->prepare($cmd);
+            $stmt->execute([':account' => $account]);
+
+            //取出當下total
+            $row = $stmt->fetchall(PDO::FETCH_ASSOC);
+            $newTotal = $row[0]['total'];
+
+            $cmd = "UPDATE `money` SET `total` = `total` - :take WHERE `account` = :account";
             $stmt = $pdo->prepare($cmd);
             $stmt->execute([
-                ':total' => $after,
+                ':take' => $take,
                 ':account' => $account
             ]);
 
@@ -26,9 +34,9 @@ class Record
             $stmt = $pdo->prepare($cmd);
             $stmt->execute([
                 ':take' => $take,
-                ':total' => $total,
+                ':total' => $newTotal,
                 ':account' => $account,
-                ':result' => $after
+                ':result' => $newTotal - $take
             ]);
 
             //將所有資料庫解鎖
@@ -58,7 +66,7 @@ class Record
             $row = $stmt->fetchall(PDO::FETCH_ASSOC);
             $newTotal = $row[0]['total'];
 
-            $cmd = "UPDATE `money` SET `total`= `total` + :save WHERE `account` = :account";
+            $cmd = "UPDATE `money` SET `total` = `total` + :save WHERE `account` = :account";
             $stmt = $pdo->prepare($cmd);
             $stmt->execute([':save' => $save, ':account' => $account]);
 
