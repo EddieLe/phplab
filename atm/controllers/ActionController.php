@@ -37,8 +37,7 @@ class ActionController extends Controller
 
             $save = $this->model("Record");
             $result = $total + $_POST['save'];
-            $save->saveMoney($_POST['account'], $result);
-            $save->insertDetail($total, $_POST['account'], $result, $_POST['save']);
+            $save->saveMoney($total, $_POST['account'], $result, $_POST['save']);
         }
         $account = $pay->takeAccount($_SESSION['account']);
         $this->view("atmView", $account);

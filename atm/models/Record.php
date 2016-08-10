@@ -15,8 +15,8 @@ class Record
         $stmt = $pdo->prepare($cmd);
         $stmt->execute();
 
-        $cmdup = "UPDATE `money` SET `total`= :total WHERE `account` = :account";
-        $stmt = $pdo->prepare($cmdup);
+        $cmd = "UPDATE `money` SET `total`= :total WHERE `account` = :account";
+        $stmt = $pdo->prepare($cmd);
         $stmt->execute([
             ':total' => $after,
             ':account' => $account
@@ -38,7 +38,7 @@ class Record
         $pdo->commit();
     }
 
-    public function saveMoney($account, $after)
+    public function saveMoney($total, $account, $result, $save)
     {
         $mypod = new MyPDO();
         $pdo = $mypod->pdoConnect;
@@ -49,36 +49,25 @@ class Record
         $stmt = $pdo->prepare($cmd);
         $stmt->execute([':account' => $account]);
 
-        $cmdup = "UPDATE `money` SET `total`=:total WHERE `account` = :account";
-        $stmt = $pdo->prepare($cmdup);
-        $stmt->execute([':total' => $after, ':account' => $account]);
+        //取出當下total
+        $row = $stmt->fetchall(PDO::FETCH_ASSOC);
+        $newTotal = $row[0]['total'];
 
-        //確認執行sql
-        $pdo->commit();
-    }
-
-    public function insertDetail($total, $account, $after, $save)
-    {
-        $mypod = new MyPDO();
-        $pdo = $mypod->pdoConnect;
+        $cmd = "UPDATE `money` SET `total`= `total` + :save WHERE `account` = :account";
+        $stmt = $pdo->prepare($cmd);
+        $stmt->execute([':save' => $save, ':account' => $account]);
 
         $cmd = "INSERT INTO `detail`(`save`, `total`, `account`, `result`) VALUES (:save, :total, :account, :result)";
         $stmt = $pdo->prepare($cmd);
         $stmt->execute([
             ':save' => $save,
-            ':total' => $total,
+            ':total' => $newTotal,
             ':account' => $account,
-            ':result' => $after
+            ':result' => $newTotal + $save
             ]);
-        $lastId = $pdo->lastInsertId();
 
-        $cmd ="SELECT `result` FROM `detail` WHERE `id` = :lastId ";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute([':lastId' => $lastId]);
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-        $total = $row['result'];
-
-        return $total;
+        //確認執行sql
+        $pdo->commit();
     }
 
     public function selectDetail($account)
