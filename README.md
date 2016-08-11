@@ -7,8 +7,11 @@
 
             備註:使用使用一 for update 方式鎖表
                  使用方式二 lock tables   unlock tables 鎖表
-                 心得:相較結果for update方式比較好 因為如果使用lock tables 情況
-                 如不unlock 下整個表單將無法使用
+                 使用方式三 lock in share mode 鎖表
+
+                 心得:相較結果for update方式比較好
+                      如果使用lock tables 情況 如不unlock 下整個表單將無法使用
+                      如果使用 lock in share mode 因為可同時讀取會在即時存款時候撈出同一值有錯誤問題
 
 -----------------------------------------------------------------------------
 

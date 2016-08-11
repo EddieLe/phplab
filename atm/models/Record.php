@@ -58,7 +58,7 @@ class Record
 
         try {
             //鎖定輸入
-            $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
+            $cmd = "SELECT `total` FROM `money` WHERE `account` = :account LOCK IN SHARE MODE";
             $stmt = $pdo->prepare($cmd);
             $stmt->execute([':account' => $account]);
 
