@@ -9,13 +9,10 @@ class Record
         $mypod = new MyPDO();
         $pdo = $mypod->pdoConnect;
         $pdo->beginTransaction();
-        try {
-            //鎖定tables
-            $cmd = "LOCK TABLES `money` WRITE, `detail` WRITE";
-            $stmt = $pdo->prepare($cmd);
-            $stmt->execute();
 
-            $cmd = "SELECT `total` FROM `money` WHERE `account` = :account";
+        try {
+            //鎖定輸入
+            $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
             $stmt = $pdo->prepare($cmd);
             $stmt->execute([':account' => $account]);
 
@@ -23,27 +20,23 @@ class Record
             $row = $stmt->fetchall(PDO::FETCH_ASSOC);
             $newTotal = $row[0]['total'];
 
-            $cmd = "UPDATE `money` SET `total` = `total` - :take WHERE `account` = :account";
-            $stmt = $pdo->prepare($cmd);
-            $stmt->execute([
-                ':take' => $take,
-                ':account' => $account
-            ]);
+            if ($newTotal == $total) {
+                $cmd = "UPDATE `money` SET `total` = `total` - :take WHERE `account` = :account";
+                $stmt = $pdo->prepare($cmd);
+                $stmt->execute([':take' => $take, ':account' => $account]);
 
-            $cmd = "INSERT INTO `detail`(`take`, `total`, `account`, `result`) VALUES (:take, :total, :account, :result)";
-            $stmt = $pdo->prepare($cmd);
-            $stmt->execute([
-                ':take' => $take,
-                ':total' => $newTotal,
-                ':account' => $account,
-                ':result' => $newTotal - $take
-            ]);
+                $cmd = "INSERT INTO `detail`(`take`, `total`, `account`, `result`) VALUES (:take, :total, :account, :result)";
+                $stmt = $pdo->prepare($cmd);
+                $stmt->execute([
+                    ':take' => $take,
+                    ':total' => $newTotal,
+                    ':account' => $account,
+                    ':result' => $newTotal - $take
+                    ]);
 
-            //將所有資料庫解鎖
-            $cmd = "UNLOCK TABLES";
-            $stmt = $pdo->prepare($cmd);
-            $stmt->execute();
-            $pdo->commit();
+                //確認執行sql
+                $pdo->commit();
+            }
         } catch(Exception $e) {
             $pdo->rollback();
             echo 'Caught exception: ',  $e->getMessage();
