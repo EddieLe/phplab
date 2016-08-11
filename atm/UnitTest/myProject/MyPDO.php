@@ -3,9 +3,9 @@
 class MyPDO
 {
     private $dbHost = 'localhost';
-    private $dbUser = 'root';
-    private $dbPass = '';
-    private $dbName = 'Payment';
+	private $dbUser = 'root';
+	private $dbPass = '';
+	private $dbName = 'Payment';
     public $pdoConnect = null;
 
     function __construct()
