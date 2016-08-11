@@ -1,5 +1,4 @@
 <?php
-
 namespace myProject\Test;
 
 use myProject\Tool;
