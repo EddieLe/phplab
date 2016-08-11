@@ -17,6 +17,7 @@ class ActionController extends Controller
             if ($_POST['take'] > 0) {
                 $payArray = $pay->takeAccount($_POST['account']);
                 $total = $payArray['total'];
+                $version = $payArray['version'];
 
                 $take = $this->model("Record");
                 $result = $total - $_POST['take'];
@@ -28,7 +29,7 @@ class ActionController extends Controller
                     $account = $pay->takeAccount($_SESSION['account']);
                     $this->view("atmView", $account);
                 } else {
-                    $take->takeMoney($total, $_POST['account'], $result, $_POST['take']);
+                    $take->takeMoney($version, $_POST['account'], $_POST['take']);
                 }
             }
 
