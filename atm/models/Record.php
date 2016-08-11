@@ -10,33 +10,38 @@ class Record
         $pdo = $mypod->pdoConnect;
         $pdo->beginTransaction();
 
+        try {
         //鎖定輸入
-        $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute(array(':account' => $account));
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        //判斷即時有沒有更動總金額
-        if ($total == $row['total']) {
-            $cmdup = "UPDATE `money` SET `total`=:total WHERE `account` = :account";
-            $stmt = $pdo->prepare($cmdup);
-            $stmt->execute(array(
-                ':total' => $after,
-                ':account' => $account
-            ));
-
-            $cmd = "INSERT INTO `detail`(`take`, `total`, `account`, `result`) VALUES (:take, :total, :account, :result)";
+            $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
             $stmt = $pdo->prepare($cmd);
-            $stmt->execute(array(
-                ':take' => $take,
-                ':total' => $total,
-                ':account' => $account,
-                ':result' => $after
-            ));
-            //確認執行sql
-            $pdo->commit();
-        } else {
-            //更新失敗回上一步
+            $stmt->execute(array(':account' => $account));
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            //判斷即時有沒有更動總金額
+            if ($total == $row['total']) {
+                $cmdup = "UPDATE `money` SET `total`=:total WHERE `account` = :account";
+                $stmt = $pdo->prepare($cmdup);
+                $stmt->execute(array(
+                    ':total' => $after,
+                    ':account' => $account
+                ));
+
+                $cmd = "INSERT INTO `detail`(`take`, `total`, `account`, `result`) VALUES (:take, :total, :account, :result)";
+                $stmt = $pdo->prepare($cmd);
+                $stmt->execute(array(
+                    ':take' => $take,
+                    ':total' => $total,
+                    ':account' => $account,
+                    ':result' => $after
+                ));
+                //確認執行sql
+                $pdo->commit();
+            } else {
+                //更新失敗回上一步
+                $pdo->rollback();
+            }
+        } catch(Exception $e) {
+            $e->getMessage();
             $pdo->rollback();
         }
     }
@@ -47,14 +52,15 @@ class Record
         $pdo = $mypod->pdoConnect;
         $pdo->beginTransaction();
 
-        //鎖定輸入
-        $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
-        $stmt = $pdo->prepare($cmd);
-        $stmt->execute(array(':account' => $account));
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        try {
+            //鎖定輸入
+            $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
+            $stmt = $pdo->prepare($cmd);
+            $stmt->execute(array(':account' => $account));
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        //判斷即時有沒有更動總金額
-        if ($total == $row['total']) {
+            //判斷即時有沒有更動總金額
+
             $cmdup = "UPDATE `money` SET `total`=:total WHERE `account` = :account";
             $stmt = $pdo->prepare($cmdup);
             $stmt->execute(array(':total' => $after, ':account' => $account));
@@ -66,11 +72,11 @@ class Record
                 ':total' => $total,
                 ':account' => $account,
                 ':result' => $after
-            ));
+                ));
             //確認執行sql
             $pdo->commit();
-        } else {
-            //更新失敗回上一步
+        } catch(Exception $e) {
+            $e->getMessage();
             $pdo->rollback();
         }
     }
