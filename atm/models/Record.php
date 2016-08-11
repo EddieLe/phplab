@@ -17,7 +17,6 @@ class Record
             $stmt->execute([':account' => $account]);
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
             $newTotal = $row['total'];
-            $newVersion = $row['version'];
 
             $cmd = "UPDATE `money` SET `total` = `total` - :take, `version` = `version` + 1 WHERE `account` = :account AND `version` = :version";
             $stmt = $pdo->prepare($cmd);
