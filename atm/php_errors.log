@@ -1,0 +1,662 @@
+[12-Aug-2016 00:59:20 UTC] PHP Warning:  require_once(MyPDO.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 4
+[12-Aug-2016 00:59:20 UTC] PHP Stack trace:
+[12-Aug-2016 00:59:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 00:59:20 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 00:59:20 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 00:59:20 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 00:59:20 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 00:59:20 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 00:59:20 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 00:59:20 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 00:59:20 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 00:59:20 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 00:59:20 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 00:59:20 UTC] PHP Fatal error:  require_once(): Failed opening required 'MyPDO.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 4
+[12-Aug-2016 00:59:20 UTC] PHP Stack trace:
+[12-Aug-2016 00:59:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 00:59:20 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 00:59:20 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 00:59:20 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 00:59:20 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 00:59:20 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 00:59:20 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 00:59:20 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 00:59:20 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 00:59:20 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 00:59:20 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 01:00:38 UTC] PHP Warning:  require_once(../MyPDO.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 4
+[12-Aug-2016 01:00:38 UTC] PHP Stack trace:
+[12-Aug-2016 01:00:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:00:38 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:00:38 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:00:38 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 01:00:38 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 01:00:38 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 01:00:38 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 01:00:38 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 01:00:38 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 01:00:38 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 01:00:38 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 01:00:38 UTC] PHP Fatal error:  require_once(): Failed opening required '../MyPDO.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 4
+[12-Aug-2016 01:00:38 UTC] PHP Stack trace:
+[12-Aug-2016 01:00:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:00:38 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:00:38 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:00:38 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 01:00:38 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 01:00:38 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 01:00:38 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 01:00:38 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 01:00:38 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 01:00:38 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 01:00:38 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 01:00:59 UTC] PHP Fatal error:  Cannot redeclare class MyPDO in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/MyPDO.php on line 4
+[12-Aug-2016 01:00:59 UTC] PHP Stack trace:
+[12-Aug-2016 01:00:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:00:59 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:00:59 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:00:59 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:00:59 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:00:59 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:00:59 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:00:59 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:00:59 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:00:59 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:00:59 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:00:59 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:00:59 UTC] PHP  13. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:15
+[12-Aug-2016 01:00:59 UTC] PHP  14. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:15
+[12-Aug-2016 01:00:59 UTC] PHP  15. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 01:00:59 UTC] PHP  16. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 01:05:55 UTC] PHP Warning:  require_once(/eddie/atm/UnitTest/myProject/Test/MyPDO.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 4
+[12-Aug-2016 01:05:55 UTC] PHP Stack trace:
+[12-Aug-2016 01:05:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:05:55 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:05:55 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:05:55 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 01:05:55 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 01:05:55 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 01:05:55 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 01:05:55 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 01:05:55 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 01:05:55 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 01:05:55 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 01:05:55 UTC] PHP Fatal error:  require_once(): Failed opening required '/eddie/atm/UnitTest/myProject/Test/MyPDO.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 4
+[12-Aug-2016 01:05:55 UTC] PHP Stack trace:
+[12-Aug-2016 01:05:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:05:55 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:05:55 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:05:55 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 01:05:55 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 01:05:55 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 01:05:55 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 01:05:55 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 01:05:55 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 01:05:55 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 01:05:55 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 01:15:17 UTC] PHP Fatal error:  Cannot redeclare class MyPDO in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/MyPDO.php on line 4
+[12-Aug-2016 01:15:17 UTC] PHP Stack trace:
+[12-Aug-2016 01:15:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:15:17 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:15:17 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:15:17 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:15:17 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:15:17 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:15:17 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:15:17 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:15:17 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:15:17 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:15:17 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:15:17 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:15:17 UTC] PHP  13. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:15
+[12-Aug-2016 01:15:17 UTC] PHP  14. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:15
+[12-Aug-2016 01:15:17 UTC] PHP  15. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 01:15:17 UTC] PHP  16. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 01:19:52 UTC] PHP Fatal error:  Class 'myProject\Test\MyPDO' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 15
+[12-Aug-2016 01:19:52 UTC] PHP Stack trace:
+[12-Aug-2016 01:19:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:19:52 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:19:52 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:19:52 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:19:52 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:19:52 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:19:52 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:19:52 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:19:52 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:19:52 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:19:52 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:19:52 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:39:44 UTC] PHP Fatal error:  Class 'myProject\MyPDO' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 15
+[12-Aug-2016 01:39:44 UTC] PHP Stack trace:
+[12-Aug-2016 01:39:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:39:44 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:39:44 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:39:44 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:39:44 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:39:44 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:39:44 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:39:44 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:39:44 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:39:44 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:39:44 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:39:44 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:40:46 UTC] PHP Fatal error:  Class 'myProject\Record' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 18
+[12-Aug-2016 01:40:46 UTC] PHP Stack trace:
+[12-Aug-2016 01:40:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:40:46 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:40:46 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:40:46 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:40:46 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:40:46 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:40:46 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:40:46 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:40:46 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:40:46 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:40:46 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:40:46 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:43:38 UTC] PHP Fatal error:  Class 'myProject\MyPDO' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 15
+[12-Aug-2016 01:43:38 UTC] PHP Stack trace:
+[12-Aug-2016 01:43:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:43:38 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:43:38 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:43:38 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:43:38 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:43:38 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:43:38 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:43:38 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:43:38 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:43:38 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:43:38 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:43:38 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:46:06 UTC] PHP Fatal error:  Class 'myProject\MyPDO' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 15
+[12-Aug-2016 01:46:06 UTC] PHP Stack trace:
+[12-Aug-2016 01:46:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:46:06 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:46:06 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:46:06 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:46:06 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:46:06 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:46:06 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:46:06 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:46:06 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:46:06 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:46:06 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:46:06 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:46:28 UTC] PHP Fatal error:  Class 'myProject\MyPDO' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 15
+[12-Aug-2016 01:46:28 UTC] PHP Stack trace:
+[12-Aug-2016 01:46:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:46:28 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:46:28 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:46:28 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:46:28 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:46:28 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:46:28 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:46:28 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:46:28 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:46:28 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:46:28 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:46:28 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:47:15 UTC] PHP Fatal error:  Class 'myProject\Record' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 18
+[12-Aug-2016 01:47:15 UTC] PHP Stack trace:
+[12-Aug-2016 01:47:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:47:15 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:47:15 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:47:15 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:47:15 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:47:15 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:47:15 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:47:15 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:47:15 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:47:15 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:47:15 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:47:15 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:48:40 UTC] PHP Fatal error:  Cannot redeclare class MyPDO in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/MyPDO.php on line 4
+[12-Aug-2016 01:48:40 UTC] PHP Stack trace:
+[12-Aug-2016 01:48:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:48:40 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:48:40 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:48:40 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:48:40 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:48:40 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:48:40 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:48:40 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:48:40 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:48:40 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:48:40 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:48:40 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:48:40 UTC] PHP  13. myProject\Record->takeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:19
+[12-Aug-2016 01:48:40 UTC] PHP  14. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:10
+[12-Aug-2016 01:48:40 UTC] PHP  15. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:10
+[12-Aug-2016 01:48:40 UTC] PHP  16. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 01:48:40 UTC] PHP  17. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 01:49:06 UTC] PHP Fatal error:  Class 'myProject\PDO' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/MyPDO.php on line 15
+[12-Aug-2016 01:49:06 UTC] PHP Stack trace:
+[12-Aug-2016 01:49:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:49:06 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:49:06 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:49:06 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:49:06 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:49:06 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:49:06 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:49:06 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:49:06 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:49:06 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:49:06 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:49:06 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:49:06 UTC] PHP  13. myProject\Record->takeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:19
+[12-Aug-2016 01:49:06 UTC] PHP  14. myProject\MyPDO->__construct() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Record.php:10
+[12-Aug-2016 01:59:54 UTC] PHP Warning:  Uncaught require_once(MyPDO.php): failed to open stream: No such file or directory
+
+/home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Record.php:4
+/home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Record.php:4
+/home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:18
+
+  thrown in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Record.php on line 4
+[12-Aug-2016 01:59:54 UTC] PHP Stack trace:
+[12-Aug-2016 01:59:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:59:54 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:59:54 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:59:54 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:59:54 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:59:54 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:59:54 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:59:54 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:59:54 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:59:54 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:59:54 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:59:54 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:59:54 UTC] PHP  13. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:18
+[12-Aug-2016 01:59:54 UTC] PHP  14. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:18
+[12-Aug-2016 01:59:54 UTC] PHP  15. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 01:59:54 UTC] PHP  16. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 01:59:54 UTC] PHP Fatal error:  main(): Failed opening required 'MyPDO.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Record.php on line 4
+[12-Aug-2016 01:59:54 UTC] PHP Stack trace:
+[12-Aug-2016 01:59:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 01:59:54 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 01:59:54 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 01:59:54 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 01:59:54 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 01:59:54 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:59:54 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 01:59:54 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 01:59:54 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 01:59:54 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 01:59:54 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:59:54 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 01:59:54 UTC] PHP  13. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:18
+[12-Aug-2016 01:59:54 UTC] PHP  14. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:18
+[12-Aug-2016 01:59:54 UTC] PHP  15. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 01:59:54 UTC] PHP  16. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 02:00:12 UTC] PHP Fatal error:  Call to a member function takeMoney() on a non-object in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 19
+[12-Aug-2016 02:00:12 UTC] PHP Stack trace:
+[12-Aug-2016 02:00:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:00:12 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:00:12 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:00:12 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:00:12 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:00:12 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:00:12 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:00:12 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:00:12 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:00:12 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:00:12 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:00:12 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:00:56 UTC] PHP Fatal error:  Class 'myProject\Tool' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 14
+[12-Aug-2016 02:00:56 UTC] PHP Stack trace:
+[12-Aug-2016 02:00:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:00:56 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:00:56 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:00:56 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:00:56 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:00:56 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:00:56 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:00:56 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:00:56 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:00:56 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:00:56 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:00:56 UTC] PHP  12. myProject\Test\ToolTest->testRepeatString() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:11:19 UTC] PHP Fatal error:  Class 'myProject\MyPDO' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php on line 15
+[12-Aug-2016 02:11:19 UTC] PHP Stack trace:
+[12-Aug-2016 02:11:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:11:19 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:11:19 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:11:19 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:11:19 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:11:19 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:11:19 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:11:19 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:11:19 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:11:19 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:11:19 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:11:19 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:11:38 UTC] PHP Fatal error:  Cannot redeclare class MyPDO in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/MyPDO.php on line 4
+[12-Aug-2016 02:11:38 UTC] PHP Stack trace:
+[12-Aug-2016 02:11:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:11:38 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:11:38 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:11:38 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:11:38 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:11:38 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:11:38 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:11:38 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:11:38 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:11:38 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:11:38 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:11:38 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:11:38 UTC] PHP  13. myProject\Record->takeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:19
+[12-Aug-2016 02:11:38 UTC] PHP  14. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:10
+[12-Aug-2016 02:11:38 UTC] PHP  15. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:10
+[12-Aug-2016 02:11:38 UTC] PHP  16. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 02:11:38 UTC] PHP  17. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 02:12:02 UTC] PHP Fatal error:  Cannot redeclare class myProject\Test\MyPDO in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/MyPDO.php on line 5
+[12-Aug-2016 02:12:02 UTC] PHP Stack trace:
+[12-Aug-2016 02:12:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:12:02 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:12:02 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:12:02 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:12:02 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:12:02 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:12:02 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:12:02 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:12:02 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:12:02 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:12:02 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:12:02 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:12:02 UTC] PHP  13. myProject\Record->takeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:19
+[12-Aug-2016 02:12:02 UTC] PHP  14. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:10
+[12-Aug-2016 02:12:02 UTC] PHP  15. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:10
+[12-Aug-2016 02:12:02 UTC] PHP  16. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 02:12:02 UTC] PHP  17. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 02:13:48 UTC] PHP Fatal error:  Cannot redeclare class myProject\Test\MyPDO in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/MyPDO.php on line 5
+[12-Aug-2016 02:13:48 UTC] PHP Stack trace:
+[12-Aug-2016 02:13:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:13:48 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:13:48 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:13:48 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:13:48 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:13:48 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:13:48 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:13:48 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:13:48 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:13:48 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:13:48 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:13:48 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:13:48 UTC] PHP  13. myProject\Record->takeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:19
+[12-Aug-2016 02:13:48 UTC] PHP  14. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:10
+[12-Aug-2016 02:13:48 UTC] PHP  15. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:10
+[12-Aug-2016 02:13:48 UTC] PHP  16. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 02:13:48 UTC] PHP  17. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 02:16:03 UTC] PHP Fatal error:  Cannot redeclare class myProject\Test\MyPDO in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/MyPDO.php on line 5
+[12-Aug-2016 02:16:03 UTC] PHP Stack trace:
+[12-Aug-2016 02:16:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:16:03 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:16:03 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:16:03 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:16:03 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:16:03 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:16:03 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:16:03 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:16:03 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:16:03 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:16:03 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:16:03 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:16:03 UTC] PHP  13. myProject\Record->takeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:15
+[12-Aug-2016 02:16:03 UTC] PHP  14. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:10
+[12-Aug-2016 02:16:03 UTC] PHP  15. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:10
+[12-Aug-2016 02:16:03 UTC] PHP  16. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 02:16:03 UTC] PHP  17. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 02:16:52 UTC] PHP Fatal error:  Call to a member function beginTransaction() on a non-object in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Record.php on line 12
+[12-Aug-2016 02:16:53 UTC] PHP Stack trace:
+[12-Aug-2016 02:16:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:16:53 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:16:53 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:16:53 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:16:53 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:16:53 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:16:53 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:16:53 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:16:53 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:16:53 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:16:53 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:16:53 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:16:53 UTC] PHP  13. myProject\Record->takeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:15
+[12-Aug-2016 02:21:23 UTC] PHP Warning:  Uncaught require_once(MyPDO.php): failed to open stream: No such file or directory
+
+/home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Record.php:4
+/home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Record.php:4
+/home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/RecordTest.php:14
+
+  thrown in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Record.php on line 4
+[12-Aug-2016 02:21:23 UTC] PHP Stack trace:
+[12-Aug-2016 02:21:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:21:23 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:21:23 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:21:23 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:21:23 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:21:23 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:21:23 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:21:23 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:21:23 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:21:23 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:21:23 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:21:23 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:21:23 UTC] PHP  13. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:14
+[12-Aug-2016 02:21:23 UTC] PHP  14. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:14
+[12-Aug-2016 02:21:23 UTC] PHP  15. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 02:21:23 UTC] PHP  16. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 02:21:23 UTC] PHP Fatal error:  main(): Failed opening required 'MyPDO.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Record.php on line 4
+[12-Aug-2016 02:21:23 UTC] PHP Stack trace:
+[12-Aug-2016 02:21:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:21:23 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:21:23 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:21:23 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:21:23 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:21:23 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:21:23 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:21:23 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:21:23 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:21:23 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:21:23 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:21:23 UTC] PHP  12. myProject\Test\RecordTest->testTakeMoney() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:21:23 UTC] PHP  13. spl_autoload_call() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:14
+[12-Aug-2016 02:21:23 UTC] PHP  14. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:14
+[12-Aug-2016 02:21:23 UTC] PHP  15. Composer\Autoload\includeFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:301
+[12-Aug-2016 02:21:23 UTC] PHP  16. include() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/composer/ClassLoader.php:412
+[12-Aug-2016 02:22:36 UTC] PHP Fatal error:  Class 'myProject\Tool' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 14
+[12-Aug-2016 02:22:36 UTC] PHP Stack trace:
+[12-Aug-2016 02:22:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:22:36 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:22:36 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:22:36 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:22:36 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:22:36 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:22:36 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:22:36 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:22:36 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:22:36 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:22:36 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:22:36 UTC] PHP  12. myProject\Test\ToolTest->testRepeatString() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:42:39 UTC] PHP Fatal error:  Class 'Tool' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 10
+[12-Aug-2016 02:42:39 UTC] PHP Stack trace:
+[12-Aug-2016 02:42:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:42:39 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:42:39 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:42:39 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:42:39 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:42:39 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:42:39 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:42:39 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:42:39 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:42:39 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:42:39 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:42:39 UTC] PHP  12. ToolTest->testRepeatString() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:43:57 UTC] PHP Warning:  require_once(Tool.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:43:57 UTC] PHP Stack trace:
+[12-Aug-2016 02:43:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:43:57 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:43:57 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:43:57 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:43:57 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:43:57 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:43:57 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:43:57 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:43:57 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:43:57 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:43:57 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:43:57 UTC] PHP Fatal error:  require_once(): Failed opening required 'Tool.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:43:57 UTC] PHP Stack trace:
+[12-Aug-2016 02:43:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:43:57 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:43:57 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:43:57 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:43:57 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:43:57 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:43:57 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:43:57 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:43:57 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:43:57 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:43:57 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:44:43 UTC] PHP Fatal error:  Class 'Tool' not found in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 11
+[12-Aug-2016 02:44:43 UTC] PHP Stack trace:
+[12-Aug-2016 02:44:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:44:43 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:44:43 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:44:43 UTC] PHP   4. PHPUnit_TextUI_TestRunner->doRun() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:147
+[12-Aug-2016 02:44:43 UTC] PHP   5. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/TestRunner.php:428
+[12-Aug-2016 02:44:43 UTC] PHP   6. PHPUnit_Framework_TestSuite->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:44:43 UTC] PHP   7. PHPUnit_Framework_TestCase->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:738
+[12-Aug-2016 02:44:43 UTC] PHP   8. PHPUnit_Framework_TestResult->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:702
+[12-Aug-2016 02:44:43 UTC] PHP   9. PHPUnit_Framework_TestCase->runBare() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestResult.php:601
+[12-Aug-2016 02:44:43 UTC] PHP  10. PHPUnit_Framework_TestCase->runTest() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:746
+[12-Aug-2016 02:44:43 UTC] PHP  11. ReflectionMethod->invokeArgs() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:44:43 UTC] PHP  12. ToolTest->testRepeatString() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestCase.php:881
+[12-Aug-2016 02:45:36 UTC] PHP Warning:  require_once(/myProject/Tool.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:45:36 UTC] PHP Stack trace:
+[12-Aug-2016 02:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:45:36 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:45:36 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:45:36 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:45:36 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:45:36 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:45:36 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:45:36 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:45:36 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:45:36 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:45:36 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:45:36 UTC] PHP Fatal error:  require_once(): Failed opening required '/myProject/Tool.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:45:36 UTC] PHP Stack trace:
+[12-Aug-2016 02:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:45:36 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:45:36 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:45:36 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:45:36 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:45:36 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:45:36 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:45:36 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:45:36 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:45:36 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:45:36 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:53:19 UTC] PHP Warning:  require_once(Tool.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:53:19 UTC] PHP Stack trace:
+[12-Aug-2016 02:53:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:53:19 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:53:19 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:53:19 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:53:19 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:53:19 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:53:19 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:53:19 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:53:19 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:53:19 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:53:19 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:53:19 UTC] PHP Fatal error:  require_once(): Failed opening required 'Tool.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:53:19 UTC] PHP Stack trace:
+[12-Aug-2016 02:53:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:53:19 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:53:19 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:53:19 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:53:19 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:53:19 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:53:19 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:53:19 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:53:19 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:53:19 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:53:19 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:53:31 UTC] PHP Warning:  require_once(/Tool.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:53:31 UTC] PHP Stack trace:
+[12-Aug-2016 02:53:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:53:31 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:53:31 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:53:31 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:53:31 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:53:31 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:53:31 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:53:31 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:53:31 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:53:31 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:53:31 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:53:31 UTC] PHP Fatal error:  require_once(): Failed opening required '/Tool.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:53:31 UTC] PHP Stack trace:
+[12-Aug-2016 02:53:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:53:31 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:53:31 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:53:31 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:53:31 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:53:31 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:53:31 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:53:31 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:53:31 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:53:31 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:53:31 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:53:39 UTC] PHP Warning:  require_once(../Tool.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:53:39 UTC] PHP Stack trace:
+[12-Aug-2016 02:53:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:53:39 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:53:39 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:53:39 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:53:39 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:53:39 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:53:39 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:53:39 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:53:39 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:53:39 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:53:39 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:53:39 UTC] PHP Fatal error:  require_once(): Failed opening required '../Tool.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:53:39 UTC] PHP Stack trace:
+[12-Aug-2016 02:53:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:53:39 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:53:39 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:53:39 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:53:39 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:53:39 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:53:39 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:53:39 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:53:39 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:53:39 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:53:39 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:53:52 UTC] PHP Warning:  require_once(./Tool.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:53:53 UTC] PHP Stack trace:
+[12-Aug-2016 02:53:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:53:53 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:53:53 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:53:53 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:53:53 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:53:53 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:53:53 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:53:53 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:53:53 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:53:53 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:53:53 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52
+[12-Aug-2016 02:53:53 UTC] PHP Fatal error:  require_once(): Failed opening required './Tool.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/eddie/atm/UnitTest/myProject/Test/ToolTest.php on line 2
+[12-Aug-2016 02:53:53 UTC] PHP Stack trace:
+[12-Aug-2016 02:53:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:0
+[12-Aug-2016 02:53:53 UTC] PHP   2. PHPUnit_TextUI_Command::main() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/phpunit:36
+[12-Aug-2016 02:53:53 UTC] PHP   3. PHPUnit_TextUI_Command->run() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+[12-Aug-2016 02:53:53 UTC] PHP   4. PHPUnit_TextUI_Command->handleArguments() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:109
+[12-Aug-2016 02:53:53 UTC] PHP   5. PHPUnit_Util_Configuration->getTestSuiteConfiguration() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/TextUI/Command.php:622
+[12-Aug-2016 02:53:53 UTC] PHP   6. PHPUnit_Util_Configuration->getTestSuite() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:853
+[12-Aug-2016 02:53:53 UTC] PHP   7. PHPUnit_Framework_TestSuite->addTestFiles() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Configuration.php:940
+[12-Aug-2016 02:53:53 UTC] PHP   8. PHPUnit_Framework_TestSuite->addTestFile() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:406
+[12-Aug-2016 02:53:53 UTC] PHP   9. PHPUnit_Util_Fileloader::checkAndLoad() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Framework/TestSuite.php:334
+[12-Aug-2016 02:53:53 UTC] PHP  10. PHPUnit_Util_Fileloader::load() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:36
+[12-Aug-2016 02:53:53 UTC] PHP  11. include_once() /home/ubuntu/workspace/eddie/atm/UnitTest/vendor/phpunit/phpunit/src/Util/Fileloader.php:52

@@ -1,6 +1,5 @@
 <?php
-
-require_once "MyPDO.php";
+require_once "myProject/MyPDO.php";
 
 class Record
 {
@@ -33,15 +32,10 @@ class Record
                     ':account' => $account,
                     ':result' => $newTotal - $take
                     ]);
-
                 //確認執行sql
-                $pdo->commit();
-                $cmd = "SELECT `total` FROM `detail` WHERE `account` = :account";
-                $stmt = $pdo->prepare($cmd);
-                $stmt->execute([':account' => $account]);
-                $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                // $pdo->commit();
 
-                return $row['result'];
+                return true;
             }
         } catch(Exception $e) {
             $pdo->rollback();

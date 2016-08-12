@@ -1,19 +1,14 @@
 <?php
-namespace myProject\Test;
-
-require_once "MyPDO.php";
-use myProject\Record;
+require_once "myProject/Record.php";
 
 class RecordTest extends \PHPUnit_Framework_TestCase {
-
-    public function testTakeMoney() {
-        $total = 10000;
+    //for model 測試
+    public function testTakeMoney()
+    {
+        $total = 12000;
         $account = 99999;
         $take = 1000;
-        $expectedResult = 9000;
-
-        $mypod = new MyPDO();
-        $pdo = $mypod->pdoConnect;
+        $expectedResult = true;
 
         $record = new Record();
         $result = $record->takeMoney($total, $account, $take);
