@@ -40,6 +40,7 @@ class Record
         } catch(Exception $e) {
             $pdo->rollback();
             echo 'Caught exception: ',  $e->getMessage();
+
         }
     }
 
@@ -73,7 +74,9 @@ class Record
                 ]);
 
             //確認執行sql
-            $pdo->commit();
+            // $pdo->commit();
+
+            return true;
         } catch(Exception $e) {
             $pdo->rollback();
             echo 'Caught exception: ',  $e->getMessage();
@@ -89,6 +92,6 @@ class Record
         $stmt->execute([':account'=>$account]);
         $row = $stmt->fetchall(PDO::FETCH_ASSOC);
 
-        return $row;
+        return true;
     }
 }

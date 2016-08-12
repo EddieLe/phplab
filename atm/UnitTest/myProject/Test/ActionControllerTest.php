@@ -1,8 +1,6 @@
 <?php
-namespace myProject\Test;
+// require_once "myProject/ActionController.php";
 
-use myProject\ActionController;
+// class ActionControllerTest extends \PHPUnit_Framework_TestCase {
 
-class ActionControllerTest extends \PHPUnit_Framework_TestCase {
-
-}
+// }
