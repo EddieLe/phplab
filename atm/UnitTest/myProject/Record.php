@@ -10,6 +10,10 @@ class Record
         $pdo->beginTransaction();
 
         try {
+
+            if (!isset($account)) {
+                throw new Exception("帳號不能為空");
+            }
             //鎖定輸入
             $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
             $stmt = $pdo->prepare($cmd);
@@ -38,7 +42,8 @@ class Record
         return false;
         } catch(Exception $e) {
             $pdo->rollback();
-            echo 'Caught exception: ',  $e->getMessage();
+
+            return 'Caught exception: ' . $e->getMessage();
         }
     }
 
@@ -49,6 +54,10 @@ class Record
         $pdo->beginTransaction();
 
         try {
+
+            if (!isset($account)) {
+                throw new Exception("帳號不能為空");
+            }
             //鎖定輸入
             $cmd = "SELECT `total` FROM `money` WHERE `account` = :account FOR UPDATE";
             $stmt = $pdo->prepare($cmd);
@@ -74,7 +83,8 @@ class Record
             return true;
         } catch(Exception $e) {
             $pdo->rollback();
-            echo 'Caught exception: ',  $e->getMessage();
+
+            return 'Caught exception: ' . $e->getMessage();
         }
     }
 

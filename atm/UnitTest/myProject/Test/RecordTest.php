@@ -21,6 +21,14 @@ class RecordTest extends \PHPUnit_Framework_TestCase
         $expectedResult = false;
         $result = $record->takeMoney($total, $account, $take);
         $this->assertEquals($expectedResult, $result);
+
+        $total = 13000;
+        $account = null;
+        $take = 1000;
+        $result = $record->takeMoney($total, $account, $take);
+        $this->assertEquals("Caught exception: 帳號不能為空", $result);
+
+
     }
 
     public function testSelectDetail()
@@ -50,8 +58,13 @@ class RecordTest extends \PHPUnit_Framework_TestCase
 
         $record = new Record();
         $result = $record->saveMoney($total, $account, $result, $save);
-
         $this->assertEquals($expectedResult, $result);
+
+        $total = 13000;
+        $account = null;
+        $take = 1000;
+        $result = $record->saveMoney($total, $account, $result, $save);
+        $this->assertEquals("Caught exception: 帳號不能為空", $result);
     }
 
 }
