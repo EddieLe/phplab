@@ -30,7 +30,15 @@ class RecordTest extends \PHPUnit_Framework_TestCase
 
         $record = new Record();
         $result = $record->selectDetail($account);
-        $this->assertEquals($expectedResult, $result);
+
+        $this->assertEquals("109", $result[0]['id']);
+        $this->assertEquals("21000", $result[0]['total']);
+        $this->assertEquals("0", $result[0]['take']);
+        $this->assertEquals("1000", $result[0]['save']);
+        $this->assertEquals("22000", $result[0]['result']);
+        $this->assertEquals("2016-08-11 01:47:46", $result[0]['date']);
+        $this->assertEquals("99999", $result[0]['account']);
+
     }
 
     public function testSaveMoney()
@@ -42,6 +50,7 @@ class RecordTest extends \PHPUnit_Framework_TestCase
 
         $record = new Record();
         $result = $record->saveMoney($total, $account, $result, $save);
+
         $this->assertEquals($expectedResult, $result);
     }
 

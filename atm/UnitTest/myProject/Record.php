@@ -87,6 +87,6 @@ class Record
         $stmt->execute([':account'=>$account]);
         $row = $stmt->fetchall(PDO::FETCH_ASSOC);
 
-        return true;
+        return $row;
     }
 }
