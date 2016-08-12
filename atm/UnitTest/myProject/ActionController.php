@@ -1,4 +1,5 @@
 <?php
+require_once "myProject/Controller.php";
 
 class ActionController extends Controller
 {

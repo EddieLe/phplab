@@ -32,15 +32,13 @@ class Record
                     ':account' => $account,
                     ':result' => $newTotal - $take
                     ]);
-                //確認執行sql
-                // $pdo->commit();
 
                 return true;
             }
+        return false;
         } catch(Exception $e) {
             $pdo->rollback();
             echo 'Caught exception: ',  $e->getMessage();
-
         }
     }
 
@@ -72,9 +70,6 @@ class Record
                 ':account' => $account,
                 ':result' => $newTotal + $save
                 ]);
-
-            //確認執行sql
-            // $pdo->commit();
 
             return true;
         } catch(Exception $e) {
