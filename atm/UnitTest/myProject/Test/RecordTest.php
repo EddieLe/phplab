@@ -5,7 +5,7 @@ class RecordTest extends \PHPUnit_Framework_TestCase {
     //for model 測試
     public function testTakeMoney()
     {
-        $total = 12000;
+        $total = 13000;
         $account = 99999;
         $take = 1000;
         $expectedResult = true;
